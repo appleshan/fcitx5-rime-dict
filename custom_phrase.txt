@@ -1,0 +1,162 @@
+# Rime table
+# coding: utf-8
+#
+# 用於【朙月拼音】系列輸入方案
+# 【小狼毫】0.9.21 以上
+#
+# 請將該文件以UTF-8編碼保存爲
+# Rime用戶文件夾/custom_phrase.txt
+#
+# 碼表各字段以製表符（Tab）分隔
+# 順序爲：文字、編碼、權重（決定重碼的次序、可選）
+#
+# 雖然文本碼表編輯較爲方便，但不適合導入大量條目
+#
+# no comment
+
+#{{ 拼词
+
+# 三角叠
+劦	lilili
+品	pinpinpin
+垚	tututu
+芔	huihuihui
+晶	ririri
+森	mumumu
+骉	mamama
+惢	xinxinxin
+掱	shoushoushou
+毳	maomaomao
+淼	shuishuishui
+焱	huohuohuo
+猋	quanquanquan
+磊	shishishi
+畾	tiantiantian
+皛	baibaibai
+赑	beibeibei
+矗	zhizhizhi
+鑫	jinjinjin
+雥	zhuizhuizhui
+雥	cuicuicui
+雥	weiweiwei
+馫	xiangxiangxiang
+麤	lululu
+龘	longlonglong
+众	renrenren
+刕	daodaodao
+厵	yuanyuanyuan
+叒	youyouyou
+嚞	jijiji
+壵	shishishi
+孨	zizizi
+尛	xiaoxiaoxiao
+歮	zhizhizhi
+犇	niuniuniu
+𤾩	baibaibai
+羴	yangyangyang
+舙	shesheshe
+譶	yanyanyan
+靐	leileilei
+飍	fengfengfeng
+飝	feifeifei
+鱻	yuyuyu
+灥	quanquanquan
+㐂	qiqiqi
+㽓	shengshengsheng
+䆐	qinqinqin
+䖃	ruoruoruo
+䨺	yunyunyun
+
+# 左右叠
+㴇	shuishuishui
+雦	zhuizhuizhui
+
+# 四方叠
+叕	youyouyouyou
+㗊	koukoukoukou
+㠭	gonggonggonggong
+𣊭	riririri
+㵘	shuishuishuishui
+朤	yueyueyueyue
+燚	huohuohuohuo
+𨰻	jinjinjinjin
+䲜	yuyuyuyu
+䨻	leileilei
+
+#}}
+
+# 符号
+·	jiangehao
+·	dian
+°	du
+℃	sheshidu
+℉	huashidu
+
+# 人名
+
+# 扩展词语
+中州韻輸入法引擎	rime	2
+http://rime.im/	rime	1
+Rime	rime	3
+朙月拼音	mingyuepinyin
+⌘	cmd
+⌃	ctl
+⌥	opt
+⇧	shift
+GBK	gbk
+UTF-8	utfba
+Google Analytics	ga
+macOS	macos
+Linux	linux
+CSS	css
+HTML	html
+iOS	ios
+iPad	ipad
+iPhone	iphone
+iTunes	itunes
+JavaScript	js
+TypeScript	ts
+jQuery	jquery
+MySQL	mysql
+SQL	sql
+WeChat	wechat
+Swift	swift
+MacBook Pro	mbp
+MacBook	macbook
+Apple	apple
+U盘	up
+GitHub	github
+iMac	imac
+iPad	ipad
+iPhone	iphone
+iPod	ipod
+IPTV	iptv
+IPv4	ipv
+IPv6	ipv
+Mac App Store	mas
+OS X	osx
+GNU/Linux	linux
+Youku	youku
+YouTube	youtube
+iCloud	icloud
+Dropbox	dropbox
+T恤	txu
+Mac	mac
+Wi-Fi	wifi
+Apple ID	appleid
+QQ邮箱	qqyzxl
+
+# 方便词
+儿	r
+一	i
+你们	nm
+知道	zd
+没有	my
+又有	uu
+39454075	qq
+apple.shan@gmail.com	email
+http://lims.hbmlab.net:8080/KP-LIMS/	kplims
+
+# 容错词
+什么	sheme
+

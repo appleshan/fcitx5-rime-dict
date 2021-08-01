@@ -1,0 +1,8691 @@
+# ------------------------------------------------------------------------------
+# Rime dictionary
+# encoding: utf-8
+# ------------------------------------------------------------------------------
+# Copyright (c) 2016 Jak Wings https://github.com/jakwings/rime-xyz
+#
+# Permission to use, copy, modify, and/or distribute this software for any
+# purpose with or without fee is hereby granted, provided that the above
+# copyright notice and this permission notice appear in all copies.
+#
+# THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+# REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+# AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+# INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+# LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+# OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+# PERFORMANCE OF THIS SOFTWARE.
+# ------------------------------------------------------------------------------
+
+---
+version: '2017.12.22'
+name: symbols
+sort: original
+columns: [ code, text ]
+use_preset_vocabulary: false
+...
+
+# 縮略碼表 {
+?	請確認字符顯示正常無誤
+?	─╴縮略碼表╶─────
+?	英文字母 = a-z ＆ zm
+?	計數字符 = 0-9 ＆ sz
+?	查看使用說明 = ? + 縮略碼
+?	按相關字母檢索 = 編碼 + 字母
+?	按數字關係檢索 = 編碼 + 數字
+?	切換至半角形態 = 編碼 + bj
+?	切換至大寫形態 = 編碼 + dx
+?	切換至小寫形態 = 編碼 + xx
+?	特殊符號 = ts
+?	標點符號 = bd
+?	漢語拼音 = py
+?	註音符號 = zy
+?	漢字筆畫 = bh
+?	偏旁部首 = bs/pp ＆ kx
+?	漢字結構 = jg
+?	日文假名 = hg / kk / rw
+?	希臘字母 = xl
+?	俄語字母 = ey
+?	希伯來文 = xblw / xw
+?	拉丁字母 = ld
+?	國際音標 = yb
+?	羅馬數字 = lm
+?	計量單位 = dw
+?	貨币單位 = hb
+?	數學算符 = sx
+?	分數符號 = fs
+?	聲調調型 = dx / sd
+?	時間日期 = sj
+?	易經八卦 = yj ＆ bg
+?	太玄經爻 = txj
+?	盲文點字 = mw
+?	漢文批註 = pz
+?	上標下標 = sb ＆ xb
+?	星號標記 = xh
+?	指向箭頭 = jt
+?	製表符號 = zb
+?	組合方塊 = fk
+?	幾何圖形 = tx
+?	電腦界面 = dn
+?	信號標誌 = bz
+?	人物表情 = bq
+?	兩性關係 = lx
+?	音樂樂譜 = yy
+?	天氣狀況 = tq
+?	黃道星宮 = xz
+?	宇宙天體 = tt
+?	煉金符號 = lj
+?	遊戲紙牌 = qp ＆ gp ＆ mj ＆ pk ＆ tl
+?	棋子骰子 = qp ＆ tz ＆ xq
+?	國家地區 = dq
+?	空白字符 = kb / kg
+?	挖掘彩蛋 = 隨意組合
+?bd	─╴標點符號╶─────
+?bd	半角 = bd + bj
+?bd	全角 = bd + qj
+?bd	日文 = bd + rw
+?bd	小型 = bd + xx
+?bd	大型 = bd + dx
+?bd	直書 = bd + zs
+?bd	橫槓 = bd + hg
+?bd	上標 = bd + sb
+?bd	引號 = bd + yh
+?bd	句點 = bd + d
+?bh	─╴漢字筆畫╶─────
+?bh	按名稱 = bh + 簡拼
+?bh	按折點數 = bh + 數字
+?jg	─╴字形結構╶─────
+?jg	按名稱 = jg + 簡拼
+?jg	簡拼有 zy/sx/zs/zx/ys/hh/b/w/…
+?lm	─╴羅馬數字╶─────
+?lm	古代記法 = lm + old
+?sz	─╴其它數字╶─────
+?sz	算籌 = sz + sc
+?sz	蘇州碼 = sz + sz
+?sx	─╴數學算符╶─────
+?sx	常數 = sx + cs
+?sx	集合 = sx + jh
+?sx	邏輯 = sx + lj
+?sx	省略 = sx + sl
+?sx	其它 = sx + 簡拼
+?xl	─╴希臘字母╶─────
+?xl	按排序 = xl + 數字
+?xl	按名稱 = xl + 英文名
+?rw	─╴日文假名╶─────
+?rw	按日本式 = rw + 羅馬字
+?rw	按黑本式 = rw + 羅馬字
+?rw	外語轉寫 = rw + wy
+?hg	─╴平假名╶────
+?hg	按日本式 = hg + 羅馬字
+?hg	按黑本式 = hg + 羅馬字
+?kk	─╴片假名╶────
+?kk	按日本式 = kk + 羅馬字
+?kk	按黑本式 = kk + 羅馬字
+?kk	方塊組合 = kk + fk
+?dx	─╴聲調調型╶─────
+?dx	五度標記 = dx/sd + 1/2/3/4/5
+?dx	五度組合 = dx/sd + 調値序列
+?dx	四角標調 = dx/sd + ping/shang/qu/ru
+?dx	阴阳四聲 = dx/sd + yin/yang
+?sj	─╴時間日期╶─────
+?sj	日期 = sj + rq
+?sj	時刻 = sj + sk
+?sj	月份 = sj + yf
+?sj	曜日 = sj + yr
+?bg	─╴八卦爻符╶─────
+?bg	i:陽爻 o:陰爻 由下至上
+?txj	─╴太玄經爻╶─────
+?txj	t:天 d:地 r:人 由上至下
+?mw	─╴盲文點字╶─────
+?mw	符點從上到下、左到右編號：
+?mw	1,2,3(,7),4,5,6(,8)
+?yb	─╴國際音標╶─────
+?yb	（尚未加入字符編碼）
+?pz	─╴漢字批註╶─────
+?pz	日本 KanBun 研究 = pz + rw
+?sb	─╴上標符號╶─────
+?sb	數字 = sb + 數字
+?sb	算符 = sb + j/d/k
+?sb	拉丁字母 = sb + ld
+?sb	希臘字母 = sb + xl
+?xb	─╴下標符號╶─────
+?xb	數字 = xb + 數字
+?xb	算符 = xb + j/d/k
+?xb	拉丁字母 = xb + ld
+?xb	希臘字母 = xb + xl
+?fk	─╴組合方塊╶─────
+?fk	橫向 = fk + h
+?fk	豎向 = fk + s
+?fk	明暗 = fk + m
+?fk	四角 = fk + j
+?jt	─╴指向箭頭╶─────
+?jt	上/下/左/右 = jt + s/x/z/y
+?jt	左上/左下 = jt + zs/zx
+?jt	右上/右下 = jt + ys/yx
+?jt	左右/上下 = jt + zy/sx/yz/xs
+?jt	交叉對角 = jt + jc/dj
+?jt	順時針 = jt + ssz
+?jt	逆時針 = jt + nsz
+?jt	拐彎 = jt+s/x/z/y+g / jt+g
+?tx	─╴幾何圖形╶─────
+?tx	正方形 = tx + fx/zfx
+?tx	三角形 = tx + sjx
+?tx	四邊形 = tx + sbx
+?tx	五邊形 = tx + wbx/wjx
+?tx	六邊形 = tx + lbx/ljx
+?tx	八邊形 = tx + bbx/bjx
+?tx	圓形 = tx + yx
+?tx	橢圓 = tx + ty
+?tx	半圓 = tx + by
+?tx	圓弧 = tx + yh
+?tx	菱形 = tx + lx
+?tx	星形 = tx + xx
+?zb	─╴製表符號╶─────
+?zb	中間 = zb + zj
+?zb	橫/豎/斜/彎 = zb + h/s/x/w
+?zb	上/下/左/右 = zb + ss/xx/zz/yy
+?bz	─╴信號標誌╶─────
+?bz	標準 = bz + bz
+?bz	地圖 = bz + dt
+?bz	環保 = bz + hb
+?bz	警告 = bz + jg
+?bz	交通 = bz + jt
+?bz	群體 = bz + qt
+?bz	體育 = bz + ty
+?bz	宗派 = bz + zp
+?xz	─╴黃道星宮╶─────
+?xz	按排序 = xz + 數字
+?xz	按名稱 = xz + 簡拼/英文名
+?tt	─╴天體符號╶─────
+?tt	按排序 = tt + 數字
+?tt	按名稱 = tt + 簡拼/英文名
+?qp	─╴棋牌賭博╶─────
+?qp	骰子 = tz / qp+tz
+?qp	麻將 = mj / qp+mj
+?qp	象棋 = xq / qp+xq
+?qp	撲克牌 = pk / qp+pk
+?qp	多米諾骨牌 = gp / qp+gp
+?qp	遊戲塔羅牌 = tl / qp+tl
+?pk	─╴撲克牌╶──────
+?pk	黑桃 Spades = pk + s
+?pk	紅桃 Hearts = pk + h
+?pk	方塊 Diamonds = pk + d
+?pk	梅花 Clubs = pk + c
+?tl	─╴塔羅牌╶──────
+?tl	該牌組（Tarot Nouveau）用於塔羅牌遊戲
+?dq	─╴國家地區╶─────
+?dq	採用 ISO 3166-1 國家地區代碼
+?dq	dq + 二字母/三字母/三數字/英文名
+# 縮略碼表 }
+
+# 數字～全角 {
+0	０
+1	１
+2	２
+3	３
+4	４
+5	５
+6	６
+7	７
+8	８
+9	９
+# 數字～全角 }
+
+# 數字～漢字 {
+0	〇
+0	零
+1	壹
+2	貳
+2	贰
+3	叄
+3	叁
+4	肆
+5	伍
+6	陸
+6	陆
+7	柒
+8	捌
+9	玖
+10	拾
+100	佰
+1000	仟
+10000	萬
+100000000	億
+1	一
+2	二
+3	三
+4	四
+5	五
+6	六
+7	七
+8	八
+9	九
+10	十
+100	百
+1000	千
+10000	万
+100000000	亿
+20	廿
+30	卅
+40	卌
+# 數字～漢字 }
+
+# 羅馬數字 {
+1	Ⅰ
+2	Ⅱ
+3	Ⅲ
+4	Ⅳ
+5	Ⅴ
+6	Ⅵ
+7	Ⅶ
+8	Ⅷ
+9	Ⅸ
+10	Ⅹ
+11	Ⅺ
+12	Ⅻ
+50	Ⅼ
+100	Ⅽ
+500	Ⅾ
+1000	Ⅿ
+1	ⅰ
+2	ⅱ
+3	ⅲ
+4	ⅳ
+5	ⅴ
+6	ⅵ
+7	ⅶ
+8	ⅷ
+9	ⅸ
+10	ⅹ
+11	ⅺ
+12	ⅻ
+50	ⅼ
+100	ⅽ
+500	ⅾ
+1000	ⅿ
+lm"1	Ⅰ
+lm"2	Ⅱ
+lm"3	Ⅲ
+lm"4	Ⅳ
+lm"5	Ⅴ
+lm"6	Ⅵ
+lm"7	Ⅶ
+lm"8	Ⅷ
+lm"9	Ⅸ
+lm"10	Ⅹ
+lm"11	Ⅺ
+lm"12	Ⅻ
+lm"50	Ⅼ
+lm"100	Ⅽ
+lm"500	Ⅾ
+lm"1000	Ⅿ
+lm'1	ⅰ
+lm'2	ⅱ
+lm'3	ⅲ
+lm'4	ⅳ
+lm'5	ⅴ
+lm'6	ⅵ
+lm'7	ⅶ
+lm'8	ⅷ
+lm'9	ⅸ
+lm'10	ⅹ
+lm'11	ⅺ
+lm'12	ⅻ
+lm'50	ⅼ
+lm'100	ⅽ
+lm'500	ⅾ
+lm'1000	ⅿ
+lm:old:6	ↅ
+lm:old:50	ↆ
+lm:old:100	Ↄ
+lm:old:1000	ↀ
+lm:old:5000	ↁ
+lm:old:10000	ↂ
+lm:old:50000	ↇ
+lm:old:100000	ↈ
+# 羅馬數字 }
+
+# 數字～上標 {
+0	⁰
+1	¹
+2	²
+3	³
+4	⁴
+5	⁵
+6	⁶
+7	⁷
+8	⁸
+9	⁹
+# 數字～上標 }
+
+# 數字～下標 {
+0	₀
+1	₁
+2	₂
+3	₃
+4	₄
+5	₅
+6	₆
+7	₇
+8	₈
+9	₉
+# 數字～下標 }
+
+# 數字～圓圈 {
+1	①
+2	②
+3	③
+4	④
+5	⑤
+6	⑥
+7	⑦
+8	⑧
+9	⑨
+0	⓪
+10	⑩
+11	⑪
+12	⑫
+13	⑬
+14	⑭
+15	⑮
+16	⑯
+17	⑰
+18	⑱
+19	⑲
+20	⑳
+21	㉑
+22	㉒
+23	㉓
+24	㉔
+25	㉕
+26	㉖
+27	㉗
+28	㉘
+29	㉙
+30	㉚
+31	㉛
+32	㉜
+33	㉝
+34	㉞
+35	㉟
+36	㊱
+37	㊲
+38	㊳
+39	㊴
+40	㊵
+41	㊶
+42	㊷
+43	㊸
+44	㊹
+45	㊺
+46	㊻
+47	㊼
+48	㊽
+49	㊾
+50	㊿
+# 數字～圓圈 }
+
+# 數字～括弧 {
+1	⑴
+2	⑵
+3	⑶
+4	⑷
+5	⑸
+6	⑹
+7	⑺
+8	⑻
+9	⑼
+10	⑽
+11	⑾
+12	⑿
+13	⒀
+14	⒁
+15	⒂
+16	⒃
+17	⒄
+18	⒅
+19	⒆
+20	⒇
+# 數字～括弧 }
+
+# 數字～句號 {
+1	⒈
+2	⒉
+3	⒊
+4	⒋
+5	⒌
+6	⒍
+7	⒎
+8	⒏
+9	⒐
+0	🄀
+10	⒑
+11	⒒
+12	⒓
+13	⒔
+14	⒕
+15	⒖
+16	⒗
+17	⒘
+18	⒙
+19	⒚
+20	⒛
+# 數字～句號 }
+
+# 數字～逗號 {
+1	🄂
+2	🄃
+3	🄄
+4	🄅
+5	🄆
+6	🄇
+7	🄈
+8	🄉
+9	🄊
+0	🄁
+# 數字～逗號 }
+
+# 數字～括弧 {
+1	㈠
+2	㈡
+3	㈢
+4	㈣
+5	㈤
+6	㈥
+7	㈦
+8	㈧
+9	㈨
+10	㈩
+# 數字～括弧 }
+
+# 數字～圓圈 {
+1	㊀
+2	㊁
+3	㊂
+4	㊃
+5	㊄
+6	㊅
+7	㊆
+8	㊇
+9	㊈
+10	㊉
+# 數字～圓圈 }
+
+# 數字～蘇州碼 {
+sz:sz:0	〇
+sz:sz:1	〡
+sz:sz:2	〢
+sz:sz:3	〣
+sz:sz:4	〤
+sz:sz:5	〥
+sz:sz:6	〦
+sz:sz:7	〧
+sz:sz:8	〨
+sz:sz:9	〩
+sz:sz:10	〸
+sz:sz:20	〹
+sz:sz:30	〺
+# 數字～蘇州碼 }
+
+# 數字～算籌 {
+sz:sc:0	〇
+sz:sc:1	𝍠
+sz:sc:2	𝍡
+sz:sc:3	𝍢
+sz:sc:4	𝍣
+sz:sc:5	𝍤
+sz:sc:6	𝍥
+sz:sc:7	𝍦
+sz:sc:8	𝍧
+sz:sc:9	𝍨
+sz:sc:1	𝍩
+sz:sc:2	𝍪
+sz:sc:3	𝍫
+sz:sc:4	𝍬
+sz:sc:5	𝍭
+sz:sc:6	𝍮
+sz:sc:7	𝍯
+sz:sc:8	𝍰
+sz:sc:9	𝍱
+# 數字～算籌 }
+
+# 分數 {
+fs:0:0	⁄
+fs:0:1	⅟
+fs:2:1	½
+fs:3:0	↉
+fs:3:1	⅓
+fs:3:2	⅔
+fs:4:1	¼
+fs:4:3	¾
+fs:5:1	⅕
+fs:5:2	⅖
+fs:5:3	⅗
+fs:5:4	⅘
+fs:6:1	⅙
+fs:6:5	⅚
+fs:7:1	⅐
+fs:8:1	⅛
+fs:8:3	⅜
+fs:8:5	⅝
+fs:8:7	⅞
+fs:9:1	⅑
+fs:10:1	⅒
+# 分數 }
+
+# 字母～全角 {
+a"	ａ
+b"	ｂ
+c"	ｃ
+d"	ｄ
+e"	ｅ
+f"	ｆ
+g"	ｇ
+h"	ｈ
+i"	ｉ
+j"	ｊ
+k"	ｋ
+l"	ｌ
+m"	ｍ
+n"	ｎ
+o"	ｏ
+p"	ｐ
+q"	ｑ
+r"	ｒ
+s"	ｓ
+t"	ｔ
+u"	ｕ
+v"	ｖ
+w"	ｗ
+x"	ｘ
+y"	ｙ
+z"	ｚ
+a'	Ａ
+b'	Ｂ
+c'	Ｃ
+d'	Ｄ
+e'	Ｅ
+f'	Ｆ
+g'	Ｇ
+h'	Ｈ
+i'	Ｉ
+j'	Ｊ
+k'	Ｋ
+l'	Ｌ
+m'	Ｍ
+n'	Ｎ
+o'	Ｏ
+p'	Ｐ
+q'	Ｑ
+r'	Ｒ
+s'	Ｓ
+t'	Ｔ
+u'	Ｕ
+v'	Ｖ
+w'	Ｗ
+x'	Ｘ
+y'	Ｙ
+z'	Ｚ
+# 字母～全角 }
+
+# 字母～圓圈 {
+a"	ⓐ
+b"	ⓑ
+c"	ⓒ
+d"	ⓓ
+e"	ⓔ
+f"	ⓕ
+g"	ⓖ
+h"	ⓗ
+i"	ⓘ
+j"	ⓙ
+k"	ⓚ
+l"	ⓛ
+m"	ⓜ
+n"	ⓝ
+o"	ⓞ
+p"	ⓟ
+q"	ⓠ
+r"	ⓡ
+s"	ⓢ
+t"	ⓣ
+u"	ⓤ
+v"	ⓥ
+w"	ⓦ
+x"	ⓧ
+y"	ⓨ
+z"	ⓩ
+a'	Ⓐ
+b'	Ⓑ
+c'	Ⓒ
+d'	Ⓓ
+e'	Ⓔ
+f'	Ⓕ
+g'	Ⓖ
+h'	Ⓗ
+i'	Ⓘ
+j'	Ⓙ
+k'	Ⓚ
+l'	Ⓛ
+m'	Ⓜ
+n'	Ⓝ
+o'	Ⓞ
+p'	Ⓟ
+q'	Ⓠ
+r'	Ⓡ
+s'	Ⓢ
+t'	Ⓣ
+u'	Ⓤ
+v'	Ⓥ
+w'	Ⓦ
+x'	Ⓧ
+y'	Ⓨ
+z'	Ⓩ
+# 字母～圓圈 }
+
+# 字母～括弧 {
+a"	⒜
+b"	⒝
+c"	⒞
+d"	⒟
+e"	⒠
+f"	⒡
+g"	⒢
+h"	⒣
+i"	⒤
+j"	⒥
+k"	⒦
+l"	⒧
+m"	⒨
+n"	⒩
+o"	⒪
+p"	⒫
+q"	⒬
+r"	⒭
+s"	⒮
+t"	⒯
+u"	⒰
+v"	⒱
+w"	⒲
+x"	⒳
+y"	⒴
+z"	⒵
+a'	🄐
+b'	🄑
+c'	🄒
+d'	🄓
+e'	🄔
+f'	🄕
+g'	🄖
+h'	🄗
+i'	🄘
+j'	🄙
+k'	🄚
+l'	🄛
+m'	🄜
+n'	🄝
+o'	🄞
+p'	🄟
+q'	🄠
+r'	🄡
+s'	🄢
+t'	🄣
+u'	🄤
+v'	🄥
+w'	🄦
+x'	🄧
+y'	🄨
+z'	🄩
+# 字母～括弧 }
+
+# 字母～圓形 {
+a'	🅐
+b'	🅑
+c'	🅒
+d'	🅓
+e'	🅔
+f'	🅕
+g'	🅖
+h'	🅗
+i'	🅘
+j'	🅙
+k'	🅚
+l'	🅛
+m'	🅜
+n'	🅝
+o'	🅞
+p'	🅟
+q'	🅠
+r'	🅡
+s'	🅢
+t'	🅣
+u'	🅤
+v'	🅥
+w'	🅦
+x'	🅧
+y'	🅨
+z'	🅩
+# 字母～圓形 }
+
+# 字母～方框 {
+a'	🄰
+b'	🄱
+c'	🄲
+d'	🄳
+e'	🄴
+f'	🄵
+g'	🄶
+h'	🄷
+i'	🄸
+j'	🄹
+k'	🄺
+l'	🄻
+m'	🄼
+n'	🄽
+o'	🄾
+p'	🄿
+q'	🅀
+r'	🅁
+s'	🅂
+t'	🅃
+u'	🅄
+v'	🅅
+w'	🅆
+x'	🅇
+y'	🅈
+z'	🅉
+# 字母～方框 }
+
+# 字母～方形 {
+a'	🅰
+b'	🅱
+c'	🅲
+d'	🅳
+e'	🅴
+f'	🅵
+g'	🅶
+h'	🅷
+i'	🅸
+j'	🅹
+k'	🅺
+l'	🅻
+m'	🅼
+n'	🅽
+o'	🅾
+p'	🅿
+q'	🆀
+r'	🆁
+s'	🆂
+t'	🆃
+u'	🆄
+v'	🆅
+w'	🆆
+x'	🆇
+y'	🆈
+z'	🆉
+# 字母～方形 }
+
+# 字母～區域 {
+a'	🇦
+b'	🇧
+c'	🇨
+d'	🇩
+e'	🇪
+f'	🇫
+g'	🇬
+h'	🇭
+i'	🇮
+j'	🇯
+k'	🇰
+l'	🇱
+m'	🇲
+n'	🇳
+o'	🇴
+p'	🇵
+q'	🇶
+r'	🇷
+s'	🇸
+t'	🇹
+u'	🇺
+v'	🇻
+w'	🇼
+x'	🇽
+y'	🇾
+z'	🇿
+# 字母～區域 }
+
+# 標點符號 {
+bd	々
+bd	·
+bd	•
+bd	⸱
+bd	※
+bd	§
+bd	…
+bd	—
+bd	、
+bd	。
+bd	“
+bd	”
+bd	‘
+bd	’
+bd	「
+bd	」
+bd	『
+bd	』
+bd	【
+bd	】
+bd	〖
+bd	〗
+bd	〔
+bd	〕
+bd	〘
+bd	〙
+bd	《
+bd	》
+bd	〈
+bd	〉
+bd	‹
+bd	›
+bd	¶
+bd	†
+bd	‡
+bd	◊
+bd	‼
+bd	‽
+bd	⸘
+bd	⁇
+bd	⁈
+bd	⁉
+bd	⸢
+bd	⸣
+bd	⸤
+bd	⸥
+bd:d	․
+bd:d	‥
+bd:d	…
+bd:d	⋮
+bd:d	⁝
+bd:d	⁞
+bd:d	⸽
+bd:yh:left	〝
+bd:yh:right	〞
+bd:yh:left	❝
+bd:yh:right	❞
+bd:yh:low	❠	❝
+bd:yh:left	❛
+bd:yh:right	❜
+bd:yh:low	❟	❛
+bd:yh:left	‘
+bd:yh:right	’
+bd:yh:high	‛	’
+bd:yh:low	‚	‘
+bd:yh:left	“
+bd:yh:right	”
+bd:yh:high	‟	”
+bd:yh:low	„	“
+bd:sb	′
+bd:sb	″
+bd:sb	‴
+bd:sb	⁗
+bd:sb	‵
+bd:sb	‶
+bd:sb	‷
+bd:qj	（
+bd:qj	）
+bd:qj	［
+bd:qj	］
+bd:qj	｛
+bd:qj	｝
+bd:qj	｟
+bd:qj	｠
+bd:qj	～
+bd:qj	？
+bd:qj	！
+bd:qj	，
+bd:qj	．
+bd:qj	：
+bd:qj	；
+bd:qj	＂
+bd:qj	＇
+bd:qj	｀
+bd:bj	｢
+bd:bj	｣
+bd:bj	､
+bd:bj	｡
+bd:bj	⸨
+bd:bj	⸩
+bd:zs	︐
+bd:zs	︑
+bd:zs	︒
+bd:zs	︓
+bd:zs	︔
+bd:zs	︕
+bd:zs	︖
+bd:zs	︰
+bd:zs	︙
+bd:zs	︱
+bd:zs	︲
+bd:zs	﹁
+bd:zs	﹂
+bd:zs	﹃
+bd:zs	﹄
+bd:zs	︵
+bd:zs	︶
+bd:zs	︻
+bd:zs	︼
+bd:zs	︗
+bd:zs	︘
+bd:zs	︽
+bd:zs	︾
+bd:zs	︿
+bd:zs	﹀
+bd:zs	︹
+bd:zs	︺
+bd:zs	﹇
+bd:zs	﹈
+bd:zs	︷
+bd:zs	︸
+bd:rw	ー
+bd:rw	・
+bd:rw	゛
+bd:rw	゜
+bd:rw	〱
+bd:rw	〲
+bd:rw	ヽ
+bd:rw	ヾ
+bd:rw	ゝ
+bd:rw	ゞ
+bd:rw	゠
+bd:bj:rw	ｰ
+bd:bj:rw	･
+bd:bj:rw	ﾞ
+bd:bj:rw	ﾟ
+bd:zs:rw	〳
+bd:zs:rw	〴
+bd:zs:rw	〵
+bd:hg:hyphen	‐
+bd:hg:hyphen-no-break	‑
+bd:hg:em	—
+bd:hg:en	–
+bd:hg:figure	‒
+bd:hg:swung	⁓
+bd:hg:bar	―
+bd:hg:em*s	﹘
+bd:hg:em*2	⸺
+bd:hg:em*3	⸻
+bd:hg:wave	〜
+bd:hg:wave	〰
+bd:xx	﹐
+bd:xx	﹑
+bd:xx	﹒
+bd:xx	﹔
+bd:xx	﹕
+bd:xx	﹖
+bd:xx	﹗
+bd:xx	﹘
+bd:xx	﹙
+bd:xx	﹚
+bd:xx	﹛
+bd:xx	﹜
+bd:xx	﹝
+bd:xx	﹞
+bd:dx	⎛
+bd:dx	⎜
+bd:dx	⎝
+bd:dx	⎞
+bd:dx	⎟
+bd:dx	⎠
+bd:dx	⎡
+bd:dx	⎢
+bd:dx	⎣
+bd:dx	⎤
+bd:dx	⎥
+bd:dx	⎦
+bd:dx	⎧
+bd:dx	⎨
+bd:dx	⎩
+bd:dx	⎪
+bd:dx	⎫
+bd:dx	⎬
+bd:dx	⎭
+# 標點符號 }
+
+# 空白字符 {
+kb:em	 	EM SPACE
+kb:em/3	 	THREE-PER-EM SPACE
+kb:em/4	 	FOUR-PER-EM SPACE
+kb:em/6	 	SIX-PER-EM SPACE
+kb:en	 	EN SPACE
+kb:en-quad	 	EN QUAD
+kb:em-quad	 	EM QUAD
+kb:no-break	 	NO-BREAK SPACE
+kb:narrow-no-break	 	NARROW NO-BREAK SPACE
+kb:figure	 	FIGURE SPACE
+kb:punctuation	 	PUNCTUATION SPACE
+kb:medium-mathematical	 	MEDIUM MATHEMATICAL SPACE
+kb:ideographic	　	IDEOGRAPHIC SPACE
+kb:thin	 	THIN SPACE
+kb:hair	 	HAIR SPACE
+kb:zero-width	​	ZERO WIDTH SPACE
+kb:zero-width-joiner	‍	ZERO WIDTH JOINER
+kb:zero-width-non-joiner	‌	ZERO WIDTH NON-JOINER
+kb:left-to-right-mark	‎	LEFT-TO-RIGHT MARK
+kb:right-to-left-mark	‏	RIGHT-TO-LEFT MARK
+kb:left-to-right-embedding	‪	LEFT-TO-RIGHT EMBEDDING
+kb:right-to-left-embedding	‫	RIGHT-TO-LEFT EMBEDDING
+kb:pop-directional-formatting	‬	POP DIRECTIONAL FORMATTING
+kb:left-to-right-override	‭	LEFT-TO-RIGHT OVERRIDE
+kb:right-to-left-override	‮	RIGHT-TO-LEFT OVERRIDE
+kb:line-separator	 	LINE SEPARATOR
+kb:paragraph-separator	 	PARAGRAPH SEPARATOR
+kb:word-joiner	⁠	WORD JOINER
+kb:function-application	⁡	FUNCTION APPLICATION
+kb:invisible-times	⁢	INVISIBLE TIMES
+kb:invisible-separator	⁣	INVISIBLE SEPARATOR
+kb:invisible-plus	⁤	INVISIBLE PLUS
+kb:left-to-right-isolate	⁦	LEFT-TO-RIGHT ISOLATE
+kb:right-to-left-isolate	⁧	RIGHT-TO-LEFT ISOLATE
+kb:first-strong-isolate	⁨	FIRST STRONG ISOLATE
+kb:pop-directional-isolate	⁩	POP DIRECTIONAL ISOLATE
+kb:inhibit-symmetric-swapping	⁪	INHIBIT SYMMETRIC SWAPPING
+kb:activate-symmetric-swapping	⁫	ACTIVATE SYMMETRIC SWAPPING
+kb:inhibit-arabic-form-shaping	⁬	INHIBIT ARABIC FORM SHAPING
+kb:activate-arabic-form-shaping	⁭	ACTIVATE ARABIC FORM SHAPING
+kb:national-digit-shapes	⁮	NATIONAL DIGIT SHAPES
+kb:nominal-digit-shapes	⁯	NOMINAL DIGIT SHAPES
+kb:interlinear-annotation-anchor	￹	INTERLINEAR ANNOTATION ANCHOR
+kb:interlinear-annotation-separator	￺	INTERLINEAR ANNOTATION SEPARATOR
+kb:interlinear-annotation-terminator	￻	INTERLINEAR ANNOTATION TERMINATOR
+kb:emoji-off	︎	VARIATION SELECTOR-15
+kb:emoji-on	️	VARIATION SELECTOR-16
+kb:emoji-type-2	🏻	EMOJI MODIFIER FITZPATRICK TYPE-2
+kb:emoji-type-3	🏼	EMOJI MODIFIER FITZPATRICK TYPE-3
+kb:emoji-type-4	🏽	EMOJI MODIFIER FITZPATRICK TYPE-4
+kb:emoji-type-5	🏾	EMOJI MODIFIER FITZPATRICK TYPE-5
+kb:emoji-type-6	🏿	EMOJI MODIFIER FITZPATRICK TYPE-6
+# 空白字符 }
+
+# 筆畫 {
+bh	一→㇐
+bh	丨→㇑
+bh	丿→㇒
+bh	丶→㇔
+bh	乛→㇖
+bh	〇→㇣
+bh:0:d	㇔	點
+bh:0:h	㇐	橫
+bh:0:n	㇏	捺
+bh:0:tn	㇝	挑捺
+bh:1:tn	㇝	挑捺
+bh:0:p	㇒	撇
+bh:0:q	㇣	圈
+bh:0:s	㇑	豎
+bh:0:sg	㇚	豎鉤
+bh:1:sg	㇚	豎鉤
+bh:0:sp	㇓	豎撇
+bh:0:t	㇀	挑、提
+bh:1:bxg	㇃	半斜鉤、扁斜鉤
+bh:1:z	㇖	折
+bh:1:hg	㇖	橫鉤
+bh:1:hp	㇇	橫撇
+bh:1:hz	㇕	橫折
+bh:1:pd	㇛	撇點
+bh:1:pg	㇢	撇鉤
+bh:1:pz	㇜	撇折
+bh:1:st	㇙	豎挑
+bh:1:sw	㇄	豎彎
+bh:1:swz	㇘	豎彎折、豎彎左
+bh:1:sz	㇗	豎折
+bh:1:wg	㇁	彎鉤
+bh:1:wg	㇃	卧鉤
+bh:1:xg	㇂	斜鉤
+bh:2:hzg	㇆	橫折鉤
+bh:2:hzt	㇊	橫折挑
+bh:2:hzw	㇍	橫折彎
+bh:2:hzz	㇅	橫折折
+bh:2:swg	㇟	豎彎鉤
+bh:2:szz	㇞	豎折折
+bh:3:hpwg	㇌	橫撇彎鉤
+bh:3:hzwg	㇈	橫折彎鉤
+bh:3:hzwg	㇠	橫斜彎鉤
+bh:3:hzzp	㇋	橫折折撇
+bh:3:hzzz	㇎	橫折折折
+bh:3:szwg	㇉	豎折彎鉤
+bh:4:hzzzg	㇡	橫折折折鉤
+# 筆畫 }
+
+# 康熙部首 {
+kx:1	⼀	一
+kx:1	⼁	丨
+kx:1	⼂	丶
+kx:1	⼃	丿
+kx:1	⼄	乙
+kx:1	⼅	亅
+kx:2	⼆	二
+kx:2	⼇	亠
+kx:2	⼈	人
+kx:2	⼉	儿
+kx:2	⼊	入
+kx:2	⼋	八
+kx:2	⼌	冂
+kx:2	⼍	冖
+kx:2	⼎	冫
+kx:2	⼏	几
+kx:2	⼐	凵
+kx:2	⼑	刀
+kx:2	⼒	力
+kx:2	⼓	勹
+kx:2	⼔	匕
+kx:2	⼕	匚
+kx:2	⼖	匸
+kx:2	⼗	十
+kx:2	⼘	卜
+kx:2	⼙	卩
+kx:2	⼚	厂
+kx:2	⼛	厶
+kx:2	⼜	又
+kx:3	⼝	口
+kx:3	⼞	囗
+kx:3	⼟	土
+kx:3	⼠	士
+kx:3	⼡	夂
+kx:3	⼢	夊
+kx:3	⼣	夕
+kx:3	⼤	大
+kx:3	⼥	女
+kx:3	⼦	子
+kx:3	⼧	宀
+kx:3	⼨	寸
+kx:3	⼩	小
+kx:3	⼪	尢
+kx:3	⼫	尸
+kx:3	⼬	屮
+kx:3	⼭	山
+kx:3	⼮	巛
+kx:3	⼯	工
+kx:3	⼰	己
+kx:3	⼱	巾
+kx:3	⼲	干
+kx:3	⼳	幺
+kx:3	⼴	广
+kx:3	⼵	廴
+kx:3	⼶	廾
+kx:3	⼷	弋
+kx:3	⼸	弓
+kx:3	⼹	彐
+kx:3	⼺	彡
+kx:3	⼻	彳
+kx:4	⼼	心
+kx:4	⼽	戈
+kx:4	⼾	戶
+kx:4	⼿	手
+kx:4	⽀	支
+kx:4	⽁	攴
+kx:4	⽂	文
+kx:4	⽃	斗
+kx:4	⽄	斤
+kx:4	⽅	方
+kx:4	⽆	无
+kx:4	⽇	日
+kx:4	⽈	曰
+kx:4	⽉	月
+kx:4	⽊	木
+kx:4	⽋	欠
+kx:4	⽌	止
+kx:4	⽍	歹
+kx:4	⽎	殳
+kx:4	⽏	毋
+kx:4	⽐	比
+kx:4	⽑	毛
+kx:4	⽒	氏
+kx:4	⽓	气
+kx:4	⽔	水
+kx:4	⽕	火
+kx:4	⽖	爪
+kx:4	⽗	父
+kx:4	⽘	爻
+kx:4	⽙	爿	⺦
+kx:4	⽚	片
+kx:4	⽛	牙
+kx:4	⽜	牛
+kx:4	⽝	犬
+kx:5	⽞	玄
+kx:5	⽟	玉
+kx:5	⽠	瓜
+kx:5	⽡	瓦
+kx:5	⽢	甘
+kx:5	⽣	生
+kx:5	⽤	用
+kx:5	⽥	田
+kx:5	⽦	疋
+kx:5	⽧	疒
+kx:5	⽨	癶
+kx:5	⽩	白
+kx:5	⽪	皮
+kx:5	⽫	皿
+kx:5	⽬	目
+kx:5	⽭	矛
+kx:5	⽮	矢
+kx:5	⽯	石
+kx:5	⽰	示
+kx:5	⽱	禸
+kx:5	⽲	禾
+kx:5	⽳	穴
+kx:5	⽴	立
+kx:6	⽵	竹
+kx:6	⽶	米
+kx:6	⽷	糸	⺰
+kx:6	⽸	缶
+kx:6	⽹	网
+kx:6	⽺	羊
+kx:6	⽻	羽
+kx:6	⽼	老
+kx:6	⽽	而
+kx:6	⽾	耒
+kx:6	⽿	耳
+kx:6	⾀	聿
+kx:6	⾁	肉
+kx:6	⾂	臣
+kx:6	⾃	自
+kx:6	⾄	至
+kx:6	⾅	臼
+kx:6	⾆	舌
+kx:6	⾇	舛
+kx:6	⾈	舟
+kx:6	⾉	艮
+kx:6	⾊	色
+kx:6	⾋	艸
+kx:6	⾌	虍
+kx:6	⾍	虫
+kx:6	⾎	血
+kx:6	⾏	行
+kx:6	⾐	衣
+kx:6	⾑	襾
+kx:7	⾒	見	⻅
+kx:7	⾓	角
+kx:7	⾔	言	⻈
+kx:7	⾕	谷
+kx:7	⾖	豆
+kx:7	⾗	豕
+kx:7	⾘	豸
+kx:7	⾙	貝	⻉
+kx:7	⾚	赤
+kx:7	⾛	走
+kx:7	⾜	足
+kx:7	⾝	身
+kx:7	⾞	車	⻋
+kx:7	⾟	辛
+kx:7	⾠	辰
+kx:7	⾡	辵	⻌
+kx:7	⾢	邑
+kx:7	⾣	酉
+kx:7	⾤	釆
+kx:7	⾥	里
+kx:8	⾦	金	⻐
+kx:8	⾧	長	⻓
+kx:8	⾨	門	⻔
+kx:8	⾩	阜
+kx:8	⾪	隶
+kx:8	⾫	隹
+kx:8	⾬	雨
+kx:8	⾭	靑
+kx:8	⾮	非
+kx:9	⾯	面
+kx:9	⾰	革
+kx:9	⾱	韋	⻙
+kx:9	⾲	韭
+kx:9	⾳	音
+kx:9	⾴	頁	⻚
+kx:9	⾵	風	⻛
+kx:9	⾶	飛	⻜
+kx:9	⾷	食	⻠
+kx:9	⾸	首
+kx:9	⾹	香
+kx:10	⾺	馬	⻢
+kx:10	⾻	骨
+kx:10	⾼	高
+kx:10	⾽	髟
+kx:10	⾾	鬥
+kx:10	⾿	鬯
+kx:10	⿀	鬲
+kx:10	⿁	鬼
+kx:11	⿂	魚	⻥
+kx:11	⿃	鳥	⻦
+kx:11	⿄	鹵	⻧
+kx:11	⿅	鹿
+kx:11	⿆	麥	⻨
+kx:11	⿇	麻
+kx:12	⿈	黃	⻩
+kx:12	⿉	黍
+kx:12	⿊	黑
+kx:12	⿋	黹
+kx:13	⿌	黽	⻪
+kx:13	⿍	鼎
+kx:13	⿎	鼓
+kx:13	⿏	鼠
+kx:14	⿐	鼻
+kx:14	⿑	齊	⻬
+kx:15	⿒	齒	⻮
+kx:16	⿓	龍	⻰
+kx:16	⿔	龜	⻳
+kx:17	⿕	龠
+# 康熙部首 }
+
+# 其它部首 {
+bs:1	⺂→⼄	乙 乛
+bs:1	⺃→⼄	乙 乚
+bs:1	⺄→⼄	乙
+bs:2	⺀
+bs:2	⺁→⼚	厂 𠂆
+bs:2	⺅→⼈	人 亻
+bs:2	⺆→⼌	冂
+bs:2	⺇→⼏	几 𠘨
+bs:2	⺈→⼑	刀 𠂊
+bs:2	⺉→⼑	刀 刂
+bs:2	⺊→⼘	卜
+bs:2	⺋→⼙	卩 㔾
+bs:2	⻈→⾔	言 讠
+bs:2	⻏→⾢	邑 阝
+bs:2	⻖→⾩	阜 阝
+bs:3	⺌→⼩	小 𡭔
+bs:3	⺍→⼩	小 𡭔
+bs:3	⺎→⼪	尢 兀
+bs:3	⺐→⼪	尢
+bs:3	⺒→⼰	己 巳
+bs:3	⺓→⼳	幺
+bs:3	⺔→⼹	彐 彑
+bs:3	⺕→⼹	彐
+bs:3	⺖→⼼	心 忄
+bs:3	⺘→⼿	手 扌
+bs:3	⺡→⽔	水 氵
+bs:3	⺦→⽙	爿 丬
+bs:3	⺨→⽝	犬 犭
+bs:3	⺰→⽷	糸 纟
+bs:3	⺾→⾋	艸 艹
+bs:3	⻌→⾡	辵 辶
+bs:3	⻎→⾡	辵 辶
+bs:3	⻔→⾨	門 门
+bs:3	⻜→⾶	飛 飞
+bs:3	⻠→⾷	食 饣
+bs:3	⻢→⾺	馬 马
+bs:4	⺏→⼪	尢 尣
+bs:4	⺑→⼪	尢 尣 𡯂
+bs:4	⺗→⼼	心 㣺
+bs:4	⺙→⽁	攴 攵
+#bs:4	⺚→⽆	无
+bs:4	⺛→⽆	无 旡
+bs:4	⺜→⽈	曰 冃
+bs:4	⺝→⽉	月
+bs:4	⺣→⽕	火 灬
+bs:4	⺤→⽖	爪 爫
+bs:4	⺥→⽖	爪 爫
+bs:4	⺧→⽜	牛 𠂒
+bs:4	⺩→⽟	玉 王 𤣩
+bs:4	⺭→⽰	示 礻
+bs:4	⺱→⽹	网 罓
+bs:4	⺳→⽹	网 㓁 𦉪
+bs:4	⺴→⽹	网 㓁 𦉪
+bs:4	⺵→⽹	网 𦉫
+bs:4	⺹→⽼	老 耂
+bs:4	⺺→⾀	聿 肀
+bs:4	⺼→⾁	肉
+bs:4	⺿→⾋	艸 艹 艹
+bs:4	⻀→⾋	艸 艹 艹
+bs:4	⻅→⾒	見 见
+bs:4	⻉→⾙	貝 贝
+bs:4	⻋→⾞	車 车
+bs:4	⻍→⾡	辵 辶
+bs:4	⻓→⾧	長 长
+bs:4	⻙→⾱	韋 韦
+bs:4	⻛→⾵	風 风
+bs:5	⺞→⽍	歹 歺
+bs:5	⺟→⽏	毋 母
+bs:5	⺠→⽒	氏 民
+bs:5	⺢→⽔	水 氺
+bs:5	⺪→⽦	疋 𤴔
+bs:5	⺫→⽬	目
+bs:5	⺬→⽰	示
+bs:5	⺲→⽹	网 罒
+bs:5	⺻→⾀	聿
+bs:5	⻂→⾐	衣 衤
+bs:5	⻐→⾦	金 钅
+bs:5	⻦→⿃	鳥 鸟
+bs:5	⻰→⿓	龍 龙
+bs:6	⺮→⽵	竹 𥫗
+bs:6	⺯→⽷	糸 糹
+bs:6	⺶→⽺	羊
+bs:6	⺷→⽺	羊 𦍌
+bs:6	⻃→⾑	襾 覀
+bs:6	⻄→⾑	襾 西
+bs:6	⻚→⾴	頁 页
+bs:6	⻬→⿑	齊 齐
+bs:7	⺸→⽺	羊 羋 𦍋
+bs:7	⺽→⾅	臼
+bs:7	⻆→⾓	角
+bs:7	⻊→⾜	足 𧾷
+bs:7	⻑→⾧	長
+bs:7	⻒→⾧	長 镸
+bs:7	⻧→⿄	鹵 卤
+bs:7	⻨→⿆	麥 麦
+bs:7	⻳→⿔	龜 龟
+bs:8	⻁→⾌	虍 虎
+bs:8	⻇→⾓	角 𧢲
+bs:8	⻕→⾩	阜 𨸏
+bs:8	⻗→⾬	雨
+bs:8	⻘→⾭	靑
+bs:8	⻞→⾷	食 𩙿
+bs:8	⻟→⾷	食 飠
+bs:8	⻥→⿂	魚 鱼
+bs:8	⻪→⿌	黽 黾
+bs:8	⻫→⿑	齊 斉
+bs:8	⻮→⿒	齒 齿
+bs:9	⻞→⾷	食 𩙿
+bs:9	⻝→⾷	食
+bs:9	⻣→⾻	骨
+bs:9	⻤→⿁	鬼
+bs:10	⻤→⿁	鬼
+bs:10	⻡→⾸	首 𩠐
+bs:10	⻯→⿓	龍 竜
+bs:11	⻩→⿈	黃 黄
+bs:11	⻲→⿔	龜 亀
+bs:12	⻭→⿒	齒 歯
+bs:15	⻱→⿔	龜
+# 其它部首 }
+
+# 表意文字描述字符 Ideograph Descriptor {
+jg	⿰	左，右。
+jg	⿱	上，下。
+jg	⿺	外，內。
+jg	⿸	外，內。
+jg	⿹	外，內。
+jg	⿳	上，中，下。
+jg	⿲	左，中，右。
+jg	⿵	外，內。
+jg	⿴	外，內。
+jg	⿷	外，內。
+jg	⿶	外，內。
+jg	⿻	上，下；左，右；外，內；大，小。
+jg:zy	⿰	左右
+jg:sx	⿱	上下
+jg:zx	⿺	左下
+jg:zs	⿸	左上
+jg:ys	⿹	右上
+jg:szx	⿳	上中下
+jg:zzy	⿲	左中右
+jg:sbw	⿵	上包圍
+jg:qbw	⿴	全包圍
+jg:zbw	⿷	左包圍
+jg:xbw	⿶	下包圍
+jg:hh	⿻	混合
+jg:jc	⿻	交錯
+jg:qt	⿻	嵌套
+jg:xj	⿻	相交
+# 表意文字描述字符 Ideograph Descriptor }
+
+# 盲文 {
+# +-----+
+# | 1 4 |
+# | 2 5 |
+# | 3 6 |
+# | 7 8 |
+# +-----+
+mw:0	⠀
+mw:1	⠁
+mw:2	⠂
+mw:3	⠄
+mw:4	⠈
+mw:5	⠐
+mw:6	⠠
+mw:7	⡀
+mw:8	⢀
+mw:12	⠃
+mw:13	⠅
+mw:14	⠉
+mw:15	⠑
+mw:16	⠡
+mw:17	⡁
+mw:18	⢁
+mw:23	⠆
+mw:24	⠊
+mw:25	⠒
+mw:26	⠢
+mw:27	⡂
+mw:28	⢂
+mw:34	⠌
+mw:35	⠔
+mw:36	⠤
+mw:37	⡄
+mw:38	⢄
+mw:45	⠘
+mw:46	⠨
+mw:47	⡈
+mw:48	⢈
+mw:56	⠰
+mw:57	⡐
+mw:58	⢐
+mw:67	⡠
+mw:68	⢠
+mw:78	⣀
+mw:123	⠇
+mw:124	⠋
+mw:125	⠓
+mw:126	⠣
+mw:127	⡃
+mw:128	⢃
+mw:134	⠍
+mw:135	⠕
+mw:136	⠥
+mw:137	⡅
+mw:138	⢅
+mw:145	⠙
+mw:146	⠩
+mw:147	⡉
+mw:148	⢉
+mw:156	⠱
+mw:157	⡑
+mw:158	⢑
+mw:167	⡡
+mw:168	⢡
+mw:178	⣁
+mw:234	⠎
+mw:235	⠖
+mw:236	⠦
+mw:237	⡆
+mw:238	⢆
+mw:245	⠚
+mw:246	⠪
+mw:247	⡊
+mw:248	⢊
+mw:256	⠲
+mw:257	⡒
+mw:258	⢒
+mw:267	⡢
+mw:268	⢢
+mw:278	⣂
+mw:345	⠜
+mw:346	⠬
+mw:347	⡌
+mw:348	⢌
+mw:356	⠴
+mw:357	⡔
+mw:358	⢔
+mw:367	⡤
+mw:368	⢤
+mw:378	⣄
+mw:456	⠸
+mw:457	⡘
+mw:458	⢘
+mw:467	⡨
+mw:468	⢨
+mw:478	⣈
+mw:567	⡰
+mw:568	⢰
+mw:578	⣐
+mw:678	⣠
+mw:1234	⠏
+mw:1235	⠗
+mw:1236	⠧
+mw:1237	⡇
+mw:1238	⢇
+mw:1245	⠛
+mw:1246	⠫
+mw:1247	⡋
+mw:1248	⢋
+mw:1256	⠳
+mw:1257	⡓
+mw:1258	⢓
+mw:1267	⡣
+mw:1268	⢣
+mw:1278	⣃
+mw:1345	⠝
+mw:1346	⠭
+mw:1347	⡍
+mw:1348	⢍
+mw:1356	⠵
+mw:1357	⡕
+mw:1358	⢕
+mw:1367	⡥
+mw:1368	⢥
+mw:1378	⣅
+mw:1456	⠹
+mw:1457	⡙
+mw:1458	⢙
+mw:1467	⡩
+mw:1468	⢩
+mw:1478	⣉
+mw:1567	⡱
+mw:1568	⢱
+mw:1578	⣑
+mw:1678	⣡
+mw:2345	⠞
+mw:2346	⠮
+mw:2347	⡎
+mw:2348	⢎
+mw:2356	⠶
+mw:2357	⡖
+mw:2358	⢖
+mw:2367	⡦
+mw:2368	⢦
+mw:2378	⣆
+mw:2456	⠺
+mw:2457	⡚
+mw:2458	⢚
+mw:2467	⡪
+mw:2468	⢪
+mw:2478	⣊
+mw:2567	⡲
+mw:2568	⢲
+mw:2578	⣒
+mw:2678	⣢
+mw:3456	⠼
+mw:3457	⡜
+mw:3458	⢜
+mw:3467	⡬
+mw:3468	⢬
+mw:3478	⣌
+mw:3567	⡴
+mw:3568	⢴
+mw:3578	⣔
+mw:3678	⣤
+mw:4567	⡸
+mw:4568	⢸
+mw:4578	⣘
+mw:4678	⣨
+mw:5678	⣰
+mw:12345	⠟
+mw:12346	⠯
+mw:12347	⡏
+mw:12348	⢏
+mw:12356	⠷
+mw:12357	⡗
+mw:12358	⢗
+mw:12367	⡧
+mw:12368	⢧
+mw:12378	⣇
+mw:12456	⠻
+mw:12457	⡛
+mw:12458	⢛
+mw:12467	⡫
+mw:12468	⢫
+mw:12478	⣋
+mw:12567	⡳
+mw:12568	⢳
+mw:12578	⣓
+mw:12678	⣣
+mw:13456	⠽
+mw:13457	⡝
+mw:13458	⢝
+mw:13467	⡭
+mw:13468	⢭
+mw:13478	⣍
+mw:13567	⡵
+mw:13568	⢵
+mw:13578	⣕
+mw:13678	⣥
+mw:14567	⡹
+mw:14568	⢹
+mw:14578	⣙
+mw:14678	⣩
+mw:15678	⣱
+mw:23456	⠾
+mw:23457	⡞
+mw:23458	⢞
+mw:23467	⡮
+mw:23468	⢮
+mw:23478	⣎
+mw:23567	⡶
+mw:23568	⢶
+mw:23578	⣖
+mw:23678	⣦
+mw:24567	⡺
+mw:24568	⢺
+mw:24578	⣚
+mw:24678	⣪
+mw:25678	⣲
+mw:34567	⡼
+mw:34568	⢼
+mw:34578	⣜
+mw:34678	⣬
+mw:35678	⣴
+mw:45678	⣸
+mw:123456	⠿
+mw:123457	⡟
+mw:123458	⢟
+mw:123467	⡯
+mw:123468	⢯
+mw:123478	⣏
+mw:123567	⡷
+mw:123568	⢷
+mw:123578	⣗
+mw:123678	⣧
+mw:124567	⡻
+mw:124568	⢻
+mw:124578	⣛
+mw:124678	⣫
+mw:125678	⣳
+mw:134567	⡽
+mw:134568	⢽
+mw:134578	⣝
+mw:134678	⣭
+mw:135678	⣵
+mw:145678	⣹
+mw:234567	⡾
+mw:234568	⢾
+mw:234578	⣞
+mw:234678	⣮
+mw:235678	⣶
+mw:245678	⣺
+mw:345678	⣼
+mw:1234567	⡿
+mw:1234568	⢿
+mw:1234578	⣟
+mw:1234678	⣯
+mw:1235678	⣷
+mw:1245678	⣻
+mw:1345678	⣽
+mw:2345678	⣾
+mw:12345678	⣿
+# 盲文 }
+
+# 易經爻符 {
+# i:陽爻 o:陰爻 由下至上
+yj	☰
+yj	☱
+yj	☲
+yj	☳
+yj	☴
+yj	☵
+yj	☶
+yj	☷
+# 無極
+yj	○ ￮ ⚬ ◯
+# 太極
+yj	☯
+# 兩儀
+bg:i	⚊	陽、動
+bg:o	⚋	陰、靜
+# 四象
+bg:ii	⚌	太陽、夏
+bg:io	⚍	少陽、春
+bg:oi	⚎	少陰、秋
+bg:oo	⚏	太陰、冬
+# 八卦 {
+bg:iii	☰	乾、天、強健、父、西北
+bg:iio	☱	兌、澤、愉悅、少女、西
+bg:ioi	☲	離、火、附麗、中女、南
+bg:ioo	☳	震、雷、興動、長男、東
+bg:oii	☴	巽、風、順入、長女、東南
+bg:oio	☵	坎、水、險陷、中男、北
+bg:ooi	☶	艮、山、靜止、少男、東北
+bg:ooo	☷	坤、地、和順、母、西南
+# }
+# 六十四卦＝上卦＋下卦 {
+bg:iiiiii	䷀	乾乾
+bg:iioiii	䷉	乾兌
+bg:ioiiii	䷌	乾離
+bg:iooiii	䷘	乾震
+bg:oiiiii	䷫	乾巽
+bg:oioiii	䷅	乾坎
+bg:ooiiii	䷠	乾艮
+bg:oooiii	䷋	乾坤
+bg:iiiiio	䷪	兌乾
+bg:iioiio	䷹	兌兌
+bg:ioiiio	䷰	兌離
+bg:iooiio	䷐	兌震
+bg:oiiiio	䷛	兌巽
+bg:oioiio	䷮	兌坎
+bg:ooiiio	䷞	兌艮
+bg:oooiio	䷬	兌坤
+bg:iiiioi	䷍	離乾
+bg:iioioi	䷥	離兌
+bg:ioiioi	䷝	離離
+bg:iooioi	䷔	離震
+bg:oiiioi	䷱	離巽
+bg:oioioi	䷿	離坎
+bg:ooiioi	䷷	離艮
+bg:oooioi	䷢	離坤
+bg:iiiioo	䷡	震乾
+bg:iioioo	䷵	震兌
+bg:ioiioo	䷶	震離
+bg:iooioo	䷲	震震
+bg:oiiioo	䷟	震巽
+bg:oioioo	䷧	震坎
+bg:ooiioo	䷽	震艮
+bg:oooioo	䷏	震坤
+bg:iiioii	䷈	巽乾
+bg:iiooii	䷼	巽兌
+bg:ioioii	䷤	巽離
+bg:ioooii	䷩	巽震
+bg:oiioii	䷸	巽巽
+bg:oiooii	䷺	巽坎
+bg:ooioii	䷴	巽艮
+bg:ooooii	䷓	巽坤
+bg:iiioio	䷄	坎乾
+bg:iiooio	䷻	坎兌
+bg:ioioio	䷾	坎離
+bg:ioooio	䷂	坎震
+bg:oiioio	䷯	坎巽
+bg:oiooio	䷜	坎坎
+bg:ooioio	䷦	坎艮
+bg:ooooio	䷇	坎坤
+bg:iiiooi	䷙	艮乾
+bg:iioooi	䷨	艮兌
+bg:ioiooi	䷕	艮離
+bg:iooooi	䷚	艮震
+bg:oiiooi	䷑	艮巽
+bg:oioooi	䷃	艮坎
+bg:ooiooi	䷳	艮艮
+bg:oooooi	䷖	艮坤
+bg:iiiooo	䷊	坤乾
+bg:iioooo	䷒	坤兌
+bg:ioiooo	䷣	坤離
+bg:iooooo	䷗	坤震
+bg:oiiooo	䷭	坤巽
+bg:oioooo	䷆	坤坎
+bg:ooiooo	䷎	坤艮
+bg:oooooo	䷁	坤坤
+# }
+# 易經爻符 }
+
+# 太玄經爻符 {
+# t:天 d:地 r:人 由上至下
+txj:t	⚊
+txj:d	⚋
+txj:r	𝌀
+txj:tt	⚌
+txj:td	⚎
+txj:tr	𝌁
+txj:dt	⚍
+txj:dd	⚏
+txj:dr	𝌂
+txj:rt	𝌃
+txj:rd	𝌄
+txj:rr	𝌅
+txj:tttt	𝌆
+txj:tttd	𝌇
+txj:tttr	𝌈
+txj:ttdt	𝌉
+txj:ttdd	𝌊
+txj:ttdr	𝌋
+txj:ttrt	𝌌
+txj:ttrd	𝌍
+txj:ttrr	𝌎
+txj:tdtt	𝌏
+txj:tdtd	𝌐
+txj:tdtr	𝌑
+txj:tddt	𝌒
+txj:tddd	𝌓
+txj:tddr	𝌔
+txj:tdrt	𝌕
+txj:tdrd	𝌖
+txj:tdrr	𝌗
+txj:trtt	𝌘
+txj:trtd	𝌙
+txj:trtr	𝌚
+txj:trdt	𝌛
+txj:trdd	𝌜
+txj:trdr	𝌝
+txj:trrt	𝌞
+txj:trrd	𝌟
+txj:trrr	𝌠
+txj:dttt	𝌡
+txj:dttd	𝌢
+txj:dttr	𝌣
+txj:dtdt	𝌤
+txj:dtdd	𝌥
+txj:dtdr	𝌦
+txj:dtrt	𝌧
+txj:dtrd	𝌨
+txj:dtrr	𝌩
+txj:ddtt	𝌪
+txj:ddtd	𝌫
+txj:ddtr	𝌬
+txj:dddt	𝌭
+txj:dddd	𝌮
+txj:dddr	𝌯
+txj:ddrt	𝌰
+txj:ddrd	𝌱
+txj:ddrr	𝌲
+txj:drtt	𝌳
+txj:drtd	𝌴
+txj:drtr	𝌵
+txj:drdt	𝌶
+txj:drdd	𝌷
+txj:drdr	𝌸
+txj:drrt	𝌹
+txj:drrd	𝌺
+txj:drrr	𝌻
+txj:rttt	𝌼
+txj:rttd	𝌽
+txj:rttr	𝌾
+txj:rtdt	𝌿
+txj:rtdd	𝍀
+txj:rtdr	𝍁
+txj:rtrt	𝍂
+txj:rtrd	𝍃
+txj:rtrr	𝍄
+txj:rdtt	𝍅
+txj:rdtd	𝍆
+txj:rdtr	𝍇
+txj:rddt	𝍈
+txj:rddd	𝍉
+txj:rddr	𝍊
+txj:rdrt	𝍋
+txj:rdrd	𝍌
+txj:rdrr	𝍍
+txj:rrtt	𝍎
+txj:rrtd	𝍏
+txj:rrtr	𝍐
+txj:rrdt	𝍑
+txj:rrdd	𝍒
+txj:rrdr	𝍓
+txj:rrrt	𝍔
+txj:rrrd	𝍕
+txj:rrrr	𝍖
+# 太玄經爻符 }
+
+# 聲調調型 {
+dx	ˉ
+dx	ˊ
+dx	ˇ
+dx	ˋ
+dx	˙
+dx:5	˥
+dx:4	˦
+dx:3	˧
+dx:2	˨
+dx:1	˩
+dx:5	꜈
+dx:4	꜉
+dx:3	꜊
+dx:2	꜋
+dx:1	꜌
+dx:5	꜒
+dx:4	꜓
+dx:3	꜔
+dx:2	꜕
+dx:1	꜖
+dx:5	꜍
+dx:4	꜎
+dx:3	꜏
+dx:2	꜐
+dx:1	꜑
+dx:yinping	꜀
+dx:yangping	꜁
+dx:yinshang	꜂
+dx:yangshang	꜃
+dx:yinqu	꜄
+dx:yangqu	꜅
+dx:yinru	꜆
+dx:yangru	꜇
+# 組合字符
+dx:ping	〪	平〪
+dx:shang	〫	上〫
+dx:qu	〬	去〬
+dx:ru	〭	入〭
+# 變調序列
+dx:55	˥˥
+dx:54	˥˦
+dx:53	˥˧
+dx:52	˥˨
+dx:51	˥˩
+dx:45	˦˥
+dx:44	˦˦
+dx:43	˦˧
+dx:42	˦˨
+dx:41	˦˩
+dx:35	˧˥
+dx:34	˧˦
+dx:33	˧˧
+dx:32	˧˨
+dx:31	˧˩
+dx:25	˨˥
+dx:24	˨˦
+dx:23	˨˧
+dx:22	˨˨
+dx:21	˨˩
+dx:15	˩˥
+dx:14	˩˦
+dx:13	˩˧
+dx:12	˩˨
+dx:11	˩˩
+dx:555	˥˥˥
+dx:554	˥˥˦
+dx:553	˥˥˧
+dx:552	˥˥˨
+dx:551	˥˥˩
+dx:545	˥˦˥
+dx:544	˥˦˦
+dx:543	˥˦˧
+dx:542	˥˦˨
+dx:541	˥˦˩
+dx:535	˥˧˥
+dx:534	˥˧˦
+dx:533	˥˧˧
+dx:532	˥˧˨
+dx:531	˥˧˩
+dx:525	˥˨˥
+dx:524	˥˨˦
+dx:523	˥˨˧
+dx:522	˥˨˨
+dx:521	˥˨˩
+dx:515	˥˩˥
+dx:514	˥˩˦
+dx:513	˥˩˧
+dx:512	˥˩˨
+dx:511	˥˩˩
+dx:455	˦˥˥
+dx:454	˦˥˦
+dx:453	˦˥˧
+dx:452	˦˥˨
+dx:451	˦˥˩
+dx:445	˦˦˥
+dx:444	˦˦˦
+dx:443	˦˦˧
+dx:442	˦˦˨
+dx:441	˦˦˩
+dx:435	˦˧˥
+dx:434	˦˧˦
+dx:433	˦˧˧
+dx:432	˦˧˨
+dx:431	˦˧˩
+dx:425	˦˨˥
+dx:424	˦˨˦
+dx:423	˦˨˧
+dx:422	˦˨˨
+dx:421	˦˨˩
+dx:415	˦˩˥
+dx:414	˦˩˦
+dx:413	˦˩˧
+dx:412	˦˩˨
+dx:411	˦˩˩
+dx:355	˧˥˥
+dx:354	˧˥˦
+dx:353	˧˥˧
+dx:352	˧˥˨
+dx:351	˧˥˩
+dx:345	˧˦˥
+dx:344	˧˦˦
+dx:343	˧˦˧
+dx:342	˧˦˨
+dx:341	˧˦˩
+dx:335	˧˧˥
+dx:334	˧˧˦
+dx:333	˧˧˧
+dx:332	˧˧˨
+dx:331	˧˧˩
+dx:325	˧˨˥
+dx:324	˧˨˦
+dx:323	˧˨˧
+dx:322	˧˨˨
+dx:321	˧˨˩
+dx:315	˧˩˥
+dx:314	˧˩˦
+dx:313	˧˩˧
+dx:312	˧˩˨
+dx:311	˧˩˩
+dx:255	˨˥˥
+dx:254	˨˥˦
+dx:253	˨˥˧
+dx:252	˨˥˨
+dx:251	˨˥˩
+dx:245	˨˦˥
+dx:244	˨˦˦
+dx:243	˨˦˧
+dx:242	˨˦˨
+dx:241	˨˦˩
+dx:235	˨˧˥
+dx:234	˨˧˦
+dx:233	˨˧˧
+dx:232	˨˧˨
+dx:231	˨˧˩
+dx:225	˨˨˥
+dx:224	˨˨˦
+dx:223	˨˨˧
+dx:222	˨˨˨
+dx:221	˨˨˩
+dx:215	˨˩˥
+dx:214	˨˩˦
+dx:213	˨˩˧
+dx:212	˨˩˨
+dx:211	˨˩˩
+dx:155	˩˥˥
+dx:154	˩˥˦
+dx:153	˩˥˧
+dx:152	˩˥˨
+dx:151	˩˥˩
+dx:145	˩˦˥
+dx:144	˩˦˦
+dx:143	˩˦˧
+dx:142	˩˦˨
+dx:141	˩˦˩
+dx:135	˩˧˥
+dx:134	˩˧˦
+dx:133	˩˧˧
+dx:132	˩˧˨
+dx:131	˩˧˩
+dx:125	˩˨˥
+dx:124	˩˨˦
+dx:123	˩˨˧
+dx:122	˩˨˨
+dx:121	˩˨˩
+dx:115	˩˩˥
+dx:114	˩˩˦
+dx:113	˩˩˧
+dx:112	˩˩˨
+dx:111	˩˩˩
+# 聲調調型 }
+
+# 漢語拼音 {
+py"a	ā
+py"a	á
+py"a	ǎ
+py"a	à
+py"e	ē
+py"e	é
+py"e	ě
+py"e	è
+py"i	ī
+py"i	í
+py"i	ǐ
+py"i	ì
+py"o	ō
+py"o	ó
+py"o	ǒ
+py"o	ò
+py"u	ū
+py"u	ú
+py"u	ǔ
+py"u	ù
+py"v	ǖ
+py"v	ǘ
+py"v	ǚ
+py"v	ǜ
+py'v	ü
+py'a	Ā
+py'a	Á
+py'a	Ǎ
+py'a	À
+py'e	Ē
+py'e	É
+py'e	Ě
+py'e	È
+py'i	Ī
+py'i	Í
+py'i	Ǐ
+py'i	Ì
+py'o	Ō
+py'o	Ó
+py'o	Ǒ
+py'o	Ò
+py'u	Ū
+py'u	Ú
+py'u	Ǔ
+py'u	Ù
+py'v	Ǖ
+py'v	Ǘ
+py'v	Ǚ
+py'v	Ǜ
+py'v	Ü
+py:a	ɑ̄
+py:a	ɑ́
+py:a	ɑ̌
+py:a	ɑ̀
+py:a	ɑ
+py:ea	ê
+py:ea	Ê
+py:g	ɡ
+py:ng	ŋ
+py:ch	ĉ
+py:ch	Ĉ
+py:sh	ŝ
+py:sh	Ŝ
+py:zh	ẑ
+py:zh	Ẑ
+py:1	ˉ
+py:2	ˊ
+py:3	˅
+py:4	ˋ
+py:5	’
+# 漢語拼音 }
+
+# 註音符號 {
+zy:1	ˉ
+zy:2	ˊ
+zy:3	˅
+zy:4	ˋ
+zy:5	˙
+zy:b	ㄅ	包裹	[p]
+zy:p	ㄆ	扑打	[pʰ]
+zy:m	ㄇ	幂䍦	[m]
+zy:f	ㄈ	方筐	[f]
+zy:d	ㄉ	刀子	[t]
+zy:t	ㄊ	突出	[tʰ]
+zy:n	ㄋ	乃爾	[n]
+zy:l	ㄌ	力量	[l]
+zy:g	ㄍ	溝澮	[k]
+zy:k	ㄎ	考慮	[kʰ]
+zy:h	ㄏ	厓厈	[x] [h]
+zy:j	ㄐ	糾結	[t͡ɕ]
+zy:q	ㄑ	畎畝	[t͡ɕʰ]
+zy:x	ㄒ	向下	[ɕ]
+zy:zh	ㄓ	之中	[ʈ͡ʂ] zhi
+zy:ch	ㄔ	彳亍	[ʈ͡ʂʰ] chi
+zy:sh	ㄕ	屍首	[ʂ] shi
+zy:r	ㄖ	日月	[ʐ] ri
+zy:z	ㄗ	節子	[t͡s] zi
+zy:c	ㄘ	七次	[t͡sʰ] ci
+zy:s	ㄙ	徇私	[s] si
+zy:a	ㄚ	丫頭	[ä] [a]
+zy:o	ㄛ	哦哦	[o] [uɔ]
+zy:e	ㄜ	呃呃	[ə] [ɯʌ]
+zy:ea	ㄝ	也是	[ɛ]
+zy:ai	ㄞ	亥時	[aɪ] [ai]
+zy:ei	ㄟ	飛賊	[eɪ]
+zy:ao	ㄠ	幺麼	[ɑʊ] [au]
+zy:ou	ㄡ	又是	[ɤʊ] [ou]
+zy:an	ㄢ	鞍山	[än] [an]
+zy:en	ㄣ	伸縮	[ən] -n
+zy:ang	ㄤ	尢㝿	[ɑŋ] [aŋ]
+zy:eng	ㄥ	奉公	[ɤŋ] [əŋ] -ng
+zy:er	ㄦ	兒女	[ɑɻ]
+zy:i	ㄧ	一橫	[i] yi y-
+#zy:i	丨	一豎	[i] yi y-
+zy:u	ㄨ	五文	[u] wu w-
+zy:v	ㄩ	𠙴盧	[y] ü
+zy:v	ㄪ	萬貫	[v]
+zy:ng	ㄫ	兀立	[ŋ]
+zy:gn	ㄬ	崖广	[ɲ]
+zy:i	ㄭ	周匝	[ʅ] [ɿ] zh/ch/sh/r- z/c/s-
+zy:e	ㄮ	呃呃	[ə] [ɯʌ]
+zy:yi	ㄧ	yi
+zy:wu	ㄨ	wu
+zy:iu	ㄧㄡ	you
+zy:you	ㄧㄡ	you
+zy:ui	ㄨㄟ	wei
+zy:wei	ㄨㄟ	wei
+zy:un	ㄨㄣ	wen
+zy:wen	ㄨㄣ	wen
+zy:in	ㄧㄣ	yin
+zy:yin	ㄧㄣ	yin
+zy:vn	ㄩㄣ	yun
+zy:yvn	ㄩㄣ	yun
+zy:yun	ㄩㄣ	yun
+zy:uan	ㄩㄢ	yuan
+zy:yuan	ㄩㄢ	yuan
+zy:van	ㄩㄢ	yuan
+zy:yvan	ㄩㄢ	yuan
+zy:ing	ㄧㄥ	ying
+zy:ying	ㄧㄥ	ying
+zy:ung	ㄨㄥ	weng
+zy:weng	ㄨㄥ	weng
+zy:ong	ㄨㄥ	wong
+zy:wong	ㄨㄥ	wong
+#zy:ung	ㄨㄥ	wong
+zy:wung	ㄨㄥ	wong
+zy:iong	ㄩㄥ	yong
+zy:yong	ㄩㄥ	yong
+zy:iung	ㄩㄥ	yong
+zy:yung	ㄩㄥ	yong
+zy:b	ㆠ	[b]
+zy:z	ㆡ	[z]
+zy:j	ㆢ	[d͡ʑ]
+zy:g	ㆣ	[g]
+zy:e	ㆤ	[e]
+zy:e	ㆥ	[ẽ]
+zy:o	ㆦ	[ɔ]
+zy:o	ㆧ	[ɔ̃]
+zy:i	ㆨ	[ɨ]
+zy:a	ㆩ	[ã]
+zy:i	ㆪ	[ĩ]
+zy:u	ㆫ	[ũ]
+zy:m	ㆬ	[m̩] -m
+zy:ng	ㆭ	[ŋ̍] -ng
+zy:ai	ㆮ	[ãĩ]
+zy:au	ㆯ	[ãũ]
+zy:am	ㆰ	[am]
+zy:om	ㆱ	[ɔm]
+zy:ong	ㆲ	[ɔŋ]
+zy:i	ㆳ	[ĩ]
+zy:p	ㆴ	[p̚] -p
+zy:t	ㆵ	[t̚] -t
+zy:k	ㆶ	[k̚] -k
+zy:h	ㆷ	[ʔ]
+zy:g	ㆸ	[ɣ]
+zy:v	ㆸ	[ɣ]
+zy:l	ㆹ	[ɫʰ] [ɫ]
+zy:z	ㆺ	[ʑ]
+zy:ba	ㄅㄚ
+zy:bai	ㄅㄞ
+zy:ban	ㄅㄢ
+zy:bang	ㄅㄤ
+zy:bao	ㄅㄠ
+zy:bei	ㄅㄟ
+zy:ben	ㄅㄣ
+zy:beng	ㄅㄥ
+zy:bi	ㄅㄧ
+zy:bian	ㄅㄧㄢ
+zy:biao	ㄅㄧㄠ
+zy:bie	ㄅㄧㄝ
+zy:bin	ㄅㄧㄣ
+zy:bing	ㄅㄧㄥ
+zy:bo	ㄅㄛ
+zy:bu	ㄅㄨ
+zy:ca	ㄘㄚ
+zy:cai	ㄘㄞ
+zy:can	ㄘㄢ
+zy:cang	ㄘㄤ
+zy:cao	ㄘㄠ
+zy:ce	ㄘㄜ
+zy:cen	ㄘㄣ
+zy:ceng	ㄘㄥ
+zy:cha	ㄔㄚ
+zy:chai	ㄔㄞ
+zy:chan	ㄔㄢ
+zy:chang	ㄔㄤ
+zy:chao	ㄔㄠ
+zy:che	ㄔㄜ
+zy:chen	ㄔㄣ
+zy:cheng	ㄔㄥ
+zy:chi	ㄔ
+zy:chong	ㄔㄨㄥ
+zy:chou	ㄔㄡ
+zy:chu	ㄔㄨ
+zy:chua	ㄔㄨㄚ
+zy:chuai	ㄔㄨㄞ
+zy:chuan	ㄔㄨㄢ
+zy:chuang	ㄔㄨㄤ
+zy:chui	ㄔㄨㄟ
+zy:chun	ㄔㄨㄣ
+zy:chuo	ㄔㄨㄛ
+zy:ci	ㄘ
+zy:cong	ㄘㄨㄥ
+zy:cou	ㄘㄡ
+zy:cu	ㄘㄨ
+zy:cuan	ㄘㄨㄢ
+zy:cui	ㄘㄨㄟ
+zy:cun	ㄘㄨㄣ
+zy:cuo	ㄘㄨㄛ
+zy:da	ㄉㄚ
+zy:dai	ㄉㄞ
+zy:dan	ㄉㄢ
+zy:dang	ㄉㄤ
+zy:dao	ㄉㄠ
+zy:de	ㄉㄜ
+zy:dei	ㄉㄟ
+zy:deng	ㄉㄥ
+zy:di	ㄉㄧ
+zy:dian	ㄉㄧㄢ
+zy:diang	ㄉㄧㄤ
+zy:diao	ㄉㄧㄠ
+zy:die	ㄉㄧㄝ
+zy:ding	ㄉㄧㄥ
+zy:diu	ㄉㄧㄡ
+zy:dong	ㄉㄨㄥ
+zy:dou	ㄉㄡ
+zy:du	ㄉㄨ
+zy:duan	ㄉㄨㄢ
+zy:dui	ㄉㄨㄟ
+zy:dun	ㄉㄨㄣ
+zy:duo	ㄉㄨㄛ
+zy:fa	ㄈㄚ
+zy:fan	ㄈㄢ
+zy:fang	ㄈㄤ
+zy:fei	ㄈㄟ
+zy:fen	ㄈㄣ
+zy:feng	ㄈㄥ
+zy:fo	ㄈㄛ
+zy:fou	ㄈㄡ
+zy:fu	ㄈㄨ
+zy:ga	ㄍㄚ
+zy:gai	ㄍㄞ
+zy:gan	ㄍㄢ
+zy:gang	ㄍㄤ
+zy:gao	ㄍㄠ
+zy:ge	ㄍㄜ
+zy:gei	ㄍㄟ
+zy:gen	ㄍㄣ
+zy:geng	ㄍㄥ
+zy:gong	ㄍㄨㄥ
+zy:gou	ㄍㄡ
+zy:gu	ㄍㄨ
+zy:gua	ㄍㄨㄚ
+zy:guai	ㄍㄨㄞ
+zy:guan	ㄍㄨㄢ
+zy:guang	ㄍㄨㄤ
+zy:gui	ㄍㄨㄟ
+zy:gun	ㄍㄨㄣ
+zy:guo	ㄍㄨㄛ
+zy:ha	ㄏㄚ
+zy:hai	ㄏㄞ
+zy:han	ㄏㄢ
+zy:hang	ㄏㄤ
+zy:hao	ㄏㄠ
+zy:he	ㄏㄜ
+zy:hei	ㄏㄟ
+zy:hen	ㄏㄣ
+zy:heng	ㄏㄥ
+zy:hong	ㄏㄨㄥ
+zy:hou	ㄏㄡ
+zy:hu	ㄏㄨ
+zy:hua	ㄏㄨㄚ
+zy:huai	ㄏㄨㄞ
+zy:huan	ㄏㄨㄢ
+zy:huang	ㄏㄨㄤ
+zy:hui	ㄏㄨㄟ
+zy:hun	ㄏㄨㄣ
+zy:huo	ㄏㄨㄛ
+zy:ji	ㄐㄧ
+zy:jia	ㄐㄧㄚ
+zy:jian	ㄐㄧㄢ
+zy:jiang	ㄐㄧㄤ
+zy:jiao	ㄐㄧㄠ
+zy:jie	ㄐㄧㄝ
+zy:jin	ㄐㄧㄣ
+zy:jing	ㄐㄧㄥ
+zy:jiong	ㄐㄩㄥ
+zy:jiu	ㄐㄧㄡ
+zy:ju	ㄐㄩ
+zy:jv	ㄐㄩ
+zy:juan	ㄐㄩㄢ
+zy:jvan	ㄐㄩㄢ
+zy:jue	ㄐㄩㄝ
+zy:jve	ㄐㄩㄝ
+zy:jun	ㄐㄩㄣ
+zy:jvn	ㄐㄩㄣ
+zy:ka	ㄎㄚ
+zy:kai	ㄎㄞ
+zy:kan	ㄎㄢ
+zy:kang	ㄎㄤ
+zy:kao	ㄎㄠ
+zy:ke	ㄎㄜ
+zy:ken	ㄎㄣ
+zy:keng	ㄎㄥ
+zy:kong	ㄎㄨㄥ
+zy:kou	ㄎㄡ
+zy:ku	ㄎㄨ
+zy:kua	ㄎㄨㄚ
+zy:kuai	ㄎㄨㄞ
+zy:kuan	ㄎㄨㄢ
+zy:kuang	ㄎㄨㄤ
+zy:kui	ㄎㄨㄟ
+zy:kun	ㄎㄨㄣ
+zy:kuo	ㄎㄨㄛ
+zy:la	ㄌㄚ
+zy:lai	ㄌㄞ
+zy:lan	ㄌㄢ
+zy:lang	ㄌㄤ
+zy:lao	ㄌㄠ
+zy:le	ㄌㄜ
+zy:lei	ㄌㄟ
+zy:leng	ㄌㄥ
+zy:li	ㄌㄧ
+zy:lia	ㄌㄧㄚ
+zy:lian	ㄌㄧㄢ
+zy:liang	ㄌㄧㄤ
+zy:liao	ㄌㄧㄠ
+zy:lie	ㄌㄧㄝ
+zy:lin	ㄌㄧㄣ
+zy:ling	ㄌㄧㄥ
+zy:liu	ㄌㄧㄡ
+zy:lo	ㄌㄛ
+zy:long	ㄌㄨㄥ
+zy:lou	ㄌㄡ
+zy:lu	ㄌㄨ
+zy:luan	ㄌㄨㄢ
+zy:lun	ㄌㄨㄣ
+zy:luo	ㄌㄨㄛ
+zy:lv	ㄌㄩ
+zy:luan	ㄌㄩㄢ
+zy:lve	ㄌㄩㄝ
+zy:lun	ㄌㄩㄣ
+zy:ma	ㄇㄚ
+zy:mai	ㄇㄞ
+zy:man	ㄇㄢ
+zy:mang	ㄇㄤ
+zy:mao	ㄇㄠ
+zy:me	ㄇㄜ
+zy:mei	ㄇㄟ
+zy:men	ㄇㄣ
+zy:meng	ㄇㄥ
+zy:mi	ㄇㄧ
+zy:mian	ㄇㄧㄢ
+zy:miao	ㄇㄧㄠ
+zy:mie	ㄇㄧㄝ
+zy:min	ㄇㄧㄣ
+zy:ming	ㄇㄧㄥ
+zy:miu	ㄇㄧㄡ
+zy:mo	ㄇㄛ
+zy:mou	ㄇㄡ
+zy:mu	ㄇㄨ
+zy:na	ㄋㄚ
+zy:nai	ㄋㄞ
+zy:nan	ㄋㄢ
+zy:nang	ㄋㄤ
+zy:nao	ㄋㄠ
+zy:ne	ㄋㄜ
+zy:nei	ㄋㄟ
+zy:nen	ㄋㄣ
+zy:neng	ㄋㄥ
+zy:ni	ㄋㄧ
+zy:nia	ㄋㄧㄚ
+zy:nian	ㄋㄧㄢ
+zy:niang	ㄋㄧㄤ
+zy:niao	ㄋㄧㄠ
+zy:nie	ㄋㄧㄝ
+zy:nin	ㄋㄧㄣ
+zy:ning	ㄋㄧㄥ
+zy:niu	ㄋㄧㄡ
+zy:nong	ㄋㄨㄥ
+zy:nou	ㄋㄡ
+zy:nu	ㄋㄨ
+zy:nuan	ㄋㄨㄢ
+zy:nun	ㄋㄨㄣ
+zy:nuo	ㄋㄨㄛ
+zy:nv	ㄋㄩ
+zy:nve	ㄋㄩㄝ
+zy:pa	ㄆㄚ
+zy:pai	ㄆㄞ
+zy:pan	ㄆㄢ
+zy:pang	ㄆㄤ
+zy:pao	ㄆㄠ
+zy:pei	ㄆㄟ
+zy:pen	ㄆㄣ
+zy:peng	ㄆㄥ
+zy:pi	ㄆㄧ
+zy:pian	ㄆㄧㄢ
+zy:piao	ㄆㄧㄠ
+zy:pie	ㄆㄧㄝ
+zy:pin	ㄆㄧㄣ
+zy:ping	ㄆㄧㄥ
+zy:po	ㄆㄛ
+zy:pou	ㄆㄡ
+zy:pu	ㄆㄨ
+zy:qi	ㄑㄧ
+zy:qia	ㄑㄧㄚ
+zy:qian	ㄑㄧㄢ
+zy:qiang	ㄑㄧㄤ
+zy:qiao	ㄑㄧㄠ
+zy:qie	ㄑㄧㄝ
+zy:qin	ㄑㄧㄣ
+zy:qing	ㄑㄧㄥ
+zy:qiong	ㄑㄩㄥ
+zy:qiu	ㄑㄧㄡ
+zy:qu	ㄑㄩ
+zy:qv	ㄑㄩ
+zy:quan	ㄑㄩㄢ
+zy:qvan	ㄑㄩㄢ
+zy:que	ㄑㄩㄝ
+zy:qve	ㄑㄩㄝ
+zy:qun	ㄑㄩㄣ
+zy:qvn	ㄑㄩㄣ
+zy:ran	ㄖㄢ
+zy:rang	ㄖㄤ
+zy:rao	ㄖㄠ
+zy:re	ㄖㄜ
+zy:ren	ㄖㄣ
+zy:reng	ㄖㄥ
+zy:ri	ㄖ
+zy:rong	ㄖㄨㄥ
+zy:rou	ㄖㄡ
+zy:ru	ㄖㄨ
+zy:ruan	ㄖㄨㄢ
+zy:rui	ㄖㄨㄟ
+zy:run	ㄖㄨㄣ
+zy:ruo	ㄖㄨㄛ
+zy:sa	ㄙㄚ
+zy:sai	ㄙㄞ
+zy:san	ㄙㄢ
+zy:sang	ㄙㄤ
+zy:sao	ㄙㄠ
+zy:se	ㄙㄜ
+zy:sen	ㄙㄣ
+zy:seng	ㄙㄥ
+zy:sha	ㄕㄚ
+zy:shai	ㄕㄞ
+zy:shan	ㄕㄢ
+zy:shang	ㄕㄤ
+zy:shao	ㄕㄠ
+zy:she	ㄕㄜ
+zy:shei	ㄕㄟ
+zy:shen	ㄕㄣ
+zy:sheng	ㄕㄥ
+zy:shi	ㄕ
+zy:shou	ㄕㄡ
+zy:shu	ㄕㄨ
+zy:shua	ㄕㄨㄚ
+zy:shuai	ㄕㄨㄞ
+zy:shuan	ㄕㄨㄢ
+zy:shuang	ㄕㄨㄤ
+zy:shui	ㄕㄨㄟ
+zy:shun	ㄕㄨㄣ
+zy:shuo	ㄕㄨㄛ
+zy:si	ㄙ
+zy:song	ㄙㄨㄥ
+zy:sou	ㄙㄡ
+zy:su	ㄙㄨ
+zy:suan	ㄙㄨㄢ
+zy:sui	ㄙㄨㄟ
+zy:sun	ㄙㄨㄣ
+zy:suo	ㄙㄨㄛ
+zy:ta	ㄊㄚ
+zy:tai	ㄊㄞ
+zy:tan	ㄊㄢ
+zy:tang	ㄊㄤ
+zy:tao	ㄊㄠ
+zy:te	ㄊㄜ
+zy:tei	ㄊㄟ
+zy:teng	ㄊㄥ
+zy:ti	ㄊㄧ
+zy:tian	ㄊㄧㄢ
+zy:tiao	ㄊㄧㄠ
+zy:tie	ㄊㄧㄝ
+zy:ting	ㄊㄧㄥ
+zy:tong	ㄊㄨㄥ
+zy:tou	ㄊㄡ
+zy:tu	ㄊㄨ
+zy:tuan	ㄊㄨㄢ
+zy:tui	ㄊㄨㄟ
+zy:tun	ㄊㄨㄣ
+zy:tuo	ㄊㄨㄛ
+zy:wa	ㄨㄚ
+zy:wai	ㄨㄞ
+zy:wan	ㄨㄢ
+zy:wang	ㄨㄤ
+zy:wo	ㄨㄛ
+zy:xi	ㄒㄧ
+zy:xia	ㄒㄧㄚ
+zy:xian	ㄒㄧㄢ
+zy:xiang	ㄒㄧㄤ
+zy:xiao	ㄒㄧㄠ
+zy:xie	ㄒㄧㄝ
+zy:xin	ㄒㄧㄣ
+zy:xing	ㄒㄧㄥ
+zy:xiong	ㄒㄩㄥ
+zy:xiu	ㄒㄧㄡ
+zy:xu	ㄒㄩ
+zy:xv	ㄒㄩ
+zy:xuan	ㄒㄩㄢ
+zy:xvan	ㄒㄩㄢ
+zy:xue	ㄒㄩㄝ
+zy:xve	ㄒㄩㄝ
+zy:xun	ㄒㄩㄣ
+zy:xvn	ㄒㄩㄣ
+zy:ya	ㄧㄚ
+zy:yan	ㄧㄢ
+zy:yang	ㄧㄤ
+zy:yao	ㄧㄠ
+zy:ye	ㄧㄝ
+zy:yu	ㄩ
+zy:yv	ㄩ
+zy:yue	ㄩㄝ
+zy:yve	ㄩㄝ
+zy:za	ㄗㄚ
+zy:zai	ㄗㄞ
+zy:zan	ㄗㄢ
+zy:zang	ㄗㄤ
+zy:zao	ㄗㄠ
+zy:ze	ㄗㄜ
+zy:zei	ㄗㄟ
+zy:zen	ㄗㄣ
+zy:zeng	ㄗㄥ
+zy:zha	ㄓㄚ
+zy:zhai	ㄓㄞ
+zy:zhan	ㄓㄢ
+zy:zhang	ㄓㄤ
+zy:zhao	ㄓㄠ
+zy:zhe	ㄓㄜ
+zy:zhei	ㄓㄟ
+zy:zhen	ㄓㄣ
+zy:zheng	ㄓㄥ
+zy:zhi	ㄓ
+zy:zhong	ㄓㄨㄥ
+zy:zhou	ㄓㄡ
+zy:zhu	ㄓㄨ
+zy:zhua	ㄓㄨㄚ
+zy:zhuai	ㄓㄨㄞ
+zy:zhuan	ㄓㄨㄢ
+zy:zhuang	ㄓㄨㄤ
+zy:zhui	ㄓㄨㄟ
+zy:zhun	ㄓㄨㄣ
+zy:zhuo	ㄓㄨㄛ
+zy:zi	ㄗ
+zy:zong	ㄗㄨㄥ
+zy:zou	ㄗㄡ
+zy:zu	ㄗㄨ
+zy:zuan	ㄗㄨㄢ
+zy:zui	ㄗㄨㄟ
+zy:zun	ㄗㄨㄣ
+zy:zuo	ㄗㄨㄛ
+# 註音符號 }
+
+# 時間日期 {
+# yr:曜日 yf:月份 sk:時刻 rq:日期
+sj:1	月
+sj:2	火
+sj:3	水
+sj:4	木
+sj:5	金
+sj:6	土
+sj:7	日
+sj:rq:1	㏠
+sj:rq:2	㏡
+sj:rq:3	㏢
+sj:rq:4	㏣
+sj:rq:5	㏤
+sj:rq:6	㏥
+sj:rq:7	㏦
+sj:rq:8	㏧
+sj:rq:9	㏨
+sj:rq:10	㏩
+sj:rq:11	㏪
+sj:rq:12	㏫
+sj:rq:13	㏬
+sj:rq:14	㏭
+sj:rq:15	㏮
+sj:rq:16	㏯
+sj:rq:17	㏰
+sj:rq:18	㏱
+sj:rq:19	㏲
+sj:rq:20	㏳
+sj:rq:21	㏴
+sj:rq:22	㏵
+sj:rq:23	㏶
+sj:rq:24	㏷
+sj:rq:25	㏸
+sj:rq:26	㏹
+sj:rq:27	㏺
+sj:rq:28	㏻
+sj:rq:29	㏼
+sj:rq:30	㏽
+sj:rq:31	㏾
+sj:sk:0	㍘
+sj:sk:1	㍙
+sj:sk:2	㍚
+sj:sk:3	㍛
+sj:sk:4	㍜
+sj:sk:5	㍝
+sj:sk:6	㍞
+sj:sk:7	㍟
+sj:sk:8	㍠
+sj:sk:9	㍡
+sj:sk:10	㍢
+sj:sk:11	㍣
+sj:sk:12	㍤
+sj:sk:13	㍥
+sj:sk:14	㍦
+sj:sk:15	㍧
+sj:sk:16	㍨
+sj:sk:17	㍩
+sj:sk:18	㍪
+sj:sk:19	㍫
+sj:sk:20	㍬
+sj:sk:21	㍭
+sj:sk:22	㍮
+sj:sk:23	㍯
+sj:sk:24	㍰
+sj:yf:1	㋀
+sj:yf:2	㋁
+sj:yf:3	㋂
+sj:yf:4	㋃
+sj:yf:5	㋄
+sj:yf:6	㋅
+sj:yf:7	㋆
+sj:yf:8	㋇
+sj:yf:9	㋈
+sj:yf:10	㋉
+sj:yf:11	㋊
+sj:yf:12	㋋
+sj:yr:1	㊊
+sj:yr:2	㊋
+sj:yr:3	㊌
+sj:yr:4	㊍
+sj:yr:5	㊎
+sj:yr:6	㊏
+sj:yr:7	㊐
+sj:yr:1	㈪
+sj:yr:2	㈫
+sj:yr:3	㈬
+sj:yr:4	㈭
+sj:yr:5	㈮
+sj:yr:6	㈯
+sj:yr:7	㈰
+# 時間日期 }
+
+# 日文～HiraGana {
+hg"a	あ
+hg'a	ぁ
+hg"i	い
+hg'i	ぃ
+hg"u	う
+hg'u	ぅ
+hg"e	え
+hg'e	ぇ
+hg"o	お
+hg'o	ぉ
+hg"ka	か
+hg"ga	が
+hg"ki	き
+hg"gi	ぎ
+hg"ku	く
+hg"gu	ぐ
+hg"ke	け
+hg"ge	げ
+hg"ko	こ
+hg"go	ご
+hg"sa	さ
+hg"za	ざ
+hg"si	し
+hg"shi	し
+hg"zi	じ
+hg"ji	じ
+hg"su	す
+hg"zu	ず
+hg"se	せ
+hg"ze	ぜ
+hg"so	そ
+hg"zo	ぞ
+hg"ta	た
+hg"da	だ
+hg"ti	ち
+hg"chi	ち
+hg"di	ぢ
+hg"ji	ぢ
+hg"tu	つ
+hg"tsu	つ
+hg"du	づ
+hg"zu	づ
+hg'tu	っ
+hg'tsu	っ
+hg"te	て
+hg"de	で
+hg"to	と
+hg"do	ど
+hg"na	な
+hg"ni	に
+hg"nu	ぬ
+hg"ne	ね
+hg"no	の
+hg"ha	は
+hg"ba	ば
+hg"pa	ぱ
+hg"hi	ひ
+hg"bi	び
+hg"pi	ぴ
+hg"hu	ふ
+hg"fu	ふ
+hg"bu	ぶ
+hg"pu	ぷ
+hg"he	へ
+hg"be	べ
+hg"pe	ぺ
+hg"ho	ほ
+hg"bo	ぼ
+hg"po	ぽ
+hg"ma	ま
+hg"mi	み
+hg"mu	む
+hg"me	め
+hg"mo	も
+hg"ra	ら
+hg"ri	り
+hg"ru	る
+hg"re	れ
+hg"ro	ろ
+hg"ya	や
+hg'ya	ゃ
+hg"yu	ゆ
+hg'yu	ゅ
+hg"yo	よ
+hg'yo	ょ
+hg"wa	わ
+hg'wa	ゎ
+hg"wi	ゐ
+hg"wu	う
+hg"we	ゑ
+hg"wo	を
+hg"n	ん
+hg'q	っ
+hg"vu	ゔ
+hg'ka	ゕ
+hg'ke	ゖ
+# 日文～HiraGana }
+
+# 日文～KataKana {
+kk"a	ア
+kk'a	ァ
+kk"i	イ
+kk'i	ィ
+kk"u	ウ
+kk'u	ゥ
+kk"e	エ
+kk'e	ェ
+kk"o	オ
+kk'o	ォ
+kk"ka	カ
+kk"ga	ガ
+kk"ki	キ
+kk"gi	ギ
+kk"ku	ク
+kk"gu	グ
+kk"ke	ケ
+kk"ge	ゲ
+kk"ko	コ
+kk"go	ゴ
+kk"sa	サ
+kk"za	ザ
+kk"si	シ
+kk"shi	シ
+kk"zi	ジ
+kk"ji	ジ
+kk"su	ス
+kk"zu	ズ
+kk"se	セ
+kk"ze	ゼ
+kk"so	ソ
+kk"zo	ゾ
+kk"ta	タ
+kk"da	ダ
+kk"ti	チ
+kk"chi	チ
+kk"di	ヂ
+kk"ji	ヂ
+kk"tu	ツ
+kk"tsu	ツ
+kk"du	ヅ
+kk"zu	ヅ
+kk'tu	ッ
+kk'tsu	ッ
+kk"te	テ
+kk"de	デ
+kk"to	ト
+kk"do	ド
+kk"na	ナ
+kk"ni	ニ
+kk"nu	ヌ
+kk"ne	ネ
+kk"no	ノ
+kk"ha	ハ
+kk"ba	バ
+kk"pa	パ
+kk"hi	ヒ
+kk"bi	ビ
+kk"pi	ピ
+kk"hu	フ
+kk"fu	フ
+kk"bu	ブ
+kk"pu	プ
+kk"he	ヘ
+kk"be	ベ
+kk"pe	ペ
+kk"ho	ホ
+kk"bo	ボ
+kk"po	ポ
+kk"ma	マ
+kk"mi	ミ
+kk"mu	ム
+kk"me	メ
+kk"mo	モ
+kk"ra	ラ
+kk"ri	リ
+kk"ru	ル
+kk"re	レ
+kk"ro	ロ
+kk"ya	ヤ
+kk'ya	ャ
+kk"yu	ユ
+kk'yu	ュ
+kk"yo	ヨ
+kk'yo	ョ
+kk"wa	ワ
+kk'wa	ヮ
+kk"wi	ヰ
+kk"wu	ウ
+kk"we	ヱ
+kk"wo	ヲ
+kk"n	ン
+kk'q	ッ
+kk"va	ヷ
+kk"vi	ヸ
+kk"vu	ヴ
+kk"ve	ヹ
+kk"vo	ヺ
+kk'ka	ヵ
+kk'ke	ヶ
+kk'ku	ㇰ
+kk'si	ㇱ
+kk'shi	ㇱ
+kk'su	ㇲ
+kk'to	ㇳ
+kk'nu	ㇴ
+kk'ha	ㇵ
+kk'hi	ㇶ
+kk'hu	ㇷ
+kk'fu	ㇷ
+kk'he	ㇸ
+kk'ho	ㇹ
+kk'mu	ㇺ
+kk'ra	ㇻ
+kk'ri	ㇼ
+kk'ru	ㇽ
+kk're	ㇾ
+kk'ro	ㇿ
+# 日文～KataKana }
+
+# 日文～片假名～半角 {
+kk"bj:a	ｱ
+kk'bj:a	ｧ
+kk"bj:i	ｲ
+kk'bj:i	ｨ
+kk"bj:u	ｳ
+kk'bj:u	ｩ
+kk"bj:e	ｴ
+kk'bj:e	ｪ
+kk"bj:o	ｵ
+kk'bj:o	ｫ
+kk"bj:ka	ｶ
+kk"bj:ki	ｷ
+kk"bj:ku	ｸ
+kk"bj:ke	ｹ
+kk"bj:ko	ｺ
+kk"bj:sa	ｻ
+kk"bj:si	ｼ
+kk"bj:shi	ｼ
+kk"bj:su	ｽ
+kk"bj:se	ｾ
+kk"bj:so	ｿ
+kk"bj:ta	ﾀ
+kk"bj:ti	ﾁ
+kk"bj:chi	ﾁ
+kk"bj:tu	ﾂ
+kk"bj:tsu	ﾂ
+kk'bj:tu	ｯ
+kk'bj:tsu	ｯ
+kk"bj:te	ﾃ
+kk"bj:to	ﾄ
+kk"bj:na	ﾅ
+kk"bj:ni	ﾆ
+kk"bj:nu	ﾇ
+kk"bj:ne	ﾈ
+kk"bj:no	ﾉ
+kk"bj:ha	ﾊ
+kk"bj:hi	ﾋ
+kk"bj:hu	ﾌ
+kk"bj:fu	ﾌ
+kk"bj:he	ﾍ
+kk"bj:ho	ﾎ
+kk"bj:ma	ﾏ
+kk"bj:mi	ﾐ
+kk"bj:mu	ﾑ
+kk"bj:me	ﾒ
+kk"bj:mo	ﾓ
+kk"bj:ya	ﾔ
+kk'bj:ya	ｬ
+kk"bj:yu	ﾕ
+kk'bj:yu	ｭ
+kk"bj:yo	ﾖ
+kk'bj:yo	ｮ
+kk"bj:ra	ﾗ
+kk"bj:ri	ﾘ
+kk"bj:ru	ﾙ
+kk"bj:re	ﾚ
+kk"bj:ro	ﾛ
+kk"bj:n	ﾝ
+kk'bj:q	ｯ
+kk"bj:wa	ﾜ
+kk"bj:wu	ｳ
+kk"bj:wo	ｦ
+# 日文～片假名～半角 }
+
+# 日文～片假名～圓圈 {
+kk:a	㋐
+kk:i	㋑
+kk:u	㋒
+kk:e	㋓
+kk:o	㋔
+kk:ka	㋕
+kk:ki	㋖
+kk:ku	㋗
+kk:ke	㋘
+kk:ko	㋙
+kk:sa	㋚
+kk:si	㋛
+kk:shi	㋛
+kk:su	㋜
+kk:se	㋝
+kk:so	㋞
+kk:ta	㋟
+kk:ti	㋠
+kk:chi	㋠
+kk:tu	㋡
+kk:tsu	㋡
+kk:te	㋢
+kk:to	㋣
+kk:na	㋤
+kk:ni	㋥
+kk:nu	㋦
+kk:ne	㋧
+kk:no	㋨
+kk:ha	㋩
+kk:hi	㋪
+kk:hu	㋫
+kk:fu	㋫
+kk:he	㋬
+kk:ho	㋭
+kk:ma	㋮
+kk:mi	㋯
+kk:mu	㋰
+kk:me	㋱
+kk:mo	㋲
+kk:ya	㋳
+kk:yu	㋴
+kk:yo	㋵
+kk:ra	㋶
+kk:ri	㋷
+kk:ru	㋸
+kk:re	㋹
+kk:ro	㋺
+kk:wa	㋻
+kk:wi	㋼
+kk:we	㋽
+kk:wo	㋾
+# 日文～片假名～圓圈 }
+
+# 日文～其它 {
+hg"hoka	🈀	ほか合寫
+hg"yori	ゟ	より合寫
+hg"ye	𛀁	古體字
+kk'e	𛀀	古體字
+kk'koto	ヿ	コト合寫
+kk'tomo	𪜈	トモ合寫
+kk::apaato	㌀	apartment (公寓)
+kk::aruhua	㌁	alpha (希臘字母表首字母：α)
+kk::arufua	㌁	alpha (希臘字母表首字母：α)
+kk::anpea	㌂	ampere (電流強度單位：安培)
+kk::aaru	㌃	are (面積單位：公畝)
+kk::iningu	㌄	inning (一局棒球賽)
+kk::inti	㌅	inch (長度單位：英寸)
+kk::inchi	㌅	inch (長度單位：英寸)
+kk::uon	㌆	won (韓國貨幣單位：圓)
+kk::esukuudo	㌇	escudo (葡萄牙舊貨幣單位：盾)
+kk::eekaa	㌈	acre (面積單位：英畝)
+kk::onsu	㌉	ounce (質量單位：盎司)
+kk::oomu	㌊	ohm (電阻單位：歐姆)
+kk::kairi	㌋	海里 (航行長度單位)
+kk::karatto	㌌	carat (寶石質量單位：克拉)
+kk::karorii	㌍	calorie (食物熱量單位：卡路里)
+kk::garon	㌎	gallon (容積單位：加侖)
+kk::ganma	㌏	gamma (希臘字母表第三個字母：γ)
+kk::giga	㌐	giga- (數量前綴：十億)
+kk::ginii	㌑	guinea (英國舊貨幣單位：堅尼)
+kk::kyurii	㌒	curie (輻射強度單位：居里)
+kk::girudaa	㌓	guilder (荷蘭舊貨幣單位：荷蘭盾)
+kk::kiro	㌔	kilo- (數量前綴：千)
+kk::kiroguramu	㌕	kilogram (質量單位：千克)
+kk::kiromeetoru	㌖	kilometer (長度單位：千米)
+kk::kirowatto	㌗	kilowatt (功率單位：千瓦)
+kk::guramu	㌘	gram (質量單位：克)
+kk::guramuton	㌙	gram-ton (質量單位：公噸)
+kk::kuruzeiro	㌚	cruzeiro (巴西舊貨幣單位：克鲁賽羅)
+kk::kuroone	㌛	krone (丹麥貨幣單位：克郎)
+kk::keesu	㌜	case (案例)
+kk::koruna	㌝	koruna (捷克斯洛伐克貨幣單位：克郎)
+kk::koopo	㌞	corporate house (集合住宅)
+kk::saikuru	㌟	cycle (周期)
+kk::santiimu	㌠	centime (英國舊通貨單位：生丁)
+kk::siringu	㌡	shilling (英國舊貨幣單位：先令)
+kk::senti	㌢	centi- (數量前綴：百分之一)
+kk::senchi	㌢	centi- (數量前綴：百分之一)
+kk::sento	㌣	cent (美國貨幣單位：美分)
+kk::daasu	㌤	dozen (數量單位：打)
+kk::desi	㌥	deci- (數量前綴：十分之一)
+kk::deshi	㌥	deci- (數量前綴：十分之一)
+kk::doru	㌦	dollar (美國貨幣單位：美元)
+kk::ton	㌧	ton (質量單位：噸)
+kk::nano	㌨	nano- (數量前綴：十億分之一)
+kk::notto	㌩	knot (速度單位：節)
+kk::haitu	㌪	heights (高地建築)
+kk::haitsu	㌪	heights (高地建築)
+kk::paasento	㌫	percent (百分比)
+kk::paatu	㌬	baht (泰國貨幣單位：銖)
+kk::paatsu	㌬	baht (泰國貨幣單位：銖)
+kk::baareru	㌭	barrel (容積單位：桶)
+kk::piasutoru	㌮	piaster (貨幣單位：比索)
+kk::pikuru	㌯	picul (中國質量單位：石)
+kk::piko	㌰	piko- (數量前綴：萬億分之一)
+kk::biru	㌱	building (耐震建築)
+kk::huaraddo	㌲	farad (電容單位：法拉)
+kk::fuaraddo	㌲	farad (電容單位：法拉)
+kk::huiito	㌳	feet (長度單位：英尺)
+kk::fuiito	㌳	feet (長度單位：英尺)
+kk::bussyeru	㌴	bushel (容積單位：蒲式耳)
+kk::bussheru	㌴	bushel (容積單位：蒲式耳)
+kk::huran	㌵	franc (法國舊貨幣單位：法郎)
+kk::furan	㌵	franc (法國舊貨幣單位：法郎)
+kk::hekutaaru	㌶	hectare (面積單位：公頃)
+kk::peso	㌷	peso (貨幣單位：比索)
+kk::penihi	㌸	pfennig (德國舊貨幣單位：芬尼)
+kk::herutu	㌹	hertz (周期單位：赫茲)
+kk::herutsu	㌹	hertz (周期單位：赫茲)
+kk::pensu	㌺	pence (英國貨幣單位：便士)
+kk::peezi	㌻	page (紙張數量單位：頁)
+kk::peeji	㌻	page (紙張數量單位：頁)
+kk::beeta	㌼	beta (希臘字母表第二個字母：β)
+kk::pointo	㌽	point (印刷長度單位：點)
+kk::boruto	㌾	volt (電壓單位：伏特)
+kk::hon	㌿	phon (響度單位：方)
+kk::pondo	㍀	pound (質量單位：磅)
+kk::hooru	㍁	hole (一洞高爾夫球)
+kk::hoon	㍂	phon (響度單位：方)
+kk::maikuro	㍃	micro- (數量前綴：百萬分之一)
+kk::mairu	㍄	mile (長度單位：英里)
+kk::mahha	㍅	mach (飛行速度單位：馬赫)
+kk::maruku	㍆	mark (德國舊貨幣單位：馬克)
+kk::mansyon	㍇	mansion (大厦)
+kk::manshon	㍇	mansion (大厦)
+kk::mikuron	㍈	micron (長度單位：微米)
+kk::miri	㍉	mili- (數量前綴：千分之一)
+kk::miribaaru	㍊	milibar (大氣壓強單位：毫巴)
+kk::mega	㍋	mega- (數量前綴：百萬)
+kk::megaton	㍌	megaton (爆炸威力單位：百萬吨)
+kk::meetoru	㍍	meter (長度單位：米)
+kk::yaado	㍎	yard (長度單位：碼)
+kk::yaaru	㍏	yard (布匹長度單位：碼)
+kk::yuan	㍐	yuan (中國貨幣單位：圓)
+kk::rittoru	㍑	liter (容量體積單位：升)
+kk::rira	㍒	lira (貨幣單位：鎊)
+kk::rupii	㍓	rupee (印度貨幣單位：盧比)
+kk::ruuburu	㍔	rouble (俄羅斯貨幣單位：盧布)
+kk::remu	㍕	rem (輻射劑量單位：雷姆)
+kk::rentogen	㍖	roentgon (輻射劑量單位：倫琴)
+kk::watto	㍗	watt (功率單位：瓦特)
+rw	゙	♪゙
+rw	゚	♪゚
+# 日文～其它 }
+
+# 日文～拗音 {
+rw"kya	きゃ
+rw"gya	ぎゃ
+rw'kya	キャ
+rw'gya	ギャ
+rw"kyu	きゅ
+rw"gyu	ぎゅ
+rw'kyu	キュ
+rw'gyu	ギュ
+rw"kyo	きょ
+rw"gyo	ぎょ
+rw'kyo	キョ
+rw'gyo	ギョ
+rw"sya	しゃ
+rw"zya	じゃ
+rw"ja	じゃ
+rw'sya	シャ
+rw'zya	ジャ
+rw'ja	ジャ
+rw"syu	しゅ
+rw"zyu	じゅ
+rw"ju	じゅ
+rw'syu	シュ
+rw'zyu	ジュ
+rw'ju	ジュ
+rw"syo	しょ
+rw"zyo	じょ
+rw"jo	じょ
+rw'syo	ショ
+rw'zyo	ジョ
+rw'jo	ジョ
+rw"sha	しゃ
+rw'sha	シャ
+rw"shu	しゅ
+rw'shu	シュ
+rw"sho	しょ
+rw'sho	ショ
+rw"tya	ちゃ
+rw'tya	チャ
+rw"tyu	ちゅ
+rw'tyu	チュ
+rw"tyo	ちょ
+rw'tyo	チョ
+rw"cha	ちゃ
+rw"dya	ぢゃ
+rw"ja	ぢゃ
+rw'cha	チャ
+rw'dya	ヂャ
+rw'ja	ヂャ
+rw"chu	ちゅ
+rw"dyu	ぢゅ
+rw"ju	ぢゅ
+rw'chu	チュ
+rw'dyu	ヂュ
+rw'ju	ヂュ
+rw"cho	ちょ
+rw"dyo	ぢょ
+rw"jo	ぢょ
+rw'cho	チョ
+rw'dyo	ヂョ
+rw'jo	ヂョ
+rw"nya	にゃ
+rw'nya	ニャ
+rw"nyu	にゅ
+rw'nyu	ニュ
+rw"nyo	にょ
+rw'nyo	ニョ
+rw"hya	ひゃ
+rw"bya	びゃ
+rw"pya	ぴゃ
+rw'hya	ヒャ
+rw'bya	ビャ
+rw'pya	ピャ
+rw"hyu	ひゅ
+rw"byu	びゅ
+rw"pyu	ぴゅ
+rw'hyu	ヒュ
+rw'byu	ビュ
+rw'pyu	ピュ
+rw"hyo	ひょ
+rw"byo	びょ
+rw"pyo	ぴょ
+rw'hyo	ヒョ
+rw'byo	ビョ
+rw'pyo	ピョ
+rw"mya	みゃ
+rw'mya	ミャ
+rw"myu	みゅ
+rw'myu	ミュ
+rw"myo	みょ
+rw'myo	ミョ
+rw"rya	りゃ
+rw'rya	リャ
+rw"ryu	りゅ
+rw'ryu	リュ
+rw"ryo	りょ
+rw'ryo	リョ
+rw"kwa	くゎ
+rw'kwa	クヮ
+rw"gwa	ぐゎ
+rw'gwa	グヮ
+# 日文～拗音 }
+
+# 日文～外語 {
+rw:wy'bye	ビェ
+rw:wy'che	チェ
+rw:wy'di	ディ
+rw:wy'du	ドゥ
+rw:wy'dyu	デュ
+rw:wy'fa	ファ
+rw:wy'fe	フェ
+rw:wy'fi	フィ
+rw:wy'fo	フォ
+rw:wy'fya	フャ
+rw:wy'fye	フィェ
+rw:wy'fyo	フォ
+rw:wy'fyu	フュ
+rw:wy'gwa	グァ
+rw:wy'gwa	グヮ
+rw:wy'gwe	グェ
+rw:wy'gwi	グィ
+rw:wy'gwo	グォ
+rw:wy'gye	ギェ
+rw:wy'hu	ホゥ
+rw:wy'hye	ヒェ
+rw:wy'je	ジェ
+rw:wy'kwa	クァ
+rw:wy'kwa	クヮ
+rw:wy'kwe	クェ
+rw:wy'kwi	クィ
+rw:wy'kwo	クォ
+rw:wy'kye	キェ
+rw:wy'la	ラ゚
+rw:wy'le	レ゚
+rw:wy'li	リ゚
+rw:wy'lo	ロ゚
+rw:wy'lu	ル゚
+rw:wy'mye	ミェ
+rw:wy'nye	ニェ
+rw:wy'pye	ピェ
+rw:wy'rye	リェ
+rw:wy'she	シェ
+rw:wy'si	スィ
+rw:wy'ti	ティ
+rw:wy'tsa	ツァ
+rw:wy'tse	ツェ
+rw:wy'tsi	ツィ
+rw:wy'tso	ツォ
+rw:wy'tsyu	ツュ
+rw:wy'tu	トゥ
+rw:wy'tyu	テュ
+rw:wy'va	ヴァ
+rw:wy've	ヴェ
+rw:wy'vi	ヴィ
+rw:wy'vo	ヴォ
+rw:wy'vya	ヴャ
+rw:wy'vye	ヴィェ
+rw:wy'vyo	ヴョ
+rw:wy'vyu	ヴュ
+rw:wy'wa	ウァ
+rw:wy'we	ウェ
+rw:wy'wi	ウィ
+rw:wy'wo	ウォ
+rw:wy'wu	ウー
+rw:wy'wu	ウゥ
+rw:wy'ye	イェ
+rw:wy'yi	イィ
+rw:wy'zi	ズィ
+# 日文～外語 }
+
+# 日文～漢字批註 {
+pz:rw	㆐
+pz:rw	㆑
+pz:rw	㆒
+pz:rw	㆓
+pz:rw	㆔
+pz:rw	㆕
+pz:rw	㆖
+pz:rw	㆗
+pz:rw	㆘
+pz:rw	㆙
+pz:rw	㆚
+pz:rw	㆛
+pz:rw	㆜
+pz:rw	㆝
+pz:rw	㆞
+pz:rw	㆟
+# 日文～漢字批註 }
+
+# 希臘文 {
+xl"1:alpha	α
+xl"2:beta	β
+xl"3:gamma	γ
+xl"4:delta	δ
+xl"5:epsilon	ε
+xl"6:zeta	ζ
+xl"7:eta	η
+xl"8:theta	θ
+xl"9:iota	ι
+xl"10:kappa	κ
+xl"11:lambda	λ
+xl"12:mu	μ
+xl"13:nu	ν
+xl"14:xi	ξ
+xl"15:omicron	ο
+xl"16:pi	π
+xl"17:rho	ρ
+xl"18:sigma	σ
+xl"19:tau	τ
+xl"20:upsilon	υ
+xl"21:phi	φ
+xl"22:chi	χ
+xl"23:psi	ψ
+xl"24:omega	ω
+xl'1:alpha	Α
+xl'2:beta	Β
+xl'3:gamma	Γ
+xl'4:delta	Δ
+xl'5:epsilon	Ε
+xl'6:zeta	Ζ
+xl'7:eta	Η
+xl'8:theta	Θ
+xl'9:iota	Ι
+xl'10:kappa	Κ
+xl'11:lambda	Λ
+xl'12:mu	Μ
+xl'13:nu	Ν
+xl'14:xi	Ξ
+xl'15:omicron	Ο
+xl'16:pi	Π
+xl'17:rho	Ρ
+xl'18:sigma	Σ
+xl'19:tau	Τ
+xl'20:upsilon	Υ
+xl'21:phi	Φ
+xl'22:chi	Χ
+xl'23:psi	Ψ
+xl'24:omega	Ω
+# 希臘文 }
+
+# 俄語 {
+ey"1	А
+ey"2	Б
+ey"3	В
+ey"4	Г
+ey"5	Д
+ey"6	Е
+ey"7	Ё
+ey"8	Ж
+ey"9	З
+ey"10	И
+ey"11	Й
+ey"12	К
+ey"13	Л
+ey"14	М
+ey"15	Н
+ey"16	О
+ey"17	П
+ey"18	Р
+ey"19	С
+ey"20	Т
+ey"21	У
+ey"22	Ф
+ey"23	Х
+ey"24	Ц
+ey"25	Ч
+ey"26	Ш
+ey"27	Щ
+ey"28	Ъ
+ey"29	Ы
+ey"30	Ь
+ey"31	Э
+ey"32	Ю
+ey"33	Я
+ey'1	а
+ey'2	б
+ey'3	в
+ey'4	г
+ey'5	д
+ey'6	е
+ey'7	ё
+ey'8	ж
+ey'9	з
+ey'10	и
+ey'11	й
+ey'12	к
+ey'13	л
+ey'14	м
+ey'15	н
+ey'16	о
+ey'17	п
+ey'18	р
+ey'19	с
+ey'20	т
+ey'21	у
+ey'22	ф
+ey'23	х
+ey'24	ц
+ey'25	ч
+ey'26	ш
+ey'27	щ
+ey'28	ъ
+ey'29	ы
+ey'30	ь
+ey'31	э
+ey'32	ю
+ey'33	я
+# 俄語 }
+
+# 希伯來文 {
+xblw:1	א
+xblw:2	ב
+xblw:3	ג
+xblw:4	ד
+xblw:5	ה
+xblw:6	ו
+xblw:7	ז
+xblw:8	ח
+xblw:9	ט
+xblw:10	י
+xblw:11	ך
+xblw:12	כ
+xblw:13	ל
+xblw:14	ם
+xblw:15	מ
+xblw:16	ן
+xblw:17	נ
+xblw:18	ס
+xblw:19	ע
+xblw:20	ף
+xblw:21	פ
+xblw:22	ץ
+xblw:23	צ
+xblw:24	ק
+xblw:25	ר
+xblw:26	ש
+xblw:27	ת
+# 希伯來文 }
+
+# 拉丁字母 {
+# A:uppercase a:lowercase R:reversed I:inverted T:turned S:small
+ld!?	ʔ	R:ʕ I:ʖ
+ld!?	ʕ	r:ʔ T:ʖ
+ld!?	ʖ	i:ʔ t:ʕ
+ld!?	ʡ	R:ʢ I:ƾ
+ld!?	ʢ	r:ʡ T:ƾ
+ld!?	ƾ	i:ʡ t:ʢ
+ld"?	ɂ	A:Ɂ
+ld'?	Ɂ	a:ɂ
+ld!??	ᴤ
+ld"?	ꜣ	A:Ꜣ
+ld"?	ꜥ	A:Ꜥ
+ld"?	ꜭ	A:Ꜭ
+ld"?	ꜯ	A:Ꜯ
+ld"?	ꞌ	A:Ꞌ
+ld'?	Ꜣ	a:ꜣ
+ld'?	Ꜥ	a:ꜥ
+ld'?	Ꜭ	a:ꜭ
+ld'?	Ꜯ	a:ꜯ
+ld'?	Ꞌ	a:ꞌ
+ld:?	ǀ
+ld:?	ǁ
+ld:?	ǂ
+ld:?	ǃ
+ld:?	ᴥ
+ld:?	ꞏ
+ld"a	a	A:A T:ɐ
+ld"a	à	A:À
+ld"a	á	A:Á
+ld"a	â	A:Â
+ld"a	ã	A:Ã
+ld"a	ä	A:Ä
+ld"a	å	A:Å
+ld"a	ā	A:Ā
+ld"a	ă	A:Ă
+ld"a	ą	A:Ą
+ld"a	ǎ	A:Ǎ
+ld"a	ǟ	A:Ǟ
+ld"a	ǡ	A:Ǡ
+ld"a	ǻ	A:Ǻ
+ld"a	ȁ	A:Ȁ
+ld"a	ȃ	A:Ȃ
+ld"a	ȧ	A:Ȧ
+ld"a	ɐ	A:Ɐ t:a
+ld"a	ɑ	A:Ɑ I:ꭤ T:ɒ
+ld"a	ɒ	A:Ɒ R:ꭤ t:ɑ
+ld"a	ᴀ	s:A
+ld"a	ᶏ
+ld"a	ᶐ
+ld"a	ḁ	A:Ḁ
+ld"a	ẚ
+ld"a	ạ	A:Ạ
+ld"a	ả	A:Ả
+ld"a	ấ	A:Ấ
+ld"a	ầ	A:Ầ
+ld"a	ẩ	A:Ẩ
+ld"a	ẫ	A:Ẫ
+ld"a	ậ	A:Ậ
+ld"a	ắ	A:Ắ
+ld"a	ằ	A:Ằ
+ld"a	ẳ	A:Ẳ
+ld"a	ẵ	A:Ẵ
+ld"a	ặ	A:Ặ
+ld"a	ⱥ	A:Ⱥ
+ld"a	ꬰ
+ld"a	ꭤ	r:ɒ i:ɑ
+ld'a	A	a:a T:Ɐ S:ᴀ
+ld'a	À	a:à
+ld'a	Á	a:á
+ld'a	Â	a:â
+ld'a	Ã	a:ã
+ld'a	Ä	a:ä
+ld'a	Å	a:å
+ld'a	Ā	a:ā
+ld'a	Ă	a:ă
+ld'a	Ą	a:ą
+ld'a	Ǎ	a:ǎ
+ld'a	Ǟ	a:ǟ
+ld'a	Ǡ	a:ǡ
+ld'a	Ǻ	a:ǻ
+ld'a	Ȁ	a:ȁ
+ld'a	Ȃ	a:ȃ
+ld'a	Ȧ	a:ȧ
+ld'a	Ⱥ	a:ⱥ
+ld'a	Ḁ	a:ḁ
+ld'a	Ạ	a:ạ
+ld'a	Ả	a:ả
+ld'a	Ấ	a:ấ
+ld'a	Ầ	a:ầ
+ld'a	Ẩ	a:ẩ
+ld'a	Ẫ	a:ẫ
+ld'a	Ậ	a:ậ
+ld'a	Ắ	a:ắ
+ld'a	Ằ	a:ằ
+ld'a	Ẳ	a:ẳ
+ld'a	Ẵ	a:ẵ
+ld'a	Ặ	a:ặ
+ld'a	Ɑ	a:ɑ T:Ɒ
+ld'a	Ɐ	a:ɐ t:A
+ld'a	Ɒ	a:ɒ t:Ɑ
+ld"aa	ꜳ	A:Ꜳ
+ld'aa	Ꜳ	a:ꜳ
+ld"ae	æ	A:Æ T:ᴂ
+ld"ae	ǣ	A:Ǣ
+ld"ae	ǽ	A:Ǽ
+ld"ae	ᴁ	s:Æ
+ld"ae	ᴂ	t:æ
+ld"ae	ꬱ
+ld'ae	Æ	a:æ S:ᴁ
+ld'ae	Ǣ	a:ǣ
+ld'ae	Ǽ	a:ǽ
+ld"ao	ꜵ	A:Ꜵ
+ld'ao	Ꜵ	a:ꜵ
+ld"au	ꜷ	A:Ꜷ
+ld'au	Ꜷ	a:ꜷ
+ld"av	ꜹ	A:Ꜹ
+ld"av	ꜻ	A:Ꜻ
+ld'av	Ꜹ	a:ꜹ
+ld'av	Ꜻ	a:ꜻ
+ld"ay	ꜽ	A:Ꜽ
+ld'ay	Ꜽ	a:ꜽ
+ld"b	b	A:B
+ld"b	ß	A:ẞ
+ld"b	ƀ	A:Ƀ
+ld"b	ƃ	A:Ƃ
+ld"b	ƅ	A:Ƅ	tone six
+ld"b	ɓ	A:Ɓ
+ld"b	ʙ	s:B
+ld"b	ᴃ
+ld"b	ᵬ
+ld"b	ᶀ
+ld"b	ḃ	A:Ḃ
+ld"b	ḅ	A:Ḅ
+ld"b	ḇ	A:Ḇ
+ld"b	ꞗ	A:Ꞗ
+ld"b	ꞛ	A:Ꞛ	Volapük AE ɛɑ
+ld"b	ꞝ	A:Ꞝ	Volapük OE ɛo
+ld"b	ꞵ	A:Ꞵ
+ld'b	B	a:b S:ʙ
+ld'b	Ɓ	a:ɓ
+ld'b	Ƃ	a:ƃ
+ld'b	Ƅ	a:ƅ	tone six
+ld'b	Ƀ	a:ƀ
+ld'b	Ḃ	a:ḃ
+ld'b	Ḅ	a:ḅ
+ld'b	Ḇ	a:ḇ
+ld'b	ẞ	a:ß
+ld'b	Ꞗ	a:ꞗ
+ld'b	Ꞛ	a:ꞛ	Volapük AE ƐⱭ
+ld'b	Ꞝ	a:ꞝ	Volapük OE ƐO
+ld'b	Ꞵ	a:ꞵ
+ld"c	c	A:C R:ↄ
+ld"c	ç	A:Ç
+ld"c	ć	A:Ć
+ld"c	ĉ	A:Ĉ
+ld"c	ċ	A:Ċ
+ld"c	č	A:Č
+ld"c	ƈ	A:Ƈ
+ld"c	ȼ	A:Ȼ
+ld"c	ɕ	A:ɕ
+ld"c	ᴄ	s:C
+ld"c	ḉ	A:Ḉ
+ld"c	ↄ	r:c
+ld"c	ꜿ	A:Ꜿ
+ld"c	ꝯ	A:Ꝯ	con (reversed c)
+ld"c	ꞓ	A:Ꞓ
+ld"c	ꞔ
+ld'c	C	a:c S:ᴄ
+ld'c	Ç	a:ç
+ld'c	Ć	a:ć
+ld'c	Ĉ	a:ĉ
+ld'c	Ċ	a:ċ
+ld'c	Č	a:č
+ld'c	Ƈ	a:ƈ
+ld'c	Ȼ	a:ȼ
+ld'c	Ḉ	a:ḉ
+ld'c	Ꜿ	a:ꜿ
+ld'c	Ꝯ	a:ꝯ	con (reversed C)
+ld'c	Ꞓ	a:ꞓ
+ld:c	ʗ
+ld"d	d	A:D
+ld"d	ð	A:Ð
+ld"d	ď	A:Ď
+ld"d	đ	A:Đ
+ld"d	ƌ	A:Ƌ
+ld"d	ƍ	t:ẟ
+ld"d	ȡ
+ld"d	ɖ	A:Ɖ
+ld"d	ɗ	A:Ɗ
+ld"d	ᴅ	s:D
+ld"d	ᴆ	s:Ð
+ld"d	ᵭ
+ld"d	ᶁ
+ld"d	ᶑ
+ld"d	ḋ	A:Ḋ
+ld"d	ḍ	A:Ḍ
+ld"d	ḏ	A:Ḏ
+ld"d	ḑ	A:Ḑ
+ld"d	ḓ	A:Ḓ
+ld"d	ẟ	T:ƍ
+ld"d	ꝱ
+ld"d	ꝺ	A:Ꝺ	Insular d
+ld'd	D	a:d S:ᴅ
+ld'd	Ð	a:ð S:ᴆ
+ld'd	Ď	a:ď
+ld'd	Đ	a:đ
+ld'd	Ɖ	a:ɖ
+ld'd	Ɗ	a:ɗ
+ld'd	Ƌ	a:ƌ
+ld'd	Ḋ	a:ḋ
+ld'd	Ḍ	a:ḍ
+ld'd	Ḏ	a:ḏ
+ld'd	Ḑ	a:ḑ
+ld'd	Ḓ	a:ḓ
+ld'd	Ꝺ	a:ꝺ	Insular D
+ld"db	ȸ
+ld"dz	ǆ	A:Ǆ
+ld"dz	ǳ	A:Ǳ
+ld"dz	ʣ
+ld"dz	ʤ
+ld"dz	ʥ
+ld'dz	Ǆ	a:ǆ
+ld'dz	ǅ
+ld'dz	Ǳ	a:ǳ
+ld'dz	ǲ
+ld"e	e	A:E R:ɘ T:ǝ
+ld"e	è	A:È
+ld"e	é	A:É
+ld"e	ê	A:Ê
+ld"e	ë	A:Ë
+ld"e	ē	A:Ē
+ld"e	ĕ	A:Ĕ
+ld"e	ė	A:Ė
+ld"e	ę	A:Ę
+ld"e	ě	A:Ě
+ld"e	ǝ	A:Ǝ i:ɘ t:e
+ld"e	ȅ	A:Ȅ
+ld"e	ȇ	A:Ȇ
+ld"e	ȩ	A:Ȩ
+ld"e	ɇ	A:Ɇ
+ld"e	ɘ	A:Ǝ r:e I:ǝ
+ld"e	ə	A:Ə
+ld"e	ɚ
+ld"e	ɛ	A:Ɛ R:ɜ T:ᴈ
+ld"e	ɜ	A:Ɜ r:ɛ I:ᴈ
+ld"e	ɝ
+ld"e	ɞ	r:ʚ	closed ɜ
+ld"e	ʚ	R:ɞ	closed ɛ
+ld"e	ᴇ	s:E
+ld"e	ᴈ	i:ɜ t:ɛ
+ld"e	ᶒ
+ld"e	ᶓ	R:ᶔ
+ld"e	ᶔ	r:ᶓ
+ld"e	ᶕ
+ld"e	ḕ	A:Ḕ
+ld"e	ḗ	A:Ḗ
+ld"e	ḙ	A:Ḙ
+ld"e	ḛ	A:Ḛ
+ld"e	ḝ	A:Ḝ
+ld"e	ẹ	A:Ẹ
+ld"e	ẻ	A:Ẻ
+ld"e	ẽ	A:Ẽ
+ld"e	ế	A:Ế
+ld"e	ề	A:Ề
+ld"e	ể	A:Ể
+ld"e	ễ	A:Ễ
+ld"e	ệ	A:Ệ
+ld"e	ⱸ	A:ⱸ
+ld"e	ⱻ	s:Ǝ
+ld"e	ꜫ	A:Ꜫ
+ld"e	ꝫ	A:Ꝫ	-et, et (ꝫc → etc)
+ld"e	ꬲ
+ld"e	ꬳ
+ld"e	ꬴ
+ld'e	E	a:e R:Ǝ T:Ǝ S:ᴇ
+ld'e	È	a:è
+ld'e	É	a:é
+ld'e	Ê	a:ê
+ld'e	Ë	a:ë
+ld'e	Ē	a:ē
+ld'e	Ĕ	a:ĕ
+ld'e	Ė	a:ė
+ld'e	Ę	a:ę
+ld'e	Ě	a:ě
+ld'e	Ǝ	a:ɘ a:ǝ r:E t:E S:ⱻ
+ld'e	Ə	a:ə
+ld'e	Ɛ	a:ɛ R:Ɜ
+ld'e	Ʃ	a:ʃ
+ld'e	Ȅ	a:ȅ
+ld'e	Ȇ	a:ȇ
+ld'e	Ȩ	a:ȩ
+ld'e	Ɇ	a:ɇ
+ld'e	Ḕ	a:ḕ
+ld'e	Ḗ	a:ḗ
+ld'e	Ḙ	a:ḙ
+ld'e	Ḛ	a:ḛ
+ld'e	Ḝ	a:ḝ
+ld'e	Ẹ	a:ẹ
+ld'e	Ẻ	a:ẻ
+ld'e	Ẽ	a:ẽ
+ld'e	Ế	a:ế
+ld'e	Ề	a:ề
+ld'e	Ể	a:ể
+ld'e	Ễ	a:ễ
+ld'e	Ệ	a:ệ
+ld'e	Ꜫ	a:ꜫ
+ld'e	Ꝫ	a:ꝫ	-et, et
+ld'e	Ɜ	a:ɜ r:Ɛ
+ld"f	f	A:F
+ld"f	ƒ	A:Ƒ
+ld"f	ᵮ	A:ᵮ
+ld"f	ᶂ
+ld"f	ḟ	A:Ḟ
+ld"f	ꜰ	s:F
+ld"f	ꝼ	A:Ꝼ	Insular f
+ld"f	ꞙ	A:Ꞙ
+ld"f	ꬵ
+ld'f	F	a:f R:ꟻ S:ꜰ
+ld'f	Ƒ	a:ƒ
+ld'f	Ḟ	a:ḟ
+ld'f	Ꝼ	a:ꝼ	Insular F
+ld'f	Ꞙ	a:ꞙ
+ld'f	ꟻ	f:F
+ld"ff	ﬀ
+ld"ffi	ﬃ
+ld"ffl	ﬄ
+ld"fi	ﬁ
+ld"fl	ﬂ
+ld"fn	ʩ
+ld"g	g	A:G T:ᵷ
+ld"g	ĝ	A:Ĝ
+ld"g	ğ	A:Ğ
+ld"g	ġ	A:Ġ
+ld"g	ģ	A:Ģ
+ld"g	ǥ	A:Ǥ
+ld"g	ǧ	A:Ǧ
+ld"g	ǵ	A:Ǵ
+ld"g	ɠ	A:Ɠ
+ld"g	ɡ	A:Ɡ T:ᵷ
+ld"g	ɢ	s:G
+ld"g	ʛ	s:Ɠ
+ld"g	ᵷ	t:g t:ɡ
+ld"g	ᵹ	A:Ᵹ T:ꝿ	Insular g
+ld"g	ᶃ
+ld"g	ḡ	A:Ḡ
+ld"g	ꝿ	A:Ꝿ t:ᵹ
+ld"g	ꞡ	A:Ꞡ
+ld"g	ꬶ
+ld'g	G	a:g S:ɢ
+ld'g	Ĝ	a:ĝ
+ld'g	Ğ	a:ğ
+ld'g	Ġ	a:ġ
+ld'g	Ģ	a:ģ
+ld'g	Ɠ	a:ɠ S:ʛ
+ld'g	Ǥ	a:ǥ
+ld'g	Ǧ	a:ǧ
+ld'g	Ǵ	a:ǵ
+ld'g	Ḡ	a:ḡ
+ld'g	Ᵹ	a:ᵹ T:Ꝿ	Insular G
+ld'g	Ꝿ	a:ꝿ t:Ᵹ
+ld'g	Ꞡ	a:ꞡ
+ld'g	Ɡ	a:ɡ
+ld"h	h	A:H T:ɥ
+ld"h	ĥ	A:Ĥ
+ld"h	ħ	A:Ħ
+ld"h	ȟ	A:Ȟ
+ld"h	ɥ	A:Ɥ t:h
+ld"h	ɦ	A:Ɦ
+ld"h	ɧ
+ld"h	ʜ	s:H
+ld"h	ʮ
+ld"h	ʯ
+ld"h	ḣ	A:Ḣ
+ld"h	ḥ	A:Ḥ
+ld"h	ḧ	A:Ḧ
+ld"h	ḩ	A:Ḩ
+ld"h	ḫ	A:Ḫ
+ld"h	ẖ	A:ẖ
+ld"h	ⱨ	A:Ⱨ
+ld"h	ⱶ	A:Ⱶ	half ʜ
+ld"h	ꜧ	A:Ꜧ
+ld"h	ꞕ
+ld'h	H	a:h S:ʜ
+ld'h	Ĥ	a:ĥ
+ld'h	Ħ	a:ħ
+ld'h	Ȟ	a:ȟ
+ld'h	Ḣ	a:ḣ
+ld'h	Ḥ	a:ḥ
+ld'h	Ḧ	a:ḧ
+ld'h	Ḩ	a:ḩ
+ld'h	Ḫ	a:ḫ
+ld'h	Ⱨ	a:ⱨ
+ld'h	Ⱶ	a:ⱶ	half H
+ld'h	Ꜧ	a:ꜧ
+ld'h	Ɥ	a:ɥ
+ld'h	Ɦ	a:ɦ
+ld"hv	ƕ	A:Ƕ
+ld'hv	Ƕ	a:ƕ
+ld"i	i	A:I T:ᴉ
+ld"i	ì	A:Ì
+ld"i	í	A:Í
+ld"i	î	A:Î
+ld"i	ï	A:Ï
+ld"i	ĩ	A:Ĩ
+ld"i	ī	A:Ī
+ld"i	ĭ	A:Ĭ
+ld"i	į	A:Į
+ld"i	ı	-	i
+ld"i	ǐ	A:Ǐ
+ld"i	ȉ	A:Ȉ
+ld"i	ȋ	A:Ȋ
+ld"i	ɨ	A:Ɨ
+ld"i	ɩ	A:Ɩ
+ld"i	ɪ	A:Ɪ s:I
+ld"i	ᴉ	t:i
+ld"i	ᵻ	s:Ɨ
+ld"i	ᵼ
+ld"i	ᶖ
+ld"i	ḭ	A:Ḭ
+ld"i	ḯ	A:Ḯ
+ld"i	ỉ	A:Ỉ
+ld"i	ị	A:Ị
+ld'i	I	a:i S:ɪ
+ld'i	Ì	a:ì
+ld'i	Í	a:í
+ld'i	Î	a:î
+ld'i	Ï	a:ï
+ld'i	Ĩ	a:ĩ
+ld'i	Ī	a:ī
+ld'i	Ĭ	a:ĭ
+ld'i	Į	a:į
+ld'i	İ	a:i
+ld'i	Ɩ	a:ɩ
+ld'i	Ɨ	a:ɨ S:ᵻ
+ld'i	Ǐ	a:ǐ
+ld'i	Ȉ	a:ȉ
+ld'i	Ȋ	a:ȋ
+ld'i	Ḭ	a:ḭ
+ld'i	Ḯ	a:ḯ
+ld'i	Ỉ	a:ỉ
+ld'i	Ị	a:ị
+ld'i	Ɪ	a:ɪ
+ld'i	ꟷ	-	I
+ld'i	ꟾ	-	apex
+ld"ib	ꭠ	-	ɪb
+ld"ie	ꭡ	-	ɩe
+ld"ij	ĳ	A:Ĳ
+ld'ij	Ĳ	a:ĳ
+ld"j	j	A:J
+ld"j	ĵ	A:Ĵ
+ld"j	ǰ
+ld"j	ȷ	-	j
+ld"j	ɉ	A:Ɉ
+ld"j	ɟ	-	ɉ
+ld"j	ʄ	-	ɟ with hook
+ld"j	ʝ	A:Ʝ
+ld"j	ᴊ	s:J
+ld'j	J	a:j S:ᴊ
+ld'j	Ĵ	a:ĵ
+ld'j	Ɉ	a:ɉ
+ld'j	Ʝ	a:ʝ
+ld"k	k	A:K T:ʞ
+ld"k	ķ	A:Ķ
+ld"k	ĸ
+ld"k	ƙ	A:Ƙ
+ld"k	ǩ	A:Ǩ
+ld"k	ʞ	A:Ʞ t:k
+ld"k	ᴋ	s:K
+ld"k	ᶄ
+ld"k	ḱ	A:Ḱ
+ld"k	ḳ	A:Ḳ
+ld"k	ḵ	A:Ḵ
+ld"k	ⱪ	A:Ⱪ
+ld"k	ꝁ	A:Ꝁ
+ld"k	ꝃ	A:Ꝃ
+ld"k	ꝅ	A:Ꝅ
+ld"k	ꞣ	A:Ꞣ
+ld'k	K	a:k T:Ʞ S:ᴋ
+ld'k	Ķ	a:ķ
+ld'k	Ƙ	a:ƙ
+ld'k	Ǩ	a:ǩ
+ld'k	Ḱ	a:ḱ
+ld'k	Ḳ	a:ḳ
+ld'k	Ḵ	a:ḵ
+ld'k	Ⱪ	a:ⱪ
+ld'k	Ꝁ	a:ꝁ
+ld'k	Ꝃ	a:ꝃ
+ld'k	Ꝅ	a:ꝅ
+ld'k	Ꞣ	a:ꞣ
+ld'k	Ʞ	a:ʞ t:K
+ld"l	l	A:L T:ꞁ
+ld"l	ĺ	A:Ĺ
+ld"l	ļ	A:Ļ
+ld"l	ľ	A:Ľ
+ld"l	ŀ	A:Ŀ
+ld"l	ł	A:Ł
+ld"l	ƚ	A:Ƚ
+ld"l	ȴ
+ld"l	ɫ	A:Ɫ
+ld"l	ɬ	A:Ɬ
+ld"l	ɭ
+ld"l	ʟ	s:L
+ld"l	ᴌ	s:Ł
+ld"l	ᶅ
+ld"l	ḷ	A:Ḷ
+ld"l	ḹ	A:Ḹ
+ld"l	ḻ	A:Ḻ
+ld"l	ḽ	A:Ḽ
+ld"l	ⱡ	A:Ⱡ
+ld"l	ꝇ	A:Ꝇ
+ld"l	ꝉ	A:Ꝉ
+ld"l	ꝲ
+ld"l	ꞁ	A:Ꞁ t:l
+ld"l	ꞎ
+ld"l	ꬷ
+ld"l	ꬸ
+ld"l	ꬹ
+ld'l	L	a:l T:Ꞁ S:ʟ
+ld'l	Ĺ	a:ĺ
+ld'l	Ļ	a:ļ
+ld'l	Ľ	a:ľ
+ld'l	Ŀ	a:ŀ
+ld'l	Ł	a:ł S:ᴌ
+ld'l	Ƚ	a:ƚ
+ld'l	Ḷ	a:ḷ
+ld'l	Ḹ	a:ḹ
+ld'l	Ḻ	a:ḻ
+ld'l	Ḽ	a:ḽ
+ld'l	Ⱡ	a:ⱡ
+ld'l	Ɫ	a:ɫ
+ld'l	Ꝇ	a:ꝇ
+ld'l	Ꝉ	a:ꝉ
+ld'l	Ꞁ	a:ꞁ t:L
+ld'l	Ɬ	a:ɬ
+ld"lj	ǉ	A:Ǉ
+ld'lj	Ǉ	a:ǉ
+ld'lj	ǈ
+ld"ll	ỻ	A:Ỻ
+ld'll	Ỻ	a:ỻ
+ld"ls	ʪ
+ld"lz	ɮ
+ld"lz	ʫ
+ld"m	m	A:M T:ɯ
+ld"m	ɯ	A:Ɯ t:m
+ld"m	ɰ
+ld"m	ɱ	A:Ɱ
+ld"m	ᴍ	s:M
+ld"m	ᴟ	-	ɯ
+ld"m	ᵯ
+ld"m	ᶆ
+ld"m	ḿ	A:Ḿ
+ld"m	ṁ	A:Ṁ
+ld"m	ṃ	A:Ṃ
+ld"m	ꝳ
+ld"m	ꟺ	s:Ɯ
+ld"m	ꬺ
+ld'm	M	a:m I:ꟽ S:ᴍ
+ld'w	Ɯ	a:ɯ S:ꟺ
+ld'm	Ḿ	a:ḿ
+ld'm	Ṁ	a:ṁ
+ld'm	Ṃ	a:ṃ
+ld'm	Ɱ	a:ɱ
+ld'm	ꟽ	i:M
+ld'm	ꟿ
+ld"n	n	A:N
+ld"n	ñ	A:Ñ
+ld"n	ń	A:Ń
+ld"n	ņ	A:Ņ
+ld"n	ň	A:Ň
+ld"n	ŉ
+ld"n	ŋ	A:Ŋ
+ld"n	ƞ	A:Ƞ
+ld"n	ǹ	A:Ǹ
+ld"n	ȵ
+ld"n	ɲ	A:Ɲ
+ld"n	ɳ
+ld"n	ɴ	s:N R:ᴎ
+ld"n	ᴎ	r:ɴ
+ld"n	ᵰ
+ld"n	ᶇ
+ld"n	ṅ	A:Ṅ
+ld"n	ṇ	A:Ṇ
+ld"n	ṉ	A:Ṉ
+ld"n	ṋ	A:Ṋ
+ld"n	ꝴ	A:ꝴ
+ld"n	ꞑ	A:Ꞑ
+ld"n	ꞥ	A:Ꞥ
+ld"n	ꬻ
+ld"n	ꬼ
+ld'n	N	a:n S:ɴ
+ld'n	Ñ	a:ñ
+ld'n	Ń	a:ń
+ld'n	Ņ	a:ņ
+ld'n	Ň	a:ň
+ld'n	Ŋ	a:ŋ
+ld'n	Ɲ	a:ɲ
+ld'n	Ǹ	a:ǹ
+ld'n	Ƞ	a:ƞ
+ld'n	Ṅ	a:ṅ
+ld'n	Ṇ	a:ṇ
+ld'n	Ṉ	a:ṉ
+ld'n	Ṋ	a:ṋ
+ld'n	Ꞑ	a:ꞑ
+ld'n	Ꞥ	a:ꞥ
+ld"nj	ǌ	A:Ǌ
+ld'nj	Ǌ	a:ǌ
+ld'nj	ǋ
+ld"nn	ʭ
+ld"o	o	A:O
+ld"o	ò	A:Ò
+ld"o	ó	A:Ó
+ld"o	ô	A:Ô
+ld"o	õ	A:Õ
+ld"o	ö	A:Ö
+ld"o	ø	A:Ø
+ld"o	ō	A:Ō
+ld"o	ŏ	A:Ŏ
+ld"o	ő	A:Ő
+ld"o	ơ	A:Ơ
+ld"o	ǒ	A:Ǒ
+ld"o	ǫ	A:Ǫ
+ld"o	ǭ	A:Ǭ
+ld"o	ǿ	A:Ǿ
+ld"o	ȍ	A:Ȍ
+ld"o	ȏ	A:Ȏ
+ld"o	ȫ	A:Ȫ
+ld"o	ȭ	A:Ȭ
+ld"o	ȯ	A:Ȯ
+ld"o	ȱ	A:Ȱ
+ld"o	ɔ	A:Ɔ	open o
+ld"o	ɵ	A:Ɵ
+ld"o	ɷ	-	closed ω
+ld"o	ɸ
+ld"o	ᴏ	s:O
+ld"o	ᴐ	s:Ɔ
+ld"o	ᴑ	-	o
+ld"o	ᴒ	-	ɔ
+ld"o	ᴓ	-	ø
+ld"o	ᴖ	-	half o
+ld"o	ᴗ	-	half o
+ld"o	ᶗ
+ld"o	ṍ	A:Ṍ
+ld"o	ṏ	A:Ṏ
+ld"o	ṑ	A:Ṑ
+ld"o	ṓ	A:Ṓ
+ld"o	ọ	A:Ọ
+ld"o	ỏ	A:Ỏ
+ld"o	ố	A:Ố
+ld"o	ồ	A:Ồ
+ld"o	ổ	A:Ổ
+ld"o	ỗ	A:Ỗ
+ld"o	ộ	A:Ộ
+ld"o	ớ	A:Ớ
+ld"o	ờ	A:Ờ
+ld"o	ở	A:Ở
+ld"o	ỡ	A:Ỡ
+ld"o	ợ	A:Ợ
+ld"o	ⱷ	-	tailless φ
+ld"o	ⱺ
+ld"o	ꝋ	A:Ꝋ
+ld"o	ꝍ	A:Ꝍ
+ld"o	ꞷ	A:Ꞷ
+ld"o	ꬽ
+ld"o	ꬾ
+ld"o	ꬿ
+ld'o	O	a:o S:ᴏ
+ld'o	Ò	a:ò
+ld'o	Ó	a:ó
+ld'o	Ô	a:ô
+ld'o	Õ	a:õ
+ld'o	Ö	a:ö
+ld'o	Ø	a:ø
+ld'o	Ō	a:ō
+ld'o	Ŏ	a:ŏ
+ld'o	Ő	a:ő
+ld'o	Ɔ	a:ɔ S:ᴐ	open O
+ld'o	Ɵ	a:ɵ
+ld'o	Ơ	a:ơ
+ld'o	Ǒ	a:ǒ
+ld'o	Ǫ	a:ǫ
+ld'o	Ǭ	a:ǭ
+ld'o	Ǿ	a:ǿ
+ld'o	Ȍ	a:ȍ
+ld'o	Ȏ	a:ȏ
+ld'o	Ȫ	a:ȫ
+ld'o	Ȭ	a:ȭ
+ld'o	Ȯ	a:ȯ
+ld'o	Ȱ	a:ȱ
+ld'o	Ṍ	a:ṍ
+ld'o	Ṏ	a:ṏ
+ld'o	Ṑ	a:ṑ
+ld'o	Ṓ	a:ṓ
+ld'o	Ọ	a:ọ
+ld'o	Ỏ	a:ỏ
+ld'o	Ố	a:ố
+ld'o	Ồ	a:ồ
+ld'o	Ổ	a:ổ
+ld'o	Ỗ	a:ỗ
+ld'o	Ộ	a:ộ
+ld'o	Ớ	a:ớ
+ld'o	Ờ	a:ờ
+ld'o	Ở	a:ở
+ld'o	Ỡ	a:ỡ
+ld'o	Ợ	a:ợ
+ld'o	Ꝋ	a:ꝋ
+ld'o	Ꝍ	a:ꝍ
+ld'o	Ꞷ	a:ꞷ
+ld:o	ʘ
+ld"oe	œ	A:Œ I:ꭀ T:ᴔ
+ld"oe	ɶ	s:Œ
+ld"oe	ᴔ	r:ꭀ t:œ
+ld"oe	ꭀ	r:ᴔ i:œ
+ld"oe	ꭁ	-	turned œ with stroke
+ld"oe	ꭂ	-	turned œ with horizontal stroke
+ld"oe	ꭢ	-	ɔe
+ld"oi	ƣ	A:Ƣ
+ld"oo	ꝏ	A:Ꝏ
+ld"oo	ꭃ	-	turned (o + ɔ)
+ld"oo	ꭄ	-	ꭃ with stroke
+ld"ou	ȣ	A:Ȣ
+ld"ou	ᴕ	s:Ȣ
+ld'oe	Œ	a:œ S:ɶ
+ld'oi	Ƣ	a:ƣ
+ld'oo	Ꝏ	a:ꝏ
+ld'ou	Ȣ	a:ȣ S:ᴕ
+ld"p	p	A:P
+ld"p	þ	A:Þ	th [θ] [ð]
+ld"p	ƥ	A:Ƥ
+ld"p	ƿ	A:Ƿ	/w/
+ld"p	ᴘ	s:P
+ld"p	ᵱ
+ld"p	ᵽ	A:Ᵽ
+ld"p	ᶈ
+ld"p	ṕ	A:Ṕ
+ld"p	ṗ	A:Ṗ
+ld"p	ꝑ	A:Ꝑ
+ld"p	ꝓ	A:Ꝓ
+ld"p	ꝕ	A:Ꝕ
+ld"p	ꝥ	A:Ꝥ	that
+ld"p	ꝧ	A:Ꝧ	that
+ld'p	P	a:p R:ꟼ S:ᴘ
+ld'p	Þ	a:þ	th /θ/ /ð/
+ld'p	Ƥ	a:ƥ
+ld'p	Ƿ	a:ƿ	/w/
+ld'p	Ṕ	a:ṕ
+ld'p	Ṗ	a:ṗ
+ld'p	Ᵽ	a:ᵽ
+ld'p	Ꝑ	a:ꝑ
+ld'p	Ꝓ	a:ꝓ
+ld'p	Ꝕ	a:ꝕ
+ld'p	Ꝥ	a:ꝥ	that
+ld'p	Ꝧ	a:ꝧ	that
+ld'p	ꟼ	r:P
+ld"q	q	A:Q
+ld"q	ɋ	A:Ɋ
+ld"q	ʠ	A:ʠ
+ld"q	ꝗ	A:Ꝗ
+ld"q	ꝙ	A:Ꝙ
+ld'q	Q	a:q
+ld'q	Ɋ	a:ɋ
+ld'q	Ꝗ	a:ꝗ
+ld'q	Ꝙ	a:ꝙ
+ld"qp	ȹ
+ld"r	r	A:R T:ɹ
+ld"r	ŕ	A:Ŕ
+ld"r	ŗ	A:Ŗ
+ld"r	ř	A:Ř
+ld"r	ȑ	A:Ȑ
+ld"r	ȓ	A:Ȓ
+ld"r	ɍ	A:Ɍ
+ld"r	ɣ	A:Ɣ
+ld"r	ɤ
+ld"r	ɹ	t:r
+ld"r	ɺ	t:ɼ
+ld"r	ɻ
+ld"r	ɼ	T:ɺ
+ld"r	ɽ	A:Ɽ
+ld"r	ɾ	r:ɿ
+ld"r	ɿ	R:ɾ
+ld"r	ʀ	A:Ʀ s:R R:ᴙ I:ʁ T:ᴚ
+ld"r	ʁ	i:ʀ t:ᴙ
+ld"r	ʅ	-	ɿ with retroflex hook
+ld"r	ᴙ	r:ʀ I:ᴚ T:ʁ
+ld"r	ᴚ	i:ᴙ t:ʀ
+ld"r	ᵲ
+ld"r	ᵳ
+ld"r	ᶉ
+ld"r	ṙ	A:Ṙ
+ld"r	ṛ	A:Ṛ
+ld"r	ṝ	A:Ṝ
+ld"r	ṟ	A:Ṟ
+ld"r	ⱹ
+ld"r	ꝛ	A:Ꝛ	round r (half R), -rum, 2, et (⁊c → ꝛc → etc)
+ld"r	ꝝ	A:Ꝝ	-rum (ꝛ with stoke)
+ld"r	ꝵ
+ld"r	ꝶ	s:?
+ld"r	ꞃ	A:Ꞃ	Insular r
+ld"r	ꞟ	A:Ꞟ	Volapük UE ɛu
+ld"r	ꞧ	A:Ꞧ
+ld"r	ꭅ
+ld"r	ꭆ	s:?
+ld"r	ꭇ	-	r
+ld"r	ꭈ
+ld"r	ꭉ
+ld"r	ꭊ
+ld"r	ꭋ
+ld"r	ꭌ
+ld'r	R	a:r S:ʀ
+ld'r	Ŕ	a:ŕ
+ld'r	Ŗ	a:ŗ
+ld'r	Ř	a:ř
+ld'r	Ɣ	a:ɣ
+ld'r	Ʀ	a:ʀ
+ld'r	Ȑ	a:ȑ
+ld'r	Ȓ	a:ȓ
+ld'r	Ɍ	a:ɍ
+ld'r	Ṙ	a:ṙ
+ld'r	Ṛ	a:ṛ
+ld'r	Ṝ	a:ṝ
+ld'r	Ṟ	a:ṟ
+ld'r	Ɽ	a:ɽ
+ld'r	Ꝛ	a:ꝛ	round R (half R), -rum, 2
+ld'r	Ꝝ	a:ꝝ	-rum (Ꝛ with stoke)
+ld'r	Ꞃ	a:ꞃ	Insular R
+ld'r	Ꞟ	a:ꞟ	Volapük UE ƐU
+ld'r	Ꞧ	a:ꞧ
+ld"s	s	A:S
+ld"s	ś	A:Ś
+ld"s	ŝ	A:Ŝ
+ld"s	ş	A:Ş
+ld"s	š	A:Š
+ld"s	ſ	-	s
+ld"s	ƨ	A:Ƨ	tone two
+ld"s	ƪ
+ld"s	ƽ	A:Ƽ	tone five
+ld"s	ș	A:Ș
+ld"s	ȿ	A:Ȿ
+ld"s	ʂ
+ld"s	ʃ	A:Ʃ
+ld"s	ʆ
+ld"s	ᵴ
+ld"s	ᶊ
+ld"s	ᶋ
+ld"s	ᶘ
+ld"s	ṡ	A:Ṡ
+ld"s	ṣ	A:Ṣ
+ld"s	ṥ	A:Ṥ
+ld"s	ṧ	A:Ṧ
+ld"s	ṩ	A:Ṩ
+ld"s	ẛ	-	ṡ
+ld"s	ẜ	-	ꞩ
+ld"s	ẝ	-	ſ with high stroke
+ld"s	ꜱ	s:S
+ld"s	ꝭ	A:Ꝭ
+ld"s	ꝸ
+ld"s	ꞅ	A:Ꞅ	Insular s
+ld"s	ꞩ	A:Ꞩ
+ld"s	ꭍ	-	ʃ
+ld's	S	a:s S:ꜱ
+ld's	Ś	a:ś
+ld's	Ŝ	a:ŝ
+ld's	Ş	a:ş
+ld's	Š	a:š
+ld's	Ƨ	a:ƨ	tone two
+ld's	Ƽ	a:ƽ	tone five
+ld's	Ș	a:ș
+ld's	Ṡ	a:ṡ
+ld's	Ṣ	a:ṣ
+ld's	Ṥ	a:ṥ
+ld's	Ṧ	a:ṧ
+ld's	Ṩ	a:ṩ
+ld's	Ȿ	a:ȿ
+ld's	Ꝭ	a:ꝭ
+ld's	Ꞅ	a:ꞅ	Insular S
+ld's	Ꞩ	a:ꞩ
+ld"st	ﬅ	-	st
+ld"st	ﬆ
+ld"t	t	A:T T:ʇ
+ld"t	ţ	A:Ţ
+ld"t	ť	A:Ť
+ld"t	ŧ	A:Ŧ
+ld"t	ƫ
+ld"t	ƭ	A:Ƭ
+ld"t	ț	A:Ț
+ld"t	ȶ
+ld"t	ʇ	A:Ʇ t:t
+ld"t	ʈ	A:Ʈ
+ld"t	ᴛ	s:T
+ld"t	ᵵ
+ld"t	ṫ	A:Ṫ
+ld"t	ṭ	A:Ṭ
+ld"t	ṯ	A:Ṯ
+ld"t	ṱ	A:Ṱ
+ld"t	ẗ
+ld"t	ⱦ	A:Ⱦ
+ld"t	ꝷ
+ld"t	ꞇ	A:Ꞇ	Insular t
+ld't	T	a:t T:Ʇ S:ᴛ
+ld't	Ţ	a:ţ
+ld't	Ť	a:ť
+ld't	Ŧ	a:ŧ
+ld't	Ƭ	a:ƭ
+ld't	Ʈ	a:ʈ
+ld't	Ț	a:ț
+ld't	Ⱦ	a:ⱦ
+ld't	Ṫ	a:ṫ
+ld't	Ṭ	a:ṭ
+ld't	Ṯ	a:ṯ
+ld't	Ṱ	a:ṱ
+ld't	Ꞇ	a:ꞇ	Insular T
+ld't	Ʇ	a:ʇ t:T
+ld"tc	ʨ
+ld"th	ᵺ
+ld"ts	ʦ
+ld"ts	ʧ
+ld"tz	ꜩ	A:Ꜩ
+ld'tz	Ꜩ	a:ꜩ
+ld"u	u	A:U
+ld"u	ù	A:Ù
+ld"u	ú	A:Ú
+ld"u	û	A:Û
+ld"u	ü	A:Ü
+ld"u	ũ	A:Ũ
+ld"u	ū	A:Ū
+ld"u	ŭ	A:Ŭ
+ld"u	ů	A:Ů
+ld"u	ű	A:Ű
+ld"u	ų	A:Ų
+ld"u	ư	A:Ư
+ld"u	ǔ	A:Ǔ
+ld"u	ǖ	A:Ǖ
+ld"u	ǘ	A:Ǘ
+ld"u	ǚ	A:Ǚ
+ld"u	ǜ	A:Ǜ
+ld"u	ȕ	A:Ȕ
+ld"u	ȗ	A:Ȗ
+ld"u	ʉ	A:Ʉ
+ld"u	ʊ	A:Ʊ
+ld"u	ᴜ	s:U
+ld"u	ᴝ	-	u
+ld"u	ᴞ	-	ü
+ld"u	ᵾ	s:Ʉ
+ld"u	ᵿ
+ld"u	ᶙ
+ld"u	ṳ	A:Ṳ
+ld"u	ṵ	A:Ṵ
+ld"u	ṷ	A:Ṷ
+ld"u	ṹ	A:Ṹ
+ld"u	ṻ	A:Ṻ
+ld"u	ụ	A:Ụ
+ld"u	ủ	A:Ủ
+ld"u	ứ	A:Ứ
+ld"u	ừ	A:Ừ
+ld"u	ử	A:Ử
+ld"u	ữ	A:Ữ
+ld"u	ự	A:Ự
+ld"u	ꭎ
+ld"u	ꭏ
+ld"u	ꭒ
+ld'u	U	a:u S:ᴜ
+ld'u	Ù	a:ù
+ld'u	Ú	a:ú
+ld'u	Û	a:û
+ld'u	Ü	a:ü
+ld'u	Ũ	a:ũ
+ld'u	Ū	a:ū
+ld'u	Ŭ	a:ŭ
+ld'u	Ů	a:ů
+ld'u	Ű	a:ű
+ld'u	Ų	a:ų
+ld'u	Ư	a:ư
+ld'u	Ʊ	a:ʊ
+ld'u	Ǔ	a:ǔ
+ld'u	Ǖ	a:ǖ
+ld'u	Ǘ	a:ǘ
+ld'u	Ǚ	a:ǚ
+ld'u	Ǜ	a:ǜ
+ld'u	Ȕ	a:ȕ
+ld'u	Ȗ	a:ȗ
+ld'u	Ʉ	a:ʉ S:ᵾ
+ld'u	Ṳ	a:ṳ
+ld'u	Ṵ	a:ṵ
+ld'u	Ṷ	a:ṷ
+ld'u	Ṹ	a:ṹ
+ld'u	Ṻ	a:ṻ
+ld'u	Ụ	a:ụ
+ld'u	Ủ	a:ủ
+ld'u	Ứ	a:ứ
+ld'u	Ừ	a:ừ
+ld'u	Ử	a:ử
+ld'u	Ữ	a:ữ
+ld'u	Ự	a:ự
+ld"ue	ᵫ
+ld"ui	ꭐ	T:ꭑ
+ld"ui	ꭑ	t:ꭐ
+ld"uo	ꭣ
+ld"v	v	A:V T:ʌ
+ld"v	ʋ	A:Ʋ
+ld"v	ʌ	A:Ʌ t:v
+ld"v	ᴠ	s:V
+ld"v	ᶌ
+ld"v	ṽ	A:Ṽ
+ld"v	ṿ	A:Ṿ
+ld"v	ỽ	A:Ỽ	Middle-Welsh /u/ /v/ /w/
+ld"v	ⱱ
+ld"v	ⱴ
+ld"v	ꝟ	A:Ꝟ
+ld'v	V	a:v T:Ʌ S:ᴠ
+ld'v	Ʋ	a:ʋ
+ld'v	Ʌ	a:ʌ t:V
+ld'v	Ṽ	a:ṽ
+ld'v	Ṿ	a:ṿ
+ld'v	Ỽ	a:ỽ	Middle-Welsh /u/ /v/ /w/
+ld'v	Ꝟ	a:ꝟ
+ld"vy	ꝡ	A:Ꝡ
+ld'vy	Ꝡ	a:ꝡ
+ld"w	w	A:W T:ʍ
+ld"w	ŵ	A:Ŵ
+ld"w	ʍ	t:w
+ld"w	ᴡ	s:W
+ld"w	ẁ	A:Ẁ
+ld"w	ẃ	A:Ẃ
+ld"w	ẅ	A:Ẅ
+ld"w	ẇ	A:Ẇ
+ld"w	ẉ	A:Ẉ
+ld"w	ẘ
+ld"w	ⱳ	A:Ⱳ
+ld'w	W	a:w S:ᴡ
+ld'w	Ŵ	a:ŵ
+ld'w	Ẁ	a:ẁ
+ld'w	Ẃ	a:ẃ
+ld'w	Ẅ	a:ẅ
+ld'w	Ẇ	a:ẇ
+ld'w	Ẉ	a:ẉ
+ld'w	Ⱳ	a:ⱳ
+ld"ww	ʬ
+ld"x	x	A:X
+ld"x	ᶍ
+ld"x	ẋ	A:Ẋ
+ld"x	ẍ	A:Ẍ
+ld"x	ꭓ	A:Ꭓ	χ
+ld"x	ꭔ	-	ꭓ
+ld"x	ꭕ	-	ꭓ
+ld"x	ꭖ	-	x
+ld"x	ꭗ	-	x
+ld"x	ꭘ	-	x
+ld"x	ꭙ	-	x
+ld'x	X	a:x
+ld'x	Ẋ	a:ẋ
+ld'x	Ẍ	a:ẍ
+ld'x	Ꭓ	a:ꭓ	Χ
+ld"y	y	A:Y T:ʎ
+ld"y	ý	A:Ý
+ld"y	ÿ	A:Ÿ
+ld"y	ŷ	A:Ŷ
+ld"y	ƛ	-	λ
+ld"y	ƴ	A:Ƴ
+ld"y	ȳ	A:Ȳ
+ld"y	ɏ	A:Ɏ
+ld"y	ʎ	t:y
+ld"y	ʏ	s:Y
+ld"y	ẏ	A:Ẏ
+ld"y	ẙ
+ld"y	ỳ	A:Ỳ
+ld"y	ỵ	A:Ỵ
+ld"y	ỷ	A:Ỷ
+ld"y	ỹ	A:Ỹ
+ld"y	ỿ	A:Ỿ
+ld"y	ꝩ	A:Ꝩ	/u/ /v/ /w/
+ld"y	ꭚ
+ld'y	Y	a:y S:ʏ
+ld'y	Ý	a:ý
+ld'y	Ŷ	a:ŷ
+ld'y	Ÿ	a:ÿ
+ld'y	Ƴ	a:ƴ
+ld'y	Ȳ	a:ȳ
+ld'y	Ɏ	a:ɏ
+ld'y	Ẏ	a:ẏ
+ld'y	Ỳ	a:ỳ
+ld'y	Ỵ	a:ỵ
+ld'y	Ỷ	a:ỷ
+ld'y	Ỹ	a:ỹ
+ld'y	Ỿ	a:ỿ
+ld'y	Ꝩ	a:ꝩ	/u/ /v/ /w/
+ld"z	z	A:Z
+ld"z	ź	A:Ź
+ld"z	ż	A:Ż
+ld"z	ž	A:Ž
+ld"z	ƶ	A:Ƶ
+ld"z	ƹ	A:Ƹ r:ʒ
+ld"z	ƺ
+ld"z	ǯ	A:Ǯ
+ld"z	ȝ	A:Ȝ	yogh
+ld"z	ȥ	A:Ȥ
+ld"z	ɀ	A:Ɀ
+ld"z	ʐ	A:ʐ
+ld"z	ʑ	A:ʑ
+ld"z	ʒ	A:Ʒ R:ƹ	ezh
+ld"z	ʓ
+ld"z	ᴢ	s:Z
+ld"z	ᴣ	s:Ʒ
+ld"z	ᵶ
+ld"z	ᶎ
+ld"z	ᶚ
+ld"z	ẑ	A:Ẑ
+ld"z	ẓ	A:Ẓ
+ld"z	ẕ	A:Ẕ
+ld"z	ⱬ	A:Ⱬ
+ld"z	ꝣ	A:Ꝣ	Visigothic z
+ld'z	Z	a:z S:ᴢ
+ld'z	Ź	a:ź
+ld'z	Ż	a:ż
+ld'z	Ž	a:ž
+ld'z	Ƶ	a:ƶ
+ld'z	Ʒ	a:ʒ R:Ƹ S:ᴣ	ezh
+ld'z	Ƹ	a:ƹ r:Ʒ
+ld'z	Ǯ	a:ǯ
+ld'z	Ȝ	a:ȝ	yogh
+ld'z	Ȥ	a:ȥ
+ld'z	Ẑ	a:ẑ
+ld'z	Ẓ	a:ẓ
+ld'z	Ẕ	a:ẕ
+ld'z	Ⱬ	a:ⱬ
+ld'z	Ɀ	a:ɀ
+ld'z	Ꝣ	a:ꝣ	Visigothic Z
+ld:z	ƻ	-	2 with stroke
+# 拉丁字母 }
+
+# 國際音標 {
+yb	TODO
+# 國際音標 }
+
+# 計量單位 {
+dw:am	㏂	a.m.	下午
+dw:ampere:per:minute	㏟	amperes per minute	安（培）/分
+dw:angstrom	Å	angstrom	埃
+dw:angstrom	Å	angstrom	埃
+dw:astronomical:unit	㍳	astronomical unit	天文單位
+dw:bar	㍴	bar	巴
+dw:becquerel	㏃	becquerel	貝可（勒爾）
+dw:calorie	㎈	calorie	卡（路里）
+dw:calorie:per:kilogram	㏆	calories per kilogram	卡（路里）/千克
+dw:candela	㏅	candela	坎德拉（燭光）
+dw:celsius	℃	celsius	攝氏度
+dw:centimeter	㎝	centimeter	釐米
+dw:centimeter2	㎠	square centimeter	平方釐米
+dw:centimeter3	㎤	cubic centimeter	立方釐米
+dw:cubic:centimeter	㏄	cubic centimeter	立方釐米（毫升）
+dw:deca	㍲	deca-	十
+dw:decibel	㏈	decibel	分貝
+dw:deciliter	㎗	deciliter	分升
+dw:decimeter	㍷	decimeter	分米
+dw:decimeter2	㍸	square decimeter	平方分米
+dw:decimeter3	㍹	cubic decimeter	立方分米
+dw:degree	°	degree	（角）度
+dw:electronvolt	㋎	electronvolt	電子伏（特）
+dw:erg	㋍	erg	爾格
+dw:fahrenheit	℉	fahrenheit	華氏度
+dw:femtometer	㎙	femtometer	飛米
+dw:gal	㏿	gal	伽（利略）
+dw:gigabyte	㎇	gigabyte	吉位元組
+dw:gigahertz	㎓	gigahertz	吉赫（茲）
+dw:gigapascal	㎬	gigapascal	吉帕（斯卡）
+dw:gray	㏉	gray	格雷
+dw:hectare	㏊	hectare	公頃
+dw:hectogram	㋌	hectogram	百克
+dw:hectopascal	㍱	hectopascal	百帕（斯卡）
+dw:hertz	㎐	hertz	赫（茲）
+dw:horsepower	㏋	horsepower	馬力
+dw:inch	㏌	inch	英寸
+dw:international:unit	㍺	international unit	國際單位
+dw:kiloampere	㎄	kiloampere	千安（培）
+dw:kilobyte	㎅	kilobyte	千位元組
+dw:kilocalorie	㎉	kilocalorie	千卡（路里）
+dw:kilogram	㎏	kilogram	千克
+dw:kilohertz	㎑	kilohertz	千赫（茲）
+dw:kilokelvin	㏍	kilokelvin	千開（爾文）
+dw:kiloliter	㎘	kiloliter	千升
+dw:kilometer	㎞	kilometer	千米
+dw:kilometer	㏎	kilometer	千米
+dw:kilometer2	㎢	square kilometer	平方千米
+dw:kilometer3	㎦	cubic kilometer	立方千米
+dw:kiloohm	㏀	kiloohm	千歐（姆）
+dw:kilopascal	㎪	kilopascal	千帕（斯卡）
+dw:kilovolt	㎸	kilovolt	千伏（特）
+dw:kilowatt	㎾	kilowatt	千瓦（特）
+dw:knot	㏏	knot	節
+dw:lumen	㏐	lumen	流明
+dw:lux	㏓	lux	勒克斯
+dw:megabyte	㎆	megabyte	兆位元組
+dw:megahertz	㎒	megahertz	兆赫（茲）
+dw:megaohm	㏁	megaohm	百萬歐（姆）
+dw:megapascal	㎫	megapascal	兆帕（斯卡）
+dw:megavolt	㎹	megavolt	百萬伏（特）
+dw:megawatt	㎿	megawatt	百萬瓦（特）
+dw:meter2	㎡	square meter	平方米
+dw:meter3	㎥	cubic meter	立方米
+dw:meter:per:second	㎧	meters per second	米/秒
+dw:meter:per:second2	㎨	meters per second²	米/秒²
+dw:microampere	㎂	microampere	微安（培）
+dw:microfarad	㎌	microfarad	微法（拉第）
+dw:microgram	㎍	microgram	微克
+dw:microliter	㎕	microliter	微升
+dw:micrometer	㎛	micrometer	微米
+dw:microsecond	㎲	microsecond	微秒
+dw:microvolt	㎶	microvolt	微伏（特）
+dw:microwatt	㎼	microwatt	微瓦（特）
+dw:mil	㏕	mil	毫英寸
+dw:milliampere	㎃	milliampere	毫安（培）
+dw:millibar	㏔	millibar	毫巴
+dw:milligram	㎎	milligram	毫克
+dw:milliliter	㎖	milliliter	毫升
+dw:millimeter	㎜	millimeter	毫米
+dw:millimeter2	㎟	square millimeter	平方毫米
+dw:millimeter3	㎣	cubic millimeter	立方毫米
+dw:millisecond	㎳	millisecond	毫秒
+dw:millivolt	㎷	millivolt	毫伏（特）
+dw:milliwatt	㎽	milliwatt	毫瓦（特）
+dw:minute	′	minute of arc	角分
+dw:mole	㏖	mole	摩爾
+dw:nanoampere	㎁	nanoampere	毫微安（培）
+dw:nanofarad	㎋	nanofarad	毫微法（拉第）
+dw:nanometer	㎚	nanometer	納米
+dw:nanosecond	㎱	nanosecond	納秒
+dw:nanovolt	㎵	nanovolt	毫微伏（特）
+dw:nanowatt	㎻	nanowatt	毫微瓦（特）
+dw:parsec	㍶	parsec	秒差距
+dw:pascal	㎩	pascal	帕（斯卡）
+dw:per:cent	％	per cent	百分率
+dw:per:mille	‰	per mille	千分率
+dw:per:million	㏙	parts per million	百萬分率
+dw:per:ten:thousand	‱	per ten thousand	萬分率
+dw:picoampere	㎀	picoampere	皮安（培）
+dw:picofarad	㎊	picofarad	皮法（拉第）
+dw:picosecond	㎰	picosecond	皮秒
+dw:picovolt	㎴	picovolt	皮伏（特）
+dw:picowatt	㎺	picowatt	皮瓦（特）
+dw:pm	㏘	p.m.	下午
+dw:potential:of:hydrogen	㏗	potential of hydrogen	酸鹼度
+dw:radian	㎭	radian	弧度
+dw:radian:per:second	㎮	radians per second	弧度/秒
+dw:radian:per:second2	㎯	radians per second²	弧度/秒²
+dw:second	″	second of arc	角秒
+dw:sievert	㏜	sievert	希沃特
+dw:steradian	㏛	steradian	球面度
+dw:terahertz	㎔	terahertz	太赫（茲）
+dw:volt:per:minute	㏞	volts per minute	伏（特）/分
+dw:weber	㏝	weber	韋伯
+# 計量單位 }
+
+# 貨币單位 {
+hb:afghani	؋
+hb:austral	₳
+hb:baht	฿
+hb:bitcoin	₿
+hb:cedi	₵
+hb:cent	¢
+hb:cent	￠
+hb:colon	₡
+hb:cruzeiro	₢
+hb:currency	¤
+hb:dollar	$
+hb:dollar	＄
+hb:dong	₫
+hb:drachma	₯
+hb:dram	֏
+hb:ecu	₠
+hb:euro	€
+hb:florin	ƒ
+hb:franc	₣
+hb:guarani	₲
+hb:hryvnia	₴
+hb:kip	₭
+hb:lari	₾
+hb:lira	£
+hb:lira	₤
+hb:lira:turkish	₺
+hb:livre:tournois	₶
+hb:manat	₼
+hb:mark	ℳ
+hb:mark:nordic	₻
+hb:mill	₥
+hb:naira	₦
+hb:penny	₰
+hb:peseta	₧
+hb:peso	₱
+hb:pound	£
+hb:pound	￡
+hb:rial	﷼
+hb:riel	៛
+hb:ruble	₽
+hb:rupee	₨
+hb:rupee:bengali	৲
+hb:rupee:bengali	৳
+hb:rupee:gujarati	૱
+hb:rupee:indian	₹
+hb:rupee:tamil	௹
+hb:shekel	₪
+hb:spesmilo	₷
+hb:tenge	₸
+hb:tugrik	₮
+hb:won	₩
+hb:won	￦
+hb:yen	¥
+hb:yen	元
+hb:yen	円
+hb:yen	圆
+hb:yen	圓
+hb:yen	￥
+# 貨币單位 }
+
+# 箭頭 {
+# s:上 x:下 z:左 y:右 g:拐 jc:交叉 ssz:順時針 nsz:逆時針
+jt	→
+jt	←
+jt	↓
+jt	↑
+jt:y	→
+jt:z	←
+jt:x	↓
+jt:s	↑
+jt:zy	↔
+jt:yz	↔
+jt:sx	↕
+jt:xs	↕
+jt:sx	↨
+jt:xs	↨
+jt:yx	↘
+jt:xy	↘
+jt:ys	↗
+jt:sy	↗
+jt:zx	↙
+jt:xz	↙
+jt:zs	↖
+jt:sz	↖
+jt:zy	↮
+jt:yz	↮
+jt:y	↛
+jt:z	↚
+jt:y	⟶
+jt:z	⟵
+jt:zy	⟷
+jt:yz	⟷
+jt:y	⇥
+jt:z	⇤
+jt:zy	↹
+jt:yz	↹
+jt:yz	⇄
+jt:zy	⇄
+jt:sx	⇅
+jt:xs	⇅
+jt:zy	⇆
+jt:yz	⇆
+jt:xs	⇵
+jt:sx	⇵
+jt:yy	⇉
+jt:zz	⇇
+jt:xx	⇊
+jt:ss	⇈
+jt:yyy	⇶
+jt:zzz	⬱
+jt:y	⇒
+jt:z	⇐
+jt:x	⇓
+jt:s	⇑
+jt:zy	⇔
+jt:yz	⇔
+jt:sx	⇕
+jt:xs	⇕
+jt:y	⇏
+jt:z	⇍
+jt:zy	⇎
+jt:yz	⇎
+jt:yx	⇘
+jt:xy	⇘
+jt:ys	⇗
+jt:sy	⇗
+jt:zx	⇙
+jt:xz	⇙
+jt:zs	⇖
+jt:sz	⇖
+jt:y	⟹
+jt:z	⟸
+jt:zy	⟺
+jt:yz	⟺
+jt:y	⇛
+jt:z	⇚
+jt:y	⭆
+jt:z	⭅
+jt:x	⟱
+jt:s	⟰
+jt:yz	⇌
+jt:zy	⇌
+jt:zy	⇋
+jt:yz	⇋
+jt:sx	⥮
+jt:xs	⥮
+jt:xs	⥯
+jt:sx	⥯
+jt:y	⇀
+jt:y	⇁
+jt:z	↼
+jt:z	↽
+jt:x	⇃
+jt:x	⇂
+jt:s	↿
+jt:s	↾
+jt:y	⥓
+jt:y	⥗
+jt:z	⥒
+jt:z	⥖
+jt:x	⥕
+jt:x	⥙
+jt:s	⥔
+jt:s	⥘
+jt:y	⥛
+jt:y	⥟
+jt:z	⥚
+jt:z	⥞
+jt:x	⥝
+jt:x	⥡
+jt:s	⥜
+jt:s	⥠
+jt:y	⥤
+jt:z	⥢
+jt:x	⥥
+jt:s	⥣
+jt:yz	⥨
+jt:zy	⥨
+jt:zy	⥦
+jt:yz	⥦
+jt:yz	⥩
+jt:zy	⥩
+jt:zy	⥧
+jt:yz	⥧
+jt:y	⥬
+jt:y	⥭
+jt:z	⥪
+jt:z	⥫
+jt:yz	⥋
+jt:zy	⥋
+jt:zy	⥊
+jt:yz	⥊
+jt:sx	⥍
+jt:xs	⥍
+jt:xs	⥌
+jt:sx	⥌
+jt:zy	⥎
+jt:yz	⥎
+jt:zy	⥐
+jt:yz	⥐
+jt:sx	⥏
+jt:xs	⥏
+jt:sx	⥑
+jt:xs	⥑
+jt:y	⥰
+jt:yg	↬
+jt:zg	↫
+jt:zg	↩
+jt:yg	↪
+jt:ssz	↻
+jt:nsz	↺
+jt:ssz	⟳
+jt:nsz	⟲
+jt:ssz	⥁
+jt:nsz	⥀
+jt:ssz	↷
+jt:nsz	↶
+jt:ssz	⤸
+jt:nsz	⤹
+jt:ssz	⤼
+jt:nsz	⤽
+jt:nsz	⤺
+jt:nsz	⤻
+jt:ssz	⤾
+jt:nsz	⤿
+jt:zg	↰
+jt:yg	↱
+jt:zg	↲
+jt:yg	↳
+jt:xg	↴
+jt:zg	↵
+jt:xg	⬎
+jt:sg	⬏
+jt:xg	⬐
+jt:sg	⬑
+jt:y	↦
+jt:z	↤
+jt:x	↧
+jt:s	↥
+jt:y	⤅
+jt:z	⬶
+jt:y	⟼
+jt:z	⟻
+jt:y	⤇
+jt:z	⤆
+jt:y	⟾
+jt:z	⟽
+jt:y	⇸
+jt:z	⇷
+jt:x	⤈
+jt:s	⤉
+jt:zy	⇹
+jt:yz	⇹
+jt:y	⇻
+jt:z	⇺
+jt:x	⇟
+jt:s	⇞
+jt:zy	⇼
+jt:yz	⇼
+jt:y	⤃
+jt:z	⤂
+jt:zy	⤄
+jt:yz	⤄
+jt:y	↠
+jt:z	↞
+jt:x	↡
+jt:s	↟
+jt:y	⤀
+jt:z	⬴
+jt:y	⤁
+jt:z	⬵
+jt:y	⇢
+jt:z	⇠
+jt:x	⇣
+jt:s	⇡
+jt:y	⤍
+jt:z	⤌
+jt:y	⤏
+jt:z	⤎
+jt:y	⤑
+jt:z	⬸
+jt:y	⤐
+jt:z	⬷
+jt:y	↣
+jt:z	↢
+jt:y	⤔
+jt:z	⬹
+jt:y	⤕
+jt:z	⬺
+jt:y	⤖
+jt:z	⬻
+jt:y	⤗
+jt:z	⬼
+jt:y	⤘
+jt:z	⬽
+jt:y	⤚
+jt:z	⤙
+jt:y	⤜
+jt:z	⤛
+jt:y	⤞
+jt:z	⤝
+jt:y	⤠
+jt:z	⤟
+jt:y	⥽
+jt:z	⥼
+jt:x	⥿
+jt:s	⥾
+jt:y	⇨
+jt:z	⇦
+jt:x	⇩
+jt:s	⇧
+jt:zy	⬄
+jt:yz	⬄
+jt:yx	⬂
+jt:xy	⬂
+jt:ys	⬀
+jt:sy	⬀
+jt:zx	⬃
+jt:xz	⬃
+jt:zs	⬁
+jt:sz	⬁
+jt:y	⮕
+jt:z	⬅
+jt:x	⬇
+jt:s	⬆
+jt:yx	⬊
+jt:xy	⬊
+jt:ys	⬈
+jt:sy	⬈
+jt:zx	⬋
+jt:xz	⬋
+jt:zs	⬉
+jt:sz	⬉
+jt:zy	⬌
+jt:yz	⬌
+jt:sx	⬍
+jt:xs	⬍
+jt:zg	⮨
+jt:yg	⮩
+jt:zg	⮪
+jt:yg	⮫
+jt:xg	⮯
+jt:xg	⮮
+jt:sg	⮭
+jt:sg	⮬
+jt:zg	⮰
+jt:yg	⮱
+jt:zg	⮲
+jt:yg	⮳
+jt:xg	⮷
+jt:xg	⮶
+jt:sg	⮵
+jt:sg	⮴
+jt:y	⮊
+jt:z	⮈
+jt:x	⮋
+jt:s	⮉
+jt:y	⮚
+jt:z	⮘
+jt:x	⮛
+jt:s	⮙
+jt:y	⮞
+jt:z	⮜
+jt:x	⮟
+jt:s	⮝
+jt:yx	⇲
+jt:xy	⇲
+jt:zs	⇱
+jt:sz	⇱
+jt:zs	↸
+jt:sz	↸
+jt:s	⇪
+jt:s	⇫
+jt:s	⇬
+jt:s	⇭
+jt:s	⇮
+jt:s	⇯
+jt:s	⮸
+jt:y	⇰
+jt:y	⇾
+jt:z	⇽
+jt:zy	⇿
+jt:yz	⇿
+jt:sx	⇳
+jt:xs	⇳
+jt:x	↯
+jt:x	⭍
+jt:zy	↭
+jt:yz	↭
+jt:y	⇝
+jt:z	⇜
+jt:y	⟿
+jt:z	⬳
+jt:y	↝
+jt:z	↜
+jt:y	⤳
+jt:z	⬿
+jt:xg	⤵
+jt:sg	⤴
+jt:zg	⤶
+jt:yg	⤷
+jt:y	⥱
+jt:z	⭀
+jt:y	⥵
+jt:z	⭊
+jt:y	⭈
+jt:z	⭂
+jt:y	⥲
+jt:z	⭉
+jt:y	⥴
+jt:z	⥳
+jt:y	⭇
+jt:z	⭁
+jt:y	⭌
+jt:z	⭋
+jt:y	⥸
+jt:z	⥶
+jt:y	⥹
+jt:z	⥻
+jt:y	⭃
+jt:z	⥷
+jt:y	⥺
+jt:z	⭄
+jt:y	⟴
+jt:z	⬲
+jt:y	⇴
+jt:z	⬰
+jt:zy	⥈
+jt:yz	⥈
+jt:s	⥉
+jt:y	⥇
+jt:z	⬾
+jt:y	⥂
+jt:yz	⥂
+jt:zy	⥂
+jt:z	⥃
+jt:zy	⥃
+jt:yz	⥃
+jt:z	⥄
+jt:yz	⥄
+jt:zy	⥄
+jt:zg	⮒
+jt:yg	⮓
+jt:zg	⮐
+jt:yg	⮑
+jt:ys	⤤
+jt:sy	⤤
+jt:yx	⤥
+jt:xy	⤥
+jt:zs	⤣
+jt:sz	⤣
+jt:zx	⤦
+jt:xz	⤦
+jt:jc	⤡
+jt:jc	⤢
+jt:jc	⤧
+jt:jc	⤩
+jt:jc	⤨
+jt:jc	⤪
+jt:jc	⤬
+jt:jc	⤫
+jt:jc	⤯
+jt:jc	⤰
+jt:jc	⤮
+jt:jc	⤭
+jt:jc	⤱
+jt:jc	⤲
+jt:nsz	⮔
+jt:ssz	⭮
+jt:nsz	⭯
+jt:zg	⮌
+jt:yg	⮎
+jt:xg	⮏
+jt:sg	⮍
+jt:y	⭢
+jt:z	⭠
+jt:x	⭣
+jt:s	⭡
+jt:zy	⭤
+jt:yz	⭤
+jt:sx	⭥
+jt:xs	⭥
+jt:yx	⭨
+jt:xy	⭨
+jt:ys	⭧
+jt:sy	⭧
+jt:zx	⭩
+jt:xz	⭩
+jt:zs	⭦
+jt:sz	⭦
+jt:yz	⮂
+jt:zy	⮂
+jt:sx	⮁
+jt:xs	⮁
+jt:zy	⮀
+jt:yz	⮀
+jt:xs	⮃
+jt:sx	⮃
+jt:yy	⮆
+jt:zz	⮄
+jt:xx	⮇
+jt:ss	⮅
+jt:y	⭬
+jt:z	⭪
+jt:x	⭭
+jt:s	⭫
+jt:zg	⮠
+jt:yg	⮡
+jt:zg	⮢
+jt:yg	⮣
+jt:xg	⮧
+jt:xg	⮦
+jt:sg	⮥
+jt:sg	⮤
+jt:y	⭲
+jt:z	⭰
+jt:x	⭳
+jt:s	⭱
+jt:yx	⭸
+jt:xy	⭸
+jt:ys	⭷
+jt:sy	⭷
+jt:zx	⭹
+jt:xz	⭹
+jt:zs	⭶
+jt:sz	⭶
+jt:zy	⭾
+jt:yz	⭾
+jt:sx	⭿
+jt:xs	⭿
+jt:y	⯮
+jt:z	⯬
+jt:x	⯯
+jt:s	⯭
+jt:y	🠂
+jt:z	🠀
+jt:x	🠃
+jt:s	🠁
+jt:y	🠆
+jt:z	🠄
+jt:x	🠇
+jt:s	🠅
+jt:y	🠊
+jt:z	🠈
+jt:x	🠋
+jt:s	🠉
+jt:y	🠒
+jt:z	🠐
+jt:x	🠓
+jt:s	🠑
+jt:y	🠖
+jt:z	🠔
+jt:x	🠗
+jt:s	🠕
+jt:y	🠚
+jt:z	🠘
+jt:x	🠛
+jt:s	🠙
+jt:y	🠞
+jt:z	🠜
+jt:x	🠟
+jt:s	🠝
+jt:y	🠢
+jt:z	🠠
+jt:x	🠣
+jt:s	🠡
+jt:y	🠦
+jt:z	🠤
+jt:x	🠧
+jt:s	🠥
+jt:y	🠪
+jt:z	🠨
+jt:x	🠫
+jt:s	🠩
+jt:y	🠮
+jt:z	🠬
+jt:x	🠯
+jt:s	🠭
+jt:y	🠲
+jt:z	🠰
+jt:x	🠳
+jt:s	🠱
+jt:y	🠶
+jt:z	🠴
+jt:x	🠷
+jt:s	🠵
+jt:y	🠺
+jt:z	🠸
+jt:x	🠻
+jt:s	🠹
+jt:y	🠾
+jt:z	🠼
+jt:x	🠿
+jt:s	🠽
+jt:y	🡂
+jt:z	🡀
+jt:x	🡃
+jt:s	🡁
+jt:y	🡆
+jt:z	🡄
+jt:x	🡇
+jt:s	🡅
+jt:y	🡒
+jt:z	🡐
+jt:x	🡓
+jt:s	🡑
+jt:yx	🡖
+jt:xy	🡖
+jt:ys	🡕
+jt:sy	🡕
+jt:zx	🡗
+jt:xz	🡗
+jt:zs	🡔
+jt:sz	🡔
+jt:zy	🡘
+jt:yz	🡘
+jt:sx	🡙
+jt:xs	🡙
+jt:y	🡢
+jt:z	🡠
+jt:x	🡣
+jt:s	🡡
+jt:yx	🡦
+jt:xy	🡦
+jt:ys	🡥
+jt:sy	🡥
+jt:zx	🡧
+jt:xz	🡧
+jt:zs	🡤
+jt:sz	🡤
+jt:y	🡪
+jt:z	🡨
+jt:x	🡫
+jt:s	🡩
+jt:yx	🡮
+jt:xy	🡮
+jt:ys	🡭
+jt:sy	🡭
+jt:zx	🡯
+jt:xz	🡯
+jt:zs	🡬
+jt:sz	🡬
+jt:y	🡲
+jt:z	🡰
+jt:x	🡳
+jt:s	🡱
+jt:yx	🡶
+jt:xy	🡶
+jt:ys	🡵
+jt:sy	🡵
+jt:zx	🡷
+jt:xz	🡷
+jt:zs	🡴
+jt:sz	🡴
+jt:y	🡺
+jt:z	🡸
+jt:x	🡻
+jt:s	🡹
+jt:yx	🡾
+jt:xy	🡾
+jt:ys	🡽
+jt:sy	🡽
+jt:zx	🡿
+jt:xz	🡿
+jt:zs	🡼
+jt:sz	🡼
+jt:y	🢂
+jt:z	🢀
+jt:x	🢃
+jt:s	🢁
+jt:yx	🢆
+jt:xy	🢆
+jt:ys	🢅
+jt:sy	🢅
+jt:zx	🢇
+jt:xz	🢇
+jt:zs	🢄
+jt:sz	🢄
+jt:y	🢒
+jt:z	🢐
+jt:x	🢓
+jt:s	🢑
+jt:y	🢖
+jt:z	🢔
+jt:x	🢗
+jt:s	🢕
+jt:y	🢚
+jt:z	🢘
+jt:x	🢛
+jt:s	🢙
+# 箭頭 }
+
+# 幾何圖形 {
+tx:bbx	⯃
+tx:bbx	⯄
+tx:by	◖
+tx:by	◗
+tx:by	⯊
+tx:by	⯋
+tx:sbx	▢
+tx:sbx	▬
+tx:sbx	▭
+tx:sbx	▮
+tx:sbx	▯
+tx:sbx	⏥
+tx:sbx	⏢
+tx:sbx	▰
+tx:sbx	▱
+tx:fx	⯀
+tx:fx	■
+tx:fx	□
+tx:fx	⬚
+tx:fx	▣
+tx:fx	▤
+tx:fx	▥
+tx:fx	▦
+tx:fx	▧
+tx:fx	▨
+tx:fx	▩
+tx:fx	◰
+tx:fx	◱
+tx:fx	◲
+tx:fx	◳
+tx:fx	◫
+tx:fx	⬝
+tx:fx	⬞
+tx:fx	▪
+tx:fx	▫
+tx:fx	◻
+tx:fx	◼
+tx:fx	◽
+tx:fx	◾
+tx:fx	⬛
+tx:fx	⬜
+tx:fx	◧
+tx:fx	◨
+tx:fx	⬒
+tx:fx	⬓
+tx:fx	◩
+tx:fx	◪
+tx:fx	⬔
+tx:fx	⬕
+tx:fx	⯁
+tx:fx	◇
+tx:fx	◈
+tx:fx	⬖
+tx:fx	⬗
+tx:fx	⬘
+tx:fx	⬙
+tx:fx	⬩
+tx:fx	⬥
+tx:fx	⬦
+tx:lbx	⬡
+tx:lbx	⬢
+tx:lbx	⬣
+tx:lx	◆
+tx:lx	◊
+tx:lx	⬪
+tx:lx	⬫
+tx:lx	⬧
+tx:lx	⬨
+tx:sjx	⊿
+tx:sjx	▲
+tx:sjx	△
+tx:sjx	▶
+tx:sjx	▷
+tx:sjx	▼
+tx:sjx	▽
+tx:sjx	◀
+tx:sjx	◁
+tx:sjx	◢
+tx:sjx	◣
+tx:sjx	◤
+tx:sjx	◥
+tx:sjx	◬
+tx:sjx	◭
+tx:sjx	◮
+tx:sjx	◸
+tx:sjx	◹
+tx:sjx	◺
+tx:sjx	◿
+tx:sjx	⯅
+tx:sjx	⯆
+tx:sjx	⯇
+tx:sjx	⯈
+tx:sjx	🞀
+tx:sjx	🞁
+tx:sjx	🞂
+tx:sjx	🞃
+tx:ty	⬬
+tx:ty	⬭
+tx:ty	⬮
+tx:ty	⬯
+tx:wbx	⬟
+tx:wbx	⬠
+tx:wbx	⭓
+tx:wbx	⭔
+tx:wbx	⯂
+tx:xx	★
+tx:xx	☆
+tx:xx	⯌
+tx:xx	⯍
+tx:xx	⯎
+tx:xx	⯏
+tx:yh	◜
+tx:yh	◝
+tx:yh	◞
+tx:yh	◟
+tx:yh	◠
+tx:yh	◡
+tx:yx	◉
+tx:yx	○
+tx:yx	◌
+tx:yx	◍
+tx:yx	◎
+tx:yx	●
+tx:yx	◐
+tx:yx	◑
+tx:yx	◒
+tx:yx	◓
+tx:yx	◔
+tx:yx	◕
+tx:yx	◯
+tx:yx	◴
+tx:yx	◵
+tx:yx	◶
+tx:yx	◷
+tx:yx	⬤
+tx:yx	⭘
+# 幾何圖形 }
+
+# 組合方塊 {
+# h:橫 s:豎 m:明 j:角
+fk:s	▁
+fk:s	▂
+fk:s	▃
+fk:s	▄
+fk:s	▅
+fk:s	▆
+fk:s	▇
+fk:s	█
+fk:s	▀
+fk:s	▔
+fk:h	▏
+fk:h	▎
+fk:h	▍
+fk:h	▌
+fk:h	▋
+fk:h	▊
+fk:h	▉
+fk:h	█
+fk:h	▐
+fk:h	▕
+fk:m	░
+fk:m	▒
+fk:m	▓
+fk:m	█
+fk:j	▘
+fk:j	▗
+fk:j	▖
+fk:j	▝
+fk:j	▚
+fk:j	▞
+fk:j	▛
+fk:j	▟
+fk:j	▙
+fk:j	▜
+# 組合方塊 }
+
+# 製表符號 {
+# h:橫 s:豎 w:彎 x:斜 ss:上 xx:下 zz:左 yy:右 zj:中間
+zb:h	─
+zb:h	━
+zb:h	═
+zb:h	╼
+zb:h	╾
+zb:h	┈
+zb:h	┉
+zb:h	┄
+zb:h	┅
+zb:h	╌
+zb:h	╍
+zb:h	╴
+zb:h	╸
+zb:h	╶
+zb:h	╺
+zb:s	│
+zb:s	┃
+zb:s	║
+zb:s	╽
+zb:s	╿
+zb:s	┊
+zb:s	┋
+zb:s	┆
+zb:s	┇
+zb:s	╎
+zb:s	╏
+zb:s	╵
+zb:s	╹
+zb:s	╷
+zb:s	╻
+zb:x	╱
+zb:x	╲
+zb:x	╳
+zb:zs	┌
+zb:ss	┬
+zb:ys	┐
+zb:zz	├
+zb:zj	┼
+zb:yy	┤
+zb:zx	└
+zb:xx	┴
+zb:yx	┘
+zb:zs	┏
+zb:ss	┳
+zb:ys	┓
+zb:zz	┣
+zb:zj	╋
+zb:yy	┫
+zb:zx	┗
+zb:xx	┻
+zb:yx	┛
+zb:zs	╔
+zb:ss	╦
+zb:ys	╗
+zb:zz	╠
+zb:zj	╬
+zb:yy	╣
+zb:zx	╚
+zb:xx	╩
+zb:yx	╝
+zb:zs	╒
+zb:ss	╤
+zb:ys	╕
+zb:zz	╞
+zb:zj	╪
+zb:yy	╡
+zb:zx	╘
+zb:xx	╧
+zb:yx	╛
+zb:zs	╓
+zb:ss	╥
+zb:ys	╖
+zb:zz	╟
+zb:zj	╫
+zb:yy	╢
+zb:zx	╙
+zb:xx	╨
+zb:yx	╜
+zb:zs	┍
+zb:ss	┯
+zb:ys	┑
+zb:zz	┝
+zb:zj	┿
+zb:yy	┥
+zb:zx	┕
+zb:xx	┷
+zb:yx	┙
+zb:zs	┎
+zb:ss	┰
+zb:ys	┒
+zb:zz	┠
+zb:zj	╂
+zb:yy	┨
+zb:zx	┖
+zb:xx	┸
+zb:yx	┚
+zb:ss	┭
+zb:ss	┮
+zb:ss	┱
+zb:ss	┲
+zb:xx	┵
+zb:xx	┶
+zb:xx	┹
+zb:xx	┺
+zb:zz	┞
+zb:zz	┟
+zb:zz	┡
+zb:zz	┢
+zb:yy	┦
+zb:yy	┧
+zb:yy	┩
+zb:yy	┪
+zb:zj	┽
+zb:zj	┾
+zb:zj	╀
+zb:zj	╁
+zb:zj	╃
+zb:zj	╄
+zb:zj	╅
+zb:zj	╆
+zb:zj	╇
+zb:zj	╈
+zb:zj	╉
+zb:zj	╊
+zb:w	╭
+zb:w	╮
+zb:w	╰
+zb:w	╯
+zb:zs	╭
+zb:ys	╮
+zb:zx	╰
+zb:yx	╯
+# 製表符號 }
+
+# 電腦 {
+dn:mac:private	
+dn:win:fake	❖
+dn:keyboard	⌨
+dn:alt	⎇
+dn:capslock	⇪
+dn:clear	⌧
+dn:command	⌘
+dn:control	⌃
+dn:erase:left	⌫
+dn:erase:right	⌦
+dn:escape	⎋
+dn:escape	⮹
+dn:newline:left	⮒
+dn:newline:right	⮓
+dn:option	⌥
+dn:return	↩
+dn:return	⏎
+dn:shift	⇧
+dn:space	␣
+dn:tab:horizontal	⭾
+dn:tab:left	⇤
+dn:tab:right	⇥
+dn:tab:vertical	⭿
+dn:drag	⇱
+dn:drag	⇲
+dn:eject	⏏
+dn:forward	⏩
+dn:backward	⏪
+dn:upward	⏫
+dn:downward	⏬
+dn:power	⏻
+dn:power	⏼
+dn:power:on	⏽
+dn:power:off	⭘
+dn:power:sleep	⏾
+dn:up	⏶
+dn:down	⏷
+dn:left	⏴
+dn:right	⏵
+dn:pause	⏸
+dn:stop	⏹
+dn:record	⏺
+dn:alarmclock	⏰
+dn:stopwatch	⏱
+dn:clock	⏲
+dn:play:next	⏭
+dn:play:prev	⏮
+dn:play:pause	⏯
+dn:gear	⚙
+dn:position	⌖
+dn:hourglass	⌛
+dn:page:prev	⎗
+dn:page:next	⎘
+dn:printscreen	⎙
+dn:clearscreen	⎚
+dn:underline	⎁
+dn:underline	⎂
+dn:00:nul	␀
+dn:01:soh	␁
+dn:02:stx	␂
+dn:03:etx	␃
+dn:04:eot	␄
+dn:05:enq	␅
+dn:06:ack	␆
+dn:07:bel	␇
+dn:08:bs	␈
+dn:09:ht	␉
+dn:0a:lf	␊
+dn:0a:nl	␤
+dn:0b:vt	␋
+dn:0c:ff	␌
+dn:0d:cr	␍
+dn:0e:so	␎
+dn:0f:si	␏
+dn:10:dle	␐
+dn:11:dc1	␑
+dn:12:dc2	␒
+dn:13:dc3	␓
+dn:14:dc4	␔
+dn:15:nak	␕
+dn:16:syn	␖
+dn:17:etb	␗
+dn:18:can	␘
+dn:19:em	␙
+dn:1a:sub	␚
+dn:1b:esc	␛
+dn:1c:fs	␜
+dn:1d:gs	␝
+dn:1e:rs	␞
+dn:1f:us	␟
+dn:20:sp	␠
+dn:7f:del	␡
+# 電腦 }
+
+# 星號 {
+xh:1	❶
+xh:2	❷
+xh:3	❸
+xh:4	❹
+xh:5	❺
+xh:6	❻
+xh:7	❼
+xh:8	❽
+xh:9	❾
+xh:10	❿
+xh:1	➀
+xh:2	➁
+xh:3	➂
+xh:4	➃
+xh:5	➄
+xh:6	➅
+xh:7	➆
+xh:8	➇
+xh:9	➈
+xh:10	➉
+xh:1	➊
+xh:2	➋
+xh:3	➌
+xh:4	➍
+xh:5	➎
+xh:6	➏
+xh:7	➐
+xh:8	➑
+xh:9	➒
+xh:10	➓
+xh:a	❤
+xh:a	❥
+xh:a	❦
+xh:a	❧
+xh:b	✍
+xh:b	✎
+xh:b	✏
+xh:b	✐
+xh:b	✑
+xh:b	✒
+xh:c	☐
+xh:c	☒
+xh:c	✕
+xh:c	✖
+xh:c	✗
+xh:c	✘
+xh:c	❌
+xh:c	❎
+xh:c	⮽
+xh:g	☐
+xh:g	☑
+xh:g	✅
+xh:g	✓
+xh:g	✔
+xh:g	⭕
+xh:jt	➔
+xh:jt	➘
+xh:jt	➙
+xh:jt	➚
+xh:jt	➛
+xh:jt	➜
+xh:jt	➝
+xh:jt	➞
+xh:jt	➟
+xh:jt	➠
+xh:jt	➡
+xh:jt	➢
+xh:jt	➣
+xh:jt	➤
+xh:jt	➥
+xh:jt	➦
+xh:jt	➧
+xh:jt	➨
+xh:jt	➩
+xh:jt	➪
+xh:jt	➫
+xh:jt	➬
+xh:jt	➭
+xh:jt	➮
+xh:jt	➯
+xh:jt	➱
+xh:jt	➲
+xh:jt	➳
+xh:jt	➴
+xh:jt	➵
+xh:jt	➶
+xh:jt	➷
+xh:jt	➸
+xh:jt	➹
+xh:jt	➺
+xh:jt	➻
+xh:jt	➼
+xh:jt	➽
+xh:jt	➾
+xh:q	⚐
+xh:q	⚑
+xh:s	☛
+xh:s	☞
+xh:s	✊
+xh:s	✋
+xh:s	✌
+xh:t	❕
+xh:t	❗
+xh:w	❓
+xh:w	❔
+xh:x	★
+xh:x	☆
+xh:x	⚝
+xh:x	⛤
+xh:x	⛥
+xh:x	⛦
+xh:x	⛧
+xh:x	✙
+xh:x	✚
+xh:x	✛
+xh:x	✜
+xh:x	✝
+xh:x	✞
+xh:x	✟
+xh:x	✠
+xh:x	✡
+xh:x	✢
+xh:x	✣
+xh:x	✤
+xh:x	✥
+xh:x	✦
+xh:x	✧
+xh:x	✨
+xh:x	✩
+xh:x	✪
+xh:x	✫
+xh:x	✬
+xh:x	✭
+xh:x	✮
+xh:x	✯
+xh:x	✰
+xh:x	✱
+xh:x	✲
+xh:x	✳
+xh:x	✴
+xh:x	✵
+xh:x	✶
+xh:x	✷
+xh:x	✸
+xh:x	✹
+xh:x	✺
+xh:x	✻
+xh:x	✼
+xh:x	✽
+xh:x	✾
+xh:x	✿
+xh:x	❀
+xh:x	❁
+xh:x	❂
+xh:x	❃
+xh:x	❄
+xh:x	❅
+xh:x	❆
+xh:x	❇
+xh:x	❈
+xh:x	❉
+xh:x	❊
+xh:x	❋
+xh:x	❖
+xh:x	⯌
+xh:x	⯍
+xh:x	⯎
+xh:x	⯏
+xh:y	❛
+xh:y	❜
+xh:y	❝
+xh:y	❞
+xh:y	❟
+xh:y	❠
+# 星號 }
+
+# 星座 {
+xz:1:aries	♈
+xz:2:taurus	♉
+xz:3:gemini	♊
+xz:4:cancer	♋
+xz:5:leo	♌
+xz:6:virgo	♍
+xz:7:libra	♎
+xz:8:scorpio	♏
+xz:9:sagittarius	♐
+xz:10:capricorn	♑
+xz:11:aquarius	♒
+xz:12:pisces	♓
+xz:13:9:ophiuchus	⛎
+xz"by	♈	白羊
+xz'my	♈	牡羊
+xz"jn	♉	金牛
+xz"sz	♊	雙子
+xz"jx	♋	巨蟹
+xz"sz	♌	獅子
+xz"cn	♍	處女
+xz'sn	♍	室女
+xz"tc	♎	天秤
+xz'tp	♎	天平
+xz"tx	♏	天蠍
+xz"rm	♐	人馬
+xz'ss	♐	射手
+xz"mj	♑	摩羯
+xz'sy	♑	山羊
+xz"sp	♒	水瓶
+xz'bp	♒	寶瓶
+xz"sy	♓	雙魚
+xz"sf	⛎	蛇夫
+# 星座 }
+
+# 天體 {
+tt:1:mercury	☿
+tt:2:venus	♀
+tt:3:earth	♁
+tt:4:mars	♂
+tt:5:jupiter	♃
+tt:6:saturn	♄
+tt:7:uranus	♅
+tt:8:neptune	♆
+tt:9:pluto	♇
+tt:0:sun	☉
+tt:0:moon:1	☽
+tt:0:moon:2	☾
+tt:0:comet	☄
+tt:ty	☉	太陽
+tt:yl	☽	月亮
+tt:yl	☾	月亮
+tt:sx	☿	水星
+tt:jx	♀	金星
+tt:dq	♁	地球
+tt:hx	♂	火星
+tt:mx	♃	木星
+tt:tx	♄	土星
+tt:twx	♅	天王星
+tt:hwx	♆	海王星
+tt:mwx	♇	冥王星
+tt:hx	☄	彗星
+# 天體 }
+
+# 煉金 {
+lj:air	🜁
+lj:alembic	🝪
+lj:alkali	🜶
+lj:alkali	🜷
+lj:alum	🝅
+lj:amalgam	🝛
+lj:antimoniate:of:copper	🜥
+lj:antimony	♁
+lj:antimony:ore	🜫
+lj:aqua:regia	🜆
+lj:aqua:regia	🜇
+lj:aqua:vitae	🜈
+lj:aqua:vitae	🜉
+lj:aquafortis	🜅
+lj:arsenic	🜺
+lj:arsenic:x	⧟
+lj:ashes	🝗
+lj:auripigment	🜽
+lj:bath:of:mary	🝫
+lj:bath:of:vapours	🝬
+lj:bismuth	♆
+lj:bismuth:ore	🜾
+lj:borax	🝂
+lj:borax	🝃
+lj:borax	🝄
+lj:brick	🝙
+lj:brick:powdered	🝚
+lj:caduceus	🝐
+lj:caduceus:x	☤
+lj:calx	🝌
+lj:cinnabar	🜓
+lj:copper	♀
+lj:copper:ore	🜠
+lj:crocus:of:copper	🜣
+lj:crocus:of:copper	🜤
+lj:crocus:of:iron	⚦
+lj:crocus:of:iron	🜞
+lj:crucible	🝥
+lj:crucible	🝦
+lj:crucible	🝧
+lj:crucible	🝨
+lj:crucible	🝩
+lj:crucible:x	⊤
+lj:day	☌
+lj:day:night	🝰
+lj:dissolve	🝡
+lj:dissolve	🝢
+lj:distill	🝠
+lj:dram:half	🝲
+lj:dram:half:x	ʒ
+lj:earth	🜃
+lj:earth:x	♁
+lj:fire	🜂
+lj:fire:x	△
+lj:gold	☉
+lj:gold	🜚
+lj:gum	🝉
+lj:horse:dung	🝖
+lj:hour	🝮
+lj:hour:x	⌛
+lj:iron	♂
+lj:iron	⚦
+lj:iron	⚨
+lj:iron	⚩
+lj:iron:copper:ore	🜡
+lj:iron:ore	🜜
+lj:iron:ore	🜝
+lj:lead	♄
+lj:lead:ore	🜪
+lj:lodestone	🝓
+lj:marcasite	🜸
+lj:month	🝱
+lj:month:x	⊠
+lj:mortuum	🝎
+lj:night	🝯
+lj:nitre	🜕
+lj:nitre:x	⦶
+lj:oil	🝆
+lj:oil:x	༜
+lj:ounce:half	🝳
+lj:ounce:half:x	℥
+lj:philosophers	🜎
+lj:pot:ashes	🝘
+lj:powder	🝋
+lj:precipitate	🝟
+lj:purify	🝣
+lj:purify:x	☋
+lj:putrefaction	🝤
+lj:quicklime	🝁
+lj:quicksilver	☿
+lj:quintessence	🜀
+lj:realgar	🜻
+lj:realgar	🜼
+lj:regulus	🜲
+lj:regulus	🜳
+lj:regulus	🜴
+lj:regulus	🜵
+lj:regulus:of:antimony	🜰
+lj:regulus:of:antimony	🜱
+lj:regulus:of:iron	🜟
+lj:retort	⚗
+lj:retort	🝭
+lj:rock:salt	🜘
+lj:rock:salt	🜙
+lj:sal:ammoniac	🜹
+lj:sal:ammoniac:x	⚹
+lj:salt	□
+lj:salt	🜔
+lj:salt:of:antimony	🜭
+lj:salt:of:copper:antimoniate	🜦
+lj:salt:x	⊖
+lj:scepter:of:jove	🝏
+lj:silver	☽
+lj:silver	☾
+lj:silver	🜛
+lj:soap	🝔
+lj:soap:x	◇
+lj:spirit	🝇
+lj:stratum:super:stratum	🝜
+lj:stratum:super:stratum	🝝
+lj:sublimate	☊
+lj:sublimate:of:antimony	🜬
+lj:sublimate:of:copper	🜢
+lj:sublimate:of:mecury	🜐
+lj:sublimate:of:mecury	🜑
+lj:sublimate:of:mecury	🜒
+lj:sublimate:of:salt:of:antimony	🜮
+lj:sublimate:of:salt:of:copper	🜧
+lj:sublimation	🝞
+lj:sublimation:x	♎
+lj:sulfur	🜍
+lj:sulfur:black	🜏
+lj:tartar	🜿
+lj:tartar	🝀
+lj:tin	♃
+lj:tin:ore	🜩
+lj:tincture	🝈
+lj:trident	🝑
+lj:trident:starred	🝒
+lj:tutty	🝍
+lj:urine	🝕
+lj:urine:x	⊡
+lj:verdigris	🜨
+lj:verdigris:x	⊕
+lj:vinegar	🜊
+lj:vinegar	🜋
+lj:vinegar	🜌
+lj:vinegar:of:antimony	🜯
+lj:vinegar:x	☩
+lj:vitriol	🜖
+lj:vitriol	🜗
+lj:water	🜄
+lj:water:x	▽
+lj:wax	🝊
+# 煉金 }
+
+# 兩性關係 {
+lx:female	♀
+lx:male	♂
+lx:lesbian	⚢
+lx:gay	⚣
+lx:bisexual	⚤
+lx:hermaphrodite	⚥
+lx:transgender	⚦
+lx:transgender	⚧
+lx:transgender	⚨
+lx:transgender	⚩
+lx:neuter	⚲
+lx:asexual	⚪
+lx:engaged	⚬
+lx:marriage	⚭
+lx:divorce	⚮
+lx:partnership	⚯
+# 兩性關係 }
+
+# 音樂 {
+yy	♩
+yy	♪
+yy	♫
+yy	♬
+yy	♭
+yy	♮
+yy	♯
+yy	𝄞
+yy	𝄢
+yy	𝄖
+yy	𝄗
+yy	𝄘
+yy	𝄙
+yy	𝄚
+yy	𝄛
+# 音樂 }
+
+# 天氣 {
+tq:cloudy	☁
+tq:cloudy	⛅
+tq:rainy	⛆
+tq:snowman	☃
+tq:snowman	⛄
+tq:snowman	⛇
+tq:sunny	☀
+tq:sunny	☼
+tq:thunder	⚡
+tq:thunderstorm	⛈
+tq:umbrella	☂
+tq:umbrella	☔
+# 天氣 }
+
+# 特殊符號 {
+ts:company	㏇
+ts:copyright	©
+ts:copyright:record	℗
+ts:envelope	✉
+ts:fax	℻
+ts:flag	⚐
+ts:flag	⚑
+ts:hand	✊
+ts:hand	✋
+ts:hand	✌
+ts:information	ℹ
+ts:number	№
+ts:object	￼
+ts:position	⌖
+ts:position	⯐
+ts:postal	〒
+ts:postal	〶
+ts:replacement	�
+ts:shamrock	☘
+ts:speaking	⚞
+ts:speaking	⚟
+ts:telephone	℡
+ts:telephone	☎
+ts:telephone	☏
+ts:telephone	✆
+ts:trademark	™
+ts:trademark:registered	®
+ts:uncertainty	⯑
+# 特殊符號 }
+
+# 標誌 {
+bz:bz:japan	〄
+bz:bz:korea	㉿
+bz:dt:bank:japan	⛻
+bz:dt:battlefield	⚔
+bz:dt:beach	⛱
+bz:dt:botanical	⚘
+bz:dt:cafe	☕
+bz:dt:camp	⛺
+bz:dt:castle	⛫
+bz:dt:church	⛪
+bz:dt:drive-in	⛾
+bz:dt:factory	⚙
+bz:dt:factory	⛭
+bz:dt:ferry	⛴
+bz:dt:flag	⚐
+bz:dt:flag	⚑
+bz:dt:force:japan	⛿
+bz:dt:fountain	⛲
+bz:dt:golf:course	⛳
+bz:dt:graveyard	⛼
+bz:dt:gymnasium	⛹
+bz:dt:harbor	⚓
+bz:dt:historic	⛬
+bz:dt:hospital	⛨
+bz:dt:hot:spring	♨
+bz:dt:intersection	⛶
+bz:dt:mine	⚒
+bz:dt:mine	⛏
+bz:dt:mountain	⛰
+bz:dt:nuclear	⚛
+bz:dt:petrol:station	⛽
+bz:dt:postal	〒
+bz:dt:postal	〠
+bz:dt:postal	〶
+bz:dt:power:plant	⛮
+bz:dt:public:office	⛣
+bz:dt:sailboat	⛵
+bz:dt:skating:rink	⛸
+bz:dt:ski:resort	⛷
+bz:dt:torii	⛩
+bz:dt:tribunal	⚖
+bz:hb:0:generic	♺
+bz:hb:1:plastic	♳
+bz:hb:2:plastic	♴
+bz:hb:3:plastic	♵
+bz:hb:4:plastic	♶
+bz:hb:5:plastic	♷
+bz:hb:6:plastic	♸
+bz:hb:7:plastic	♹
+bz:hb:paper	♼
+bz:hb:paper:partially	♽
+bz:hb:paper:permanent	♾
+bz:hb:recyclable	♲
+bz:hb:recyclable	♻
+bz:jg:biohazard	☣
+bz:jg:caution	☡
+bz:jg:poison	☠
+bz:jg:radiation	☢
+bz:jg:warning	⚠
+bz:jt:accident	⛌
+bz:jt:closed:entry	⛝
+bz:jt:closed:large:vehicle	⛞
+bz:jt:closed:large:vehicle	⛟
+bz:jt:closed:left	⛜
+bz:jt:closed:road	⛒
+bz:jt:construction	⛏
+bz:jt:disabled:car	⛍
+bz:jt:maintenance	⛑
+bz:jt:no:entry	⛔
+bz:jt:required:tyre:chain	⛓
+bz:jt:restricted:left	⛠
+bz:jt:restricted:left	⛡
+bz:jt:slippery	⛐
+bz:jt:slow	⛚
+bz:jt:slow	⛛
+bz:jt:way:alternate	⛕
+bz:jt:way:merge	⛘
+bz:jt:way:merge	⛙
+bz:jt:way:two	⛖
+bz:jt:way:two	⛗
+bz:qt:disabled	♿
+bz:qt:female	♀
+bz:qt:male	♂
+bz:ty:baseball	⚾
+bz:ty:football	⚽
+bz:zp:aesculapius	⚕
+bz:zp:ankh	☥
+bz:zp:caduceus	☤
+bz:zp:cross:christogram	☧
+bz:zp:cross:greek	✙
+bz:zp:cross:greek	✚
+bz:zp:cross:jerusalem	☩
+bz:zp:cross:latin	✝
+bz:zp:cross:latin	✞
+bz:zp:cross:latin	✟
+bz:zp:cross:lorraine	☨
+bz:zp:cross:maltese	✠
+bz:zp:cross:orthodox	☦
+bz:zp:cross:syriac:east	♱
+bz:zp:cross:syriac:west	♰
+bz:zp:dharma	☸
+bz:zp:farsi	☫
+bz:zp:fleur-de-lis	⚜
+bz:zp:hermes	⚚
+bz:zp:islam	☪
+bz:zp:khanda	☬
+bz:zp:peace	☮
+bz:zp:socialism	☭
+bz:zp:star:david	✡
+bz:zp:star:evil	⛧
+bz:zp:star:pentagram	⛤
+bz:zp:yinyang	☯
+# 標誌 }
+
+# 上標 {
+sb:0	⁰
+sb:1	¹
+sb:2	²
+sb:3	³
+sb:4	⁴
+sb:5	⁵
+sb:6	⁶
+sb:7	⁷
+sb:8	⁸
+sb:9	⁹
+sb:j	⁺
+sb:j	⁻
+sb:d	⁼
+sb:k	⁽
+sb:k	⁾
+sb:xl:b	ᵝ
+sb:xl:d	ᵟ
+sb:xl:o	ᵠ
+sb:xl:r	ᵞ
+sb:xl:x	ᵡ
+sb:ld:?	ˀ
+sb:ld:?	ˁ
+sb:ld:?	ˤ
+sb:ld:?	˞
+sb:ld:?	ᵜ
+sb:ld:a	ᵃ
+sb:ld:a	ᴬ
+sb:ld:a	ᵄ
+sb:ld:a	ᵅ
+sb:ld:a	ᶛ
+sb:ld:ae	ᵆ
+sb:ld:ae	ᴭ
+sb:ld:b	ᵇ
+sb:ld:b	ᴮ
+sb:ld:b	ᴯ
+sb:ld:c	ᶜ
+sb:ld:c	ᶝ
+sb:ld:c	ꝰ
+sb:ld:d	ᵈ
+sb:ld:d	ᴰ
+sb:ld:d	ᶞ
+sb:ld:e	ᵉ
+sb:ld:e	ᴱ
+sb:ld:e	ᴲ
+sb:ld:e	ᵊ
+sb:ld:e	ᵋ
+sb:ld:e	ᵌ
+sb:ld:e	ᶟ
+sb:ld:f	ᶠ
+sb:ld:g	ᵍ
+sb:ld:g	ᴳ
+sb:ld:g	ᶢ
+sb:ld:h	ʰ
+sb:ld:h	ᴴ
+sb:ld:h	ʱ
+sb:ld:h	ᶣ
+sb:ld:h	ꟸ
+sb:ld:h	ꭜ
+sb:ld:i	ⁱ
+sb:ld:i	ᴵ
+sb:ld:i	ᵎ
+sb:ld:i	ᶤ
+sb:ld:i	ᶥ
+sb:ld:i	ᶦ
+sb:ld:i	ᶧ
+sb:ld:j	ʲ
+sb:ld:j	ᴶ
+sb:ld:j	ᶡ
+sb:ld:j	ᶨ
+sb:ld:k	ᵏ
+sb:ld:k	ᴷ
+sb:ld:l	ˡ
+sb:ld:l	ᴸ
+sb:ld:l	ᶩ
+sb:ld:l	ᶪ
+sb:ld:l	ᶫ
+sb:ld:l	ꭝ
+sb:ld:l	ꭞ
+sb:ld:m	ᵐ
+sb:ld:m	ᴹ
+sb:ld:m	ᵚ
+sb:ld:m	ᶬ
+sb:ld:m	ᶭ
+sb:ld:n	ⁿ
+sb:ld:n	ᴺ
+sb:ld:n	ᴻ
+sb:ld:n	ᵑ
+sb:ld:n	ᶮ
+sb:ld:n	ᶯ
+sb:ld:n	ᶰ
+sb:ld:o	ᵒ
+sb:ld:o	ᴼ
+sb:ld:o	ᵓ
+sb:ld:o	ᶱ
+sb:ld:o	ᶲ
+sb:ld:o	ᶿ
+sb:ld:o	ᵔ
+sb:ld:o	ᵕ
+sb:ld:o	꭛
+sb:ld:oe	ꟹ
+sb:ld:ou	ᴽ
+sb:ld:p	ᵖ
+sb:ld:p	ᴾ
+sb:ld:r	ʳ
+sb:ld:r	ᴿ
+sb:ld:r	ʴ
+sb:ld:r	ʵ
+sb:ld:r	ʶ
+sb:ld:r	ˠ
+sb:ld:s	ˢ
+sb:ld:s	ᶳ
+sb:ld:s	ᶴ
+sb:ld:t	ᵗ
+sb:ld:t	ᵀ
+sb:ld:t	ᶵ
+sb:ld:u	ᵘ
+sb:ld:u	ᵁ
+sb:ld:u	ᵙ
+sb:ld:u	ᶶ
+sb:ld:u	ᶷ
+sb:ld:u	ᶸ
+sb:ld:u	ꭟ
+sb:ld:v	ᵛ
+sb:ld:v	ⱽ
+sb:ld:v	ᶹ
+sb:ld:v	ᶺ
+sb:ld:w	ʷ
+sb:ld:w	ᵂ
+sb:ld:x	ˣ
+sb:ld:x	˟
+sb:ld:y	ʸ
+sb:ld:z	ᶻ
+sb:ld:z	ᶼ
+sb:ld:z	ᶽ
+sb:ld:z	ᶾ
+# 上標 }
+
+# 下標 {
+xb:0	₀
+xb:1	₁
+xb:2	₂
+xb:3	₃
+xb:4	₄
+xb:5	₅
+xb:6	₆
+xb:7	₇
+xb:8	₈
+xb:9	₉
+xb:j	₊
+xb:j	₋
+xb:d	₌
+xb:k	₍
+xb:k	₎
+xb:xl:b	ᵦ
+xb:xl:e	ᵨ
+xb:xl:o	ᵩ
+xb:xl:r	ᵧ
+xb:xl:x	ᵪ
+xb:ld:a	ₐ
+xb:ld:e	ₑ
+xb:ld:e	ₔ
+xb:ld:h	ₕ
+xb:ld:i	ᵢ
+xb:ld:j	ⱼ
+xb:ld:k	ₖ
+xb:ld:l	ₗ
+xb:ld:m	ₘ
+xb:ld:n	ₙ
+xb:ld:o	ₒ
+xb:ld:p	ₚ
+xb:ld:r	ᵣ
+xb:ld:s	ₛ
+xb:ld:t	ₜ
+xb:ld:u	ᵤ
+xb:ld:v	ᵥ
+xb:ld:x	ₓ
+# 下標 }
+
+# 數學 {
+sx:jj	±	加減
+sx:f	¬	非
+sx:c	÷	除
+sx:j	−	減
+sx:c	×	乘
+sx:jj	∓	減加
+sx:b	∶	比
+sx:j	∩	交
+sx:b	∪	並
+sx:czb	∝	成正比
+sx:sy	∀	所有
+sx:b	∁	補
+sx:pwf	∂	偏微分
+sx:jf	∫	積分
+sx:cz	∃	存在
+sx:bcz	∄	不存在
+sx:kz	∅	空集
+sx:delta	Δ	偏差
+sx:wq	∞	無窮
+sx:y	∧	與
+sx:h	∨	或
+sx:yh	⊻	異或
+sx:yf	⊼	與非
+sx:hf	⊽	或非
+sx:xydy	≤	小於或等於
+sx:dydy	≥	大於或等於
+sx:yxy	≪	遠小於
+sx:ddy	≫	遠大於
+sx:bxy	≮	不小於
+sx:bdy	≯	不大於
+sx:fh	∘	複合
+sx:dj	⋅	點積
+sx:kpf	√	開平方
+sx:klf	∛	開立方
+sx:kscf	∜	開四次方
+sx:sj	△	三角
+sx:j	∠	角
+sx:cz	⊥	垂直
+sx:px	∥	平行
+sx:bpx	∦	不平行
+sx:yw	∵	因爲
+sx:sy	∴	所以
+sx:bd	≠	不等
+sx:hd	≡	恆等
+sx:bhd	≢	不恆等
+sx:xs	∼	相似
+sx:bxs	≁	不相似
+sx:yd	≈	約等
+sx:qd	≅	全等
+sx:bqd	≆	不全等
+sx:bd	≇	不等
+sx:ln	㏑	自然對數
+sx:log	㏒	對數
+sx:jz	∑	加總
+sx:lc	∏	連乘
+sx:j	⊕
+sx:dj	⊙
+sx:j	⊖
+sx:c	⊗
+sx:c	⊘
+sx:fh	⊚
+sx:dy	⊜
+sx:cs	ℇ
+sx:cs	ℎ
+sx:cs	ℏ
+sx:jh	ℂ
+sx:jh	ℕ
+sx:jh	ℚ
+sx:jh	ℝ
+sx:jh	ℤ
+sx:jh	∈
+sx:jh	∉
+sx:jh	∋
+sx:jh	∌
+sx:jh	⊂
+sx:jh	⊃
+sx:jh	⊄
+sx:jh	⊅
+sx:jh	⊆
+sx:jh	⊇
+sx:jh	⊈
+sx:jh	⊉
+sx:jh	⊊
+sx:jh	⊋
+sx:lj	⊦
+sx:lj	⊨
+sx:lj	⊩
+sx:lj	⊬
+sx:lj	⊭
+sx:lj	⊮
+sx:sl	⋮
+sx:sl	⋯
+sx:sl	⋰
+sx:sl	⋱
+# 數學 }
+
+# 表情 {
+bq	☹
+bq	☺
+bq	☻
+bq  😂️
+bq  😅️
+bq  😱️
+bq  😭️
+bq  😇️
+bq  🙃️
+bq  🤔️
+bq  💊️
+bq  💯️
+bq  👍️
+bq  🙈️
+bq  💩️
+bq  😈️
+# 表情 }
+
+# 象棋 {
+xq:king	♚
+xq:queen	♛
+xq:rook	♜
+xq:bishop	♝
+xq:knight	♞
+xq:pawn	♟
+xq:king	♔
+xq:queen	♕
+xq:rook	♖
+xq:bishop	♗
+xq:knight	♘
+xq:pawn	♙
+xq:white	☖
+xq:black	☗
+xq:white	⛉
+xq:black	⛊
+# 象棋 }
+
+# 骰子 {
+tz:1	⚀
+tz:2	⚁
+tz:3	⚂
+tz:4	⚃
+tz:5	⚄
+tz:6	⚅
+# 骰子 }
+
+# 麻將 {
+mj	🀀
+mj	🀁
+mj	🀂
+mj	🀃
+mj	🀄
+mj	🀅
+mj	🀢
+mj	🀣
+mj	🀤
+mj	🀥
+mj	🀦
+mj	🀧
+mj	🀨
+mj	🀩
+mj	🀪
+mj	🀆
+mj	🀫
+mj:dong	🀀
+mj:nan	🀁
+mj:xi	🀂
+mj:bei	🀃
+mj:zhong	🀄
+mj:hongzhong	🀄
+mj:fa	🀅
+mj:qingfa	🀅
+mj:baiban	🀆
+mj:mei	🀢
+mj:lan	🀣
+mj:zhu	🀤
+mj:ju	🀥
+mj:chun	🀦
+mj:xia	🀧
+mj:qiu	🀨
+mj:dong	🀩
+mj:baida	🀪
+mj:heiban	🀫
+mj:1w	🀇
+mj:2w	🀈
+mj:3w	🀉
+mj:4w	🀊
+mj:5w	🀋
+mj:6w	🀌
+mj:7w	🀍
+mj:8w	🀎
+mj:9w	🀏
+mj:1s	🀐
+mj:2s	🀑
+mj:3s	🀒
+mj:4s	🀓
+mj:5s	🀔
+mj:6s	🀕
+mj:7s	🀖
+mj:8s	🀗
+mj:9s	🀘
+mj:1t	🀙
+mj:2t	🀚
+mj:3t	🀛
+mj:4t	🀜
+mj:5t	🀝
+mj:6t	🀞
+mj:7t	🀟
+mj:8t	🀠
+mj:9t	🀡
+# 麻將 }
+
+# 多米諾骨牌 {
+gp:h:0	🀰
+gp:h:00	🀱
+gp:h:01	🀲
+gp:h:02	🀳
+gp:h:03	🀴
+gp:h:04	🀵
+gp:h:05	🀶
+gp:h:06	🀷
+gp:h:10	🀸
+gp:h:11	🀹
+gp:h:12	🀺
+gp:h:13	🀻
+gp:h:14	🀼
+gp:h:15	🀽
+gp:h:16	🀾
+gp:h:20	🀿
+gp:h:21	🁀
+gp:h:22	🁁
+gp:h:23	🁂
+gp:h:24	🁃
+gp:h:25	🁄
+gp:h:26	🁅
+gp:h:30	🁆
+gp:h:31	🁇
+gp:h:32	🁈
+gp:h:33	🁉
+gp:h:34	🁊
+gp:h:35	🁋
+gp:h:36	🁌
+gp:h:40	🁍
+gp:h:41	🁎
+gp:h:42	🁏
+gp:h:43	🁐
+gp:h:44	🁑
+gp:h:45	🁒
+gp:h:46	🁓
+gp:h:50	🁔
+gp:h:51	🁕
+gp:h:52	🁖
+gp:h:53	🁗
+gp:h:54	🁘
+gp:h:55	🁙
+gp:h:56	🁚
+gp:h:60	🁛
+gp:h:61	🁜
+gp:h:62	🁝
+gp:h:63	🁞
+gp:h:64	🁟
+gp:h:65	🁠
+gp:h:66	🁡
+gp:s:0	🁢
+gp:s:00	🁣
+gp:s:01	🁤
+gp:s:02	🁥
+gp:s:03	🁦
+gp:s:04	🁧
+gp:s:05	🁨
+gp:s:06	🁩
+gp:s:10	🁪
+gp:s:11	🁫
+gp:s:12	🁬
+gp:s:13	🁭
+gp:s:14	🁮
+gp:s:15	🁯
+gp:s:16	🁰
+gp:s:20	🁱
+gp:s:21	🁲
+gp:s:22	🁳
+gp:s:23	🁴
+gp:s:24	🁵
+gp:s:25	🁶
+gp:s:26	🁷
+gp:s:30	🁸
+gp:s:31	🁹
+gp:s:32	🁺
+gp:s:33	🁻
+gp:s:34	🁼
+gp:s:35	🁽
+gp:s:36	🁾
+gp:s:40	🁿
+gp:s:41	🂀
+gp:s:42	🂁
+gp:s:43	🂂
+gp:s:44	🂃
+gp:s:45	🂄
+gp:s:46	🂅
+gp:s:50	🂆
+gp:s:51	🂇
+gp:s:52	🂈
+gp:s:53	🂉
+gp:s:54	🂊
+gp:s:55	🂋
+gp:s:56	🂌
+gp:s:60	🂍
+gp:s:61	🂎
+gp:s:62	🂏
+gp:s:63	🂐
+gp:s:64	🂑
+gp:s:65	🂒
+gp:s:66	🂓
+# 多米諾骨牌 }
+
+# 撲克牌 {
+pk	♠
+pk	♥
+pk	♦
+pk	♣
+pk	♤
+pk	♡
+pk	♢
+pk	♧
+pk:0	🂠
+pk:0:1	🃟
+pk:0:2	🃏
+pk:0:3	🂿
+pk:1:spade	🂡
+pk:1:heart	🂱
+pk:1:diamond	🃁
+pk:1:club	🃑
+pk:2:spade	🂢
+pk:2:heart	🂲
+pk:2:diamond	🃂
+pk:2:club	🃒
+pk:3:spade	🂣
+pk:3:heart	🂳
+pk:3:diamond	🃃
+pk:3:club	🃓
+pk:4:spade	🂤
+pk:4:heart	🂴
+pk:4:diamond	🃄
+pk:4:club	🃔
+pk:5:spade	🂥
+pk:5:heart	🂵
+pk:5:diamond	🃅
+pk:5:club	🃕
+pk:6:spade	🂦
+pk:6:heart	🂶
+pk:6:diamond	🃆
+pk:6:club	🃖
+pk:7:spade	🂧
+pk:7:heart	🂷
+pk:7:diamond	🃇
+pk:7:club	🃗
+pk:8:spade	🂨
+pk:8:heart	🂸
+pk:8:diamond	🃈
+pk:8:club	🃘
+pk:9:spade	🂩
+pk:9:heart	🂹
+pk:9:diamond	🃉
+pk:9:club	🃙
+pk:10:spade	🂪
+pk:10:heart	🂺
+pk:10:diamond	🃊
+pk:10:club	🃚
+pk:11:spade	🂫
+pk:11:heart	🂻
+pk:11:diamond	🃋
+pk:11:club	🃛
+pk:12:spade	🂭
+pk:12:heart	🂽
+pk:12:diamond	🃍
+pk:12:club	🃝
+pk:13:spade	🂮
+pk:13:heart	🂾
+pk:13:diamond	🃎
+pk:13:club	🃞
+pk:ace:spade	🂡
+pk:ace:heart	🂱
+pk:ace:diamond	🃁
+pk:ace:club	🃑
+pk:jack:spade	🂫
+pk:jack:heart	🂻
+pk:jack:diamond	🃋
+pk:jack:club	🃛
+pk:queen:spade	🂭
+pk:queen:heart	🂽
+pk:queen:diamond	🃍
+pk:queen:club	🃝
+pk:king:spade	🂮
+pk:king:heart	🂾
+pk:king:diamond	🃎
+pk:king:club	🃞
+pk:knight:spade	🂬
+pk:knight:heart	🂼
+pk:knight:diamond	🃌
+pk:knight:club	🃜
+pk:joker:1:white	🃟
+pk:joker:2:black	🃏
+pk:joker:3:red	🂿
+pk:spade	♠
+pk:heart	♥
+pk:diamond	♦
+pk:club	♣
+pk:spade	♤
+pk:heart	♡
+pk:diamond	♢
+pk:club	♧
+# 撲克牌 }
+
+# 遊戲塔羅牌 Tarot Nouveau {
+tl:0:fool	🃠
+tl:1:individual	🃡
+tl:2:childhood	🃢
+tl:3:youth	🃣
+tl:4:maturity	🃤
+tl:5:old:age	🃥
+tl:6:morning	🃦
+tl:7:afternoon	🃧
+tl:8:evening	🃨
+tl:9:night	🃩
+tl:10:earth:and:air	🃪
+tl:11:water:and:fire	🃫
+tl:12:dance	🃬
+tl:13:shopping	🃭
+tl:14:open:air	🃮
+tl:15:visual:arts	🃯
+tl:16:spring	🃰
+tl:17:summer	🃱
+tl:18:autumn	🃲
+tl:19:winter	🃳
+tl:20:the:game	🃴
+tl:21:collective	🃵
+# 遊戲塔羅牌 Tarot Nouveau }
+
+# 國家地區 {
+# 採用 ISO 3166-1 國家地區代碼
+dq:aa:-	🇦🇦
+dq:ab:-	🇦🇧
+dq:ascension::island:-	🇦🇨	Ascension Island
+dq:ac:-	🇦🇨
+dq:andorra::principality:of	🇦🇩	Principality of Andorra
+dq:ad	🇦🇩
+dq:and	🇦🇩
+dq:020	🇦🇩
+dq:united:arab:emirates	🇦🇪	United Arab Emirates
+dq:ae	🇦🇪
+dq:are	🇦🇪
+dq:784	🇦🇪
+dq:afghanistan::islamic:republic:of	🇦🇫	Islamic Republic of Afghanistan
+dq:af	🇦🇫
+dq:afg	🇦🇫
+dq:004	🇦🇫
+dq:antigua:and:barbuda	🇦🇬	Antigua and Barbuda
+dq:ag	🇦🇬
+dq:atg	🇦🇬
+dq:028	🇦🇬
+dq:ah:-	🇦🇭
+dq:anguilla	🇦🇮	Anguilla
+dq:ai	🇦🇮
+dq:aia	🇦🇮
+dq:660	🇦🇮
+dq:aj:-	🇦🇯
+dq:ak:-	🇦🇰
+dq:albania::republic:of	🇦🇱	Republic of Albania
+dq:al	🇦🇱
+dq:alb	🇦🇱
+dq:008	🇦🇱
+dq:armenia::republic:of	🇦🇲	Republic of Armenia
+dq:am	🇦🇲
+dq:arm	🇦🇲
+dq:051	🇦🇲
+dq:an:-	🇦🇳
+dq:angola::republic:of	🇦🇴	Republic of Angola
+dq:ao	🇦🇴
+dq:ago	🇦🇴
+dq:024	🇦🇴
+dq:ap:-	🇦🇵
+dq:antarctica	🇦🇶	Antarctica
+dq:aq	🇦🇶
+dq:ata	🇦🇶
+dq:010	🇦🇶
+dq:argentine::republic	🇦🇷	Argentine Republic
+dq:argentina	🇦🇷	Argentine Republic
+dq:ar	🇦🇷
+dq:arg	🇦🇷
+dq:032	🇦🇷
+dq:american:samoa	🇦🇸	American Samoa
+dq:as	🇦🇸
+dq:asm	🇦🇸
+dq:016	🇦🇸
+dq:austria::republic:of	🇦🇹	Republic of Austria
+dq:at	🇦🇹
+dq:aut	🇦🇹
+dq:040	🇦🇹
+dq:australia::commonwealth:of	🇦🇺	Commonwealth of Australia
+dq:au	🇦🇺
+dq:aus	🇦🇺
+dq:036	🇦🇺
+dq:av:-	🇦🇻
+dq:aruba	🇦🇼	Aruba
+dq:aw	🇦🇼
+dq:abw	🇦🇼
+dq:533	🇦🇼
+dq:aland::islands	🇦🇽	Åland Islands
+dq:ax	🇦🇽
+dq:ala	🇦🇽
+dq:248	🇦🇽
+dq:ay:-	🇦🇾
+dq:azerbaijan::republic:of	🇦🇿	Republic of Azerbaijan
+dq:az	🇦🇿
+dq:aze	🇦🇿
+dq:031	🇦🇿
+dq:bosnia:and:herzegovina	🇧🇦	Bosnia and Herzegovina
+dq:ba	🇧🇦
+dq:bih	🇧🇦
+dq:070	🇧🇦
+dq:barbados	🇧🇧	Barbados
+dq:bb	🇧🇧
+dq:brb	🇧🇧
+dq:052	🇧🇧
+dq:bc:-	🇧🇨
+dq:bangladesh::peoples:republic:of	🇧🇩	People's Republic of Bangladesh
+dq:bd	🇧🇩
+dq:bgd	🇧🇩
+dq:050	🇧🇩
+dq:belgium::kingdom:of	🇧🇪	Kingdom of Belgium
+dq:be	🇧🇪
+dq:bel	🇧🇪
+dq:056	🇧🇪
+dq:burkina:faso	🇧🇫	Burkina Faso
+dq:bf	🇧🇫
+dq:bfa	🇧🇫
+dq:854	🇧🇫
+dq:bulgaria::republic:of	🇧🇬	Republic of Bulgaria
+dq:bg	🇧🇬
+dq:bgr	🇧🇬
+dq:100	🇧🇬
+dq:bahrain::kingdom:of	🇧🇭	Kingdom of Bahrain
+dq:bh	🇧🇭
+dq:bhr	🇧🇭
+dq:048	🇧🇭
+dq:burundi::republic:of	🇧🇮	Republic of Burundi
+dq:bi	🇧🇮
+dq:bdi	🇧🇮
+dq:108	🇧🇮
+dq:benin::republic:of	🇧🇯	Republic of Benin
+dq:bj	🇧🇯
+dq:ben	🇧🇯
+dq:204	🇧🇯
+dq:bk:-	🇧🇰
+dq:saint:barthelemy::territorial:collectivity:of	🇧🇱	Territorial collectivity of Saint-Barthélemy
+dq:bl	🇧🇱
+dq:blm	🇧🇱
+dq:652	🇧🇱
+dq:bermuda	🇧🇲	Bermuda
+dq:bm	🇧🇲
+dq:bmu	🇧🇲
+dq:060	🇧🇲
+dq:brunei::nation:of	🇧🇳	Nation of Brunei, the Abode of Peace
+dq:bn	🇧🇳
+dq:brn	🇧🇳
+dq:096	🇧🇳
+dq:bolivia::plurinational:state:of	🇧🇴	Plurinational State of Bolivia
+dq:bo	🇧🇴
+dq:bol	🇧🇴
+dq:068	🇧🇴
+dq:bp:-	🇧🇵
+dq:caribbean:netherlands	🇧🇶	Caribbean Netherlands
+dq:bonaire	🇧🇶	Bonaire
+dq:sint:eustatius	🇧🇶	Sint Eustatius
+dq:saba	🇧🇶	Saba
+dq:bq	🇧🇶
+dq:bes	🇧🇶
+dq:535	🇧🇶
+dq:brazil::federative:republic:of	🇧🇷	Federative Republic of Brazil
+dq:br	🇧🇷
+dq:bra	🇧🇷
+dq:076	🇧🇷
+dq:bahamas::commonwealth:of	🇧🇸	Commonwealth of the Bahamas
+dq:bs	🇧🇸
+dq:bhs	🇧🇸
+dq:044	🇧🇸
+dq:bhutan::kingdom:of	🇧🇹	Kingdom of Bhutan
+dq:bt	🇧🇹
+dq:btn	🇧🇹
+dq:064	🇧🇹
+dq:bu:-	🇧🇺
+dq:bouvet::island	🇧🇻	Bouvet Island
+dq:bv	🇧🇻
+dq:bvt	🇧🇻
+dq:074	🇧🇻
+dq:botswana::republic:of	🇧🇼	Republic of Botswana
+dq:bw	🇧🇼
+dq:bwa	🇧🇼
+dq:072	🇧🇼
+dq:bx:-	🇧🇽
+dq:belarus::republic:of	🇧🇾	Republic of Belarus
+dq:by	🇧🇾
+dq:blr	🇧🇾
+dq:112	🇧🇾
+dq:belize	🇧🇿	Belize
+dq:bz	🇧🇿
+dq:blz	🇧🇿
+dq:084	🇧🇿
+dq:canada	🇨🇦	Canada
+dq:ca	🇨🇦
+dq:can	🇨🇦
+dq:124	🇨🇦
+dq:cb:-	🇨🇧
+dq:cocos::islands::territory:of	🇨🇨	Territory of the Cocos Islands
+dq:keeling::islands::territory:of	🇨🇨	Territory of the Keeling Islands
+dq:cc	🇨🇨
+dq:cck	🇨🇨
+dq:166	🇨🇨
+dq:congo::democratic:republic:of	🇨🇩	Democratic Republic of the Congo
+dq:cd	🇨🇩
+dq:cod	🇨🇩
+dq:180	🇨🇩
+dq:ce:-	🇨🇪
+dq:central:african::republic	🇨🇫	Central African Republic
+dq:cf	🇨🇫
+dq:caf	🇨🇫
+dq:140	🇨🇫
+dq:congo::republic:of	🇨🇬	Republic of the Congo
+dq:cg	🇨🇬
+dq:cog	🇨🇬
+dq:178	🇨🇬
+dq:swiss:confederation	🇨🇭	Swiss Confederation
+dq:switzerland	🇨🇭	Swiss Confederation
+dq:ch	🇨🇭
+dq:che	🇨🇭
+dq:756	🇨🇭
+dq:cote:divoire::republic:of	🇨🇮	Republic of Côte d'Ivoire
+dq:ci	🇨🇮
+dq:civ	🇨🇮
+dq:384	🇨🇮
+dq:cj:-	🇨🇯
+dq:cook::islands	🇨🇰	Cook Islands
+dq:ck	🇨🇰
+dq:cok	🇨🇰
+dq:184	🇨🇰
+dq:chile::republic:of	🇨🇱	Republic of Chile
+dq:cl	🇨🇱
+dq:chl	🇨🇱
+dq:152	🇨🇱
+dq:cameroon::republic:of	🇨🇲	Republic of Cameroon
+dq:cm	🇨🇲
+dq:cmr	🇨🇲
+dq:120	🇨🇲
+dq:china::peoples:republic:of	🇨🇳	People's Republic of China
+dq:cn	🇨🇳
+dq:chn	🇨🇳
+dq:156	🇨🇳
+dq:colombia::republic:of	🇨🇴	Republic of Colombia
+dq:co	🇨🇴
+dq:col	🇨🇴
+dq:170	🇨🇴
+dq:clipperton::island:-	🇨🇵	Clipperton Island
+dq:cp:-	🇨🇵
+dq:cq:-	🇨🇶
+dq:costa:rica::republic:of	🇨🇷	Republic of Costa Rica
+dq:cr	🇨🇷
+dq:cri	🇨🇷
+dq:188	🇨🇷
+dq:cs:-	🇨🇸
+dq:ct:-	🇨🇹
+dq:cuba::republic:of	🇨🇺	Republic of Cuba
+dq:cu	🇨🇺
+dq:cub	🇨🇺
+dq:192	🇨🇺
+dq:cabo:verde::republic:of	🇨🇻	Republic of Cabo Verde
+dq:cv	🇨🇻
+dq:cpv	🇨🇻
+dq:132	🇨🇻
+dq:curacao::country:of	🇨🇼	Country of Curaçao
+dq:cw	🇨🇼
+dq:cuw	🇨🇼
+dq:531	🇨🇼
+dq:christmas::island::territory:of	🇨🇽	Territory of Christmas Island
+dq:cx	🇨🇽
+dq:cxr	🇨🇽
+dq:162	🇨🇽
+dq:cyprus::republic:of	🇨🇾	Republic of Cyprus
+dq:cy	🇨🇾
+dq:cyp	🇨🇾
+dq:196	🇨🇾
+dq:czech::republic	🇨🇿	Czech Republic
+dq:czechia	🇨🇿	Czech Republic
+dq:cz	🇨🇿
+dq:cze	🇨🇿
+dq:203	🇨🇿
+dq:da:-	🇩🇦
+dq:db:-	🇩🇧
+dq:dc:-	🇩🇨
+dq:dd:-	🇩🇩
+dq:germany::federal:republic:of	🇩🇪	Federal Republic of Germany
+dq:de	🇩🇪
+dq:deu	🇩🇪
+dq:276	🇩🇪
+dq:df:-	🇩🇫
+dq:dg:-	🇩🇬
+dq:dh:-	🇩🇭
+dq:di:-	🇩🇮
+dq:djibouti::republic:of	🇩🇯	Republic of Djibouti
+dq:dj	🇩🇯
+dq:dji	🇩🇯
+dq:262	🇩🇯
+dq:denmark::kingdom:of	🇩🇰	Kingdom of Denmark
+dq:dk	🇩🇰
+dq:dnk	🇩🇰
+dq:208	🇩🇰
+dq:dl:-	🇩🇱
+dq:dominica::commonwealth:of	🇩🇲	Commonwealth of Dominica
+dq:dm	🇩🇲
+dq:dma	🇩🇲
+dq:212	🇩🇲
+dq:dn:-	🇩🇳
+dq:dominican::republic	🇩🇴	Dominican Republic
+dq:do	🇩🇴
+dq:dom	🇩🇴
+dq:214	🇩🇴
+dq:dp:-	🇩🇵
+dq:dq:-	🇩🇶
+dq:dr:-	🇩🇷
+dq:ds:-	🇩🇸
+dq:dt:-	🇩🇹
+dq:du:-	🇩🇺
+dq:dv:-	🇩🇻
+dq:dw:-	🇩🇼
+dq:dx:-	🇩🇽
+dq:dy:-	🇩🇾
+dq:algeria::peoples:democratic:republic:of	🇩🇿	People's Democratic Republic of Algeria
+dq:dz	🇩🇿
+dq:dza	🇩🇿
+dq:012	🇩🇿
+dq:ceuta:-	🇪🇦	Ceuta
+dq:melilla:-	🇪🇦	Melilla
+dq:ea:-	🇪🇦
+dq:eb:-	🇪🇧
+dq:ecuador::republic:of	🇪🇨	Republic of Ecuador
+dq:ec	🇪🇨
+dq:ecu	🇪🇨
+dq:218	🇪🇨
+dq:ed:-	🇪🇩
+dq:estonia::republic:of	🇪🇪	Republic of Estonia
+dq:ee	🇪🇪
+dq:est	🇪🇪
+dq:233	🇪🇪
+dq:ef:-	🇪🇫
+dq:egypt::arab:republic:of	🇪🇬	Arab Republic of Egypt
+dq:eg	🇪🇬
+dq:egy	🇪🇬
+dq:818	🇪🇬
+dq:western:sahara	🇪🇭	Western Sahara
+dq:eh	🇪🇭
+dq:esh	🇪🇭
+dq:732	🇪🇭
+dq:ei:-	🇪🇮
+dq:ej:-	🇪🇯
+dq:ek:-	🇪🇰
+dq:el:-	🇪🇱
+dq:em:-	🇪🇲
+dq:en:-	🇪🇳
+dq:eo:-	🇪🇴
+dq:ep:-	🇪🇵
+dq:eq:-	🇪🇶
+dq:eritrea::state:of	🇪🇷	State of Eritrea
+dq:er	🇪🇷
+dq:eri	🇪🇷
+dq:232	🇪🇷
+dq:spain::kingdom:of	🇪🇸	Kingdom of Spain
+dq:es	🇪🇸
+dq:esp	🇪🇸
+dq:724	🇪🇸
+dq:ethiopia::federal:democratic:republic:of	🇪🇹	Federal Democratic Republic of Ethiopia
+dq:et	🇪🇹
+dq:eth	🇪🇹
+dq:231	🇪🇹
+dq:european:union:-	🇪🇺	European Union
+dq:eu:-	🇪🇺
+dq:ev:-	🇪🇻
+dq:ew:-	🇪🇼
+dq:ex:-	🇪🇽
+dq:ey:-	🇪🇾
+dq:ez:-	🇪🇿
+dq:fa:-	🇫🇦
+dq:fb:-	🇫🇧
+dq:fc:-	🇫🇨
+dq:fd:-	🇫🇩
+dq:fe:-	🇫🇪
+dq:ff:-	🇫🇫
+dq:fg:-	🇫🇬
+dq:fh:-	🇫🇭
+dq:finland::republic:of	🇫🇮	Republic of Finland
+dq:fi	🇫🇮
+dq:fin	🇫🇮
+dq:246	🇫🇮
+dq:fiji	🇫🇯
+dq:fj	🇫🇯
+dq:fji	🇫🇯
+dq:242	🇫🇯
+dq:falkland::islands	🇫🇰	Falkland Islands
+dq:falklands	🇫🇰	Falklands
+dq:islas:malvinas	🇫🇰	Islas Malvinas
+dq:malvinas::islands	🇫🇰	Malvinas Islands
+dq:fk	🇫🇰
+dq:flk	🇫🇰
+dq:238	🇫🇰
+dq:fl:-	🇫🇱
+dq:micronesia::federated:states:of	🇫🇲	Federated States of Micronesia
+dq:fm	🇫🇲
+dq:fsm	🇫🇲
+dq:583	🇫🇲
+dq:fn:-	🇫🇳
+dq:faroe::islands	🇫🇴	Faroe Islands
+dq:faroes	🇫🇴	Faroes
+dq:fo	🇫🇴
+dq:fro	🇫🇴
+dq:234	🇫🇴
+dq:fp:-	🇫🇵
+dq:fq:-	🇫🇶
+dq:french::republic	🇫🇷	French Republic
+dq:france	🇫🇷	French Republic
+dq:fr	🇫🇷
+dq:fra	🇫🇷
+dq:250	🇫🇷
+dq:fs:-	🇫🇸
+dq:ft:-	🇫🇹
+dq:fu:-	🇫🇺
+dq:fv:-	🇫🇻
+dq:fw:-	🇫🇼
+dq:fx:-	🇫🇽
+dq:fy:-	🇫🇾
+dq:fz:-	🇫🇿
+dq:gabonese::republic	🇬🇦	Gabonese Republic
+dq:gabon	🇬🇦	Gabonese Republic
+dq:ga	🇬🇦
+dq:gab	🇬🇦
+dq:266	🇬🇦
+dq:united:kingdom	🇬🇧	United Kingdom
+dq:great:britain	🇬🇧	Great Britain
+dq:england	🇬🇧	England
+dq:wales	🇬🇧	Wales
+dq:scotland	🇬🇧	Scotland
+dq:northern:ireland	🇬🇧	Northern Ireland
+dq:gb	🇬🇧
+dq:gbr	🇬🇧
+dq:826	🇬🇧
+dq:gc:-	🇬🇨
+dq:grenada	🇬🇩	Grenada
+dq:gd	🇬🇩
+dq:grd	🇬🇩
+dq:308	🇬🇩
+dq:georgia	🇬🇪	Georgia
+dq:ge	🇬🇪
+dq:geo	🇬🇪
+dq:268	🇬🇪
+dq:french:guiana	🇬🇫	French Guiana
+dq:guiana	🇬🇫	French Guiana
+dq:gf	🇬🇫
+dq:guf	🇬🇫
+dq:254	🇬🇫
+dq:guernsey	🇬🇬	Guernsey
+dq:gg	🇬🇬
+dq:ggy	🇬🇬
+dq:831	🇬🇬
+dq:ghana::republic:of	🇬🇭	Republic of Ghana
+dq:gh	🇬🇭
+dq:gha	🇬🇭
+dq:288	🇬🇭
+dq:gibraltar	🇬🇮	Gibraltar
+dq:gi	🇬🇮
+dq:gib	🇬🇮
+dq:292	🇬🇮
+dq:gj:-	🇬🇯
+dq:gk:-	🇬🇰
+dq:greenland	🇬🇱	Greenland
+dq:gl	🇬🇱
+dq:grl	🇬🇱
+dq:304	🇬🇱
+dq:gambia::islamic:republic:of	🇬🇲	Islamic Republic of The Gambia
+dq:gm	🇬🇲
+dq:gmb	🇬🇲
+dq:270	🇬🇲
+dq:guinea::republic:of	🇬🇳	Republic of Guinea
+dq:gn	🇬🇳
+dq:gin	🇬🇳
+dq:324	🇬🇳
+dq:go:-	🇬🇴
+dq:guadeloupe	🇬🇵	Guadeloupe
+dq:gp	🇬🇵
+dq:glp	🇬🇵
+dq:312	🇬🇵
+dq:equatorial:guinea::republic:of	🇬🇶	Republic of Equatorial Guinea
+dq:gq	🇬🇶
+dq:gnq	🇬🇶
+dq:226	🇬🇶
+dq:hellenic::republic	🇬🇷	Hellenic Republic
+dq:greece	🇬🇷	Hellenic Republic
+dq:gr	🇬🇷
+dq:grc	🇬🇷
+dq:300	🇬🇷
+dq:south:georgia:and:the:south:sandwich::islands	🇬🇸	South Georgia and the South Sandwich Islands
+dq:gs	🇬🇸
+dq:sgs	🇬🇸
+dq:239	🇬🇸
+dq:guatemala::republic:of	🇬🇹	Republic of Guatemala
+dq:gt	🇬🇹
+dq:gtm	🇬🇹
+dq:320	🇬🇹
+dq:guam::territory:of	🇬🇺	Territory of Guam
+dq:gu	🇬🇺
+dq:gum	🇬🇺
+dq:316	🇬🇺
+dq:gv:-	🇬🇻
+dq:guinea:bissau::republic:of	🇬🇼	Republic of Guinea-Bissau
+dq:gw	🇬🇼
+dq:gnb	🇬🇼
+dq:624	🇬🇼
+dq:gx:-	🇬🇽
+dq:guyana::cooperative:republic:of	🇬🇾	Co-operative Republic of Guyana
+dq:gy	🇬🇾
+dq:guy	🇬🇾
+dq:328	🇬🇾
+dq:gz:-	🇬🇿
+dq:ha:-	🇭🇦
+dq:hb:-	🇭🇧
+dq:hc:-	🇭🇨
+dq:hd:-	🇭🇩
+dq:he:-	🇭🇪
+dq:hf:-	🇭🇫
+dq:hg:-	🇭🇬
+dq:hh:-	🇭🇭
+dq:hi:-	🇭🇮
+dq:hj:-	🇭🇯
+dq:hong:kong	🇭🇰	Hong Kong Special Administrative Region of the People's Republic of China
+dq:hk	🇭🇰
+dq:hkg	🇭🇰
+dq:344	🇭🇰
+dq:hl:-	🇭🇱
+dq:heard:island:and:mcdonald::islands	🇭🇲	Heard Island and McDonald Islands
+dq:hm	🇭🇲
+dq:hmd	🇭🇲
+dq:334	🇭🇲
+dq:honduras::republic:of	🇭🇳	Republic of Honduras
+dq:hn	🇭🇳
+dq:hnd	🇭🇳
+dq:340	🇭🇳
+dq:ho:-	🇭🇴
+dq:hp:-	🇭🇵
+dq:hq:-	🇭🇶
+dq:croatia::republic:of	🇭🇷	Republic of Croatia
+dq:hr	🇭🇷
+dq:hrv	🇭🇷
+dq:191	🇭🇷
+dq:hs:-	🇭🇸
+dq:haiti::republic:of	🇭🇹	Republic of Haiti
+dq:ht	🇭🇹
+dq:hti	🇭🇹
+dq:332	🇭🇹
+dq:hungary	🇭🇺	Hungary
+dq:hu	🇭🇺
+dq:hun	🇭🇺
+dq:348	🇭🇺
+dq:hv:-	🇭🇻
+dq:hw:-	🇭🇼
+dq:hx:-	🇭🇽
+dq:hy:-	🇭🇾
+dq:hz:-	🇭🇿
+dq:ia:-	🇮🇦
+dq:ib:-	🇮🇧
+dq:canary::islands:-	🇮🇨	Canary Islands
+dq:ic:-	🇮🇨
+dq:indonesia::republic:of	🇮🇩	Republic of Indonesia
+dq:id	🇮🇩
+dq:idn	🇮🇩
+dq:360	🇮🇩
+dq:ireland::republic:of	🇮🇪	Republic of Ireland
+dq:ie	🇮🇪
+dq:irl	🇮🇪
+dq:372	🇮🇪
+dq:if:-	🇮🇫
+dq:ig:-	🇮🇬
+dq:ih:-	🇮🇭
+dq:ii:-	🇮🇮
+dq:ij:-	🇮🇯
+dq:ik:-	🇮🇰
+dq:israel::state:of	🇮🇱	State of Israel
+dq:il	🇮🇱
+dq:isr	🇮🇱
+dq:376	🇮🇱
+dq:isle:of:man	🇮🇲	Isle of Man
+dq:im	🇮🇲
+dq:imn	🇮🇲
+dq:833	🇮🇲
+dq:india::republic:of	🇮🇳	Republic of India
+dq:in	🇮🇳
+dq:ind	🇮🇳
+dq:356	🇮🇳
+dq:british:indian:ocean:territory	🇮🇴	British Indian Ocean Territory
+dq:io	🇮🇴
+dq:iot	🇮🇴
+dq:086	🇮🇴
+dq:ip:-	🇮🇵
+dq:iraq::republic:of	🇮🇶	Republic of Iraq
+dq:iq	🇮🇶
+dq:irq	🇮🇶
+dq:368	🇮🇶
+dq:iran::islamic:republic:of	🇮🇷	Islamic Republic of Iran
+dq:ir	🇮🇷
+dq:irn	🇮🇷
+dq:364	🇮🇷
+dq:iceland::republic:of	🇮🇸	Republic of Iceland
+dq:is	🇮🇸
+dq:isl	🇮🇸
+dq:352	🇮🇸
+dq:italian::republic	🇮🇹	Italian Republic
+dq:italy	🇮🇹	Italian Republic
+dq:it	🇮🇹
+dq:ita	🇮🇹
+dq:380	🇮🇹
+dq:iu:-	🇮🇺
+dq:iv:-	🇮🇻
+dq:iw:-	🇮🇼
+dq:ix:-	🇮🇽
+dq:iy:-	🇮🇾
+dq:iz:-	🇮🇿
+dq:ja:-	🇯🇦
+dq:jb:-	🇯🇧
+dq:jc:-	🇯🇨
+dq:jd:-	🇯🇩
+dq:jersey::bailiwick:of	🇯🇪	Bailiwick of Jersey
+dq:je	🇯🇪
+dq:jey	🇯🇪
+dq:832	🇯🇪
+dq:jf:-	🇯🇫
+dq:jg:-	🇯🇬
+dq:jh:-	🇯🇭
+dq:ji:-	🇯🇮
+dq:jj:-	🇯🇯
+dq:jk:-	🇯🇰
+dq:jl:-	🇯🇱
+dq:jamaica	🇯🇲	Jamaica
+dq:jm	🇯🇲
+dq:jam	🇯🇲
+dq:388	🇯🇲
+dq:jn:-	🇯🇳
+dq:jordan::hashemite:kingdom:of	🇯🇴	Hashemite Kingdom of Jordan
+dq:jo	🇯🇴
+dq:jor	🇯🇴
+dq:400	🇯🇴
+dq:japan	🇯🇵	Japan
+dq:jp	🇯🇵
+dq:jpn	🇯🇵
+dq:392	🇯🇵
+dq:jq:-	🇯🇶
+dq:jr:-	🇯🇷
+dq:js:-	🇯🇸
+dq:jt:-	🇯🇹
+dq:ju:-	🇯🇺
+dq:jv:-	🇯🇻
+dq:jw:-	🇯🇼
+dq:jx:-	🇯🇽
+dq:jy:-	🇯🇾
+dq:jz:-	🇯🇿
+dq:ka:-	🇰🇦
+dq:kb:-	🇰🇧
+dq:kc:-	🇰🇨
+dq:kd:-	🇰🇩
+dq:kenya::republic:of	🇰🇪	Republic of Kenya
+dq:ke	🇰🇪
+dq:ken	🇰🇪
+dq:404	🇰🇪
+dq:kf:-	🇰🇫
+dq:kyrgyz::republic	🇰🇬	Kyrgyz Republic
+dq:kyrgyzstan	🇰🇬	Kyrgyz Republic
+dq:kg	🇰🇬
+dq:kgz	🇰🇬
+dq:417	🇰🇬
+dq:cambodia::kingdom:of	🇰🇭	Kingdom of Cambodia
+dq:kh	🇰🇭
+dq:khm	🇰🇭
+dq:116	🇰🇭
+dq:kiribati::republic:of	🇰🇮	Republic of Kiribati
+dq:ki	🇰🇮
+dq:kir	🇰🇮
+dq:296	🇰🇮
+dq:kj:-	🇰🇯
+dq:kk:-	🇰🇰
+dq:kl:-	🇰🇱
+dq:comoros::union:of	🇰🇲	Union of the Comoros
+dq:km	🇰🇲
+dq:com	🇰🇲
+dq:174	🇰🇲
+dq:saint:kitts:and:nevis	🇰🇳	Saint Kitts and Nevis
+dq:kn	🇰🇳
+dq:kna	🇰🇳
+dq:659	🇰🇳
+dq:ko:-	🇰🇴
+dq:korea::democratic:peoples:republic:of	🇰🇵	Democratic People's Republic of Korea
+dq:north:korea	🇰🇵	Democratic People's Republic of Korea
+dq:kp	🇰🇵
+dq:prk	🇰🇵
+dq:408	🇰🇵
+dq:kq:-	🇰🇶
+dq:korea::republic:of	🇰🇷	Republic of Korea
+dq:south:korea	🇰🇷	Republic of Korea
+dq:kr	🇰🇷
+dq:kor	🇰🇷
+dq:410	🇰🇷
+dq:ks:-	🇰🇸
+dq:kt:-	🇰🇹
+dq:ku:-	🇰🇺
+dq:kv:-	🇰🇻
+dq:kuwait::state:of	🇰🇼	State of Kuwait
+dq:kw	🇰🇼
+dq:kwt	🇰🇼
+dq:414	🇰🇼
+dq:kx:-	🇰🇽
+dq:cayman::islands	🇰🇾	Cayman Islands
+dq:ky	🇰🇾
+dq:cym	🇰🇾
+dq:136	🇰🇾
+dq:kazakhstan::republic:of	🇰🇿	Republic of Kazakhstan
+dq:kz	🇰🇿
+dq:kaz	🇰🇿
+dq:398	🇰🇿
+dq:lao::peoples:democratic:republic	🇱🇦	Lao People's Democratic Republic
+dq:laos	🇱🇦	Lao People's Democratic Republic
+dq:la	🇱🇦
+dq:lao	🇱🇦
+dq:418	🇱🇦
+dq:lebanese::republic	🇱🇧	Lebanese Republic
+dq:lebanon	🇱🇧	Lebanese Republic
+dq:lb	🇱🇧
+dq:lbn	🇱🇧
+dq:422	🇱🇧
+dq:saint:lucia	🇱🇨	Saint Lucia
+dq:lc	🇱🇨
+dq:lca	🇱🇨
+dq:662	🇱🇨
+dq:ld:-	🇱🇩
+dq:le:-	🇱🇪
+dq:lf:-	🇱🇫
+dq:lg:-	🇱🇬
+dq:lh:-	🇱🇭
+dq:liechtenstein::principality:of	🇱🇮	Principality of Liechtenstein
+dq:li	🇱🇮
+dq:lie	🇱🇮
+dq:438	🇱🇮
+dq:lj:-	🇱🇯
+dq:sri:lanka::democratic:socialist:republic:of	🇱🇰	Democratic Socialist Republic of Sri Lanka
+dq:lk	🇱🇰
+dq:lka	🇱🇰
+dq:144	🇱🇰
+dq:ll:-	🇱🇱
+dq:lm:-	🇱🇲
+dq:ln:-	🇱🇳
+dq:lo:-	🇱🇴
+dq:lp:-	🇱🇵
+dq:lq:-	🇱🇶
+dq:liberia::republic:of	🇱🇷	Republic of Liberia
+dq:lr	🇱🇷
+dq:lbr	🇱🇷
+dq:430	🇱🇷
+dq:lesotho::kingdom:of	🇱🇸	Kingdom of Lesotho
+dq:ls	🇱🇸
+dq:lso	🇱🇸
+dq:426	🇱🇸
+dq:lithuania::republic:of	🇱🇹	Republic of Lithuania
+dq:lt	🇱🇹
+dq:ltu	🇱🇹
+dq:440	🇱🇹
+dq:luxembourg::grand:duchy:of	🇱🇺	Grand Duchy of Luxembourg
+dq:lu	🇱🇺
+dq:lux	🇱🇺
+dq:442	🇱🇺
+dq:latvia::republic:of	🇱🇻	Republic of Latvia
+dq:lv	🇱🇻
+dq:lva	🇱🇻
+dq:428	🇱🇻
+dq:lw:-	🇱🇼
+dq:lx:-	🇱🇽
+dq:libya	🇱🇾	Libya
+dq:ly	🇱🇾
+dq:lby	🇱🇾
+dq:434	🇱🇾
+dq:lz:-	🇱🇿
+dq:morocco::kingdom:of	🇲🇦	Kingdom of Morocco
+dq:ma	🇲🇦
+dq:mar	🇲🇦
+dq:504	🇲🇦
+dq:mb:-	🇲🇧
+dq:monaco::principality:of	🇲🇨	Principality of Monaco
+dq:mc	🇲🇨
+dq:mco	🇲🇨
+dq:492	🇲🇨
+dq:moldova::republic:of	🇲🇩	Republic of Moldova
+dq:md	🇲🇩
+dq:mda	🇲🇩
+dq:498	🇲🇩
+dq:montenegro	🇲🇪	Montenegro
+dq:me	🇲🇪
+dq:mne	🇲🇪
+dq:499	🇲🇪
+dq:saint:martin	🇲🇫	Saint Martin
+dq:mf	🇲🇫
+dq:maf	🇲🇫
+dq:663	🇲🇫
+dq:madagascar::republic:of	🇲🇬	Republic of Madagascar
+dq:mg	🇲🇬
+dq:mdg	🇲🇬
+dq:450	🇲🇬
+dq:marshall::islands	🇲🇭	Marshall Islands
+dq:mh	🇲🇭
+dq:mhl	🇲🇭
+dq:584	🇲🇭
+dq:mi:-	🇲🇮
+dq:mj:-	🇲🇯
+dq:macedonia::republic:of	🇲🇰	Republic of Macedonia
+dq:mk	🇲🇰
+dq:mkd	🇲🇰
+dq:807	🇲🇰
+dq:mali::republic:of	🇲🇱	Republic of Mali
+dq:ml	🇲🇱
+dq:mli	🇲🇱
+dq:466	🇲🇱
+dq:myanmar::republic:of:the:union:of	🇲🇲	Republic of the Union of Myanmar
+dq:burma	🇲🇲	Republic of the Union of Myanmar
+dq:mm	🇲🇲
+dq:mmr	🇲🇲
+dq:104	🇲🇲
+dq:mongolia	🇲🇳	Mongolia
+dq:mn	🇲🇳
+dq:mng	🇲🇳
+dq:496	🇲🇳
+dq:macao	🇲🇴	Macao Special Administrative Region of the People's Republic of China
+dq:macau	🇲🇴	Macao Special Administrative Region of the People's Republic of China
+dq:mo	🇲🇴
+dq:mac	🇲🇴
+dq:446	🇲🇴
+dq:northern:mariana::islands::commonwealth:of	🇲🇵	Commonwealth of the Northern Mariana Islands
+dq:mp	🇲🇵
+dq:mnp	🇲🇵
+dq:580	🇲🇵
+dq:martinique	🇲🇶	Martinique
+dq:mq	🇲🇶
+dq:mtq	🇲🇶
+dq:474	🇲🇶
+dq:mauritania::islamic:republic:of	🇲🇷	Islamic Republic of Mauritania
+dq:mr	🇲🇷
+dq:mrt	🇲🇷
+dq:478	🇲🇷
+dq:montserrat	🇲🇸	Montserrat
+dq:ms	🇲🇸
+dq:msr	🇲🇸
+dq:500	🇲🇸
+dq:malta::republic:of	🇲🇹	Republic of Malta
+dq:mt	🇲🇹
+dq:mlt	🇲🇹
+dq:470	🇲🇹
+dq:mauritius::republic:of	🇲🇺	Republic of Mauritius
+dq:mu	🇲🇺
+dq:mus	🇲🇺
+dq:480	🇲🇺
+dq:maldives::republic:of	🇲🇻	Republic of Maldives
+dq:mv	🇲🇻
+dq:mdv	🇲🇻
+dq:462	🇲🇻
+dq:malawi::republic:of	🇲🇼	Republic of Malawi
+dq:mw	🇲🇼
+dq:mwi	🇲🇼
+dq:454	🇲🇼
+dq:united:mexican:states	🇲🇽	United Mexican States
+dq:mexico	🇲🇽	United Mexican States
+dq:mx	🇲🇽
+dq:mex	🇲🇽
+dq:484	🇲🇽
+dq:malaysia	🇲🇾	Malaysia
+dq:my	🇲🇾
+dq:mys	🇲🇾
+dq:458	🇲🇾
+dq:mozambique::republic:of	🇲🇿	Republic of Mozambique
+dq:mz	🇲🇿
+dq:moz	🇲🇿
+dq:508	🇲🇿
+dq:namibia::republic:of	🇳🇦	Republic of Namibia
+dq:na	🇳🇦
+dq:nam	🇳🇦
+dq:516	🇳🇦
+dq:nb:-	🇳🇧
+dq:new:caledonia	🇳🇨	New Caledonia
+dq:nc	🇳🇨
+dq:ncl	🇳🇨
+dq:540	🇳🇨
+dq:nd:-	🇳🇩
+dq:niger::republic:of	🇳🇪	Republic of Niger
+dq:ne	🇳🇪
+dq:ner	🇳🇪
+dq:562	🇳🇪
+dq:norfolk::island::territory:of	🇳🇫	Territory of Norfolk Island
+dq:nf	🇳🇫
+dq:nfk	🇳🇫
+dq:574	🇳🇫
+dq:nigeria::federal:republic:of	🇳🇬	Federal Republic of Nigeria
+dq:ng	🇳🇬
+dq:nga	🇳🇬
+dq:566	🇳🇬
+dq:nh:-	🇳🇭
+dq:nicaragua::republic:of	🇳🇮	Republic of Nicaragua
+dq:ni	🇳🇮
+dq:nic	🇳🇮
+dq:558	🇳🇮
+dq:nj:-	🇳🇯
+dq:nk:-	🇳🇰
+dq:netherlands	🇳🇱	Netherlands
+dq:holland	🇳🇱	Netherlands
+dq:nl	🇳🇱
+dq:nld	🇳🇱
+dq:528	🇳🇱
+dq:nm:-	🇳🇲
+dq:nn:-	🇳🇳
+dq:norway::kingdom:of	🇳🇴	Kingdom of Norway
+dq:no	🇳🇴
+dq:nor	🇳🇴
+dq:578	🇳🇴
+dq:nepal::federal:democratic:republic:of	🇳🇵	Federal Democratic Republic of Nepal
+dq:np	🇳🇵
+dq:npl	🇳🇵
+dq:524	🇳🇵
+dq:nq:-	🇳🇶
+dq:nauru::republic:of	🇳🇷	Republic of Nauru
+dq:nr	🇳🇷
+dq:nru	🇳🇷
+dq:520	🇳🇷
+dq:ns:-	🇳🇸
+dq:nt:-	🇳🇹
+dq:niue	🇳🇺
+dq:nu	🇳🇺
+dq:niu	🇳🇺
+dq:570	🇳🇺
+dq:nv:-	🇳🇻
+dq:nw:-	🇳🇼
+dq:nx:-	🇳🇽
+dq:ny:-	🇳🇾
+dq:new:zealand	🇳🇿	New Zealand
+dq:nz	🇳🇿
+dq:nzl	🇳🇿
+dq:554	🇳🇿
+dq:oa:-	🇴🇦
+dq:ob:-	🇴🇧
+dq:oc:-	🇴🇨
+dq:od:-	🇴🇩
+dq:oe:-	🇴🇪
+dq:of:-	🇴🇫
+dq:og:-	🇴🇬
+dq:oh:-	🇴🇭
+dq:oi:-	🇴🇮
+dq:oj:-	🇴🇯
+dq:ok:-	🇴🇰
+dq:ol:-	🇴🇱
+dq:oman::sultanate:of	🇴🇲	Sultanate of Oman
+dq:om	🇴🇲
+dq:omn	🇴🇲
+dq:512	🇴🇲
+dq:on:-	🇴🇳
+dq:oo:-	🇴🇴
+dq:op:-	🇴🇵
+dq:oq:-	🇴🇶
+dq:or:-	🇴🇷
+dq:os:-	🇴🇸
+dq:ot:-	🇴🇹
+dq:ou:-	🇴🇺
+dq:ov:-	🇴🇻
+dq:ow:-	🇴🇼
+dq:ox:-	🇴🇽
+dq:oy:-	🇴🇾
+dq:oz:-	🇴🇿
+dq:panama::republic:of	🇵🇦	Republic of Panama
+dq:pa	🇵🇦
+dq:pan	🇵🇦
+dq:591	🇵🇦
+dq:pb:-	🇵🇧
+dq:pc:-	🇵🇨
+dq:pd:-	🇵🇩
+dq:peru	🇵🇪
+dq:pe	🇵🇪
+dq:per	🇵🇪
+dq:604	🇵🇪
+dq:french:polynesia	🇵🇫	French Polynesia
+dq:pf	🇵🇫
+dq:pyf	🇵🇫
+dq:258	🇵🇫
+dq:papua:new:guinea::independent:state:of	🇵🇬	Independent State of Papua New Guinea
+dq:pg	🇵🇬
+dq:png	🇵🇬
+dq:598	🇵🇬
+dq:philippines::republic:of	🇵🇭	Republic of the Philippines
+dq:ph	🇵🇭
+dq:phl	🇵🇭
+dq:608	🇵🇭
+dq:pi:-	🇵🇮
+dq:pj:-	🇵🇯
+dq:pakistan::islamic:republic:of	🇵🇰	Islamic Republic of Pakistan
+dq:pk	🇵🇰
+dq:pak	🇵🇰
+dq:586	🇵🇰
+dq:poland::republic:of	🇵🇱	Republic of Poland
+dq:pl	🇵🇱
+dq:pol	🇵🇱
+dq:616	🇵🇱
+dq:saint:pierre:and:miquelon::overseas:collectivity:of	🇵🇲	Overseas collectivity of Saint Pierre and Miquelon
+dq:pm	🇵🇲
+dq:spm	🇵🇲
+dq:666	🇵🇲
+dq:pitcairn:henderson:ducie:oeno::islands	🇵🇳	Pitcairn, Henderson, Ducie and Oeno Islands
+dq:pitcairn::island	🇵🇳	Pitcairn Island
+dq:henderson::island	🇵🇳	Henderson Island
+dq:ducie::island	🇵🇳	Ducie Island
+dq:oeno::island	🇵🇳	Oeno Island
+dq:pn	🇵🇳
+dq:pcn	🇵🇳
+dq:612	🇵🇳
+dq:po:-	🇵🇴
+dq:pp:-	🇵🇵
+dq:pq:-	🇵🇶
+dq:puerto:rico::commonwealth:of	🇵🇷	Commonwealth of Puerto Rico
+dq:pr	🇵🇷
+dq:pri	🇵🇷
+dq:630	🇵🇷
+dq:palestine::state:of	🇵🇸	State of Palestine
+dq:ps	🇵🇸
+dq:pse	🇵🇸
+dq:275	🇵🇸
+dq:portuguese::republic	🇵🇹	Portuguese Republic
+dq:portugal	🇵🇹	Portuguese Republic
+dq:pt	🇵🇹
+dq:prt	🇵🇹
+dq:620	🇵🇹
+dq:pu:-	🇵🇺
+dq:pv:-	🇵🇻
+dq:palau::republic:of	🇵🇼	Republic of Palau
+dq:pw	🇵🇼
+dq:plw	🇵🇼
+dq:585	🇵🇼
+dq:px:-	🇵🇽
+dq:paraguay::republic:of	🇵🇾	Republic of Paraguay
+dq:py	🇵🇾
+dq:pry	🇵🇾
+dq:600	🇵🇾
+dq:pz:-	🇵🇿
+dq:qatar::state:of	🇶🇦	State of Qatar
+dq:qa	🇶🇦
+dq:qat	🇶🇦
+dq:634	🇶🇦
+dq:qb:-	🇶🇧
+dq:qc:-	🇶🇨
+dq:qd:-	🇶🇩
+dq:qe:-	🇶🇪
+dq:qf:-	🇶🇫
+dq:qg:-	🇶🇬
+dq:qh:-	🇶🇭
+dq:qi:-	🇶🇮
+dq:qj:-	🇶🇯
+dq:qk:-	🇶🇰
+dq:ql:-	🇶🇱
+dq:qm:-	🇶🇲
+dq:qn:-	🇶🇳
+dq:qo:-	🇶🇴
+dq:qp:-	🇶🇵
+dq:qq:-	🇶🇶
+dq:qr:-	🇶🇷
+dq:qs:-	🇶🇸
+dq:qt:-	🇶🇹
+dq:qu:-	🇶🇺
+dq:qv:-	🇶🇻
+dq:qw:-	🇶🇼
+dq:qx:-	🇶🇽
+dq:qy:-	🇶🇾
+dq:qz:-	🇶🇿
+dq:ra:-	🇷🇦
+dq:rb:-	🇷🇧
+dq:rc:-	🇷🇨
+dq:rd:-	🇷🇩
+dq:reunion::holy:empire:of	🇷🇪	Holy Empire of Reunion
+dq:re	🇷🇪
+dq:reu	🇷🇪
+dq:638	🇷🇪
+dq:rf:-	🇷🇫
+dq:rg:-	🇷🇬
+dq:rh:-	🇷🇭
+dq:ri:-	🇷🇮
+dq:rj:-	🇷🇯
+dq:rk:-	🇷🇰
+dq:rl:-	🇷🇱
+dq:rm:-	🇷🇲
+dq:rn:-	🇷🇳
+dq:romania	🇷🇴	Romania
+dq:ro	🇷🇴
+dq:rou	🇷🇴
+dq:642	🇷🇴
+dq:rp:-	🇷🇵
+dq:rq:-	🇷🇶
+dq:rr:-	🇷🇷
+dq:serbia::republic:of	🇷🇸	Republic of Serbia
+dq:rs	🇷🇸
+dq:srb	🇷🇸
+dq:688	🇷🇸
+dq:rt:-	🇷🇹
+dq:russian:federation	🇷🇺	Russian Federation
+dq:russia	🇷🇺	Russian Federation
+dq:ru	🇷🇺
+dq:rus	🇷🇺
+dq:643	🇷🇺
+dq:rv:-	🇷🇻
+dq:rwanda::republic:of	🇷🇼	Republic of Rwanda
+dq:rw	🇷🇼
+dq:rwa	🇷🇼
+dq:646	🇷🇼
+dq:rx:-	🇷🇽
+dq:ry:-	🇷🇾
+dq:rz:-	🇷🇿
+dq:saudi:arabia::kingdom:of	🇸🇦	Kingdom of Saudi Arabia
+dq:sa	🇸🇦
+dq:sau	🇸🇦
+dq:682	🇸🇦
+dq:solomon::islands	🇸🇧	Solomon Islands
+dq:sb	🇸🇧
+dq:slb	🇸🇧
+dq:090	🇸🇧
+dq:seychelles::republic:of	🇸🇨	Republic of Seychelles
+dq:sc	🇸🇨
+dq:syc	🇸🇨
+dq:690	🇸🇨
+dq:sudan::republic:of	🇸🇩	Republic of the Sudan
+dq:sd	🇸🇩
+dq:sdn	🇸🇩
+dq:729	🇸🇩
+dq:sweden::kingdom:of	🇸🇪	Kingdom of Sweden
+dq:se	🇸🇪
+dq:swe	🇸🇪
+dq:752	🇸🇪
+dq:sf:-	🇸🇫
+dq:singapore::republic:of	🇸🇬	Republic of Singapore
+dq:sg	🇸🇬
+dq:sgp	🇸🇬
+dq:702	🇸🇬
+dq:saint:helenians	🇸🇭	Saint Helena, Ascension and Tristan da Cunha
+dq:saint:helena	🇸🇭	Saint Helena
+dq:ascension:island	🇸🇭	Ascension Island
+dq:tristan:da:cunha	🇸🇭	Tristan da Cunha
+dq:sh	🇸🇭
+dq:shn	🇸🇭
+dq:654	🇸🇭
+dq:slovenia::republic:of	🇸🇮	Republic of Slovenia
+dq:si	🇸🇮
+dq:svn	🇸🇮
+dq:705	🇸🇮
+dq:svalbard:and:jan:mayen	🇸🇯	Svalbard and Jan Mayen
+dq:svalbard	🇸🇯	Svalbard
+dq:jan:mayen	🇸🇯	Jan Mayen
+dq:sj	🇸🇯
+dq:sjm	🇸🇯
+dq:744	🇸🇯
+dq:slovak::republic	🇸🇰	Slovak Republic
+dq:slovakia	🇸🇰	Slovak Republic
+dq:sk	🇸🇰
+dq:svk	🇸🇰
+dq:703	🇸🇰
+dq:sierra:leone::republic:of	🇸🇱	Republic of Sierra Leone
+dq:sl	🇸🇱
+dq:sle	🇸🇱
+dq:694	🇸🇱
+dq:san:marino::republic:of	🇸🇲	(Most Serene) Republic of San Marino
+dq:sm	🇸🇲
+dq:smr	🇸🇲
+dq:674	🇸🇲
+dq:senegal::republic:of	🇸🇳	Republic of Senegal
+dq:sn	🇸🇳
+dq:sen	🇸🇳
+dq:686	🇸🇳
+dq:somalia::federal:republic:of	🇸🇴	Federal Republic of Somalia
+dq:so	🇸🇴
+dq:som	🇸🇴
+dq:706	🇸🇴
+dq:sp:-	🇸🇵
+dq:sq:-	🇸🇶
+dq:suriname::republic:of	🇸🇷	Republic of Suriname
+dq:sr	🇸🇷
+dq:sur	🇸🇷
+dq:740	🇸🇷
+dq:south:sudan::republic:of	🇸🇸	Republic of South Sudan
+dq:ss	🇸🇸
+dq:ssd	🇸🇸
+dq:728	🇸🇸
+dq:sao:tome:and:principe::democratic:republic:of	🇸🇹	Democratic Republic of São Tomé and Príncipe
+dq:st	🇸🇹
+dq:stp	🇸🇹
+dq:678	🇸🇹
+dq:su:-	🇸🇺
+dq:el:salvador::republic:of	🇸🇻	Republic of El Salvador
+dq:sv	🇸🇻
+dq:slv	🇸🇻
+dq:222	🇸🇻
+dq:sw:-	🇸🇼
+dq:sint:maarten	🇸🇽	Sint Maarten
+dq:sx	🇸🇽
+dq:sxm	🇸🇽
+dq:534	🇸🇽
+dq:syrian::arab:republic	🇸🇾	Syrian Arab Republic
+dq:syria	🇸🇾	Syrian Arab Republic
+dq:sy	🇸🇾
+dq:syr	🇸🇾
+dq:760	🇸🇾
+dq:swaziland::kingdom:of	🇸🇿	Kingdom of Swaziland
+dq:sz	🇸🇿
+dq:swz	🇸🇿
+dq:748	🇸🇿
+dq:tristan:da:cunha:-	🇹🇦	Tristan da Cunha
+dq:ta:-	🇹🇦
+dq:tb:-	🇹🇧
+dq:turks:and:caicos::islands	🇹🇨	Turks and Caicos Islands
+dq:turks::islands	🇹🇨	Turks Islands
+dq:caicos::islands	🇹🇨	Caicos Islands
+dq:tc	🇹🇨
+dq:tca	🇹🇨
+dq:796	🇹🇨
+dq:chad::republic:of	🇹🇩	Republic of Chad
+dq:td	🇹🇩
+dq:tcd	🇹🇩
+dq:148	🇹🇩
+dq:te:-	🇹🇪
+dq:french:southern:territories	🇹🇫	French Southern Territories
+dq:tf	🇹🇫
+dq:atf	🇹🇫
+dq:260	🇹🇫
+dq:togolese::republic	🇹🇬	Togolese Republic
+dq:togo	🇹🇬	Togolese Republic
+dq:tg	🇹🇬
+dq:tgo	🇹🇬
+dq:768	🇹🇬
+dq:thailand::kingdom:of	🇹🇭	Kingdom of Thailand
+dq:th	🇹🇭
+dq:tha	🇹🇭
+dq:764	🇹🇭
+dq:ti:-	🇹🇮
+dq:tajikistan::republic:of	🇹🇯	Republic of Tajikistan
+dq:tj	🇹🇯
+dq:tjk	🇹🇯
+dq:762	🇹🇯
+dq:tokelau	🇹🇰	Tokelau
+dq:tk	🇹🇰
+dq:tkl	🇹🇰
+dq:772	🇹🇰
+dq:timor:leste::democratic:republic:of	🇹🇱	Democratic Republic of Timor-Leste
+dq:east:timor	🇹🇱	Democratic Republic of Timor-Leste
+dq:tl	🇹🇱
+dq:tls	🇹🇱
+dq:626	🇹🇱
+dq:turkmenistan	🇹🇲	Turkmenistan
+dq:tm	🇹🇲
+dq:tkm	🇹🇲
+dq:795	🇹🇲
+dq:tunisian::republic	🇹🇳	Tunisian Republic
+dq:tunisia	🇹🇳	Tunisian Republic
+dq:tn	🇹🇳
+dq:tun	🇹🇳
+dq:788	🇹🇳
+dq:tonga::kingdom:of	🇹🇴	Kingdom of Tonga
+dq:to	🇹🇴
+dq:ton	🇹🇴
+dq:776	🇹🇴
+dq:tp:-	🇹🇵
+dq:tq:-	🇹🇶
+dq:turkey::republic:of	🇹🇷	Republic of Turkey
+dq:tr	🇹🇷
+dq:tur	🇹🇷
+dq:792	🇹🇷
+dq:ts:-	🇹🇸
+dq:trinidad:and:tobago::republic:of	🇹🇹	Republic of Trinidad and Tobago
+dq:tt	🇹🇹
+dq:tto	🇹🇹
+dq:780	🇹🇹
+dq:tu:-	🇹🇺
+dq:tuvalu	🇹🇻	Tuvalu
+dq:tv	🇹🇻
+dq:tuv	🇹🇻
+dq:798	🇹🇻
+dq:taiwan	🇹🇼	Taiwan Province of the People's Republic of China / Republic of China
+dq:tw	🇹🇼
+dq:twn	🇹🇼
+dq:158	🇹🇼
+dq:tx:-	🇹🇽
+dq:ty:-	🇹🇾
+dq:tanzania::united:republic:of	🇹🇿	United Republic of Tanzania
+dq:tz	🇹🇿
+dq:tza	🇹🇿
+dq:834	🇹🇿
+dq:ukraine	🇺🇦	Ukraine
+dq:ua	🇺🇦
+dq:ukr	🇺🇦
+dq:804	🇺🇦
+dq:ub:-	🇺🇧
+dq:uc:-	🇺🇨
+dq:ud:-	🇺🇩
+dq:ue:-	🇺🇪
+dq:uf:-	🇺🇫
+dq:uganda::republic:of	🇺🇬	Republic of Uganda
+dq:ug	🇺🇬
+dq:uga	🇺🇬
+dq:800	🇺🇬
+dq:uh:-	🇺🇭
+dq:ui:-	🇺🇮
+dq:uj:-	🇺🇯
+dq:uk:-	🇺🇰
+dq:ul:-	🇺🇱
+dq:united:states:minor:outlying::islands	🇺🇲	United States Minor Outlying Islands
+dq:um	🇺🇲
+dq:umi	🇺🇲
+dq:581	🇺🇲
+dq:un:-	🇺🇳
+dq:uo:-	🇺🇴
+dq:up:-	🇺🇵
+dq:uq:-	🇺🇶
+dq:ur:-	🇺🇷
+dq:america::united:states:of	🇺🇸	United States of America
+dq:united:states::of:america	🇺🇸	United States of America
+dq:us	🇺🇸
+dq:usa	🇺🇸
+dq:840	🇺🇸
+dq:ut:-	🇺🇹
+dq:uu:-	🇺🇺
+dq:uv:-	🇺🇻
+dq:uw:-	🇺🇼
+dq:ux:-	🇺🇽
+dq:uruguay::oriental:republic:of	🇺🇾	Oriental Republic of Uruguay
+dq:uy	🇺🇾
+dq:ury	🇺🇾
+dq:858	🇺🇾
+dq:uzbekistan::republic:of	🇺🇿	Republic of Uzbekistan
+dq:uz	🇺🇿
+dq:uzb	🇺🇿
+dq:860	🇺🇿
+dq:vatican:city::state:of	🇻🇦	Vatican City State
+dq:va	🇻🇦
+dq:vat	🇻🇦
+dq:336	🇻🇦
+dq:vb:-	🇻🇧
+dq:saint:vincent::and:the:grenadines	🇻🇨	Saint Vincent and the Grenadines
+dq:vc	🇻🇨
+dq:vct	🇻🇨
+dq:670	🇻🇨
+dq:vd:-	🇻🇩
+dq:venezuela::bolivarian:republic:of	🇻🇪	Bolivarian Republic of Venezuela
+dq:ve	🇻🇪
+dq:ven	🇻🇪
+dq:862	🇻🇪
+dq:vf:-	🇻🇫
+dq:virgin::islands:british	🇻🇬	(British) Virgin Islands
+dq:vg	🇻🇬
+dq:vgb	🇻🇬
+dq:092	🇻🇬
+dq:vh:-	🇻🇭
+dq:virgin::islands:american	🇻🇮	Virgin Islands of the United States
+dq:vi	🇻🇮
+dq:vir	🇻🇮
+dq:850	🇻🇮
+dq:vj:-	🇻🇯
+dq:vk:-	🇻🇰
+dq:vl:-	🇻🇱
+dq:vm:-	🇻🇲
+dq:vietnam::socialist:republic:of	🇻🇳	Socialist Republic of Vietnam
+dq:vn	🇻🇳
+dq:vnm	🇻🇳
+dq:704	🇻🇳
+dq:vo:-	🇻🇴
+dq:vp:-	🇻🇵
+dq:vq:-	🇻🇶
+dq:vr:-	🇻🇷
+dq:vs:-	🇻🇸
+dq:vt:-	🇻🇹
+dq:vanuatu::republic:of	🇻🇺	Republic of Vanuatu
+dq:vu	🇻🇺
+dq:vut	🇻🇺
+dq:548	🇻🇺
+dq:vv:-	🇻🇻
+dq:vw:-	🇻🇼
+dq:vx:-	🇻🇽
+dq:vy:-	🇻🇾
+dq:vz:-	🇻🇿
+dq:wa:-	🇼🇦
+dq:wb:-	🇼🇧
+dq:wc:-	🇼🇨
+dq:wd:-	🇼🇩
+dq:we:-	🇼🇪
+dq:wallis:and:futuna::territory:of	🇼🇫	Territory of the Wallis and Futuna Islands
+dq:wf	🇼🇫
+dq:wlf	🇼🇫
+dq:876	🇼🇫
+dq:wg:-	🇼🇬
+dq:wh:-	🇼🇭
+dq:wi:-	🇼🇮
+dq:wj:-	🇼🇯
+dq:wk:-	🇼🇰
+dq:wl:-	🇼🇱
+dq:wm:-	🇼🇲
+dq:wn:-	🇼🇳
+dq:wo:-	🇼🇴
+dq:wp:-	🇼🇵
+dq:wq:-	🇼🇶
+dq:wr:-	🇼🇷
+dq:samoa::independent:state:of	🇼🇸	Independent State of Samoa
+dq:ws	🇼🇸
+dq:wsm	🇼🇸
+dq:882	🇼🇸
+dq:wt:-	🇼🇹
+dq:wu:-	🇼🇺
+dq:wv:-	🇼🇻
+dq:ww:-	🇼🇼
+dq:wx:-	🇼🇽
+dq:wy:-	🇼🇾
+dq:wz:-	🇼🇿
+dq:xa:-	🇽🇦
+dq:xb:-	🇽🇧
+dq:xc:-	🇽🇨
+dq:xd:-	🇽🇩
+dq:xe:-	🇽🇪
+dq:xf:-	🇽🇫
+dq:xg:-	🇽🇬
+dq:xh:-	🇽🇭
+dq:xi:-	🇽🇮
+dq:xj:-	🇽🇯
+dq:kosovo::republic:of:-	🇽🇰	Republic of Kosovo
+dq:xk:-	🇽🇰
+dq:xl:-	🇽🇱
+dq:xm:-	🇽🇲
+dq:xn:-	🇽🇳
+dq:xo:-	🇽🇴
+dq:xp:-	🇽🇵
+dq:xq:-	🇽🇶
+dq:xr:-	🇽🇷
+dq:xs:-	🇽🇸
+dq:xt:-	🇽🇹
+dq:xu:-	🇽🇺
+dq:xv:-	🇽🇻
+dq:xw:-	🇽🇼
+dq:xx:-	🇽🇽
+dq:xy:-	🇽🇾
+dq:xz:-	🇽🇿
+dq:ya:-	🇾🇦
+dq:yb:-	🇾🇧
+dq:yc:-	🇾🇨
+dq:yd:-	🇾🇩
+dq:yemen::republic:of	🇾🇪	Republic of Yemen
+dq:ye	🇾🇪
+dq:yem	🇾🇪
+dq:887	🇾🇪
+dq:yf:-	🇾🇫
+dq:yg:-	🇾🇬
+dq:yh:-	🇾🇭
+dq:yi:-	🇾🇮
+dq:yj:-	🇾🇯
+dq:yk:-	🇾🇰
+dq:yl:-	🇾🇱
+dq:ym:-	🇾🇲
+dq:yn:-	🇾🇳
+dq:yo:-	🇾🇴
+dq:yp:-	🇾🇵
+dq:yq:-	🇾🇶
+dq:yr:-	🇾🇷
+dq:ys:-	🇾🇸
+dq:mayotte::department:of	🇾🇹	Department of Mayotte
+dq:yt	🇾🇹
+dq:myt	🇾🇹
+dq:175	🇾🇹
+dq:yu:-	🇾🇺
+dq:yv:-	🇾🇻
+dq:yw:-	🇾🇼
+dq:yx:-	🇾🇽
+dq:yy:-	🇾🇾
+dq:yz:-	🇾🇿
+dq:south:africa::republic:of	🇿🇦	Republic of South Africa
+dq:za	🇿🇦
+dq:zaf	🇿🇦
+dq:710	🇿🇦
+dq:zb:-	🇿🇧
+dq:zc:-	🇿🇨
+dq:zd:-	🇿🇩
+dq:ze:-	🇿🇪
+dq:zf:-	🇿🇫
+dq:zg:-	🇿🇬
+dq:zh:-	🇿🇭
+dq:zi:-	🇿🇮
+dq:zj:-	🇿🇯
+dq:zk:-	🇿🇰
+dq:zl:-	🇿🇱
+dq:zambia::republic:of	🇿🇲	Republic of Zambia
+dq:zm	🇿🇲
+dq:zmb	🇿🇲
+dq:894	🇿🇲
+dq:zn:-	🇿🇳
+dq:zo:-	🇿🇴
+dq:zp:-	🇿🇵
+dq:zq:-	🇿🇶
+dq:zr:-	🇿🇷
+dq:zs:-	🇿🇸
+dq:zt:-	🇿🇹
+dq:zu:-	🇿🇺
+dq:zv:-	🇿🇻
+dq:zimbabwe::republic:of	🇿🇼	Republic of Zimbabwe
+dq:zw	🇿🇼
+dq:zwe	🇿🇼
+dq:716	🇿🇼
+dq:zx:-	🇿🇽
+dq:zy:-	🇿🇾
+dq:zz:-	🇿🇿
+# 國家地區 }
