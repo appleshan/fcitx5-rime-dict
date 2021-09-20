@@ -53,7 +53,7 @@ import_tables:
   - luna_pinyin.extended/symbols              #部分数学符号、Emoji表情及希腊字母。300
 
   # 其他扩展词库
-  - luna_pinyin.extended/zhwiki-20210722      #肥猫维基百万大词库。119w
+# - luna_pinyin.extended/zhwiki-20210722      #肥猫维基百万大词库。119w
   - luna_pinyin.extended/essay
   - luna_pinyin.extended/sogou_chengyusuyu    #成语俗语
 # - luna_pinyin.extended/sogou_shici          #诗词名句大全
