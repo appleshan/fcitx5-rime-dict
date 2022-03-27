@@ -1,0 +1,194 @@
+# Rime schema
+# encoding: utf-8
+#
+# 部署位置：
+# ~/.local/share/fcitx5/rime  (Linux)
+# ~/Library/Rime  (Mac OS)
+# %APPDATA%\Rime  (Windows)
+#
+# 於重新部署後生效
+#
+
+# 方案配置，改进自「袖珍简化字拼音」方案。
+schema:
+  schema_id: pinyin_simp
+  name: 袖珍简化字拼音
+  version: '0.9'
+  author:
+    - Dvel
+  description: |
+    https://github.com/iDvel/rime-settings
+  dependencies:
+    - easy_en
+
+
+# 功能开关
+switches:
+  - name: ascii_mode
+    reset: 0
+    # states: [ 中文, 西文 ] 永远不切换，所以注释了
+  - name: full_shape
+    reset: 0
+    # states: [ 半角, 全角 ] 永远不切换，所以注释了
+  - name: ascii_punct
+    reset: 0
+    # states: [ 。，, ．， ] 永远不切换，所以注释了
+  - name: emoji
+    reset: 1  # 默认永远开启
+  - name: traditionalization
+    reset: 0  # 如果不想每次切换 App 都自动变成简体，可以注释这里
+    states: [ 简, 繁繁繁 ]
+
+
+# 输入引擎
+engine:
+  processors:         # ※ 默认组件：處理各類按鍵消息
+    - ascii_composer  # ※ 處理西文模式及中西文切換
+    - recognizer      # ※ 與 matcher 搭配，處理符合特定規則的輸入碼，如網址、反查等
+    - key_binder      # ※ 在特定條件下將按鍵綁定到其他按鍵，如重定義逗號、句號爲候選翻頁鍵
+    - speller         # ※ 拼寫處理器，接受字符按鍵，編輯輸入碼
+    - punctuator      # ※ 句讀處理器，將單個字符按鍵直接映射爲文字符號
+    - selector        # ※ 選字處理器，處理數字選字鍵、上、下候選定位、換頁鍵
+    - navigator       # ※ 處理輸入欄內的光標移動鍵
+    - express_editor  # ※ 編輯器，處理空格、回車上屏、回退鍵等
+  segmentors:             # ※ 默认组件：識別不同內容類型，將輸入碼分段
+    - ascii_segmentor     # ※ 標識西文段落
+    - matcher             # ※ 標識符合特定規則的段落，如網址、反查等
+    - abc_segmentor       # ※ 標識常規的文字段落
+    - punct_segmentor     # ※ 標識句讀段落
+    - fallback_segmentor  # ※ 標識其他未標識段落
+  translators:           # ※ 默认组件：翻譯特定類型的編碼段爲一組候選文字
+    - punct_translator   # ※ 轉換標點符號
+    - script_translator  # ※ 腳本翻譯器，用於拼音等基於音節表的輸入方案
+    - table_translator@custom_phrase  # 自定义文本
+    - table_translator@easy_en        # 英文输入
+    - lua_translator@date_translator  # 时间、日期、星期
+  filters: # ※ 默认组件：過濾翻譯的結果
+    - simplifier@emoji           # Emoji
+    - simplifier@traditionalize  # 简繁切换
+    - uniquifier                 # 去重
+
+
+# Emoji（删除了 Emoji，修改为一些词语和符号映射）
+emoji:
+  opencc_config: emoji.json
+  option_name: emoji
+
+
+# 增加简繁切换快捷键
+key_binder:
+  import_preset: default
+  bindings/+:
+    - {accept: "Control+Shift+4", toggle: traditionalization, when: always}
+    - {accept: "Control+Shift+F", toggle: traditionalization, when: always}
+    - {accept: "Control+slash",   toggle: traditionalization, when: always}  # Ctrl + /
+
+
+# 简繁切换
+traditionalize:
+  opencc_config: s2t.json  # 其他选项（如台湾繁体、香港繁体）参考：https://github.com/BYVoid/OpenCC#configurations-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6
+  option_name: traditionalization
+  tips: all  # 简繁提示，注释掉可直接出繁
+
+
+# 自定义文本：custom_phrase.txt
+custom_phrase:
+  dictionary: ""
+  user_dict: custom_phrase
+  db_class: stabledb
+  enable_completion: false
+  enable_sentence: false
+  # 享有最高优先级。但不与其他翻译器共同造句（所以尽量不要配置完整编码的字词，只配置缩写）
+  # custom_phrase 的权重应该比 easy_en 大，否则单编码时英文可能会冲在最前头，造成选取困难
+  initial_quality: 1
+
+
+# 英文输入方案
+easy_en:
+  dictionary: easy_en # 挂载英文主词库 easy_en.dict.yaml
+  spelling_hints: 9
+  enable_completion: true # 关闭后英文不会有提示，只会在打全时才会显示，体验不是很好
+  enable_sentence: false
+  initial_quality: 0 # -1
+
+
+# 八股文语言模型
+grammar:
+  language: zh-hans-t-essay-bgw
+translator/contextual_suggestions: true
+translator/max_homophones: 7
+translator/max_homographs: 7
+
+
+# 挂载拼音主词库
+translator:
+  dictionary: pinyin_simp  # 挂载拼音主词库 pinyin_simp.dict.yaml
+  # preedit_format 影响到输入框的显示，和回车上屏的字符
+  preedit_format:
+    # - xform/([nl])v/$1ü/
+    # - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
+
+
+# 拼写设定
+speller:
+  # alphabet: zyxwvutsrqponmlkjihgfedcba  # 默认
+  # 因为 easy_en 是以依赖的形式加载的，所以它自己的 alphabet 不管用，必须在此方案设定支持大写
+  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
+  delimiter: " '"
+  # 拼音纠错
+  algebra: 
+    # 原装
+    - erase/^hm$/
+    - erase/^m$/
+    - erase/^n$/
+    - erase/^ng$/
+    - abbrev/^([a-z]).+$/$1/
+    - abbrev/^([zcs]h).+$/$1/  # 在超级简拼中，zh ch sh 视为整体（ch'sh → 城市），而不是像这样分开（c'h、s'h → 从还是很）。
+    # 原装的 v u 转换
+    - derive/^([nl])ue$/$1ve/
+    - derive/^([jqxy])u/$1v/
+    # 原装的模糊拼音
+    - derive/un$/uen/
+    - derive/ui$/uei/
+    - derive/iu$/iou/
+    # 原装自动纠错
+    - derive/([aeiou])ng$/$1gn/  # agn → ang
+    # - derive/([dtngkhrzcs])o(u|ng)$/$1o/ # do → dou|dong 
+    # - derive/ong$/on/ # lon → long  ton → tong ...
+    - derive/ao$/oa/  # hoa → hao
+    - derive/([iu])a(o|ng?)$/a$1$2/  # tain → tian  laing → liang  laio → liao
+    # 自己添加的：
+    # - derive/ian$/ina/ # tina → tian 和「李娜、提案」有冲突
+    - derive/ua$/au/  # shau → shua  hau → hua
+    - derive/i([ao])ng$/in$1g/  # linag → liang qinog → qiong
+    - derive/([wrtypsdfghjklzcbnm])a([on])$/$1$2a/  # hoa → hao  gna  → gan
+    - derive/([wtpsghkzcbnm])ai$/$1ia/  # zia → zai 不转换[lia, lai][dia, dai]这两组正确的拼写
+    - derive/([qjx])ia$/$1ai/  # jai → jia
+    - derive/([zcs])h([aeiu])$/$1$2h/  # zeh → zhe  cah → cha  sih → shi 
+    - derive/([zcs])h(a|e|i|o|u|an|en|un|ui|ang|eng|ong|ou|uo|ai|ei)$/h$1$2/  # hsi → shi  hsang → shang
+    - derive/([wrpsdfghklzcbm])en$/$1ne/  # zne → zen
+    - derive/([zcs])h([aeiou])ng$/$1hn$2g/  # zhnag → zhang  chneg → cheng
+    - derive/([qjx])ie$/$1ei/  # qei → qie
+    - derive/([wfghkz])ei$/$1ie/  # fie → fei
+    - derive/([rtsghkzc])ui$/$1iu/  # hiu → hui
+    - derive/([qjlxbnm])iu$/$1ui/  # qui → qiu
+    - derive/([rtysdghklzcn])ong$/$1ng/  # tng → tong
+    - derive/([qypjlxbnm])in$/$1ni/  # lni → lin
+    - derive/([aeo])ng$/n$1g/  # cnag → cang
+    - derive/([qylxnj])ue$/$1eu/  # xeu → xue
+
+
+# 引入自己的修改过的 symbols：
+# - 标点符号全部直接上屏（半角状态时）
+# - 将「/」模式修改为了「v」模式，并新增一些自定义内容
+# - 自己增加了一点点符号
+punctuator:
+  # import_preset: symbols  # 默认
+  import_preset: symbols.custom
+
+recognizer:
+  import_preset: default
+  patterns:
+    # punct: "^/([0-9]+[a-z]*|[a-z]+)$" # 默认
+    punct: "^v([a-zA-Z]+|[0-9]0?)$"  # 用 “v” 替换 “/”，并支持大写

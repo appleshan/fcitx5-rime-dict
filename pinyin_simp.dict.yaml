@@ -1,0 +1,22 @@
+# Rime dictionary
+# encoding: utf-8
+
+---
+name: pinyin_simp
+version: "1"
+sort: by_weight
+vocabulary: essay-zh-hans
+
+import_tables:
+  # ----------------------- 字表 ----------------------- #
+  - cn_dicts/8105    # 《通用汉字规范表》8105 字字表
+
+
+  # --------------------- 系统词库 --------------------- #
+  - cn_dicts/sys     # 华宇野风系统词库 + 清华大学开源词库 + 修订
+
+
+  # ---------------------- 扩展 ----------------------- #
+  - cn_dicts/sys_ext # 扩展词库
+  - cn_dicts/av      # 著名表演艺术家
+...

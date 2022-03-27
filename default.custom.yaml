@@ -10,11 +10,11 @@
 #
 
 # @See https://sh.alynx.one/posts/My-RIME/
+# @See https://github.com/iDvel/rime-settings/
 
 patch:
   schema_list:                                           # 激活的输入方案选单
-    - schema: luna_pinyin_simp                           # 朙月拼音・简化字
-    - schema: luna_pinyin_fluency                        # 朙月拼音・语句流
+    - schema: pinyin_simp
     - schema: numbers                                    # 大写数字
     - schema: symbols
 
@@ -23,164 +23,102 @@ patch:
     caption: "【设置菜单】"
     # 用半角斜线而不是奇丑无比的全角斜线做分隔符。
     option_list_separator: "/"
+    # 切换方案、简繁、全半角的快捷键
     hotkeys:
-      # - "Control+s"
-      - "Control+grave"                                  # control + `
-      - "F4"
+      - F4
+      - "Control+grave" # control + `
+      # - Control+Shift+grave
+      # [] # 无快捷键：只有一个方案、不切换全半角、不切换简繁等，可以设置为空数组
 
   menu:
     page_size: 9                                         # 候选词数量
 
+  # 下面设置的整体效果：不用 CapsLock 和 Shift 切换输入法，切换输入法使用系统快捷键，如 Ctrl/Cmd + 空格
   ascii_composer:
-    # 按 CapsLock 输出大写英文字母。
+    # Caps 只切换大小写英文字母。
     good_old_caps_lock: true
-    # `inline_ascii` 在输入框内插入英文。
-    # `commit_text` 候选文字上屏并切换至英文。
-    # `commit_code` 输入拼音上屏并切换至英文。
-    # `clear` 清除拼音并切换至英文。
-    # `noop` 屏蔽此按键。
+
+    # 打字打到一半时按下了 Caps 后： commit_code 上屏拼音的英文字母； commit_text 上屏拼音拼出的词语
+    # 如果你设置 `Caps_Lock` 为 `noop`，一个奇怪的问题是退格键不能用了，除非取消大写锁定。
+    # 所以我直接设置文字上屏了。
     switch_key:
-      # 如果你设置 `Caps_Lock` 为 `noop`，
-      # 一个奇怪的问题是退格键不能用了，除非取消大写锁定。
-      # 所以我直接设置文字上屏了。
+      # `inline_ascii` 在输入框内插入英文。
+      # `commit_text` 候选文字上屏并切换至英文。
+      # `commit_code` 输入拼音上屏并切换至英文。
+      # `clear` 清除拼音并切换至英文。
+      # `noop` 屏蔽此按键。
       Caps_Lock: "commit_text"
-      Shift_L: "commit_code"
-      Shift_R: "commit_code"
+      Shift_L: "noop"
+      Shift_R: "noop"
       Control_L: "noop"
       Control_R: "noop"
 
-  key_binder:
-    bindings:
-      # Emacs 键位，我喜欢。
-      # 可是谁给我解释一下为什么 Left 是按字拼音跳而 Right 是按字母跳？
-      - accept: "Control+p"
-        send: "Up"
-        when: "composing"
-      - accept: "Control+n"
-        send: "Down"
-        when: "composing"
-      - accept: "Control+b"
-        send: "Left"
-        when: "composing"
-      - accept: "Control+f"
-        send: "Right"
-        when: "composing"
-      - accept: "Alt+b"
-        send: "Shift+Left"
-        when: "composing"
-      - accept: "Alt+f"
-        send: "Shift+Right"
-        when: "composing"
-      - accept: "Control+a"
-        send: "Home"
-        when: "composing"
-      - accept: "Control+e"
-        send: "End"
-        when: "composing"
-      - accept: "Control+d"
-        send: "Delete"
-        when: "composing"
-      # 这个用不了，不过估计也用不到。
-      # - accept: "Control+k"
-      #   send: "Shift+Delete"
-      #   when: "composing"
-      - accept: "Control+h"
-        send: "BackSpace"
-        when: "composing"
-      - accept: "Alt+h"
-        send: "Shift+BackSpace"
-        when: "composing"
-      - accept: "Control+g"
-        send: "Escape"
-        when: "composing"
-      - accept: "Control+bracketleft"
-        send: "Escape"
-        when: "composing"
-      - accept: "Alt+v"
-        send: "Page_Up"
-        when: "composing"
-      - accept: "Control+v"
-        send: "Page_Down"
-        when: "composing"
-      # 正常人不会用 Tab 切换拼音光标的，相信我。用它切换选项更快。
-      # - accept: "ISO_Left_Tab"
-      #   send: "Shift+Left"
-      #   when: "composing"
-      # - accept: "Shift+Tab"
-      #   send: "Shift+Left"
-      #   when: "composing"
-      # - accept: "Tab"
-      #   send: "Shift+Right"
-      #   when: "composing"
-      - accept: "Tab"
-        send: "Down"
-        when: "has_menu"
-      - accept: "ISO_Left_Tab"
-        send: "Up"
-        when: "has_menu"
-      # 鬼知道为什么这个也用不了！
-      - accept: "Shift+Tab"
-        send: "Up"
-        when: "has_menu"
-      - accept: "minus"
-        send: "Page_Up"
-        when: "has_menu"
-      - accept: "equal"
-        send: "Page_Down"
-        when: "has_menu"
-      - accept: "bracketleft"
-        send: "Page_Up"
-        when: "has_menu"
-      - accept: "bracketright"
-        send: "Page_Down"
-        when: "has_menu"
-      # 我觉得正常人不应该用逗号和句号翻页。
-      # - accept: "comma"
-      #   send: "Page_Up"
-      #   when: "paging"
-      # - accept: "period"
-      #   send: "Page_Down"
-      #   when: "has_menu"
-      # 鬼才记得住这么多乱七八糟的快捷键，我翻菜单比背这玩意快多了。
-      # - accept: "Control+Shift+1"
-      #   select: ".next"
-      #   when: "always"
-      # - accept: "Control+Shift+2"
-      #   toggle: "ascii_mode"
-      #   when: "always"
-      # - accept: "Control+Shift+3"
-      #   toggle: "full_shape"
-      #   when: "always"
-      # - accept: "Control+Shift+4"
-      #   toggle: simplification
-      #   when: "always"
-      # - accept: "Control+Shift+5"
-      #   toggle: "extended_charset"
-      #   when: "always"
-      # - accept: "Control+Shift+exclam"
-      #   select: "".next"
-      #   when: "always"
-      # - accept: "Control+Shift+at"
-      #   toggle: "ascii_mode"
-      #   when: "always"
-      # - accept: "Control+Shift+numbersign"
-      #   toggle: "full_shape"
-      #   when: "always"
-      # - accept: "Control+Shift+dollar"
-      #   toggle: "simplification"
-      #   when: "always"
-      # - accept: "Control+Shift+percent"
-      #   toggle: "extended_charset"
-      #   when: "always"
-      # 你就是那个经常害我变成全角的罪魁祸首！
-      # - accept: "Shift+space"
-      #   toggle: "full_shape"
-      #   when: "always"
-      # - accept: "Control+period"
-      #   toggle: "ascii_punct"
-      #   when: "always"
+  # 按键绑定： https://github.com/rime/rime-prelude/blob/master/key_bindings.yaml
+  key_binder/bindings:
+    # Emacs 键位，我喜欢。
+    # - { when: composing, accept: Control+p, send: Up }
+    # - { when: composing, accept: Control+n, send: Down }
+    # - { when: composing, accept: Control+b, send: Left }
+    # - { when: composing, accept: Control+f, send: Right }
+    - { when: composing, accept: Control+a, send: Home } # 光标跳转至行首
+    - { when: composing, accept: Control+e, send: End }  # 光标跳转至行尾
+    # - { when: composing, accept: Control+d, send: Delete }
+    # - { when: composing, accept: Control+k, send: Shift+Delete }
+    # - { when: composing, accept: Control+h, send: BackSpace }
+    # - { when: composing, accept: Control+g, send: Escape }
+    # - { when: composing, accept: Control+bracketleft, send: Escape }
+    # - { when: composing, accept: Control+y, send: Page_Up }
+    # - { when: composing, accept: Alt+v, send: Page_Up }
+    # - { when: composing, accept: Control+v, send: Page_Down }
 
-#  符号快速输入和部分符号的快速上屏
+    # 正常人不会用 Tab 切换拼音光标的，相信我。用它切换选项更快。
+    # move_by_word_with_tab: Tab/Shift+Tab 切换光标至下/上一个拼音
+    # - { when: composing, accept: ISO_Left_Tab, send: Shift+Left }
+    # - { when: composing, accept: Shift+Tab, send: Shift+Left }
+    # - { when: composing, accept: Tab, send: Shift+Right }
+    - { when: has_menu,  accept: Tab, send: Down }
+    - { when: has_menu,  accept: ISO_Left_Tab, send: Up }
+
+    # paging_with_minus_equal: 翻页：- =
+    - { when: has_menu, accept: minus, send: Page_Up }
+    - { when: has_menu, accept: equal, send: Page_Down }
+
+    # 我觉得正常人不应该用逗号和句号翻页。
+    # paging_with_comma_period: 翻页：, .
+    # - { when: paging, accept: comma, send: Page_Up }
+    # - { when: has_menu, accept: period, send: Page_Down }
+
+    # paging_with_brackets: 翻页：[ ]
+    # - { when: paging, accept: bracketleft, send: Page_Up }
+    # - { when: has_menu, accept: bracketright, send: Page_Down }
+
+    # 鬼才记得住这么多乱七八糟的快捷键，我翻菜单比背这玩意快多了。
+    # numbered_mode_switch:
+    # - { when: always, accept: Control+Shift+1, select: .next }
+    # - { when: always, accept: Control+Shift+2, toggle: ascii_mode }
+    # - { when: always, accept: Control+Shift+3, toggle: full_shape }
+    # - { when: always, accept: Control+Shift+4, toggle: simplification }
+    # - { when: always, accept: Control+Shift+5, toggle: extended_charset }
+    # - { when: always, accept: Control+Shift+exclam, select: .next }
+    # - { when: always, accept: Control+Shift+at, toggle: ascii_mode }
+    # - { when: always, accept: Control+Shift+numbersign, toggle: full_shape }
+    # - { when: always, accept: Control+Shift+dollar, toggle: simplification }
+    # - { when: always, accept: Control+Shift+percent, toggle: extended_charset }
+
+    # 你就是那个经常害我变成全角的罪魁祸首！
+    # windows_compatible_mode_switch:
+    # - { when: always, accept: Shift+space, toggle: full_shape }
+    # - { when: always, accept: Control+period, toggle: ascii_punct }
+
+    # optimized_mode_switch:
+    # - { when: always, accept: Control+Shift+space, select: .next }
+    # - { when: always, accept: Shift+space, toggle: ascii_mode }
+    # - { when: always, accept: Control+comma, toggle: full_shape }
+    # - { when: always, accept: Control+period, toggle: ascii_punct }
+    # - { when: always, accept: Control+slash, toggle: simplification }
+    # - { when: always, accept: Control+backslash, toggle: extended_charset }
+
+  # 符号快速输入和部分符号的快速上屏
   # 为了方便编写 Markdown，把一些奇怪的写中文根本用不到的符号弹出菜单改成直接输出英文符号。
   # 另一些直接默认输出中文符号，需要英文符号可以切换英文输入。
   # 有关 `"!": {commit: "！"}` 的写法含义是你设置这个键为翻页按键了，

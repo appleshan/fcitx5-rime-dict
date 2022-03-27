@@ -1,11 +1,9 @@
-customization:
-  distribution_code_name: Weasel
-  distribution_version: 0.14.3
-  generator: "Weasel::UIStyleSettings"
-  modified_time: "Thu Jun 27 17:32:21 2019"
-  rime_version: 1.5.3
-
 patch:
+  # 状态通知，全开（always）\全关（never）\适当（appropriate）
+  # options: always | never | appropriate
+  # 实际体验没有发现 always 和 appropriate 有什么区别。。。
+  show_notifications_when: always
+
   "style/display_tray_icon": true
   "style/horizontal": true #横排显示
   "style/font_face": "Microsoft YaHei" #字体
@@ -22,15 +20,23 @@ patch:
   "style/layout/candidate_spacing": 24 # 候选字间隔
   "style/layout/round_corner": 0 #候选字背景色块圆角幅度
 
+  # 配色方案名称
   "style/color_scheme": Micosoft
-  "preset_color_schemes/Micosoft":
-    name: "Micosoft"
-    author: "XNOM"
-    back_color: 0xffffff #候选框 背景色
-    border_color: 0xD77800 #候选框 边框颜色
-    text_color: 0x000000 #已选择字 文字颜色
-    hilited_text_color: 0x000000 #已选择字右侧拼音 文字颜色
-    hilited_back_color: 0xffffff #已选择字右侧拼音 背景色
-    hilited_candidate_text_color: 0xffffff #候选字颜色
-    hilited_candidate_back_color: 0xD77800 #候选字背景色
-    candidate_text_color: 0x000000 #未候选字颜色
+
+  preset_color_schemes:
+    Micosoft:
+      name: "Micosoft"
+      author: "XNOM"
+      back_color: 0xffffff #候选框 背景色
+      border_color: 0xD77800 #候选框 边框颜色
+      text_color: 0x000000 #已选择字 文字颜色
+      hilited_text_color: 0x000000 #已选择字右侧拼音 文字颜色
+      hilited_back_color: 0xffffff #已选择字右侧拼音 背景色
+      hilited_candidate_text_color: 0xffffff #候选字颜色
+      hilited_candidate_back_color: 0xD77800 #候选字背景色
+      candidate_text_color: 0x000000 #未候选字颜色
+
+  # 可参考 https://github.com/rime/weasel/blob/371e08e4c799beef15ec93b461b17125c77f166b/output/data/weasel.yaml
+  app_options:    # App默认英文
+    com.microsoft.VSCode:
+        ascii_mode: false     # 关闭默认英文
