@@ -19,4 +19,10 @@ import_tables:
   # ---------------------- 扩展 ----------------------- #
   - cn_dicts/sys_ext # 扩展词库
   - cn_dicts/av      # 著名表演艺术家
+  - cn_dicts/sogouw  # 互联网词库(SogouW)。15w
+  - cn_dicts/sogou_chengyusuyu    #成语俗语
+  # - cn_dicts/sogou_shici          #诗词名句大全
+  # - cn_dicts/sogou_yaoming        #药品名称
+  # - cn_dicts/food                 #食物
+  - cn_dicts/kaifa                #计算机软件开发术语
 ...

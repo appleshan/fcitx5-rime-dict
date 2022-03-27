@@ -26,9 +26,9 @@ patch:
     # 切换方案、简繁、全半角的快捷键
     hotkeys:
       - F4
-      - "Control+grave" # control + `
+      - Control+grave # control + `
       # - Control+Shift+grave
-      # [] # 无快捷键：只有一个方案、不切换全半角、不切换简繁等，可以设置为空数组
+      # ~ # 无快捷键：只有一个方案、不切换全半角、不切换简繁等，可以设置为空
 
   menu:
     page_size: 9                                         # 候选词数量
