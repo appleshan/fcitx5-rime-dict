@@ -21,11 +21,11 @@ patch:
   "style/layout/round_corner": 0 #候选字背景色块圆角幅度
 
   # 配色方案名称
-  "style/color_scheme": Micosoft
+  "style/color_scheme": Microsoft
 
   preset_color_schemes:
-    Micosoft:
-      name: "Micosoft"
+    Microsoft:
+      name: "Microsoft"
       author: "XNOM"
       back_color: 0xffffff #候选框 背景色
       border_color: 0xD77800 #候选框 边框颜色
