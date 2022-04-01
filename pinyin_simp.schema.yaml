@@ -137,7 +137,7 @@ speller:
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
   delimiter: " '"
   # 拼音纠错
-  algebra: 
+  algebra:
     # 原装
     - erase/^hm$/
     - erase/^m$/
