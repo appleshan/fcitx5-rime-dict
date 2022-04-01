@@ -155,7 +155,6 @@ QQ邮箱	qqyzxl
 又有	uu
 39454075	qq
 apple.shan@gmail.com	email
-http://lims.hbmlab.net:8080/KP-LIMS/	kplims
 
 # 容错词
 什么	sheme
