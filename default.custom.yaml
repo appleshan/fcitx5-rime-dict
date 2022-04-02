@@ -71,6 +71,11 @@ patch:
     # - { when: composing, accept: Alt+v, send: Page_Up }
     # - { when: composing, accept: Control+v, send: Page_Down }
 
+    # - { when: has_menu, accept: comma, send: 2 }  # 候选2 用逗号选择 （修改的时候不要多加或少加空格，跟前面的对齐就好了）
+    # - { when: has_menu, accept: period, send: 3 } # 候选3 用句号选择
+    - { when: has_menu, accept: semicolon, send: 2 }  # 候选2 用分号
+    - { when: has_menu, accept: apostrophe, send: 3 } # 候选3 用单引号
+
     # 正常人不会用 Tab 切换拼音光标的，相信我。用它切换选项更快。
     # move_by_word_with_tab: Tab/Shift+Tab 切换光标至下/上一个拼音
     # - { when: composing, accept: ISO_Left_Tab, send: Shift+Left }
