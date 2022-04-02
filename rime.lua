@@ -15,10 +15,10 @@ function date_translator(input, seg)
         yield(Candidate("time", seg.start, seg._end, os.date("%Y%m%d%H%M%S"), ""))
     end
 
-		-- 增加一个 ISO 8601 的时间格式 （示例 2022-01-07T20:42:51+08:00）
-		if (input == "dt") then
-			yield(Candidate("datetime", seg.start, seg._end, os.date("%Y-%m-%dT%H:%M:%S+08:00"), ""))
-		end
+	-- 增加一个 ISO 8601 的时间格式 （示例 2022-01-07T20:42:51+08:00）
+	if (input == "dt") then
+		yield(Candidate("datetime", seg.start, seg._end, os.date("%Y-%m-%dT%H:%M:%S+08:00"), ""))
+	end
 
     -- @JiandanDream
     -- https://github.com/KyleBing/rime-wubi86-jidian/issues/54
