@@ -79,9 +79,9 @@ emoji:
 key_binder:
   import_preset: default
   bindings/+:
-    - {accept: "Control+Shift+4", toggle: traditionalization, when: always}
     # - {accept: "Control+Shift+F", toggle: traditionalization, when: always}
     # - {accept: "Control+slash",   toggle: traditionalization, when: always}  # Ctrl + /
+    - {accept: "Control+Shift+Alt+F", toggle: traditionalization, when: always}
 
 
 # 简繁切换
