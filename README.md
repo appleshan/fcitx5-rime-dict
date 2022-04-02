@@ -23,10 +23,6 @@
 
 <br>
 
-**部署前请先将 `pinyin_simp.dict.yaml` 中的 `- cn_dicts/private` 这行删除，这是我自己的私人词库（联系人之类的），否则部署时会报错。**
-
-<br>
-
 详细介绍：[我的 Rime 配置 2022](https://dvel.me/posts/my-rime-setting-2022/)
 
 ## 使用说明
