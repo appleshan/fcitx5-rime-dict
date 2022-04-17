@@ -1,0 +1,7 @@
+distribution_code_name: Weasel
+distribution_name: "小狼毫"
+distribution_version: 0.14.3
+install_time: "Tue Dec  7 13:43:05 2021"
+installation_id: "de7d4543-5380-41ae-bf93-b75609fe1390"  # 同步和备份 ID
+sync_dir: "C:/Users/apple/OneDrive/文档/persist/sync/rime"  # 同步和备份目录，我直接放到 OneDrive
+rime_version: 1.5.3
