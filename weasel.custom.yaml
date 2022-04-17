@@ -5,7 +5,7 @@ patch:
   show_notifications_when: always
 
   "style/display_tray_icon": true
-  "style/horizontal": true #横排显示
+  "style/horizontal": false #竖排显示
   "style/font_face": "PingFang SC Regular" #字体
   "style/font_point": 13 #字体大小
   "style/inline_preedit": true # 嵌入式候选窗单行显示
