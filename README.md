@@ -2,11 +2,9 @@
 
 ![demo](./demo.jpg)
 
-
-
 ## 基本套路
 
--   Squirrel 0.15.2 简体 全拼
+-   Weasel 0.14.3 简体 全拼
 -   「[袖珍简化字方案](https://github.com/rime/rime-pinyin-simp)」作为基础
     -   [简繁切换](https://github.com/rime/home/issues/388#issuecomment-504572224)
     -   [动态日期、时间、星期](https://github.com/KyleBing/rime-wubi86-jidian)
