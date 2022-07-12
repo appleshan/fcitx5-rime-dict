@@ -11,7 +11,7 @@
 # 词库不全，仅仅是自己看过的，觉得还不错的。。。
 ---
 name: av
-version: "2022-04-28"
+version: "2022-05-01"
 sort: by_weight
 vocabulary: essay-zh-hans
 ...
@@ -30,6 +30,7 @@ vocabulary: essay-zh-hans
 星谷瞳 xing gu tong
 星野遥 xing ye yao
 本田岬 ben tian jia
+小野夕子  xiao ye xi zi
 
 # 简体和日文不同的：
 爱田飞鸟  ai tian fei niao
@@ -42,6 +43,7 @@ vocabulary: essay-zh-hans
 蒂亚  di ya
 楪可怜 die ke lian
 妃悠爱 fei you ai
+枫可怜 feng ke lian
 枫花恋 feng hua lian
 宫下华奈  gong xia hua nai
 古川伊织  gu chuan yi zhi
@@ -119,3 +121,8 @@ vocabulary: essay-zh-hans
 栗山莉绪  li shan li xu
 纱纱原百合 sha sha yuan bai he
 堀北湾 ku bei wan
+冲田杏梨  chong tian xing li
+天使萌 tian shi meng
+西条琉璃  xi tiao liu li
+君岛美绪  jun dao mei xu
+波多野结衣 bo duo ye jie yi
