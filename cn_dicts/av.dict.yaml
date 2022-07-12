@@ -11,10 +11,11 @@
 # 词库不全，仅仅是自己看过的，觉得还不错的。。。
 ---
 name: av
-version: "2022-04-25"
+version: "2022-04-28"
 sort: by_weight
 vocabulary: essay-zh-hans
 ...
+# +_+
 # 简体和日文相同的：
 东凛  dong lin
 山岸逢花  shan an feng hua
