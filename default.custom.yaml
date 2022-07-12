@@ -13,6 +13,7 @@
 # @See https://github.com/iDvel/rime-settings/
 
 patch:
+  # 方案列表
   schema_list:                                           # 激活的输入方案选单
     - schema: pinyin_simp
     - schema: numbers                                    # 大写数字
@@ -38,20 +39,19 @@ patch:
     # Caps 只切换大小写英文字母。
     good_old_caps_lock: true
 
-    # 打字打到一半时按下了 Caps 后： commit_code 上屏拼音的英文字母； commit_text 上屏拼音拼出的词语
-    # 如果你设置 `Caps_Lock` 为 `noop`，一个奇怪的问题是退格键不能用了，除非取消大写锁定。
-    # 所以我直接设置文字上屏了。
     switch_key:
       # `inline_ascii` 在输入框内插入英文。
       # `commit_text` 候选文字上屏并切换至英文。
       # `commit_code` 输入拼音上屏并切换至英文。
       # `clear` 清除拼音并切换至英文。
       # `noop` 屏蔽此按键。
-      Caps_Lock: "commit_text"
-      Shift_L: "noop"
-      Shift_R: "noop"
-      Control_L: "noop"
-      Control_R: "noop"
+      Caps_Lock: commit_text # 打字打到一半时按下了 Caps 后： commit_code 上屏拼音的英文字母 | commit_text 上屏拼音拼出的词语
+      # 如果你设置 `Caps_Lock` 为 `noop`，一个奇怪的问题是退格键不能用了，除非取消大写锁定。
+      # 所以我直接设置文字上屏了。
+      Shift_L: noop # noop | commit_code ，是否用 Shift 切换中英文
+      Shift_R: noop
+      Control_L: noop
+      Control_R: noop
 
   # 按键绑定： https://github.com/rime/rime-prelude/blob/master/key_bindings.yaml
   key_binder/bindings:

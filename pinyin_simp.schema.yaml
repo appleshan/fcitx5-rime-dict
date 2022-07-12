@@ -36,7 +36,7 @@ switches:
   - name: emoji
     reset: 1  # 默认永远开启
   - name: traditionalization
-    reset: 0  # 如果不想每次切换 App 都自动变成简体，可以注释这里
+    reset: 0
     states: [ 简, 繁繁繁 ]
 
 
@@ -77,7 +77,7 @@ emoji:
 
 # 增加简繁切换快捷键
 key_binder:
-  import_preset: default
+  import_preset: default # 继承快捷键
   bindings/+:
     # - {accept: "Control+Shift+F", toggle: traditionalization, when: always}
     # - {accept: "Control+slash",   toggle: traditionalization, when: always}  # Ctrl + /
@@ -86,9 +86,9 @@ key_binder:
 
 # 简繁切换
 traditionalize:
-  opencc_config: s2t.json  # 其他选项（如台湾繁体、香港繁体）参考：https://github.com/BYVoid/OpenCC#configurations-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6
+  opencc_config: s2t.json  # 其他选项（如台湾繁体 s2tw.json、香港繁体 s2hk.json）参考：https://github.com/BYVoid/OpenCC#configurations-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6
   option_name: traditionalization
-  tips: all  # 简繁提示，注释掉可直接出繁
+  tips: all  # 转换提示（即是否显示繁体对应的简体）: all 都显示， char 仅单字显示， none 不显示。
 
 
 # 自定义文本：custom_phrase.txt
@@ -107,7 +107,7 @@ custom_phrase:
 easy_en:
   dictionary: easy_en # 挂载英文主词库 easy_en.dict.yaml
   spelling_hints: 9
-  enable_completion: true # 关闭后英文不会有提示，只会在打全时才会显示，体验不是很好
+  enable_completion: true # 补全提示
   enable_sentence: false
   initial_quality: 0 # -1
 
@@ -143,8 +143,8 @@ speller:
     - erase/^m$/
     - erase/^n$/
     - erase/^ng$/
-    - abbrev/^([a-z]).+$/$1/
-    - abbrev/^([zcs]h).+$/$1/  # 在超级简拼中，zh ch sh 视为整体（ch'sh → 城市），而不是像这样分开（c'h、s'h → 从还是很）。
+    - abbrev/^([a-z]).+$/$1/  # 超级简拼
+    - abbrev/^([zcs]h).+$/$1/  # 超级简拼中，zh ch sh 视为整体（ch'sh → 城市），而不是像这样分开（c'h、s'h → 从还是很）。
     # 原装的 v u 转换
     - derive/^([nl])ue$/$1ve/
     - derive/^([jqxy])u/$1v/
