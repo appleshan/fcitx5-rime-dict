@@ -143,11 +143,14 @@ speller:
     - erase/^m$/
     - erase/^n$/
     - erase/^ng$/
-    - abbrev/^([a-z]).+$/$1/  # 超级简拼
+    - abbrev/^([a-z]).+$/$1/   # 超级简拼
     - abbrev/^([zcs]h).+$/$1/  # 超级简拼中，zh ch sh 视为整体（ch'sh → 城市），而不是像这样分开（c'h、s'h → 从还是很）。
     # 原装的 v u 转换
     - derive/^([nl])ue$/$1ve/
     - derive/^([jqxy])u/$1v/
+    # 增加对词库中「nue/nve」「qu/qv」等不同注音的支持
+    - derive/^([nl])ve$/$1ue/
+    - derive/^([jqxy])v/$1u/
     # 原装的模糊拼音
     - derive/un$/uen/
     - derive/ui$/uei/
