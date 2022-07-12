@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2022-04-25"
+version: "2022-04-30"
 sort: by_weight
 # vocabulary: essay-zh-hans
 ...
@@ -15,9 +15,6 @@ iPhone  iPhone  4
 iPhone 13 iPhone  3
 iPhone 13 Pro iPhone  2
 iPhone SE iPhone  1
-CapsLock  CapsL
-CapsLock  CapsLo
-CapsLock  CapsLoc
 CapsLock  CapsLock
 Aeron Aeron
 Aeron Chair AeronChair
@@ -43,15 +40,8 @@ TapTap  TapTap
 HHD HHD
 ARM ARM
 eGPU  eGPU
-One Piece OneP
-One Piece OnePi
-One Piece OnePie
-One Piece OnePiec
 One Piece OnePiece
 Bose  Bose
-iPhone  iPh
-iPhone  iPho
-iPhone  iPhon
 iPhone  iPhone
 CCTV  CCTV
 GTA GTA
@@ -78,69 +68,27 @@ Julia Julia
 Xnip  Xnip
 Workspace Workspace
 Google Workspace  GoogleWorkspace
-WYSIWYG WYS
-WYSIWYG WYSI
-WYSIWYG WYSIW
-WYSIWYG WYSIWY
 WYSIWYG WYSIWYG
-Mark Text MarkT
-Mark Text MarkTe
-Mark Text MarkTex
 Mark Text MarkText
-Joplin  Jop
-Joplin  Jopl
-Joplin  Jopli
 Joplin  Joplin
-Obsidian  Obs
-Obsidian  Obsi
-Obsidian  Obsid
-Obsidian  Obsidi
-Obsidian  Obsidia
 Obsidian  Obsidian
-SteamOS SteamO
 SteamOS SteamOS
-TikTok  Tik
-TikTok  TikT
-TikTok  TikTo
 TikTok  TikTok
 IDC IDC
 Wunderlist  Wunderlist
-VMware  VMw
-VMware  VMwa
-VMware  VMwar
 VMware  VMware
 Fusion  Fusion
-VMware Fusion VMwareF
-VMware Fusion VMwareFu
-VMware Fusion VMwareFus
-VMware Fusion VMwareFusi
-VMware Fusion VMwareFusio
 VMware Fusion VMwareFusion
 Vanilla Vanilla
 Ubisoft Ubisoft
 Twitch  Twitch
 Todoist Todoist
 TeamViewer  TeamViewer
-Sleep Cycle SleepC
-Sleep Cycle SleepCy
-Sleep Cycle SleepCyc
-Sleep Cycle SleepCycl
 Sleep Cycle SleepCycle
 Sony  Sony
-PDF Expert  PDFE
-PDF Expert  PDFEx
-PDF Expert  PDFExp
-PDF Expert  PDFExpe
-PDF Expert  PDFExper
 PDF Expert  PDFExpert
 OSCHINA OSCHINA
 Navicat Navicat
-Navicat Premium NavicatP
-Navicat Premium NavicatPr
-Navicat Premium NavicatPre
-Navicat Premium NavicatPrem
-Navicat Premium NavicatPremi
-Navicat Premium NavicatPremiu
 Navicat Premium NavicatPremium
 NameSilo  NameSilo
 localhost localhost
@@ -151,22 +99,10 @@ CloudXNS  CloudXNS
 Bitwarden Bitwarden
 BitComet  BitComet
 Bitbucket Bitbucket
-Google Photos GoogleP
-Google Photos GooglePh
-Google Photos GooglePho
-Google Photos GooglePhot
-Google Photos GooglePhoto
 Google Photos GooglePhotos
 LyricsX LyricsX
 OneDrive  OneDrive
-Xbox  Xb
-Xbox  Xbo
 Xbox  Xbox
-Xbox One  Xb
-Xbox One  Xbo
-Xbox One  Xbox
-Xbox One  XboxO
-Xbox One  XboxOn
 Xbox One  XboxOne
 Xbox One X  XboxOneX
 Xbox Series XboxSeries
@@ -177,14 +113,7 @@ ID  ID
 OTC OTC
 IEPL  IEPL
 IPLC  IPLC
-IntelliJ  Intell
-IntelliJ  Intelli
 IntelliJ  IntelliJ
-IntelliJ IDEA Intelli
-IntelliJ IDEA IntelliJ
-IntelliJ IDEA IntelliJI
-IntelliJ IDEA IntelliJID
-IntelliJ IDEA IntelliJIDE
 IntelliJ IDEA IntelliJIDEA
 IDEA  IDEA
 IDE IDE
@@ -214,25 +143,13 @@ Tokyo Tokyo
 Rachel  Rachel
 uTools  uTool
 uTools  uTools
-AirPods AirPod
 AirPods AirPods
-AirPods Pro AirPod
-AirPods Pro AirPods
 AirPods Pro AirPodsPro
-AirPods Max AirPod
 AirPods Max AirPods
 AirPods Max AirPodsMax
 CallKit CallKit
 OSS OSS
-YouTube Music YouTubeM
-YouTube Music YouTubeMu
-YouTube Music YouTubeMus
-YouTube Music YouTubeMusi
 YouTube Music YouTubeMusic
-Apple Music AppleM
-Apple Music AppleMu
-Apple Music AppleMus
-Apple Music AppleMusi
 Apple Music AppleMusic
 TED TED
 DeepL DeepL
@@ -295,48 +212,18 @@ GoLand  GoLand
 Golang  Golang
 HBO HBO
 IQOS  IQOS
-Intel Int
-Intel Inte
 Intel Intel
-Internet  Int
-Internet  Inte
-Internet  Inter
-Internet  Intern
-Internet  Interne
 Internet  Internet
-JSON  JS
-JSON  JSO
 JSON  JSON
-Java  Ja
-Java  Jav
 Java  Java
-JavaScript  Ja
-JavaScript  Jav
-JavaScript  Java
-JavaScript  Javas
-JavaScript  Javasc
-JavaScript  Javascr
-JavaScript  Javascri
-JavaScript  Javascrip
 JavaScript  Javascript
-JetBrains JetB
-JetBrains JetBr
-JetBrains JetBra
-JetBrains JetBrai
-JetBrains JetBrain
 JetBrains JetBrains
 KTV KTV
 MBP MBP
 MBA MBA
 MariaDB MariaDB
-Markdown  Markd
-Markdown  Markdo
-Markdown  Markdow
 Markdown  Markdown
 Microsoft Access  Access
-MongoDB Mong
-MongoDB Mongo
-MongoDB MongoD
 MongoDB MongoDB
 MySQL MySQL
 Node  Node
@@ -364,7 +251,6 @@ Spiritfarer Spiritfarer
 TCP/IP  tcpip
 Twitter Twitter
 V2EX  ver
-V2EX  vere
 V2EX  verex
 VSCode  VSC
 VSCode  VSCo
@@ -461,10 +347,6 @@ Apple Pay ApplePay
 AMD AMD
 Amphetamine Amphetamine
 Android Android
-App Store AppS
-App Store AppSt
-App Store AppSto
-App Store AppStor
 App Store AppStore
 AirDrop AirDrop
 Alfred  Alfred
@@ -691,10 +573,6 @@ Snip  Snip
 Sparkbox  Sparkbox
 Sparrow Sparrow
 Speedtest Speedtest
-Spotify Spo
-Spotify Spot
-Spotify Spoti
-Spotify Spotif
 Spotify Spotify
 Spotlight Spotlight
 Spss  Spss
@@ -744,7 +622,25 @@ Widget  Widget
 WiFi Explorer WiFiExplorer
 WiFi Scanner  WiFiScanner
 Window Tidy WindowTidy
-Windows Windows
+Windows Windows 999
+Windows 95  Windows 1
+Windows 98  Windows 2
+Windows Me  Windows 3
+Windows 2000  Windows 4
+Windows XP  Windows 5
+Windows XP  WindowsXP
+Windows Vista Windows 6
+Windows 7 Windows 7
+Windows 8 Windows 8
+Windows 10  Windows 10
+Windows 11  Windows 11
+Windows Vista WindowsVista
+Windows RT  WindowsRT
+Windows Me  WindowsMe
+Windows NT  WindowsNT
+Windows Server  WindowsServer
+Windows Mobile  WindowsMobile
+Windows Phone WindowsPhone
 Word  Word
 Workflow  Workflow
 WorkFlowy WorkFlowy
@@ -1009,3 +905,8 @@ RFC 3339  RFC 1
 Bob Bob
 Toolbox Toolbox
 Weasel  Weasel
+Niconico  Niconico
+TickTick  TickTick
+CHDBits CHDBits
+M-team  Mteam
+Microsoft Azure MicrosoftAzure
