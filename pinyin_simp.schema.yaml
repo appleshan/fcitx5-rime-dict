@@ -60,7 +60,7 @@ engine:
   translators:           # ※ 默认组件：翻譯特定類型的編碼段爲一組候選文字
     - punct_translator   # ※ 轉換標點符號
     - script_translator  # ※ 腳本翻譯器，用於拼音等基於音節表的輸入方案
-    - table_translator@custom_phrase  # 自定义文本
+    - table_translator@custom_phrase  # 自定义文本（固顶字）
     - table_translator@easy_en        # 英文输入
     - lua_translator@date_translator  # 时间、日期、星期
   filters: # ※ 默认组件：過濾翻譯的結果
@@ -98,9 +98,19 @@ custom_phrase:
   db_class: stabledb
   enable_completion: false
   enable_sentence: false
-  # 享有最高优先级。但不与其他翻译器共同造句（所以尽量不要配置完整编码的字词，只配置缩写）
-  # custom_phrase 的权重应该比 easy_en 大，否则单编码时英文可能会冲在最前头，造成选取困难
+  # 享有最高优先级。但不与其他翻译器共同造句
+  # custom_phrase 的权重应该比 easy_en 大，否则单编码时英文会冲在最前头
   initial_quality: 1
+
+
+# 挂载拼音主词库
+translator:
+  dictionary: pinyin_simp  # 挂载拼音主词库 pinyin_simp.dict.yaml
+  # preedit_format 影响到输入框的显示，和回车上屏的字符
+  preedit_format:
+    # - xform/([nl])v/$1ü/
+    # - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
 
 
 # 英文输入方案
@@ -120,19 +130,9 @@ translator/max_homophones: 7
 translator/max_homographs: 7
 
 
-# 挂载拼音主词库
-translator:
-  dictionary: pinyin_simp  # 挂载拼音主词库 pinyin_simp.dict.yaml
-  # preedit_format 影响到输入框的显示，和回车上屏的字符
-  preedit_format:
-    # - xform/([nl])v/$1ü/
-    # - xform/([nl])ue/$1üe/
-    - xform/([jqxy])v/$1u/
-
-
 # 拼写设定
 speller:
-  # alphabet: zyxwvutsrqponmlkjihgfedcba  # 默认
+  # alphabet: zyxwvutsrqponmlkjihgfedcba
   # 因为 easy_en 是以依赖的形式加载的，所以它自己的 alphabet 不管用，必须在此方案设定支持大写
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
   delimiter: " '"
@@ -184,11 +184,11 @@ speller:
 # - 将「/」模式修改为了「v」模式，并新增一些自定义内容
 # - 自己增加了一点点符号
 punctuator:
-  # import_preset: symbols  # 默认
+  # import_preset: symbols
   import_preset: symbols.custom
 
 recognizer:
   import_preset: default
   patterns:
-    # punct: "^/([0-9]+[a-z]*|[a-z]+)$" # 默认
+    # punct: "^/([0-9]+[a-z]*|[a-z]+)$"
     punct: "^v([a-zA-Z]+|[0-9]0?)$"  # 用 “v” 替换 “/”，并支持大写
