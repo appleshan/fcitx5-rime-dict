@@ -5,127 +5,125 @@
 #
 # 著名表演艺术家
 #
-# 希望的效果是：输入艺术家的名字后，希望第一个候选项永远是中文，第二个候选项永远是日文（方便在 javdb.com 上检索😅）
+# 希望的效果是：输入艺术家的名字后，第一个候选项永远是中文，第二个候选项永远是日文（方便在 javdb.com 上检索😅）
 # 对于中日文不同的，需要现在这里添加进词库，这样在 opcc/ 中的映射就会起作用了。
 # 输入「相泽南」后，会被映射为「相泽南 相沢みなみ」。
-# 词库不全，仅仅是自己看过的，觉得还不错的。。。
 ---
 name: av
-version: "2022-05-09"
+version: "2022-05-12"
 sort: by_weight
 vocabulary: essay-zh-hans
 ...
 # +_+
 # 简体和日文相同的：
-东凛  dong lin
-山岸逢花  shan an feng hua
-通野未帆  tong ye wei fan
-伊藤舞雪  yi teng wu xue
-有坂深雪  you ban shen xue
-友田彩也香 you tian cai ye xiang
-佐伯由美香 zuo bo you mei xiang
-河北彩花  he bei cai hua
-前田桃杏  qian tian tao xing
-夏目彩春  xia mu cai chun
-星谷瞳 xing gu tong
-星野遥 xing ye yao
-本田岬 ben tian jia
-小野夕子  xiao ye xi zi
-
+东凛  dong lin  666
+山岸逢花  shan an feng hua  666
+通野未帆  tong ye wei fan 666
+伊藤舞雪  yi teng wu xue  666
+有坂深雪  you ban shen xue  666
+友田彩也香 you tian cai ye xiang 666
+佐伯由美香 zuo bo you mei xiang  666
+河北彩花  he bei cai hua  666
+前田桃杏  qian tian tao xing  666
+夏目彩春  xia mu cai chun 666
+星谷瞳 xing gu tong  666
+星野遥 xing ye yao 666
+本田岬 ben tian jia  666
+小野夕子  xiao ye xi zi 666
 # 简体和日文不同的：
-爱田飞鸟  ai tian fei niao
-爱乃娜美  ai nai na mei
-安斋拉拉  an zhai la la
-苍井空 cang jing kong
-长谷川理穗 chang gu chuan li hui
-彩美旬果  cai mei xun guo
-春咲凉 chun xiao liang
-蒂亚  di ya
-楪可怜 die ke lian
-妃悠爱 fei you ai
-枫可怜 feng ke lian
-枫花恋 feng hua lian
-宫下华奈  gong xia hua nai
-古川伊织  gu chuan yi zhi
-广濑里绪菜 guang lai li xu cai
-河北春菜  he bei chun cai
-吉川莲 ji chuan lian
-吉泽明步  ji ze ming bu
-铃村爱里  ling cun ai li
-凉森玲梦  liang sen ling meng
-林由奈 lin you nai
-凛音桃花  lin yin tao hua
-里美尤利娅 li mei you li ya
-芦名尤莉亚 lu ming you li ya
-美雪爱莉丝 mei xue ai li si
-目黑惠 mu hei hui
-明里䌷 ming li chou
-七海蒂娜  qi hai di na
-天海翼 tian hai yi
-桃谷绘里香 tao gu hui li xiang
-辻井穗乃果 shi jing hui nai guo
-桥本有菜  qiao ben you cai
-深田咏美  shen tian yong mei
-三上悠亚  san shang you ya
-桃乃木香奈 tao nai mu xiang nai
-武藤绫香  wu teng ling xiang
-希岛爱理  xi dao ai li
-夏希栗 xia xi li
-希崎杰西卡 xi qi jie xi ka
-小泽玛利亚 xiao ze ma li ya
-小岛南 xiao dao nan
-相泽南 xiang ze nan
-星宫一花  xing gong yi hua
-星野景子  xing ye jing zi
-星野娜美  xing ye na mei
-篠田步美  xiao tian bu mei
-柚木蒂娜  you mu di na
-有贺由爱  you he you ai
-乙白沙也加 yi bai sha ye jia
-樱井步 ying jing bu
-樱井彩 ying jing cai
-樱空桃 ying kong tao
-宇都宫紫苑 yu du gong zi yuan
-一之濑亚美莉  yi zhi lai ya mei li
-濑亚美莉  lai ya mei li
-樱木凛 ying mu lin
-园田美樱  yuan tian mei ying
-永野司 yong ye si
-早川濑里奈 zao chuan lai li nai
-椎名由奈  zhi ming you nai
-竹内有纪  zhu nei you ji
-乙石沙也加 yi shi sha ye jia
-三宫椿 san gong chun
-蓝芽水月  lan ya shui yue
-星野明 xing ye ming
-莲实克蕾儿 lian shi ke lei er
-香苗玲音  xiang miao ling yin
-有原步美  you yuan bu mei
-美谷朱里  mei gu zhu li
-水川堇 shui chuan jin
-小宵虎南  xiao xiao hu nan
-新村晶 xin cun jing
-森泽佳奈  sen ze jia nai
-朝日奈花恋 zhao ri nai hua lian
-高桥圣子  gao qiao sheng zi
-西宫梦 xi gong meng
-藤森里穗  teng sen li sui
-木村穗乃香 mu cun sui nai xiang
-神宫寺奈绪 shen gong si nai xu
-水卜樱 shui bu ying
-爱音麻里亚 ai yin ma li ya
-良音荠 liang yin ji
-本庄铃 ben zhuang ling
-明日花绮罗 ming ri hua qi luo
-大桥未久  da qiao wei jiu
-濑名光莉  lai ming guang li
-栗山莉绪  li shan li xu
-纱纱原百合 sha sha yuan bai he
-堀北湾 ku bei wan
-冲田杏梨  chong tian xing li
-天使萌 tian shi meng
-西条琉璃  xi tiao liu li
-君岛美绪  jun dao mei xu
-波多野结衣 bo duo ye jie yi
-松下纱荣子 song xia sha rong zi
-山手梨爱  shan shou li ai
+爱田飞鸟  ai tian fei niao  666
+爱乃娜美  ai nai na mei 666
+安斋拉拉  an zhai la la 666
+苍井空 cang jing kong  666
+长谷川理穗 chang gu chuan li hui 666
+彩美旬果  cai mei xun guo 666
+春咲凉 chun xiao liang 666
+蒂亚  di ya 666
+楪可怜 die ke lian 666
+妃悠爱 fei you ai  666
+枫可怜 feng ke lian  666
+枫花恋 feng hua lian 666
+宫下华奈  gong xia hua nai  666
+古川伊织  gu chuan yi zhi 666
+广濑里绪菜 guang lai li xu cai 666
+河北春菜  he bei chun cai 666
+吉川莲 ji chuan lian 666
+吉泽明步  ji ze ming bu 666
+铃村爱里  ling cun ai li  666
+凉森玲梦  liang sen ling meng 666
+林由奈 lin you nai 666
+凛音桃花  lin yin tao hua 666
+里美尤利娅 li mei you li ya  666
+芦名尤莉亚 lu ming you li ya 666
+美雪爱莉丝 mei xue ai li si  666
+目黑惠 mu hei hui  666
+明里䌷 ming li chou  666
+七海蒂娜  qi hai di na  666
+天海翼 tian hai yi 666
+桃谷绘里香 tao gu hui li xiang 666
+辻井穗乃果 shi jing hui nai guo  666
+桥本有菜  qiao ben you cai  666
+深田咏美  shen tian yong mei  666
+三上悠亚  san shang you ya  666
+桃乃木香奈 tao nai mu xiang nai  666
+武藤绫香  wu teng ling xiang  666
+希岛爱理  xi dao ai li  666
+夏希栗 xia xi li 666
+希崎杰西卡 xi qi jie xi ka 666
+小泽玛利亚 xiao ze ma li ya  666
+小岛南 xiao dao nan  666
+相泽南 xiang ze nan  666
+星宫一花  xing gong yi hua  666
+星野景子  xing ye jing zi 666
+星野娜美  xing ye na mei  666
+篠田步美  xiao tian bu mei  666
+柚木蒂娜  you mu di na  666
+有贺由爱  you he you ai 666
+乙白沙也加 yi bai sha ye jia 666
+樱井步 ying jing bu  666
+樱井彩 ying jing cai 666
+樱空桃 ying kong tao 666
+宇都宫紫苑 yu du gong zi yuan  666
+一之濑亚美莉  yi zhi lai ya mei li  666
+濑亚美莉  lai ya mei li 666
+樱木凛 ying mu lin 666
+园田美樱  yuan tian mei ying  666
+永野司 yong ye si  666
+早川濑里奈 zao chuan lai li nai  666
+椎名由奈  zhi ming you nai  666
+竹内有纪  zhu nei you ji  666
+乙石沙也加 yi shi sha ye jia 666
+三宫椿 san gong chun 666
+蓝芽水月  lan ya shui yue 666
+星野明 xing ye ming  666
+莲实克蕾儿 lian shi ke lei er  666
+香苗玲音  xiang miao ling yin 666
+有原步美  you yuan bu mei 666
+美谷朱里  mei gu zhu li 666
+水川堇 shui chuan jin  666
+小宵虎南  xiao xiao hu nan  666
+新村晶 xin cun jing  666
+森泽佳奈  sen ze jia nai  666
+朝日奈花恋 zhao ri nai hua lian  666
+高桥圣子  gao qiao sheng zi 666
+西宫梦 xi gong meng  666
+藤森里穗  teng sen li sui 666
+木村穗乃香 mu cun sui nai xiang  666
+神宫寺奈绪 shen gong si nai xu 666
+水卜樱 shui bu ying  666
+爱音麻里亚 ai yin ma li ya 666
+良音荠 liang yin ji  666
+本庄铃 ben zhuang ling 666
+明日花绮罗 ming ri hua qi luo  666
+大桥未久  da qiao wei jiu 666
+濑名光莉  lai ming guang li 666
+栗山莉绪  li shan li xu 666
+纱纱原百合 sha sha yuan bai he 666
+堀北湾 ku bei wan  666
+冲田杏梨  chong tian xing li  666
+天使萌 tian shi meng 666
+西条琉璃  xi tiao liu li  666
+君岛美绪  jun dao mei xu  666
+波多野结衣 bo duo ye jie yi  666
+松下纱荣子 song xia sha rong zi  666
+山手梨爱  shan shou li ai 666

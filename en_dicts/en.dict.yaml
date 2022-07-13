@@ -5,7 +5,7 @@
 #
 ---
 name: en
-version: "2022-05-09"
+version: "2022-05-12"
 sort: by_weight
 ...
 # 以下为「融合拼音」方案原装的词库，注释掉了几个：
@@ -80,7 +80,7 @@ LGPL  LGPL  100
 Mozilla Mozilla 100
 Apache  Apache  100
 Steam Steam 100
-App App 100
+App App 999999999
 Android Android 100
 Arch  Arch  100
 iOS iOS 100
@@ -957,7 +957,7 @@ camera  camera  100
 camp  camp  100
 campaign  campaign  100
 campus  campus  100
-# can can 100
+can can
 canal canal 100
 cancel  cancel  100
 cancer  cancer  100
@@ -3100,6 +3100,7 @@ interim interim 100
 interior  interior  100
 intermediate  intermediate  100
 intermittent  intermittent  100
+inter inter 100
 internal  internal  100
 international international 100
 internet  internet  100
@@ -3747,7 +3748,7 @@ mute  mute  100
 mutter  mutter  100
 mutton  mutton  100
 mutual  mutual  100
-my  my  100
+# my  my  100
 myself  myself  100
 mysterious  mysterious  100
 mystery mystery 100
@@ -6348,7 +6349,7 @@ yet yet 100
 yield yield 100
 yoke  yoke  100
 yolk  yolk  100
-# you you 100
+you you 100
 young young 100
 youngster youngster 100
 your  your  100

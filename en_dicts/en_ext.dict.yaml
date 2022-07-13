@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2022-05-09"
+version: "2022-05-12"
 sort: by_weight
 ...
 # 一些杂项
@@ -270,7 +270,9 @@ Oracle  Oracle
 Pornhub Pornhub
 PostgreSQL  PostgreSQL
 PowerPoint  PowerPoint
+PPT PPT
 PowerPoint  ppt
+Microsoft PowerPoint  ppt
 PyCharm PyCharm
 Roguelike Roguelike
 Redis Redis
@@ -958,5 +960,38 @@ Cloudflare Workers  CloudflareWorkers
 PlayStation PlayStation
 Visual Studio VisualStudio
 Microsoft Visual Studio MicrosoftVisualStudio
+Microsoft Visual Studio VisualStudio
 AVIF  AVIF
 Apple Arcade  AppleArcade
+Microsoft Corporation MicrosoftCorporation
+Microsoft Windows MicrosoftWindows
+MS-DOS  MSDOS
+Microsoft Office  MicrosoftOffice
+Microsoft Office  Office
+Microsoft Word  MicrosoftWord
+Microsoft Word  Word
+Microsoft Excel MicrosoftExcel
+Microsoft Excel Excel
+Microsoft Access  MicrosoftAccess
+Microsoft PowerPoint  MicrosoftPowerPoint
+Microsoft PowerPoint  PowerPoint
+Microsoft Outlook MicrosoftOutlook
+Outlook Outlook
+Microsoft Outlook Outlook
+Microsoft OneNote MicrosoftOneNote
+Microsoft OneNote OneNote
+Internet Explorer InternetExplorer
+Internet Explorer IE
+Windows Media Player  WindowsMediaPlayer
+Media Player  MediaPlayer
+Windows Media Player  MediaPlayer
+Microsoft Azure   MicrosoftAzure
+Microsoft Azure   Azure
+Microsoft Edge  MicrosoftEdge
+Microsoft Edge  Edge
+Visual Studio Code  VisualStudioCode
+Visual Studio Code  VSCode
+PowerShell  PowerShell
+.Net  net
+Surface Surface
+MSN MSN
