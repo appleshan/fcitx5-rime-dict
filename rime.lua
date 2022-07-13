@@ -56,6 +56,7 @@ end
 -------------------------------------------------------------
 -- 以词定字
 -- https://github.com/BlindingDark/rime-lua-select-character
+-- 删除了默认按键，需要在 key_binder（default.custom.yaml）下设置
 local function utf8_sub(s, i, j)
     i = i or 1
     j = j or -1
@@ -113,8 +114,10 @@ function select_character(key, env)
     local commit_text = context:get_commit_text()
     local config = engine.schema.config
 
-    local first_key = config:get_string('key_binder/select_first_character') or 'bracketleft'
-    local last_key = config:get_string('key_binder/select_last_character') or 'bracketright'
+    -- local first_key = config:get_string('key_binder/select_first_character') or 'bracketleft'
+    -- local last_key = config:get_string('key_binder/select_last_character') or 'bracketright'
+    local first_key = config:get_string('key_binder/select_first_character')
+    local last_key = config:get_string('key_binder/select_last_character')
 
     if (key:repr() == first_key and commit_text ~= "") then
         engine:commit_text(first_character(commit_text))

@@ -11,6 +11,7 @@
 
 # @See https://sh.alynx.one/posts/My-RIME/
 # @See https://github.com/iDvel/rime-settings/
+# 按键速查在最下面
 
 patch:
   # 方案列表
@@ -60,11 +61,12 @@ patch:
       Control_R: noop
 
   key_binder:
-    # 以词定字的快捷键，不设置的话默认为 bracketleft bracketright 左右方括号 [ ]
-    select_first_character: "comma"  # 逗号
-    select_last_character: "period"  # 句号
+    # 以词定字的快捷键
+    select_first_character: "grave"
+    select_last_character: "slash"
     bindings:
       # 以下复制于： https://github.com/rime/rime-prelude/blob/master/key_bindings.yaml
+
       # Emacs 键位，我喜欢。
       # - { when: composing, accept: Control+p, send: Up }
       # - { when: composing, accept: Control+n, send: Down }
@@ -134,6 +136,7 @@ patch:
       # - { when: always, accept: Control+backslash, toggle: extended_charset }
 
 # 按键速查：
+# （没有 Command 键，不支持）
 # BackSpace 退格
 # Tab 水平定位符
 # Linefeed  换行
