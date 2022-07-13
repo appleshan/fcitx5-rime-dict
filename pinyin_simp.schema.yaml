@@ -170,6 +170,7 @@ speller:
     # 有些规则对全拼简拼混输有副作用：如「x'ai 喜爱」被纠错为「xia 下」
     # zh、ch、sh
     - derive/([zcs])h(a|e|i|u|ai|ei|an|en|ou|uo|ua|un|ui|uan|uai|uang|ang|eng|ong)$/h$1$2/  # hzi → zhi  hsang → shang
+    - derive/([zcs])h([aeiu])$/$1$2h/
     # ai
     - derive/([wtpsghkzxcbnm])ai$/$1ia/
     - derive/([zh|ch|sh])ai$/$1ia/
@@ -253,6 +254,7 @@ speller:
     - derive/([rtsdghkzcn])o[u|ng]$/$1o/ # do → dou|dong 
     - derive/ong$/on/ # lon → long
     - derive/teng$/ten/ # ten → teng
+    - derive/([qwrtypsdfghjklzxcbnm])([aeio])ng$/$1ng/ # lng → lang、leng、ling、long
 
 
 # 引入自己的修改过的 symbols
