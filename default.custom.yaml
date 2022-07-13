@@ -27,6 +27,7 @@ patch:
     option_list_separator: "/"
     # 切换方案、简繁、全半角的快捷键
     hotkeys:
+      # ~ # 把其他都注释掉，或只留一个波浪号，可以将快捷键置空。
       - F4
       - Control+grave # control + `
       # - Control+Shift+grave

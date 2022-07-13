@@ -140,9 +140,9 @@ end
 -- 感谢&参考于： https://github.com/tumuyan/rime-melt
 -- 修改：不提升英文和中英混输的
 function long_word_filter(input)
-        -- 目前的效果：将 3 个词插入到第 3、4、5 个候选项
-    local count = 3 -- 提升 count 个词语
-    local idx = 3   -- 插入到第 idx 位
+        -- 目前的效果：将 2 个词插入到第 4、5 个候选项
+    local count = 2 -- 提升 count 个词语
+    local idx = 4   -- 插入到第 idx 位
 
 
     local l = {}

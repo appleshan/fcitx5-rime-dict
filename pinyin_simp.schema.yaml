@@ -26,7 +26,7 @@ schema:
 switches:
   - name: ascii_mode
     reset: 0
-    # states: [ 中文, 西文 ] 永远不切换，所以注释了
+    # states: [ 中文, 英文 ] 永远不切换，所以注释了
   - name: full_shape
     reset: 0
     # states: [ 半角, 全角 ] 永远不切换，所以注释了
@@ -40,7 +40,7 @@ switches:
     states: [ 简, 繁繁繁 ]
 
 
-# 输入引擎
+# 输入引擎（带 ※ 的是默认自带的）
 engine:
   processors:         # ※ 默认组件：處理各類按鍵消息
     - lua_processor@select_character  # 以词定字
@@ -72,7 +72,7 @@ engine:
     - uniquifier                  # 去重
 
 
-# Emoji（删除了 Emoji，修改为一些词语和符号映射）
+# Emoji（没有 Emoji，改为了一些词语和符号映射）
 emoji:
   opencc_config: emoji.json
   option_name: emoji
@@ -80,7 +80,7 @@ emoji:
 
 # 增加简繁切换快捷键
 key_binder:
-  import_preset: default # 继承快捷键
+  import_preset: default # 从 default 继承快捷键
   bindings/+:
     # 简繁切换
     # - {accept: "Control+Shift+F", toggle: traditionalization, when: always}
@@ -113,9 +113,11 @@ custom_phrase:
 translator:
   dictionary: pinyin_simp  # 挂载拼音主词库 pinyin_simp.dict.yaml
   preedit_format: # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
-    - xform/([nl])v/$1ü/
-    - xform/([nl])ue/$1üe/
-    - xform/([jqxy])v/$1u/
+    # - xform/([nl])v/$1ü/    # 显示成 ü
+    # - xform/([nl])ue/$1üe/  # 显示成 ü
+    - xform/([nl])v/$1v/      # 显示成 v
+    - xform/([nl])ue/$1ve/    # 显示成 v
+    - xform/([jqxy])v/$1u/    # 显示成 u
   # 拼音的权重应该比英文大
   initial_quality: 1.2
 
@@ -152,7 +154,7 @@ speller:
     - erase/^n$/
     - erase/^ng$/
     - abbrev/^([a-z]).+$/$1/   # 超级简拼
-    - abbrev/^([zcs]h).+$/$1/  # 超级简拼中，zh ch sh 视为整体（ch'sh → 城市），而不是像这样分开（c'h、s'h → 从还是很）。
+    - abbrev/^([zcs]h).+$/$1/  # 超级简拼中，zh ch sh 视为整体（ch'sh → 城市），而不是像这样分开（c'h's'h → 从还是很）。
     # 原装的 v u 转换
     - derive/^([nl])ue$/$1ve/
     - derive/^([jqxy])u/$1v/
@@ -166,7 +168,7 @@ speller:
     # 原装自动纠错
     - derive/([aeiou])ng$/$1gn/  # agn → ang
     # - derive/([dtngkhrzcs])o(u|ng)$/$1o/ # do → dou|dong 
-    # - derive/ong$/on/ # lon → long  ton → tong ...
+    - derive/ong$/on/ # lon → long  ton → tong ...
     - derive/ao$/oa/  # hoa → hao
     - derive/([iu])a(o|ng?)$/a$1$2/  # tain → tian  laing → liang  laio → liao
     # 自己添加的：
@@ -187,12 +189,13 @@ speller:
     - derive/([qypjlxbnm])in$/$1ni/  # lni → lin
     - derive/([aeo])ng$/n$1g/  # cnag → cang
     - derive/([qylxnj])ue$/$1eu/  # xeu → xue
+    - derive/([wrtypsdfghjklzxcbnm])[aeio]gn$/$1ng/  # _ng → _ang、_eng、_ing、_ong
 
 
-# 引入自己的修改过的 symbols：
+# 引入自己的修改过的 symbols
 punctuator:
   # import_preset: symbols
-  import_preset: symbols.custom
+  import_preset: symbols.custom # symbols.custom.yaml （标点设定和「v」模式在里面）
 
 recognizer:
   import_preset: default
