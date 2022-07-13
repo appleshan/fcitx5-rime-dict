@@ -29,7 +29,6 @@ patch:
       - F4
       - Control+grave # control + `
       # - Control+Shift+grave
-      # ~ # 无快捷键：只有一个方案、不切换全半角、不切换简繁等，可以设置为空
 
   # 匹配 patterns 时，自动英文
   recognizer:

@@ -61,6 +61,7 @@ engine:
   translators:           # ※ 默认组件：翻譯特定類型的編碼段爲一組候選文字
     - punct_translator   # ※ 轉換標點符號
     - script_translator  # ※ 腳本翻譯器，用於拼音等基於音節表的輸入方案
+    - lua_translator@v_single_char_first_filter  # v 模式 symbols 优先（否则是英文优先）
     - table_translator@custom_phrase  # 自定义文本（固顶字）
     - table_translator@easy_en        # 英文输入
     - lua_translator@date_translator  # 时间、日期、星期
@@ -94,26 +95,28 @@ traditionalize:
   tips: all  # 转换提示（即是否显示繁体对应的简体）: all 都显示， char 仅单字显示， none 不显示。
 
 
-# 自定义文本：custom_phrase.txt
+# 自定义文本（固顶字）：custom_phrase.txt
 custom_phrase:
   dictionary: ""
   user_dict: custom_phrase
   db_class: stabledb
   enable_completion: false
   enable_sentence: false
-  # 享有最高优先级。但不与其他翻译器共同造句
-  # custom_phrase 的权重应该比 easy_en 大，否则单编码时英文会冲在最前头
-  initial_quality: 1
+  # 固顶字应该享有最高优先级。
+  # 但不与其他翻译器共同造句（所以不要配置完整编码的字词，只配置缩写）
+  # custom_phrase 的权重应该比 pinyin 和 easy_en 大。
+  initial_quality: 99
 
 
 # 挂载拼音主词库
 translator:
   dictionary: pinyin_simp  # 挂载拼音主词库 pinyin_simp.dict.yaml
-  # preedit_format 影响到输入框的显示，和回车上屏的字符
-  preedit_format:
+  preedit_format: # preedit_format 影响到输入框的显示和回车上屏的字符
     # - xform/([nl])v/$1ü/
     # - xform/([nl])ue/$1üe/
     - xform/([jqxy])v/$1u/
+  # 拼音的权重应该比英文大
+  initial_quality: 1.2
 
 
 # 英文输入方案
@@ -121,8 +124,9 @@ easy_en:
   dictionary: easy_en # 挂载英文主词库 easy_en.dict.yaml
   spelling_hints: 9
   enable_completion: true # 补全提示
-  enable_sentence: false
-  initial_quality: 0 # -1
+  enable_sentence: false  # 禁止造句
+  enable_user_dict: false # 禁用用户词典
+  initial_quality: 1.1
 
 
 # 八股文语言模型

@@ -1,70 +1,101 @@
+-- Rime lua 扩展：https://github.com/hchunhui/librime-lua
+-------------------------------------------------------------
 -- 日期时间
+-- 提高权重的原因：因为在方案中设置了大于 1 的 initial_quality，导致 rq sj xq dt ts 产出的候选项在所有词语的最后。
 function date_translator(input, seg)
     -- 日期
     if (input == "rq") then
-        --- Candidate(type, start, end, text, comment)
-        yield(Candidate("date", seg.start, seg._end, os.date("%Y-%m-%d"), ""))
-        yield(Candidate("date", seg.start, seg._end, os.date("%Y/%m/%d"), ""))
-        yield(Candidate("date", seg.start, seg._end, os.date("%Y.%m.%d"), ""))
-        -- yield(Candidate("date", seg.start, seg._end, os.date("%Y年%m月%d日"), ""))
-        yield(Candidate("date", seg.start, seg._end, os.date("%Y 年 %m 月 %d 日"), "")) -- 加些空格
-        -- yield(Candidate("date", seg.start, seg._end, os.date("%m-%d"), ""))
-        -- yield(Candidate("date", seg.start, seg._end, os.date("%m-%d-%Y"), ""))
+        local cand = Candidate("date", seg.start, seg._end, os.date("%Y-%m-%d"), "")
+        cand.quality = 100
+        yield(cand)
+        local cand = Candidate("date", seg.start, seg._end, os.date("%Y/%m/%d"), "")
+        cand.quality = 100
+        yield(cand)
+        local cand = Candidate("date", seg.start, seg._end, os.date("%Y.%m.%d"), "")
+        cand.quality = 100
+        yield(cand)
+        local cand = Candidate("date", seg.start, seg._end, os.date("%Y 年 %m 月 %d 日"), "")
+        cand.quality = 100
+        yield(cand)
     end
-
     -- 时间
     if (input == "sj") then
-        --- Candidate(type, start, end, text, comment)
-        yield(Candidate("time", seg.start, seg._end, os.date("%H:%M"), ""))
-        yield(Candidate("time", seg.start, seg._end, os.date("%H:%M:%S"), ""))
+        local cand = Candidate("time", seg.start, seg._end, os.date("%H:%M"), "")
+        cand.quality = 100
+        yield(cand)
+        local cand = Candidate("time", seg.start, seg._end, os.date("%H:%M:%S"), "")
+        cand.quality = 100
+        yield(cand)
     end
-
-    -- 星期  @JiandanDream  https://github.com/KyleBing/rime-wubi86-jidian/issues/54
+    -- 星期
     if (input == "xq") then
         local weakTab = {'日', '一', '二', '三', '四', '五', '六'}
-        yield(Candidate("week", seg.start, seg._end, "周"..weakTab[tonumber(os.date("%w")+1)], ""))
-        yield(Candidate("week", seg.start, seg._end, "星期"..weakTab[tonumber(os.date("%w")+1)], ""))
+        local cand = Candidate("week", seg.start, seg._end, "周" .. weakTab[tonumber(os.date("%w") + 1)], "")
+        cand.quality = 100
+        yield(cand)
+        local cand = Candidate("week", seg.start, seg._end, "星期" .. weakTab[tonumber(os.date("%w") + 1)], "")
+        cand.quality = 100
+        yield(cand)
     end
-
     -- ISO 8601/RFC 3339 的时间格式 （固定东八区）（示例 2022-01-07T20:42:51+08:00）
     if (input == "dt") then
-        yield(Candidate("datetime", seg.start, seg._end, os.date("%Y-%m-%dT%H:%M:%S+08:00"), ""))
-        yield(Candidate("time", seg.start, seg._end, os.date("%Y%m%d%H%M%S"), ""))
+        local cand = Candidate("datetime", seg.start, seg._end, os.date("%Y-%m-%dT%H:%M:%S+08:00"), "")
+        cand.quality = 100
+        yield(cand)
+        local cand = Candidate("time", seg.start, seg._end, os.date("%Y%m%d%H%M%S"), "")
+        cand.quality = 100
+        yield(cand)
     end
-
     -- 时间戳（十位数，到秒，示例 1650861664）
     if (input == "ts") then
-        yield(Candidate("datetime", seg.start, seg._end, os.time(), ""))
+        local cand = Candidate("datetime", seg.start, seg._end, os.time(), "")
+        cand.quality = 100
+        yield(cand)
     end
 end
-
-
--- 以词定字  https://github.com/BlindingDark/rime-lua-select-character
--- 设定的快捷键请看 select_character() 方法下面的注释
+-------------------------------------------------------------
+-- 以词定字
+-- https://github.com/BlindingDark/rime-lua-select-character
 local function utf8_sub(s, i, j)
     i = i or 1
     j = j or -1
 
     if i < 1 or j < 1 then
-         local n = utf8.len(s)
-         if not n then return nil end
-         if i < 0 then i = n + 1 + i end
-         if j < 0 then j = n + 1 + j end
-         if i < 0 then i = 1 elseif i > n then i = n end
-         if j < 0 then j = 1 elseif j > n then j = n end
+        local n = utf8.len(s)
+        if not n then
+            return nil
+        end
+        if i < 0 then
+            i = n + 1 + i
+        end
+        if j < 0 then
+            j = n + 1 + j
+        end
+        if i < 0 then
+            i = 1
+        elseif i > n then
+            i = n
+        end
+        if j < 0 then
+            j = 1
+        elseif j > n then
+            j = n
+        end
     end
 
-    if j < i then return "" end
+    if j < i then
+        return ""
+    end
 
     i = utf8.offset(s, i)
     j = utf8.offset(s, j + 1)
 
     if i and j then
-         return s:sub(i, j - 1)
+        return s:sub(i, j - 1)
     elseif i then
-         return s:sub(i)
+        return s:sub(i)
     else
-         return ""
+        return ""
     end
 end
 
@@ -86,18 +117,46 @@ function select_character(key, env)
     local last_key = config:get_string('key_binder/select_last_character') or 'bracketright'
 
     if (key:repr() == first_key and commit_text ~= "") then
-         engine:commit_text(first_character(commit_text))
-         context:clear()
+        engine:commit_text(first_character(commit_text))
+        context:clear()
 
-         return 1 -- kAccepted
+        return 1 -- kAccepted
     end
 
     if (key:repr() == last_key and commit_text ~= "") then
-         engine:commit_text(last_character(commit_text))
-         context:clear()
+        engine:commit_text(last_character(commit_text))
+        context:clear()
 
-         return 1 -- kAccepted
+        return 1 -- kAccepted
     end
 
     return 2 -- kNoop
 end
+-------------------------------------------------------------
+-- 因为英文方案的 initial_quality 大于 1，导致输入「va」时，候选项是「van vain。。。」
+-- 单字优先，候选项应改为「ā á ǎ à」
+--
+-- 不知道这个方法为什么不行啊？？？
+-- function v_single_char_first_filter(input, seg)
+--     if (string.find(input, "v") == 1 and string.len(input) == 2) then
+--         local l = {}
+--         for cand in input:iter() do
+--             if (utf8.len(cand.text) == 1) then
+--                 yield(cand)
+--             else
+--                 table.insert(l, cand)
+--             end
+--         end
+--         for cand in ipairs(l) do
+--             yield(cand)
+--         end
+--     end
+-- end
+--
+-- 反正是解决了，不知道怎么就解决了，就是最后多一个候选项，没多大影响。
+function v_single_char_first_filter(input, seg)
+    if (string.find(input, "v") == 1 and string.len(input) == 2) then
+            yield(Candidate("", seg.start, seg._end, "", ""))
+    end
+end
+-------------------------------------------------------------
