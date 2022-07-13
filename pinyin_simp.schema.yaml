@@ -17,7 +17,7 @@ schema:
   author:
     - Dvel
   description: |
-    https://github.com/iDvel/rime-settings
+    https://github.com/iDvel/rime-ice
   dependencies:
     - easy_en
 
@@ -34,7 +34,8 @@ switches:
     reset: 0
     # states: [ 中文标点, 英文标点 ] 永远不切换，所以注释了
   - name: emoji
-    reset: 1  # 默认永远开启
+    states: [ 💀, 😄 ]
+    reset: 1
   - name: traditionalization
     reset: 0
     states: [ 简, 繁繁繁 ]
@@ -213,6 +214,7 @@ speller:
     - derive/([zh|ch])ong$/$1ogn/
     # iao
     - derive/([qtpdjlxbnm])iao$/$1ioa/
+    - derive/([qtpdjlxbnm])iao$/$1oia/
     # ui
     - derive/([rtsghkzc])ui$/$1iu/
     # iu
@@ -251,7 +253,7 @@ speller:
     - derive/([jqx])iong$/$1iogn/
     - derive/([jqx])iong$/$1oign/
     # 其他
-    - derive/([rtsdghkzcn])o[u|ng]$/$1o/ # do → dou|dong 
+    - derive/([rtsdghkzc])o[u|ng]$/$1o/ # do → dou|dong 
     - derive/ong$/on/ # lon → long
     - derive/teng$/ten/ # ten → teng
     - derive/([qwrtypsdfghjklzxcbnm])([aeio])ng$/$1ng/ # lng → lang、leng、ling、long

@@ -1,13 +1,13 @@
 # Rime dictionary
 # encoding: utf-8
 #
-# https://github.com/iDvel/rime-settings/
+# https://github.com/iDvel/rime-ice
 #
 # 补充的英文词汇
 #
 ---
 name: en_ext
-version: "2022-06-21"
+version: "2022-06-24"
 sort: by_weight
 ...
 # 一些杂项
@@ -1069,3 +1069,15 @@ aPaaS aPaaS
 PaaS  PaaS
 WhatsApp  WhatsApp
 Messenger Messenger
+Doge  Doge
+SUV SUV
+UFO UFO
+Copyright Copyright
+Registered  Registered
+TM  TM
+Joker Joker
+SOS SOS
+abcd  abcd
+ABCD  ABCD
+abc abc
+ABC ABC
