@@ -7,13 +7,14 @@
 #
 ---
 name: en_ext
-version: "2022-05-05"
+version: "2022-05-07"
 sort: by_weight
 ...
 # 一些杂项
 &nbsp;  nbsp
 <br>  br
 .DS_Store dsstore
+
 # 生活大爆炸 & 老友记
 Sheldon Sheldon
 Leonard Leonard
@@ -26,6 +27,7 @@ Joey  Joey
 Ross  Ross
 Chandler  Chandler
 Phoebe  Phoebe
+
 # 按键
 Cmd Cmd
 Command Command
@@ -44,6 +46,7 @@ Del Del
 Delete  Delete
 Esc Esc
 Eject Eject
+
 
 # 往下开始都是扩展单词
 iPhone  iPhone  4
@@ -460,6 +463,7 @@ Gmail Gmail
 GoagentX  GoagentX
 Google  Google
 Google Music  GoogleMusic
+Google Play Music GooglePlayMusic
 Graffle Graffle
 Handoff Handoff
 Hazel Hazel

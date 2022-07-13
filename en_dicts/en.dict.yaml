@@ -5,7 +5,7 @@
 #
 ---
 name: en
-version: "2022-04-30"
+version: "2022-05-07"
 sort: by_weight
 ...
 # 以下为「融合拼音」方案原装的词库，注释掉了几个：
@@ -4939,7 +4939,7 @@ ruin  ruin  100
 rule  rule  100
 ruler ruler 100
 rumor rumor 100
-run run 100
+# run run 100
 rural rural 100
 rush  rush  100
 rust  rust  100
