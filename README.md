@@ -32,9 +32,9 @@
 
 <br>
 
-详细介绍：[我的 Rime 配置 2022](https://dvel.me/posts/my-rime-setting-2022/)
-
 ## 使用说明
+
+调教/折腾期间建议在 `pinyin_simp.dict.yaml` 注释掉维基词库，以提高部署速度。
 
 ### 1. 选项菜单
 在输入状态时，<kbd>F4</kbd> 或者 <kbd>control</kbd> + <kbd>`</kbd> 弹出菜单
@@ -76,3 +76,19 @@
 默认是开启的，具体可以查看 wiki [如何启用 ` /fh` 这种特殊符号输入](https://github.com/KyleBing/rime-wubi86-jidian/wiki/%E5%A6%82%E4%BD%95%E5%90%AF%E7%94%A8-%60--fh%60-%E8%BF%99%E7%A7%8D%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7%E8%BE%93%E5%85%A5)
 
 使用方法改成类似 `vfh` 按键，即以 `v` 作为前缀按键。
+
+## 长期维护词库
+
+主要维护的词库：
+
+- `8105.dict.yaml` 字表。
+- `main.dict.yaml` 基础词库，含注音、词频。
+- `ext.dict.yaml` 补充词库，只保留三个字及以上不太需要词频的词汇，无注音，依赖于 Rime 的自动注音。
+
+维护内容主要是异形词、错别字的校对，错误注音的修正，缺失的常用词汇的增添，词频的调整。
+
+<br>
+
+---
+
+详细介绍：[我的 Rime 配置 2022](https://dvel.me/posts/my-rime-setting-2022/)

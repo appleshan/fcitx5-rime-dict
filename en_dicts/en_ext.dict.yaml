@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2022-06-11"
+version: "2022-06-15"
 sort: by_weight
 ...
 # 一些杂项
@@ -884,6 +884,7 @@ vivo  vivo
 Uno Uno
 Gopher  Gopher
 GDPR  GDPR
+General Data Protection Regulation  GDPR
 Netlify Netlify
 Mac Studio  MacStudio
 Studio Display  StudioDisplay
@@ -1050,3 +1051,8 @@ cheers  cheers
 Confluence  Confluence
 Gitea Gitea
 followers followers
+Skynet  Skynet
+Serverless  Serverless
+Air Air
+Identifier  Identifier
+NameCheap NameCheap
