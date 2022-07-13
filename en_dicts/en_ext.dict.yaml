@@ -7,13 +7,13 @@
 #
 ---
 name: en_ext
-version: "2022-06-25"
+version: "2022-07-01"
 sort: by_weight
 ...
 # 一些杂项
 &nbsp;  nbsp
 <br>  br
-.DS_Store dsstore
+.DS_Store DSStore
 
 # 生活大爆炸 & 老友记
 Sheldon Sheldon
@@ -346,6 +346,7 @@ GIF GIF
 Graphics Interchange Format GIF
 DNS DNS
 Domain Name System  DNS
+Domain Name System  DomainNameSystem
 shit  shit
 Mod Mod
 Yes Yes
@@ -583,7 +584,6 @@ Paste Paste
 Paw Paw
 PayPal  PayPal
 PhotoDesk PhotoDesk
-Photoshop Photoshop
 Picatext  Picatext
 PingWest  PingWest
 Pixelmator  Pixelmator
@@ -933,12 +933,12 @@ WTF WTF
 ASAP  ASAP
 PUBG  PUBG
 Ruby  Ruby
-GFM GFM 2
-GitHub Flavored Markdown  GFM 1
+GFM GFM
+GitHub Flavored Markdown  GFM
 GitHub Flavored Markdown  GitHubFlavoredMarkdown
 GeekNote  GeekNote
-GUI GUI 2
-Graphical User Interface  GUI 1
+GUI GUI
+Graphical User Interface  GUI
 Graphical User Interface  GraphicalUserInterface
 VPS VPS
 BIOS  BIOS
@@ -1084,3 +1084,10 @@ ABC ABC
 Starbucks Starbucks
 I Love You  ILoveYou
 ZZZ ZZZ
+PS  PS
+Photoshop PS
+Photoshop Photoshop
+Adobe Photoshop AdobePhotoshop
+dashboard dashboard
+Honey Select  HoneySelect
+McCafe  McCafe

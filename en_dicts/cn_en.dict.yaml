@@ -9,13 +9,15 @@
 #
 ---
 name: cn_en
-version: "2022-06-20"
+version: "2022-07-01"
 sort: by_weight
 ...
 # 没有空格的（为了Emoji映射）
 X光  xguang
 X光片 xguangpian
 X射线 xshexian
+T恤  txu
+T恤衫 txushan
 # 有空格的
 AD 钙奶 adgainai
 UU 加速器  uujiasuqi
@@ -91,6 +93,7 @@ Go 语言 goyuyan
 傻 B shabi 100
 傻 X shax
 智能 ABC  zhinengabc  100
+智能 ABC 输入法  zhinengabcshurufa 100
 装 B zhuangb 100
 装 B zhuangbi  100
 A 股 agu 100
@@ -137,8 +140,6 @@ SIM 卡 simka 100
 T 淋巴细胞  tlinbaxibao 100
 T 细胞  txibao  100
 T 型台  txingtai  100
-T 恤 txu 100
-T 恤衫  txushan 100
 U 盾 udun  100
 U 形管  uxingguan 100
 UIM 卡 uimka 100
@@ -248,3 +249,4 @@ Pro 版 proban
 Lite 版本 litebanben
 Lite 版  liteban
 X 教授  xjiaoshou
+Papi 酱  papijiang

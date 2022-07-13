@@ -14,15 +14,13 @@
     - Emoji
     - 所有标点符号直接上屏，「/」模式改为「v」模式，「/」直接上屏
     - 增加了许多拼音纠错
--   融合「[easy_en](https://github.com/BlindingDark/rime-easy-en)」英文输入方案
+-   融合[easy_en](https://github.com/BlindingDark/rime-easy-en)英文输入方案
     - [优化英文输入体验](https://dvel.me/posts/make-rime-en-better/)
 -   简体字表、词库
     -   [《通用规范汉字表》的 8105 字字表](https://github.com/iDvel/The-Table-of-General-Standard-Chinese-Characters)
     -   [华宇野风系统词库](http://bbs.pinyin.thunisoft.com/forum.php?mod=viewthread&tid=30049)
     -   [现代汉语常用词表](https://gist.github.com/indiejoseph/eae09c673460aa0b56db)
-    -   [简化字八股文](https://github.com/rime/rime-essay-simp)
     -   [清华大学开源词库](https://github.com/thunlp/THUOCL)
-    -   [中文维基词库](https://github.com/felixonmars/fcitx5-pinyin-zhwiki)
     -   [八股文语言模型](https://github.com/lotem/rime-octagram-data/tree/hans)
 -   词库更新
     - 已经校对了大量词汇，主要参考[校对网](http://www.jiaodui.com/bbs/)
