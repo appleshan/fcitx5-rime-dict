@@ -189,7 +189,7 @@ speller:
     - derive/([ypfm])ou$/$1uo/
     # uo（无）
     # an
-    - derive/([wrtypsdfghklzcbnm])an$/$1na/
+    - derive/([wrtypsfghklzcbnm])an$/$1na/  # 去掉了 n，不转换常用单词 DNA
     - derive/([zh|ch|sh])an$/$1na/
     # en
     - derive/([wrpsdfghklzcbnm])en$/$1ne/
@@ -253,9 +253,9 @@ speller:
     - derive/([jqx])iong$/$1iogn/
     - derive/([jqx])iong$/$1oign/
     # 其他
-    - derive/([rtsdghkzc])o[u|ng]$/$1o/ # do → dou|dong 
+    - derive/([rtsdghkzc])o(u|ng)$/$1o/ # do → dou|dong
     - derive/ong$/on/ # lon → long
-    - derive/teng$/ten/ # ten → teng
+    - derive/([tl])eng$/$1en/ # ten → teng
     - derive/([qwrtypsdfghjklzxcbnm])([aeio])ng$/$1ng/ # lng → lang、leng、ling、long
 
 
