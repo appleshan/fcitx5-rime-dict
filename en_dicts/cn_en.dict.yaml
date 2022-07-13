@@ -5,9 +5,11 @@
 #
 # 中英混输词库
 #
+# 因书写习惯，中英文之间都加了空格
+#
 ---
 name: cn_en
-version: "2022-05-20"
+version: "2022-05-26"
 sort: by_weight
 ...
 AD 钙奶 adgainai
@@ -41,12 +43,17 @@ Win 版 winban
 Windows 版 windowsban
 Mac 版 macban
 macOS 版 macosban
+iOS 版 iosban
+Android 版 androidban
 Web 版 webban
 PC 端  pcduan
 Win 端 winduan
+Windows 端 windowsduan
 Mac 端 macduan
+macOS 端 macosduan
 Web 端 webduan
 iOS 端 iosduan
+Android 端 androidduan
 e 招贷  ezhaodai
 G 胖 gpang
 Up 主  upzhu
@@ -206,7 +213,6 @@ AA 吧  aaba
 ASCII 码 asciima
 Go 圣经 goshengjing
 江南 Style  jiangnanstyle
-goroutines  goroutines
 头文字 D touwenzid
 三无 Marblue  sanwumarblue
 A 罩杯  azhaobei
@@ -227,3 +233,6 @@ G 罩 gzhao
 H 罩 hzhao
 TV 版  tvban
 芒果 TV mangguotv
+V 字仇杀队  vzichoushadui
+V 怪客  vguaike
+V 煞 vsha

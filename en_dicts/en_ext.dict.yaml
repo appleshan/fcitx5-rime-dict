@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2022-05-20"
+version: "2022-05-26"
 sort: by_weight
 ...
 # 一些杂项
@@ -464,7 +464,7 @@ GitHub  GitHub
 Gmail Gmail
 GoagentX  GoagentX
 Google  Google
-Google Music  GoogleMusic
+Google Play GooglePlay
 Google Play Music GooglePlayMusic
 Graffle Graffle
 Handoff Handoff
@@ -992,7 +992,7 @@ Microsoft Edge  Edge
 Visual Studio Code  VisualStudioCode
 Visual Studio Code  VSCode
 PowerShell  PowerShell
-.Net  net
+.Net  Net
 Surface Surface
 MSN MSN
 Skype Skype
@@ -1010,3 +1010,24 @@ NTFS  NTFS
 Microsoft NTFS  NTFS
 setup setup
 txt txt
+chromeOS  chromeOS
+GCD GCD
+Grand Central Dispatch  GrandCentralDispatch
+Grand Central Dispatch  GCD
+Greatest common divisor GCD
+Greatest common divisor Greatestcommondivisor
+Ed Sheeran  EdSheeran
+Sheeran Sheeran
+Cloudflare Images CloudflareImages
+Cloudflare Stream CloudflareStream
+Zero Trust  ZeroTrust
+goroutines  goroutines
+Universal Actions UniversalActions
+Google Drive  GoogleDrive
+Google One  GoogleOne
+Tor Tor
+Launchpad Launchpad
+Airbnb  Airbnb
+opencc  opencc
+HarmonyOS HarmonyOS
+platinum  platinum

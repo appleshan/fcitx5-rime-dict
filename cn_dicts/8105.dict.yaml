@@ -14,28 +14,30 @@
 # 在 Rime 的自动注音程序中，权重比小于等于 5% 的多音字不会被自动注音，这在引入了没有注音的词库后造成困扰。
 # 如「都du332701」「都dou48783880」，332701/48783880 = 0.68%（小于 5%），导致「du」无法被自动注音。
 # 如「长chang100」与「长zhang5」，导致无注音的含「长」的词汇用「zhang」打不出来（必须大于 5%，等于也不行）。
-# 修订上述问题，将常用多音字之间的权重比调整为至少在 6% 以上，剩下大约 300 个犄角旮旯的发音没有理会。
+# 修正上述问题，将常用多音字之间的权重比调整为至少在 6% 以上，剩下大约 300 个犄角旮旯的发音没有理会。
 #
-# ------- 注音：-------
-# 没有增加「桔 jie」《现汉7》含有的 ju 音，词库中所有的「桔子」都改成了「橘子」。
-# 没有增加「这 zhei」「那 nei」，只保留了「这zhe」「那na」
+# ü：
 # 「nüe 虐」「lüe 略」使用「nve」「lve」的注音。
 # 「句、去、需、与」使用「ju qu xu yu」的注音。
-# 可以使用以下四行以让 Rime 同时支持「nue nve」「qv qu」等不同的注音：（在 `speller/algebra`）
+# 可以使用以下四行可以同时适配u/v注音：无论注音是u还是v，用「nue nve」「qv qu」都可以打出来。
+# 在 `speller/algebra` 下面：
 # - derive/^([nl])ue$/$1ve/
 # - derive/^([nl])ve$/$1ue/
 # - derive/^([jqxy])u/$1v/
 # - derive/^([jqxy])v/$1u/
 #
-# ------- 修改：-------
+# 一些说明：
 # 去重，如「曲 qū qǔ」去掉声调后都是「qu」。
-# 调整一些权重顺序
+# 调整一些字频
+# 只有「桔 jie」，没有增加《现汉7》含有的 ju 音，词库中所有的「桔子」都改成了「橘子」。
+# 没有增加「这 zhei」「那 nei」，只保留了「这zhe」「那na」
 # 「嗯 n ng eng」改为只有「en」。
 # 「哟 yo」增加「you」
 # 「喔 wo」增加「o」
+# 「欸 e ai」增加「ei」(字表里没有「诶」,《现汉》《现规》都没有收录「诶」)
 ---
 name: 8105
-version: "2022-05-20"
+version: "2022-05-26"
 sort: by_weight
 vocabulary: essay-zh-hans
 ...
@@ -68,6 +70,7 @@ vocabulary: essay-zh-hans
 挨 ai  231755
 矮 ai  172070
 癌 ai  151222
+欸 ai  145403
 埃 ai  142198
 哀 ai  112115
 碍 ai  73658
@@ -84,7 +87,6 @@ vocabulary: essay-zh-hans
 砹 ai  33355
 毐 ai  30404
 叆 ai  29647
-欸 ai  5403
 按 an  3171848
 俺 an  2077936
 安 an  1453097
@@ -138,8 +140,8 @@ vocabulary: essay-zh-hans
 奡 ao  24366
 聱 ao  21360
 薁 ao  1
-吧 ba  46271066
-把 ba  20010426
+吧 ba  40271066
+把 ba  40010426
 八 ba  873502
 爸 ba  493590
 巴 ba  437427
@@ -1508,6 +1510,7 @@ vocabulary: essay-zh-hans
 堨 e 1
 𥔲 e 1
 𫫇 e 1
+欸 ei  9999999
 恩 en  19478035
 嗯 en  11561133
 摁 en  77079
@@ -1987,7 +1990,6 @@ vocabulary: essay-zh-hans
 毂 gu  39921
 崮 gu  39274
 菰 gu  37972
-瞽 gu  36934
 牯 gu  36617
 鹘 gu  35193
 诂 gu  34525
@@ -1998,7 +2000,6 @@ vocabulary: essay-zh-hans
 嘏 gu  32311
 汩 gu  30846
 觚 gu  30344
-臌 gu  30183
 榖 gu  29680
 酤 gu  27918
 痼 gu  27243
@@ -2013,6 +2014,8 @@ vocabulary: essay-zh-hans
 瀔 gu  14041
 鹄 gu  1493
 贾 gu  301
+瞽 gu  1
+臌 gu  1
 𦙶 gu  1
 挂 gua 1556753
 刮 gua 248097
@@ -2945,8 +2948,8 @@ vocabulary: essay-zh-hans
 今 jin 568293
 劲 jin 350035
 斤 jin 302234
+禁 jin 252017
 锦 jin 249648
-禁 jin 242017
 晋 jin 183932
 津 jin 163000
 筋 jin 123930
@@ -5488,8 +5491,8 @@ vocabulary: essay-zh-hans
 舢 shan  25260
 墡 shan  20308
 晱 shan  18552
+禅 shan  8590
 单 shan  2821
-禅 shan  301
 嶦 shan  1
 烻 shan  1
 𫮃 shan  1
