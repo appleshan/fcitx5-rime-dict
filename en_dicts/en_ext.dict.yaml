@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2022-06-15"
+version: "2022-06-20"
 sort: by_weight
 ...
 # 一些杂项
@@ -282,7 +282,9 @@ JavaScript  Javascript
 JetBrains JetBrains
 KTV KTV
 MBP MBP
+MacBook Pro MBP
 MBA MBA
+MacBook Air MBA
 MariaDB MariaDB
 Markdown  Markdown
 Microsoft Access  Access
@@ -1058,3 +1060,8 @@ Identifier  Identifier
 NameCheap NameCheap
 Rime ice  Rimeice
 Handover  Handover
+Language Reactor  LanguageReactor
+Tencent Tencent
+Alibaba Alibaba
+Alibaba Group AlibabaGroup
+Linus Linus

@@ -10,7 +10,7 @@
 # 输入「相泽南」后，会被映射为「相泽南 相沢みなみ」。
 ---
 name: av
-version: "2022-05-20"
+version: "2022-06-20"
 sort: by_weight
 vocabulary: essay-zh-hans
 ...
@@ -41,6 +41,7 @@ vocabulary: essay-zh-hans
 彩美旬果  cai mei xun guo 666
 苍井空 cang jing kong  666
 长谷川理穗 chang gu chuan li hui 666
+长泽杏奈  chang ze xing nai 666
 冲田杏梨  chong tian xing li  666
 春咲凉 chun xiao liang 666
 大桥未久  da qiao wei jiu 666
@@ -56,6 +57,7 @@ vocabulary: essay-zh-hans
 河北春菜  he bei chun cai 666
 吉川莲 ji chuan lian 666
 吉泽明步  ji ze ming bu 666
+岬奈奈美  jia nai nai mei 666
 君岛美绪  jun dao mei xu  666
 堀北湾 ku bei wan  666
 濑名光莉  lai ming guang li 666

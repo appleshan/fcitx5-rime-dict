@@ -9,7 +9,7 @@
 #
 ---
 name: cn_en
-version: "2022-06-15"
+version: "2022-06-20"
 sort: by_weight
 ...
 AD 钙奶 adgainai
@@ -240,3 +240,7 @@ Q 弹 qtan
 Steam 云 steamyun
 M 系列  mxilie
 阿 Sir asir
+Pro 版本  probanben
+Pro 版 proban
+Lite 版本 litebanben
+Lite 版  liteban
