@@ -36,9 +36,10 @@
 # 「喔 wo」增加「o」
 # 「欸 e ai」增加「ei」(字表里没有「诶」,《现汉》《现规》都没有收录「诶」)
 # 「忒 tui」增加「tei」（没有增加「忒 te」）
+# 「稽 ji」增加「qi」（稽qi首）
 ---
 name: 8105
-version: "2022-06-10"
+version: "2022-06-11"
 sort: by_weight
 vocabulary: essay-zh-hans
 ...
@@ -4950,6 +4951,7 @@ vocabulary: essay-zh-hans
 鲯 qi  20701
 磜 qi  19321
 埼 qi  4622
+稽 qi  3000
 荠 qi  781
 亟 qi  241
 缉 qi  61
@@ -4961,12 +4963,12 @@ vocabulary: essay-zh-hans
 𬨂 qi  1
 掐 qia 137205
 恰 qia 135621
-洽 qia 74394
-髂 qia 42537
-葜 qia 31752
-拤 qia 18683
-卡 qia 15000
-袷 qia 361
+卡 qia 55000
+拤 qia 48683
+洽 qia 4394
+髂 qia 3
+葜 qia 1
+袷 qia 1
 钱 qian  6785711
 前 qian  5741039
 千 qian  688088

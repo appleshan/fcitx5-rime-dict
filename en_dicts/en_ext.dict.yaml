@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2022-06-10"
+version: "2022-06-11"
 sort: by_weight
 ...
 # 一些杂项
@@ -39,6 +39,7 @@ Option  Option
 Shift Shift
 Tab Tab
 Caps  Caps
+CapsLock  CapsLock
 Return  Return
 Enter Enter
 Space Space
@@ -77,7 +78,6 @@ Catalina  Catalina
 Big Sur BigSur
 Monterey  Monterey
 Ventura Ventura
-CapsLock  CapsLock
 Aeron Aeron
 Aeron Chair AeronChair
 RPG RPG
@@ -817,6 +817,7 @@ SWAG  SWAG
 CS  CS
 Backblaze Backblaze
 WebP  WebP
+WebM  WebM
 CleanShot X CleanShotX
 Setapp  Setapp
 IE  IE
@@ -1048,3 +1049,4 @@ Quantumult X  QuantumultX
 cheers  cheers
 Confluence  Confluence
 Gitea Gitea
+followers followers

@@ -32,7 +32,7 @@ switches:
     # states: [ 半角, 全角 ] 永远不切换，所以注释了
   - name: ascii_punct
     reset: 0
-    # states: [ 。，, ．， ] 永远不切换，所以注释了
+    # states: [ 中文标点, 英文标点 ] 永远不切换，所以注释了
   - name: emoji
     reset: 1  # 默认永远开启
   - name: traditionalization
