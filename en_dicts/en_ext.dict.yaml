@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2022-05-12"
+version: "2022-05-13"
 sort: by_weight
 ...
 # 一些杂项
@@ -995,3 +995,7 @@ PowerShell  PowerShell
 .Net  net
 Surface Surface
 MSN MSN
+Skype Skype
+TOC TOC
+Table of Contents TOC
+Table of Contents TableOfContents
