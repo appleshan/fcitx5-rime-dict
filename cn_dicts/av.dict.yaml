@@ -10,13 +10,14 @@
 # 输入「相泽南」后，会被映射为「相泽南 相沢みなみ」。
 ---
 name: av
-version: "2022-05-13"
+version: "2022-05-20"
 sort: by_weight
 vocabulary: essay-zh-hans
 ...
 # 简体和日文相同的：
 本田岬 ben tian jia  666
 东凛  dong lin  666
+橘京花 ju jing hua 666
 河北彩花  he bei cai hua  666
 前田桃杏  qian tian tao xing  666
 山岸逢花  shan an feng hua  666
@@ -82,6 +83,7 @@ vocabulary: essay-zh-hans
 森泽佳奈  sen ze jia nai  666
 纱纱原百合 sha sha yuan bai he 666
 山手梨爱  shan shou li ai 666
+上原瑞穗  shang yuan rui sui  666
 神宫寺奈绪 shen gong si nai xu 666
 深田咏美  shen tian yong mei  666
 辻井穗乃果 shi jing hui nai guo  666
@@ -93,6 +95,7 @@ vocabulary: essay-zh-hans
 藤森里穗  teng sen li sui 666
 天海翼 tian hai yi 666
 天使萌 tian shi meng 666
+望月理沙  wang yue li sha 666
 武藤绫香  wu teng ling xiang  666
 希岛爱理  xi dao ai li  666
 西宫梦 xi gong meng  666

@@ -5,7 +5,7 @@
 #
 ---
 name: en
-version: "2022-05-13"
+version: "2022-05-20"
 sort: by_weight
 ...
 # 以下为「融合拼音」方案原装的词库，注释掉了几个：
@@ -80,7 +80,7 @@ LGPL  LGPL  100
 Mozilla Mozilla 100
 Apache  Apache  100
 Steam Steam 100
-App App 999999999
+App App 100
 Android Android 100
 Arch  Arch  100
 iOS iOS 100

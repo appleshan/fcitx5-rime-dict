@@ -8,7 +8,7 @@
     - 小狼毫 Weasel 0.14.3
 -   「[袖珍简化字方案](https://github.com/rime/rime-pinyin-simp)」作为基础
     - [简繁切换](https://github.com/rime/home/issues/388#issuecomment-504572224)
-    - [动态日期时间](https://github.com/KyleBing/rime-wubi86-jidian)
+    - [日期、时间、星期](https://github.com/KyleBing/rime-wubi86-jidian)
     - [以词定字](https://github.com/BlindingDark/rime-lua-select-character)
     - [长词优先](https://github.com/tumuyan/rime-melt/blob/master/lua/melt.lua)
     - 所有标点符号直接上屏，「/」模式改为「v」模式，「/」直接上屏
@@ -17,11 +17,18 @@
 -   融合「[easy_en](https://github.com/BlindingDark/rime-easy-en)」英文输入方案
     - [优化英文输入体验](https://dvel.me/posts/make-rime-en-better/)
 
--   纯简体字表、词库（这样在用户词典中也是简体了）
-    - 字表：[《通用规范汉字表》的 8105 字字表](https://github.com/iDvel/The-Table-of-General-Standard-Chinese-Characters)
-    - 词库：「[华宇野风系统词库](http://bbs.pinyin.thunisoft.com/forum.php?mod=viewthread&tid=30049)」+「[清华大学开源词库](https://github.com/thunlp/THUOCL)」
-    - [简化字八股文语言模型](https://github.com/lotem/rime-octagram-data/tree/hans)
--   长期持续修订遇到的异形词、错别字、错误注音
+-   纯简体字表、词库
+    -   [《通用规范汉字表》的 8105 字字表](https://github.com/iDvel/The-Table-of-General-Standard-Chinese-Characters)
+    -   [华宇野风系统词库](http://bbs.pinyin.thunisoft.com/forum.php?mod=viewthread&tid=30049)
+    -   [现代汉语常用词表](https://gist.github.com/indiejoseph/eae09c673460aa0b56db)
+    -   [简化字八股文](https://github.com/rime/rime-essay-simp)
+    -   [清华大学开源词库](https://github.com/thunlp/THUOCL)
+    -   [中文维基词库](https://github.com/felixonmars/fcitx5-pinyin-zhwiki)
+    -   [八股文语言模型](https://github.com/lotem/rime-octagram-data/tree/hans)
+-   长期修订词库
+    -   修正大量错字、错音、异形词
+    -   校对大量词汇，主要参考[校对网](http://www.jiaodui.com/bbs/)
+
 
 <br>
 

@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2022-05-13"
+version: "2022-05-20"
 sort: by_weight
 ...
 # 一些杂项
@@ -999,3 +999,14 @@ Skype Skype
 TOC TOC
 Table of Contents TOC
 Table of Contents TableOfContents
+Jenny Jenny
+One Dark  OneDark
+IINA  IINA
+GUID  GUID
+ExFAT ExFAT
+APFS  APFS
+Microsoft NTFS  MicrosoftNTFS
+NTFS  NTFS
+Microsoft NTFS  NTFS
+setup setup
+txt txt

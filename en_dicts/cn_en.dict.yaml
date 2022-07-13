@@ -7,7 +7,7 @@
 #
 ---
 name: cn_en
-version: "2022-05-13"
+version: "2022-05-20"
 sort: by_weight
 ...
 AD 钙奶 adgainai
@@ -225,3 +225,5 @@ E 罩 ezhao
 F 罩 fzhao
 G 罩 gzhao
 H 罩 hzhao
+TV 版  tvban
+芒果 TV mangguotv

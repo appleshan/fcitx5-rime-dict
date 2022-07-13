@@ -14,13 +14,18 @@
 # 在 Rime 的自动注音程序中，权重比小于等于 5% 的多音字不会被自动注音，这在引入了没有注音的词库后造成困扰。
 # 如「都du332701」「都dou48783880」，332701/48783880 = 0.68%（小于 5%），导致「du」无法被自动注音。
 # 如「长chang100」与「长zhang5」，导致无注音的含「长」的词汇用「zhang」打不出来（必须大于 5%，等于也不行）。
-# 修订上述问题，将常用多音字之间的权重比调整为至少在 6% 以上。
+# 修订上述问题，将常用多音字之间的权重比调整为至少在 6% 以上，剩下大约 300 个犄角旮旯的发音没有理会。
 #
-# 「桔 jie」没有增加《现汉7》含有的 ju 音，词库中所有的「桔子」都改成了「橘子」。
-# ------- v 与 u：-------
-# 「nüe 虐」「lüe 略」使用了「nue」「lue」的注音。（按拼音规则，正确的应为 ü/v）
-# 「句、去、需」等使用了「ju qu xu」的注音。
-# 结合 Rime 的 `derive/^([nl])ve$/$1ue/` 和 `derive/^([jqxy])u/$1v/` 用「nue、qu」或「nve、qv」都可以打出来。
+# ------- 注音：-------
+# 没有增加「桔 jie」《现汉7》含有的 ju 音，词库中所有的「桔子」都改成了「橘子」。
+# 没有增加「这 zhei」「那 nei」，只保留了「这zhe」「那na」
+# 「nüe 虐」「lüe 略」使用「nve」「lve」的注音。
+# 「句、去、需、与」使用「ju qu xu yu」的注音。
+# 可以使用以下四行以让 Rime 同时支持「nue nve」「qv qu」等不同的注音：（在 `speller/algebra`）
+# - derive/^([nl])ue$/$1ve/
+# - derive/^([nl])ve$/$1ue/
+# - derive/^([jqxy])u/$1v/
+# - derive/^([jqxy])v/$1u/
 #
 # ------- 修改：-------
 # 去重，如「曲 qū qǔ」去掉声调后都是「qu」。
@@ -30,11 +35,11 @@
 # 「喔 wo」增加「o」
 ---
 name: 8105
-version: "2022-05-13"
+version: "2022-05-20"
 sort: by_weight
 vocabulary: essay-zh-hans
 ...
-# ext: 注释掉的已经在下面加入到合适的位置了
+# ext: 注释掉的这几行已经在下面加入到合适的位置了
 # 〇 ling
 # 囧 jiong
 # 屌 diao
@@ -2276,7 +2281,7 @@ vocabulary: essay-zh-hans
 堼 heng  17822
 珩 heng  4141
 行 heng  1
-哼 hng 1
+哼 hng 431013
 红 hong  1649995
 宏 hong  371473
 洪 hong  327113
@@ -3972,11 +3977,6 @@ vocabulary: essay-zh-hans
 孪 luan  36783
 娈 luan  32233
 脔 luan  27550
-略 lue 174000
-掠 lue 58797
-䂮 lue 1
-圙 lue 1
-锊 lue 1
 论 lun 819178
 轮 lun 415795
 伦 lun 212830
@@ -4014,8 +4014,8 @@ vocabulary: essay-zh-hans
 瘰 luo 27196
 脶 luo 21601
 蓏 luo 20223
+捋 luo 3000
 烙 luo 1441
-捋 luo 721
 率 lv  833059
 绿 lv  640501
 吕 lv  322655
@@ -4041,6 +4041,11 @@ vocabulary: essay-zh-hans
 𦝼 lv  17521
 偻 lv  241
 稆 lv  181
+略 lve 174000
+掠 lve 58797
+䂮 lve 1
+圙 lve 1
+锊 lve 1
 呣 m 28564
 吗 ma  26514365
 嘛 ma  8536397
@@ -4547,8 +4552,6 @@ vocabulary: essay-zh-hans
 砮 nu  21003
 笯 nu  19921
 暖 nuan  230547
-虐 nue 87092
-疟 nue 39118
 诺 nuo 319622
 挪 nuo 125488
 喏 nuo 62060
@@ -4563,6 +4566,8 @@ vocabulary: essay-zh-hans
 钕 nv  48097
 衄 nv  33058
 恧 nv  26165
+虐 nve 87092
+疟 nve 39118
 哦 o 2255790
 噢 o 928094
 喔 o 211621
@@ -6073,8 +6078,8 @@ vocabulary: essay-zh-hans
 慆 tao 21662
 梼 tao 20883
 𫘦 tao 20341
-焘 tao 2761
-叨 tao 61
+叨 tao 3100
+焘 tao 276
 特 te  1202318
 铽 te  29645
 忑 te  29404
