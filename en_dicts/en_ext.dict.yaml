@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2022-05-26"
+version: "2022-06-01"
 sort: by_weight
 ...
 # 一些杂项
@@ -29,6 +29,7 @@ Chandler  Chandler
 Phoebe  Phoebe
 
 # 按键
+Fn  Fn
 Cmd Cmd
 Command Command
 Ctrl  Ctrl
@@ -1031,3 +1032,4 @@ Airbnb  Airbnb
 opencc  opencc
 HarmonyOS HarmonyOS
 platinum  platinum
+Incase  Incase

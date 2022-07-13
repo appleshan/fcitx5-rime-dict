@@ -35,9 +35,10 @@
 # 「哟 yo」增加「you」
 # 「喔 wo」增加「o」
 # 「欸 e ai」增加「ei」(字表里没有「诶」,《现汉》《现规》都没有收录「诶」)
+# 「忒 tui」增加「tei」（没有增加「忒 te」）
 ---
 name: 8105
-version: "2022-05-26"
+version: "2022-06-01"
 sort: by_weight
 vocabulary: essay-zh-hans
 ...
@@ -2515,6 +2516,7 @@ vocabulary: essay-zh-hans
 烠 hui 24121
 橞 hui 19923
 翙 hui 18961
+珲 hui 2013
 桧 hui 1381
 溃 hui 661
 㧑 hui 361
@@ -6087,6 +6089,7 @@ vocabulary: essay-zh-hans
 铽 te  29645
 忑 te  29404
 慝 te  28338
+忒 tei 9999
 疼 teng  567480
 腾 teng  194284
 藤 teng  154012
@@ -8377,15 +8380,15 @@ vocabulary: essay-zh-hans
 窀 zhun  30556
 衠 zhun  16564
 𬘯 zhun  1
-卓 zhuo  208130
-桌 zhuo  198186
 捉 zhuo  151612
+桌 zhuo  128186
 着 zhuo  113221
 浊 zhuo  77021
 拙 zhuo  69424
 灼 zhuo  63237
 啄 zhuo  56936
 酌 zhuo  51119
+卓 zhuo  48130
 濯 zhuo  45004
 镯 zhuo  41713
 斫 zhuo  39790
