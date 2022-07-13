@@ -8,11 +8,9 @@
 name: easy_en
 version: "1"
 sort: by_weight
-# vocabulary: essay-zh-hans
 
 import_tables:
   - en_dicts/en     # 原装词库
   - en_dicts/en_ext # 自己补充的词库
   - en_dicts/cn_en  # 中英混输词库
-  - en_dicts/others # 其他
 ...

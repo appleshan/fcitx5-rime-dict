@@ -24,6 +24,7 @@
 芔	huihuihui
 晶	ririri
 森	mumumu
+驫	mamama
 骉	mamama
 惢	xinxinxin
 掱	shoushoushou
@@ -147,16 +148,81 @@ Wi-Fi	wifi
 Apple ID	appleid
 QQ邮箱	qqyzxl
 
-# 方便词
-儿	r
+##### 方便词
+# ！ 会导致 zh 无法参与超级简拼
+# 这	zh
+# ！ 单编码的声母同样会导致无法参与超级简拼，如「lir」无法响应「例如」。
+# 儿	r
 一	i
-你们	nm
-知道	zd
-没有	my
+有	u
+一个	ig
+有个	ug
+有一个	uig
+有一个	uige
+有一个	uyig
+有一个	uyge
+有一个	uyige
 又有	uu
+又又又	uuu
+又双叒叕	uuuu
 39454075	qq
 apple.shan@gmail.com	email
 
-# 容错词
-什么	sheme
+##### 容错词
+# 「血xue、xie」「谁shui、shei」「露lu、lou」「熟shu、shou」「密钥yao、yue」已在 sys 中实现
+# ---
+# 「馄饨」，正确是 tun，北方口语是 dun
+馄饨	hun tun
+馄饨	hun dun
+# 「主角」，正确是 jue，港台是 jiao
+主角	zhu jue
+主角	zhu jiao
+角色	jue se
+角色	jiao se
+# 「比萨」，正确是 bi，Pizza 发音为 pi
+比萨	bi sa
+比萨	pi sa
+比萨饼	bi sa bing
+比萨饼	pi sa bing
+吃比萨	chi bi sa
+吃比萨	chi pi sa
+超级至尊比萨	chao ji zhi zun bi sa
+超级至尊比萨	chao ji zhi zun pi sa
+至尊比萨	zhi zun bi sa
+至尊比萨	zhi zun pi sa
+大西洋珍鲑比萨	da xi yang zhen gui bi sa
+大西洋珍鲑比萨	da xi yang zhen gui pi sa
+海鲜比萨	hai xian bi sa
+海鲜比萨	hai xian pi sa
+蔬菜比萨	shu cai bi sa
+蔬菜比萨	shu cai pi sa
+# 「扑街」，正确是 jie，口语是 gai
+扑街	pu jie
+扑街	pu gai
+街溜子	jie liu zi
+街溜子	gai liu zi
+扑街仔	pu jie zai
+扑街仔	pu gai zai
+# 「说服」，正确是 shuo，但「游说」「说客」仍然保留着 shui 的读音
+说服	shuo fu
+说服	shui fu
+# 「坐骑」，正确是 qi，《现汉7》只保留了 qi，《现汉6》一些词组中是念 ji
+坐骑	zuo qi
+坐骑	zuo ji
+一骑绝尘	yi qi jue chen
+一骑绝尘	yi ji jue chen
+一骑红尘妃子笑	yi qi hong chen fei zi xiao
+一骑红尘妃子笑	yi ji hong chen fei zi xiao
+千里走单骑	qian li zou dan qi
+千里走单骑	qian li zou dan ji
+# 「道行」，正确是 heng，但「道行hang」比较流行
+道行	dao heng
+道行	dao hang
+# 「模样」，正确是 mu，口语常念 mo
+模样	mu yang
+模样	mo yang
+有模有样	you mu you yang
+有模有样	you mo you yang
+一模一样	yi mu yi yang
+一模一样	yi mo yi yang
 

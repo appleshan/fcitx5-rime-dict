@@ -7,10 +7,45 @@
 #
 ---
 name: en_ext
-version: "2022-04-30"
+version: "2022-05-05"
 sort: by_weight
-# vocabulary: essay-zh-hans
 ...
+# 一些杂项
+&nbsp;  nbsp
+<br>  br
+.DS_Store dsstore
+# 生活大爆炸 & 老友记
+Sheldon Sheldon
+Leonard Leonard
+Penny Penny
+Howard  Howard
+Rajesh  Rajesh
+Rachel  Rachel
+Monica  Monica
+Joey  Joey
+Ross  Ross
+Chandler  Chandler
+Phoebe  Phoebe
+# 按键
+Cmd Cmd
+Command Command
+Ctrl  Ctrl
+Control Control
+Opt Opt
+Option  Option
+Shift Shift
+Tab Tab
+Caps  Caps
+Return  Return
+Enter Enter
+Space Space
+Backspace Backspace
+Del Del
+Delete  Delete
+Esc Esc
+Eject Eject
+
+# 往下开始都是扩展单词
 iPhone  iPhone  4
 iPhone 13 iPhone  3
 iPhone 13 Pro iPhone  2
@@ -910,3 +945,7 @@ TickTick  TickTick
 CHDBits CHDBits
 M-team  Mteam
 Microsoft Azure MicrosoftAzure
+Emacs Emacs
+Vim Vim
+Wikipedia Wikipedia
+Google Voice  GoogleVoice

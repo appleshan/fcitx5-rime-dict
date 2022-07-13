@@ -11,7 +11,7 @@
 # 词库不全，仅仅是自己看过的，觉得还不错的。。。
 ---
 name: av
-version: "2022-05-01"
+version: "2022-05-05"
 sort: by_weight
 vocabulary: essay-zh-hans
 ...
@@ -126,3 +126,5 @@ vocabulary: essay-zh-hans
 西条琉璃  xi tiao liu li
 君岛美绪  jun dao mei xu
 波多野结衣 bo duo ye jie yi
+松下纱荣子 song xia sha rong zi
+山手梨爱  shan shou li ai
