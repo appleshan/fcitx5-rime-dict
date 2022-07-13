@@ -6,7 +6,7 @@
 #
 ---
 name: en_ext
-version: "2022-07-05"
+version: "2022-07-10"
 sort: by_weight
 ...
 # 一些杂项
@@ -878,6 +878,7 @@ TypeScript  TypeScript
 Unity Unity
 MIUI  MIUI
 Shottr  Shottr
+turbo turbo
 Turbo Boost TurboBoost
 Turbo Boost Switcher  TurboBoostSwitcher
 P2P ptop
@@ -1096,3 +1097,7 @@ BSD BSD
 GPL GPL
 LGPL  LGPL
 MIT MIT
+DNSPod  DNSPod
+exists  exists
+goto  goto
+Bandizip  Bandizip

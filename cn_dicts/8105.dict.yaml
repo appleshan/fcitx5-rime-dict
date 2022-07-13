@@ -49,7 +49,7 @@
 # 「噌 ceng」没有增加「cheng」，有了词语「噌cheng吰hong」
 ---
 name: 8105
-version: "2022-07-05"
+version: "2022-07-10"
 sort: by_weight
 vocabulary: essay-zh-hans
 ...
@@ -97,7 +97,7 @@ vocabulary: essay-zh-hans
 
 
 # 8105
-# TODO 校对进度到 差  cha 230000
+# TODO 校对进度到 拆  chai  356059
 # +_+
 啊 a 10139710
 阿 a 1906625
@@ -650,25 +650,25 @@ vocabulary: essay-zh-hans
 茬 cha 75347
 搽 cha 70528
 岔 cha 57925
-槎 cha 44784
 碴 cha 42738
 姹 cha 42450
 汊 cha 41550
-檫 cha 41421
 杈 cha 39608
 诧 cha 39325
 衩 cha 34982
-锸 cha 33773
-镲 cha 32766
+檫 cha 31421
 馇 cha 31398
-嵖 cha 29284
-侘 cha 28501
 猹 cha 25681
-垞 cha 24902
 蹅 cha 16982
-嚓 cha 1501
-刹 cha 1261
-喳 cha 181
+刹 cha 4500
+嚓 cha 2222
+镲 cha 2
+侘 cha 1
+喳 cha 1
+垞 cha 1
+嵖 cha 1
+槎 cha 1
+锸 cha 1
 𥻗 cha 1
 拆 chai  356059
 柴 chai  164582
@@ -7991,7 +7991,6 @@ vocabulary: essay-zh-hans
 柞 zha 34182
 砟 zha 33553
 蚱 zha 32981
-馇 zha 31398
 奓 zha 29348
 鲊 zha 26404
 霅 zha 23342
@@ -8008,6 +8007,7 @@ vocabulary: essay-zh-hans
 吒 zha 34
 拃 zha 8
 䃎 zha 1
+馇 zha 1
 鲝 zha 1
 齇 zha 1
 宅 zhai  189164

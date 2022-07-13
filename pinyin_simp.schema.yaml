@@ -236,7 +236,7 @@ speller:
     - derive/([qrtysdghjklzxcn])uan$/$1aun/
     # - derive/([qrtysdghjklzxcn])uan$/$1una/ # 和「去哪、露娜」等常用词有冲突
     - derive/([zh|ch|sh])uan$/$1aun/
-    - derive/([zh|sh])uan$/$1una/
+    # - derive/([zh|sh])uan$/$1una/
     # un
     - derive/([qrtysdghjklzxc])un$/$1nu/
     - derive/([zh|ch|sh])un$/$1nu/

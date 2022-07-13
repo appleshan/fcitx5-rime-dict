@@ -9,7 +9,7 @@
 #
 ---
 name: cn_en
-version: "2022-07-05"
+version: "2022-07-10"
 sort: by_weight
 ...
 # 没有空格的（为了Emoji映射。Emoji 里空格是分割符，没法映射，不知道怎么解决）
@@ -251,3 +251,5 @@ Lite 版  liteban
 X 教授  xjiaoshou
 Papi 酱  papijiang
 MAC 地址  macdizhi
+DNS 劫持  dnsjiechi
+V 友们  vyoumen
