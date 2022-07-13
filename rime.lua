@@ -133,11 +133,45 @@ function select_character(key, env)
     return 2 -- kNoop
 end
 -------------------------------------------------------------
+-- 长词优先（提升「西安」「提案」「图案」「饥饿」等词汇的优先级）
+-- https://github.com/tumuyan/rime-melt
+-- 修改：不提升英文和中英混输的
+-- 目前是将3个词插入到第2、3、4位，我想改成插入到第3、4、5位，不知道怎么改。。。
+function long_word_filter(input)
+    local l = {}
+    local length = 0 -- 记录第一个候选词的长度，提前的候选词至少要比第一个候选词长
+    -- local s1 = 0 -- 记录筛选了多少个英语词条(只提升3个词的权重，并且对comment长度过长的候选进行过滤)
+    local s2 = 0 -- 记录筛选了多少个汉语词条(只提升3个词的权重)
+    for cand in input:iter() do
+        leng = utf8.len(cand.text)
+        if (length < 1) then
+            length = leng
+            yield(cand)
+        -- 不知道这两行是干嘛用的，似乎注释掉也没有影响。
+        -- elseif #table > 30 then
+        --     table.insert(l, cand)
+        -- elseif ((leng > length) and (s1 < 2)) and (string.find(cand.text, "^[%w%p%s]+$")) then
+        --     s1 = s1 + 1
+        --     if (string.len(cand.text) / string.len(cand.comment) > 1.5) then
+        --         yield(cand)
+        --     end
+        elseif ((leng > length) and (s2 < 3)) and (string.find(cand.text, "[%w%p%s]+") == nil) then
+            yield(cand)
+            s2 = s2 + 1
+        else
+            table.insert(l, cand)
+        end
+    end
+    for i, cand in ipairs(l) do
+        yield(cand)
+    end
+end
+-------------------------------------------------------------
 -- 因为英文方案的 initial_quality 大于 1，导致输入「va」时，候选项是「van vain。。。」
 -- 单字优先，候选项应改为「ā á ǎ à」
 --
 -- 不知道这个方法为什么不行啊？？？
--- function v_single_char_first_filter(input, seg)
+-- function v_single_char_first_filter(input)
 --     if (string.find(input, "v") == 1 and string.len(input) == 2) then
 --         local l = {}
 --         for cand in input:iter() do
@@ -156,7 +190,7 @@ end
 -- 反正是解决了，不知道怎么就解决了，就是最后多一个候选项，没多大影响。
 function v_single_char_first_filter(input, seg)
     if (string.find(input, "v") == 1 and string.len(input) == 2) then
-            yield(Candidate("", seg.start, seg._end, "", ""))
+        yield(Candidate("", seg.start, seg._end, "", ""))
     end
 end
 -------------------------------------------------------------

@@ -66,9 +66,10 @@ engine:
     - table_translator@easy_en        # 英文输入
     - lua_translator@date_translator  # 时间、日期、星期
   filters: # ※ 默认组件：過濾翻譯的結果
-    - simplifier@emoji           # Emoji
-    - simplifier@traditionalize  # 简繁切换
-    - uniquifier                 # 去重
+    - lua_filter@long_word_filter # 长词优先
+    - simplifier@emoji            # Emoji
+    - simplifier@traditionalize   # 简繁切换
+    - uniquifier                  # 去重
 
 
 # Emoji（删除了 Emoji，修改为一些词语和符号映射）

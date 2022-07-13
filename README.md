@@ -10,6 +10,7 @@
     - [简繁切换](https://github.com/rime/home/issues/388#issuecomment-504572224)
     - [动态日期时间](https://github.com/KyleBing/rime-wubi86-jidian)
     - [以词定字](https://github.com/BlindingDark/rime-lua-select-character)
+    - [长词优先](https://github.com/tumuyan/rime-melt/blob/master/lua/melt.lua)
     - 所有标点符号直接上屏，「/」模式改为「v」模式，「/」直接上屏
     - 将「[Emoji](https://github.com/rime/rime-emoji)」改为词语与符号映射
     - 增加了许多拼音纠错
