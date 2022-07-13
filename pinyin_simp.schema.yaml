@@ -34,8 +34,8 @@ switches:
     reset: 0
     # states: [ 中文标点, 英文标点 ] 永远不切换，所以注释了
   - name: emoji
-    states: [ 💀, 😄 ]
     reset: 1
+    states: [ 💀, 😄 ]
   - name: traditionalization
     reset: 0
     states: [ 简, 繁繁繁 ]
@@ -73,7 +73,7 @@ engine:
     - uniquifier                  # 去重
 
 
-# Emoji（没有 Emoji，改为了一些词语和符号映射）
+# Emoji
 emoji:
   opencc_config: emoji.json
   option_name: emoji
@@ -170,8 +170,8 @@ speller:
     # 自动纠错
     # 有些规则对全拼简拼混输有副作用：如「x'ai 喜爱」被纠错为「xia 下」
     # zh、ch、sh
-    - derive/([zcs])h(a|e|i|u|ai|ei|an|en|ou|uo|ua|un|ui|uan|uai|uang|ang|eng|ong)$/h$1$2/  # hzi → zhi  hsang → shang
-    - derive/([zcs])h([aeiu])$/$1$2h/
+    - derive/([zcs])h(a|e|i|u|ai|ei|an|en|ou|uo|ua|un|ui|uan|uai|uang|ang|eng|ong)$/h$1$2/  # hzi → zhi
+    - derive/([zcs])h([aeiu])$/$1$2h/  # zih → zhi
     # ai
     - derive/([wtpsghkzxcbnm])ai$/$1ia/
     - derive/([zh|ch|sh])ai$/$1ia/
@@ -223,7 +223,7 @@ speller:
     - derive/([qtpdjlxbnm])ian$/$1ain/
     # - derive/([qtpdjlxbnm])ian$/$1ina/ # 和「李娜、蒂娜、缉拿」等常用词有冲突
     # in
-    - derive/([qpjlxbnm])in$/$1ni/
+    - derive/([qypjlxbnm])in$/$1ni/
     # iang
     - derive/([qjlxn])iang$/$1aing/
     - derive/([qjlxn])iang$/$1inag/
@@ -234,7 +234,7 @@ speller:
     - derive/([g|h|k|zh|ch|sh])uai$/$1uia/
     # uan
     - derive/([qrtysdghjklzxcn])uan$/$1aun/
-    # - derive/([qrtysdghjklzxcn])uan$/$1una/ 和「去哪、露娜」等常用词有冲突
+    # - derive/([qrtysdghjklzxcn])uan$/$1una/ # 和「去哪、露娜」等常用词有冲突
     - derive/([zh|ch|sh])uan$/$1aun/
     - derive/([zh|sh])uan$/$1una/
     # un

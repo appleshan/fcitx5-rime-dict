@@ -31,8 +31,6 @@
 
 ## 使用说明
 
-调教/折腾期间建议在 `pinyin_simp.dict.yaml` 注释掉维基词库，以提高部署速度。
-
 ### 1. 选项菜单
 在输入状态时，<kbd>F4</kbd> 或者 <kbd>control</kbd> + <kbd>`</kbd> 弹出菜单
 

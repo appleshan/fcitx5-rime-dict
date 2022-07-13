@@ -2,12 +2,11 @@
 # encoding: utf-8
 #
 # https://github.com/iDvel/rime-ice
-#
-# 补充的英文词汇
+# ------- 补充的英文词汇 -------
 #
 ---
 name: en_ext
-version: "2022-07-01"
+version: "2022-07-05"
 sort: by_weight
 ...
 # 一些杂项
@@ -817,6 +816,7 @@ chore chore
 chores  chores
 SWAG  SWAG
 CS  CS
+Counter-Strike  CS
 Backblaze Backblaze
 WebP  WebP
 WebM  WebM
@@ -1091,3 +1091,8 @@ Adobe Photoshop AdobePhotoshop
 dashboard dashboard
 Honey Select  HoneySelect
 McCafe  McCafe
+benchmark benchmark
+BSD BSD
+GPL GPL
+LGPL  LGPL
+MIT MIT
