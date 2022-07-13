@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2022-06-24"
+version: "2022-06-25"
 sort: by_weight
 ...
 # 一些杂项
@@ -1081,3 +1081,6 @@ abcd  abcd
 ABCD  ABCD
 abc abc
 ABC ABC
+Starbucks Starbucks
+I Love You  ILoveYou
+ZZZ ZZZ
