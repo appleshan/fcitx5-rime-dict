@@ -11,7 +11,7 @@
 # 词库不全，仅仅是自己看过的，觉得还不错的。。。
 ---
 name: av
-version: "2022-05-05"
+version: "2022-05-09"
 sort: by_weight
 vocabulary: essay-zh-hans
 ...
@@ -87,6 +87,7 @@ vocabulary: essay-zh-hans
 樱空桃 ying kong tao
 宇都宫紫苑 yu du gong zi yuan
 一之濑亚美莉  yi zhi lai ya mei li
+濑亚美莉  lai ya mei li
 樱木凛 ying mu lin
 园田美樱  yuan tian mei ying
 永野司 yong ye si

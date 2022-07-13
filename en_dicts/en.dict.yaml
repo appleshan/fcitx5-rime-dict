@@ -5,7 +5,7 @@
 #
 ---
 name: en
-version: "2022-05-07"
+version: "2022-05-09"
 sort: by_weight
 ...
 # 以下为「融合拼音」方案原装的词库，注释掉了几个：
@@ -957,7 +957,7 @@ camera  camera  100
 camp  camp  100
 campaign  campaign  100
 campus  campus  100
-can can 100
+# can can 100
 canal canal 100
 cancel  cancel  100
 cancer  cancer  100

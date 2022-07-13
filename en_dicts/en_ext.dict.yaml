@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2022-05-07"
+version: "2022-05-09"
 sort: by_weight
 ...
 # 一些杂项
@@ -953,3 +953,10 @@ Emacs Emacs
 Vim Vim
 Wikipedia Wikipedia
 Google Voice  GoogleVoice
+Workers Workers
+Cloudflare Workers  CloudflareWorkers
+PlayStation PlayStation
+Visual Studio VisualStudio
+Microsoft Visual Studio MicrosoftVisualStudio
+AVIF  AVIF
+Apple Arcade  AppleArcade
