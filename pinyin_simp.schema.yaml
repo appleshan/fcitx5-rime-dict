@@ -43,6 +43,7 @@ switches:
 # 输入引擎
 engine:
   processors:         # ※ 默认组件：處理各類按鍵消息
+    - lua_processor@select_character  # 以词定字
     - ascii_composer  # ※ 處理西文模式及中西文切換
     - recognizer      # ※ 與 matcher 搭配，處理符合特定規則的輸入碼，如網址、反查等
     - key_binder      # ※ 在特定條件下將按鍵綁定到其他按鍵，如重定義逗號、句號爲候選翻頁鍵
@@ -79,10 +80,12 @@ emoji:
 key_binder:
   import_preset: default # 继承快捷键
   bindings/+:
+    # 简繁切换
     # - {accept: "Control+Shift+F", toggle: traditionalization, when: always}
     # - {accept: "Control+slash",   toggle: traditionalization, when: always}  # Ctrl + /
     - {accept: "Control+Shift+Alt+F", toggle: traditionalization, when: always}
-
+    # 切换中英文标点
+    # - {accept: "Control+Shift+A", toggle: ascii_punct, when: always}
 
 # 简繁切换
 traditionalize:
