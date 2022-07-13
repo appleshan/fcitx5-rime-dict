@@ -112,9 +112,9 @@ custom_phrase:
 # 挂载拼音主词库
 translator:
   dictionary: pinyin_simp  # 挂载拼音主词库 pinyin_simp.dict.yaml
-  preedit_format: # preedit_format 影响到输入框的显示和回车上屏的字符
-    # - xform/([nl])v/$1ü/
-    # - xform/([nl])ue/$1üe/
+  preedit_format: # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
     - xform/([jqxy])v/$1u/
   # 拼音的权重应该比英文大
   initial_quality: 1.2
@@ -184,16 +184,12 @@ speller:
     - derive/([wfghkz])ei$/$1ie/  # fie → fei
     - derive/([rtsghkzc])ui$/$1iu/  # hiu → hui
     - derive/([qjlxbnm])iu$/$1ui/  # qui → qiu
-    - derive/([rtysdghklzcn])ong$/$1ng/  # tng → tong
     - derive/([qypjlxbnm])in$/$1ni/  # lni → lin
     - derive/([aeo])ng$/n$1g/  # cnag → cang
     - derive/([qylxnj])ue$/$1eu/  # xeu → xue
 
 
 # 引入自己的修改过的 symbols：
-# - 标点符号全部直接上屏（半角状态时）
-# - 将「/」模式修改为了「v」模式，并新增一些自定义内容
-# - 自己增加了一点点符号
 punctuator:
   # import_preset: symbols
   import_preset: symbols.custom
