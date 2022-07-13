@@ -55,11 +55,10 @@
 # 「邲 bi」没有增加「bian」，有了词语「邲bian水」
 ---
 name: 8105
-version: "2022-06-15"
+version: "2022-06-16"
 sort: by_weight
 vocabulary: essay-zh-hans
 ...
-# 按需启用
 # 这 zhei  21896611
 # 那 nei 32521150
 
@@ -77,13 +76,31 @@ vocabulary: essay-zh-hans
 # 炁 qi
 # 車 ju
 # 祂 ta
+# 觍 tian
 
 
-# 额外增加，用于自动注音的，一般都是一些专业名词专用
-魮 pi  1
-鲶 nian  1
-鵙 ju  1
-鮨 yi  1
+# 额外增加一些用于自动注音的，一般都是一些专业名词或地名人名之类的。
+# TODO 把含有这些字的词全部注音放到 main 里，然后在字表里删除
+魮 pi
+鲶 nian
+鵙 ju
+鮨 yi
+磺 huang
+堀 ku
+矽 xi
+憍 jiao
+暐 wei
+碁 ji
+燐 lin
+廻 hui
+咲 xiao
+峇 ba
+珮 pei
+琍 li
+辻 shi
+旼 min
+渕 yuan
+槻 gui
 
 
 # 小时候没学过的拼音。。。
@@ -4389,9 +4406,9 @@ vocabulary: essay-zh-hans
 瘼 mo  26948
 藦 mo  25748
 脉 mo  2881
-麽 mo  483
-万 mo  241
+万 mo  1
 无 mo  1
+麽 mo  1
 𬙊 mo  1
 某 mou 1576244
 谋 mou 178029
@@ -6183,6 +6200,7 @@ vocabulary: essay-zh-hans
 忝 tian  41489
 阗 tian  36488
 殄 tian  34822
+觍 tian  34777
 腆 tian  34685
 畋 tian  33618
 湉 tian  31297
