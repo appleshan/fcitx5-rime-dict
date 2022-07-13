@@ -55,7 +55,7 @@
 # 「邲 bi」没有增加「bian」，有了词语「邲bian水」
 ---
 name: 8105
-version: "2022-06-20"
+version: "2022-06-21"
 sort: by_weight
 vocabulary: essay-zh-hans
 ...
@@ -115,7 +115,7 @@ vocabulary: essay-zh-hans
 
 
 # 8105
-# TODO 校对进度到 斌  bin 234225
+# TODO 校对进度到 波  bo  702379
 # +_+
 啊 a 10139710
 阿 a 1906625
@@ -504,15 +504,15 @@ vocabulary: essay-zh-hans
 缤 bin 41327
 濒 bin 40649
 殡 bin 38800
-槟 bin 37704
-镔 bin 37202
-膑 bin 37096
-髌 bin 34774
-摈 bin 33375
-傧 bin 32719
-玢 bin 32410
-豳 bin 31531
-邠 bin 28815
+玢 bin 3
+豳 bin 2
+傧 bin 1
+摈 bin 1
+槟 bin 1
+膑 bin 1
+邠 bin 1
+镔 bin 1
+髌 bin 1
 并 bing  9752008
 病 bing  1034513
 冰 bing  643673
@@ -520,16 +520,16 @@ vocabulary: essay-zh-hans
 饼 bing  202723
 丙 bing  126529
 柄 bing  113399
-炳 bing  92436
 秉 bing  80706
 禀 bing  54320
 摒 bing  38260
-邴 bing  33665
-昺 bing  27804
-蛃 bing  16325
+炳 bing  22436
 屏 bing  15000
-槟 bing  841
+邴 bing  2
+昺 bing  1
 栟 bing  1
+槟 bing  1
+蛃 bing  1
 波 bo  702379
 博 bo  654054
 播 bo  258156
@@ -6094,7 +6094,8 @@ vocabulary: essay-zh-hans
 唐 tang  598049
 堂 tang  458649
 糖 tang  447110
-趟 tang  237162
+蹚 tang  237162
+耥 tang  231610
 躺 tang  222481
 烫 tang  212184
 塘 tang  171755
@@ -6111,9 +6112,8 @@ vocabulary: essay-zh-hans
 螳 tang  33251
 羰 tang  33157
 傥 tang  33019
-蹚 tang  29897
+趟 tang  29897
 帑 tang  29711
-耥 tang  23161
 螗 tang  22747
 铴 tang  21840
 鄌 tang  19201

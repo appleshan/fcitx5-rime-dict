@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2022-06-20"
+version: "2022-06-21"
 sort: by_weight
 ...
 # 一些杂项
@@ -1065,3 +1065,7 @@ Tencent Tencent
 Alibaba Alibaba
 Alibaba Group AlibabaGroup
 Linus Linus
+aPaaS aPaaS
+PaaS  PaaS
+WhatsApp  WhatsApp
+Messenger Messenger
