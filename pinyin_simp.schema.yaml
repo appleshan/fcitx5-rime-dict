@@ -160,9 +160,9 @@ speller:
     - derive/^([nl])ve$/$1ue/
     - derive/^([jqxy])v/$1u/
     # 原装的模糊拼音
-    - derive/un$/uen/
-    - derive/ui$/uei/
-    - derive/iu$/iou/
+    # - derive/un$/uen/
+    # - derive/ui$/uei/
+    # - derive/iu$/iou/
     # 原装自动纠错
     - derive/([aeiou])ng$/$1gn/  # agn → ang
     # - derive/([dtngkhrzcs])o(u|ng)$/$1o/ # do → dou|dong 

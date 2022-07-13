@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2022-06-01"
+version: "2022-06-10"
 sort: by_weight
 ...
 # 一些杂项
@@ -53,7 +53,30 @@ Eject Eject
 iPhone  iPhone  4
 iPhone 13 iPhone  3
 iPhone 13 Pro iPhone  2
-iPhone SE iPhone  1
+iPhone 13 Pro Max iPhone  1
+iPhone SE iPhoneSE
+macOS macOS 999
+macOS Sierra  macOS 1
+macOS High Sierra macOS 2
+macOS Mojave  macOS 3
+macOS Catalina  macOS 4
+macOS Big Sur macOS 5
+macOS Monterey  macOS 6
+macOS Ventura macOS 7
+macOS Sierra  macOSSierra
+macOS High Sierra macOSHighSierra
+macOS Mojave  macOSMojave
+macOS Catalina  macOSCatalina
+macOS Big Sur macOSBigSur
+macOS Monterey  macOSMonterey
+macOS Ventura macOSVentura
+Sierra  Sierra
+High Sierra HighSierra
+Mojave  Mojave
+Catalina  Catalina
+Big Sur BigSur
+Monterey  Monterey
+Ventura Ventura
 CapsLock  CapsLock
 Aeron Aeron
 Aeron Chair AeronChair
@@ -312,10 +335,15 @@ hey hey
 iMazing iMazing
 jQuery  jQuery
 JPG JPG
+Joint Photographic Experts Group  JPG
 JPEG  JPEG
+Joint Photographic Experts Group  JPEG
 PNG PNG
+Portable Network Graphics PNG
 GIF GIF
+Graphics Interchange Format GIF
 DNS DNS
+Domain Name System  DNS
 shit  shit
 Mod Mod
 Yes Yes
@@ -353,25 +381,6 @@ Mountain Lion MountainLion
 Mavericks Mavericks
 Yosemite  Yosemite
 El Capitan  ElCapitan
-macOS macOS 999
-macOS Sierra  macOS 1
-macOS High Sierra macOS 2
-macOS Mojave  macOS 3
-macOS Catalina  macOS 4
-macOS Big Sur macOS 5
-macOS Monterey  macOS 6
-macOS Sierra  macOSSierra
-macOS High Sierra macOSHighSierra
-macOS Mojave  macOSMojave
-macOS Catalina  macOSCatalina
-macOS Big Sur macOSBigSur
-macOS Monterey  macOSMonterey
-Sierra  Sierra
-High Sierra HighSierra
-Mojave  Mojave
-Catalina  Catalina
-Big Sur BigSur
-Monterey  Monterey
 Apple Apple
 Apple Watch AppleWatch
 AppleCare AppleCare
@@ -594,7 +603,6 @@ Readkit Readkit
 Regulex Regulex
 Remote  Remote
 RescueTime  RescueTime
-Rime  Rime
 Retina  Retina
 Safari  Safari
 Safari View Controller  SafariViewController
@@ -878,7 +886,6 @@ GDPR  GDPR
 Netlify Netlify
 Mac Studio  MacStudio
 Studio Display  StudioDisplay
-iPhone SE iPhoneSE
 OC  OC
 Objective-C OC
 Mac mini  Macmini
@@ -963,6 +970,7 @@ Visual Studio VisualStudio
 Microsoft Visual Studio MicrosoftVisualStudio
 Microsoft Visual Studio VisualStudio
 AVIF  AVIF
+AV1 Image File Format AVIF
 Apple Arcade  AppleArcade
 Microsoft Corporation MicrosoftCorporation
 Microsoft Windows MicrosoftWindows
@@ -1033,3 +1041,10 @@ opencc  opencc
 HarmonyOS HarmonyOS
 platinum  platinum
 Incase  Incase
+NPC NPC
+Non-Player Character  NPC
+MVP MVP
+Quantumult X  QuantumultX
+cheers  cheers
+Confluence  Confluence
+Gitea Gitea

@@ -25,9 +25,9 @@
     -   [清华大学开源词库](https://github.com/thunlp/THUOCL)
     -   [中文维基词库](https://github.com/felixonmars/fcitx5-pinyin-zhwiki)
     -   [八股文语言模型](https://github.com/lotem/rime-octagram-data/tree/hans)
--   长期修订词库
-    -   修正大量错字、错音、异形词
-    -   校对大量词汇，主要参考[校对网](http://www.jiaodui.com/bbs/)
+-   词库更新
+    - 已经校对了大量词汇，主要参考[校对网](http://www.jiaodui.com/bbs/)
+    - 长期对词库进行更新、修订、调频
 
 
 <br>

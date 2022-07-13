@@ -38,7 +38,7 @@
 # 「忒 tui」增加「tei」（没有增加「忒 te」）
 ---
 name: 8105
-version: "2022-06-01"
+version: "2022-06-10"
 sort: by_weight
 vocabulary: essay-zh-hans
 ...
@@ -3151,6 +3151,7 @@ vocabulary: essay-zh-hans
 隽 juan  59532
 鹃 juan  57572
 眷 juan  52519
+圈 juan  40315
 镌 juan  39541
 鄄 juan  38346
 蠲 juan  34717
@@ -3158,7 +3159,6 @@ vocabulary: essay-zh-hans
 狷 juan  33546
 桊 juan  22441
 焆 juan  15301
-圈 juan  4741
 觉 jue 446205
 绝 jue 346075
 决 jue 162329
@@ -7928,14 +7928,14 @@ vocabulary: essay-zh-hans
 曾 zeng  325321
 赠 zeng  142227
 憎 zeng  57761
-甑 zeng  40326
-缯 zeng  35345
-罾 zeng  32124
 锃 zeng  27559
-鄫 zeng  23769
-矰 zeng  22201
-综 zeng  7261
 䎖 zeng  1
+甑 zeng  1
+矰 zeng  1
+综 zeng  1
+缯 zeng  1
+罾 zeng  1
+鄫 zeng  1
 炸 zha 331639
 扎 zha 221928
 渣 zha 163851
@@ -7961,7 +7961,6 @@ vocabulary: essay-zh-hans
 哳 zha 19818
 痄 zha 19680
 溠 zha 17161
-鲝 zha 14178
 咋 zha 8041
 查 zha 8041
 轧 zha 7201
@@ -7971,6 +7970,7 @@ vocabulary: essay-zh-hans
 吒 zha 34
 拃 zha 8
 䃎 zha 1
+鲝 zha 1
 齇 zha 1
 宅 zhai  189164
 摘 zhai  181901
