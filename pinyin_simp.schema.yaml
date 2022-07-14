@@ -63,20 +63,14 @@ engine:
     - punct_translator   # ※ 轉換標點符號
     - script_translator  # ※ 腳本翻譯器，用於拼音等基於音節表的輸入方案
     - lua_translator@v_single_char_first_filter  # v 模式 symbols 优先（否则是英文优先）
+    - lua_translator@date_translator  # 时间、日期、星期 # 这个顺序要在 table_translator@easy_en 上面，否则动态时间（输入sj）的候选项不会在第一个，不知道为啥。。。
     - table_translator@custom_phrase  # 自定义文本（固顶字）
     - table_translator@easy_en        # 英文输入
-    - lua_translator@date_translator  # 时间、日期、星期
   filters: # ※ 默认组件：過濾翻譯的結果
     - lua_filter@long_word_filter # 长词优先
     - simplifier@emoji            # Emoji
     - simplifier@traditionalize   # 简繁切换
     - uniquifier                  # 去重
-
-
-# Emoji
-emoji:
-  opencc_config: emoji.json
-  option_name: emoji
 
 
 # 增加简繁切换快捷键
@@ -89,6 +83,13 @@ key_binder:
     - {accept: "Control+Shift+Alt+F", toggle: traditionalization, when: always}
     # 切换中英文标点
     # - {accept: "Control+Shift+A", toggle: ascii_punct, when: always}
+
+
+# Emoji
+emoji:
+  opencc_config: emoji.json
+  option_name: emoji
+
 
 # 简繁切换
 traditionalize:

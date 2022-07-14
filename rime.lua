@@ -140,7 +140,7 @@ end
 -- 感谢&参考于： https://github.com/tumuyan/rime-melt
 -- 修改：不提升英文和中英混输的
 function long_word_filter(input)
-        -- 目前的效果：将 2 个词插入到第 4、5 个候选项
+		-- 目前的效果：将 2 个词插入到第 4、5 个候选项
     local count = 2 -- 提升 count 个词语
     local idx = 4   -- 插入到第 idx 位
 
@@ -157,17 +157,17 @@ function long_word_filter(input)
             i = i + 1
             firstWordLength = leng
             yield(cand)
-                -- 不知道这两行是干嘛用的，似乎注释掉也没有影响。
-                -- elseif #table > 30 then
-                --     table.insert(l, cand)
-                -- 注释掉了英文的
-                -- elseif ((leng > firstWordLength) and (s1 < 2)) and (string.find(cand.text, "^[%w%p%s]+$")) then
-                --     s1 = s1 + 1
-                --     if (string.len(cand.text) / string.len(cand.comment) > 1.5) then
-                --         yield(cand)
-                --     end
-                -- 换了个正则，否则中英混输的也会被提升
-                -- elseif ((leng > firstWordLength) and (s2 < count)) and (string.find(cand.text, "^[%w%p%s]+$")==nil) then
+				-- 不知道这两行是干嘛用的，似乎注释掉也没有影响。
+				-- elseif #table > 30 then
+				--     table.insert(l, cand)
+				-- 注释掉了英文的
+				-- elseif ((leng > firstWordLength) and (s1 < 2)) and (string.find(cand.text, "^[%w%p%s]+$")) then
+				--     s1 = s1 + 1
+				--     if (string.len(cand.text) / string.len(cand.comment) > 1.5) then
+				--         yield(cand)
+				--     end
+				-- 换了个正则，否则中英混输的也会被提升
+				-- elseif ((leng > firstWordLength) and (s2 < count)) and (string.find(cand.text, "^[%w%p%s]+$")==nil) then
         elseif ((leng > firstWordLength) and (s2 < count)) and (string.find(cand.text, "[%w%p%s]+") == nil) then
             yield(cand)
             s2 = s2 + 1

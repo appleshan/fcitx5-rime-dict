@@ -1,8 +1,5 @@
 # default.custom.yaml
 #
-# 【朙月拼音】模糊音定製模板
-#   佛振配製 : https://gist.github.com/lotem/2309739
-#
 # 位置：
 # ~/.local/share/fcitx5/rime  (Linux)
 #
@@ -15,14 +12,17 @@
 
 patch:
   # 方案列表
-  schema_list:                                           # 激活的输入方案选单
+  schema_list:
     - schema: pinyin_simp
-    - schema: numbers                                    # 大写数字
+    - schema: numbers
     - schema: symbols
 
+  # 候选词数量
+  menu/page_size: 9
+
   switcher:
-    # 改掉原来的繁体字标题。
-    caption: "【方案选单】"
+    # 呼出输入法菜单的快捷键，切换方案、简繁、全半角、中英文符号等。
+    caption: "〔方案选单〕"
     # 用半角斜线而不是奇丑无比的全角斜线做分隔符。
     option_list_separator: "/"
     # 切换方案、简繁、全半角的快捷键
@@ -38,9 +38,6 @@ patch:
       email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
       uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
       url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
-
-  menu:
-    page_size: 9                                         # 候选词数量
 
   # 下面设置的整体效果：不用 CapsLock 和 Shift 切换输入法，切换输入法使用系统快捷键，如 Ctrl/Cmd + 空格
   ascii_composer:
@@ -138,111 +135,111 @@ patch:
 
 # 按键速查：
 # （没有 Command 键，不支持）
-# BackSpace 退格
-# Tab 水平定位符
-# Linefeed  换行
-# Clear 清除
-# Return  回車
-# Pause 暫停
-# Sys_Req 印屏
-# Escape  退出
-# Delete  刪除
-# Home  原位
-# Left  左箭頭
-# Up  上箭頭
-# Right 右箭頭
-# Down  下箭頭
-# Prior、Page_Up 上翻
-# Next、Page_Down  下翻
-# End 末位
-# Begin 始位
-# Shift_L 左Shift
-# Shift_R 右Shift
-# Control_L 左Ctrl
-# Control_R 右Ctrl
-# Meta_L  左Meta
-# Meta_R  右Meta
-# Alt_L 左Alt
-# Alt_R 右Alt
-# Super_L 左Super
-# Super_R 右Super
-# Hyper_L 左Hyper
-# Hyper_R 右Hyper
-# Caps_Lock 大寫鎖
-# Shift_Lock  上檔鎖
-# Scroll_Lock 滾動鎖
-# Num_Lock  小鍵板鎖
-# Select  選定
-# Print 列印
-# Execute 執行
-# Insert  插入
-# Undo  還原
-# Redo  重做
-# Menu  菜單
-# Find  蒐尋
-# Cancel  取消
-# Help  幫助
-# Break 中斷
+# BackSpace	退格
+# Tab	水平定位符
+# Linefeed	换行
+# Clear	清除
+# Return	回車
+# Pause	暫停
+# Sys_Req	印屏
+# Escape	退出
+# Delete	刪除
+# Home	原位
+# Left	左箭頭
+# Up	上箭頭
+# Right	右箭頭
+# Down	下箭頭
+# Prior、Page_Up	上翻
+# Next、Page_Down	下翻
+# End	末位
+# Begin	始位
+# Shift_L	左Shift
+# Shift_R	右Shift
+# Control_L	左Ctrl
+# Control_R	右Ctrl
+# Meta_L	左Meta
+# Meta_R	右Meta
+# Alt_L	左Alt
+# Alt_R	右Alt
+# Super_L	左Super
+# Super_R	右Super
+# Hyper_L	左Hyper
+# Hyper_R	右Hyper
+# Caps_Lock	大寫鎖
+# Shift_Lock	上檔鎖
+# Scroll_Lock	滾動鎖
+# Num_Lock	小鍵板鎖
+# Select	選定
+# Print	列印
+# Execute	執行
+# Insert	插入
+# Undo	還原
+# Redo	重做
+# Menu	菜單
+# Find	蒐尋
+# Cancel	取消
+# Help	幫助
+# Break	中斷
 # space
-# exclam  !
-# quotedbl  "
-# numbersign  #
-# dollar  $
-# percent %
-# ampersand &
-# apostrophe  '
-# parenleft (
-# parenright  )
-# asterisk  *
-# plus  +
-# comma ,
-# minus -
-# period  .
-# slash /
-# colon :
-# semicolon ;
-# less  <
-# equal =
-# greater >
-# question  ?
-# at  @
-# bracketleft [
-# backslash 
-# bracketright  ]
-# asciicircum ^
-# underscore  _
-# grave `
-# braceleft {
-# bar |
-# braceright  }
-# asciitilde  ~
-# KP_Space  小鍵板空格
-# KP_Tab  小鍵板水平定位符
-# KP_Enter  小鍵板回車
-# KP_Delete 小鍵板刪除
-# KP_Home 小鍵板原位
-# KP_Left 小鍵板左箭頭
-# KP_Up 小鍵板上箭頭
-# KP_Right  小鍵板右箭頭
-# KP_Down 小鍵板下箭頭
-# KP_Prior、KP_Page_Up 小鍵板上翻
-# KP_Next、KP_Page_Down  小鍵板下翻
-# KP_End  小鍵板末位
-# KP_Begin  小鍵板始位
-# KP_Insert 小鍵板插入
-# KP_Equal  小鍵板等於
-# KP_Multiply 小鍵板乘號
-# KP_Add  小鍵板加號
-# KP_Subtract 小鍵板減號
-# KP_Divide 小鍵板除號
-# KP_Decimal  小鍵板小數點
-# KP_0  小鍵板0
-# KP_1  小鍵板1
-# KP_2  小鍵板2
-# KP_3  小鍵板3
-# KP_4  小鍵板4
-# KP_5  小鍵板5
-# KP_6  小鍵板6
-# KP_7  小鍵板7
-# KP_8  小鍵板8
-# KP_9  小鍵板9
+# exclam	!
+# quotedbl	"
+# numbersign	#
+# dollar	$
+# percent	%
+# ampersand	&
+# apostrophe	'
+# parenleft	(
+# parenright	)
+# asterisk	*
+# plus	+
+# comma	,
+# minus	-
+# period	.
+# slash	/
+# colon	:
+# semicolon	;
+# less	<
+# equal	=
+# greater	>
+# question	?
+# at	@
+# bracketleft	[
+# backslash	
+# bracketright	]
+# asciicircum	^
+# underscore	_
+# grave	`
+# braceleft	{
+# bar	|
+# braceright	}
+# asciitilde	~
+# KP_Space	小鍵板空格
+# KP_Tab	小鍵板水平定位符
+# KP_Enter	小鍵板回車
+# KP_Delete	小鍵板刪除
+# KP_Home	小鍵板原位
+# KP_Left	小鍵板左箭頭
+# KP_Up	小鍵板上箭頭
+# KP_Right	小鍵板右箭頭
+# KP_Down	小鍵板下箭頭
+# KP_Prior、KP_Page_Up	小鍵板上翻
+# KP_Next、KP_Page_Down	小鍵板下翻
+# KP_End	小鍵板末位
+# KP_Begin	小鍵板始位
+# KP_Insert	小鍵板插入
+# KP_Equal	小鍵板等於
+# KP_Multiply	小鍵板乘號
+# KP_Add	小鍵板加號
+# KP_Subtract	小鍵板減號
+# KP_Divide	小鍵板除號
+# KP_Decimal	小鍵板小數點
+# KP_0	小鍵板0
+# KP_1	小鍵板1
+# KP_2	小鍵板2
+# KP_3	小鍵板3
+# KP_4	小鍵板4
+# KP_5	小鍵板5
+# KP_6	小鍵板6
+# KP_7	小鍵板7
+# KP_8	小鍵板8
+# KP_9	小鍵板9
