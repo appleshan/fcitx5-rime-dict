@@ -9,7 +9,7 @@
 #
 ---
 name: cn_en
-version: "2022-07-10"
+version: "2022-07-15"
 sort: by_weight
 ...
 # 没有空格的（为了Emoji映射。Emoji 里空格是分割符，没法映射，不知道怎么解决）
@@ -207,6 +207,7 @@ P 图	ptu
 P 个图	pgetu
 P 一下	pyixia
 芭比 Q	babiq
+芭比 Q 了  babiqle
 S 级	sji
 QQ 堂	qqtang
 PIN 码	pinma
@@ -252,4 +253,3 @@ X 教授	xjiaoshou
 Papi 酱	papijiang
 MAC 地址	macdizhi
 DNS 劫持	dnsjiechi
-V 友们	vyoumen

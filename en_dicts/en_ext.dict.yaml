@@ -6,7 +6,7 @@
 #
 ---
 name: en_ext
-version: "2022-07-10"
+version: "2022-07-15"
 sort: by_weight
 ...
 # 一些杂项
@@ -1101,3 +1101,7 @@ DNSPod	DNSPod
 exists	exists
 goto	goto
 Bandizip	Bandizip
+NATO  NATO
+MissWarmJ MissWarmJ
+Miss  Miss
+NASA  NASA

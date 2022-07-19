@@ -10,7 +10,7 @@
 # 对于中日文不同的，需要现在这里添加进词库，这样在 opencc/others.dict.yaml 中的映射就会起作用了。
 ---
 name: av
-version: "2022-07-10"
+version: "2022-07-15"
 sort: by_weight
 vocabulary: essay-zh-hans
 ...
@@ -36,6 +36,7 @@ vocabulary: essay-zh-hans
 爱田飞鸟	ai tian fei niao	666
 爱音麻里亚	ai yin ma li ya	666
 安斋拉拉	an zhai la la	666
+白桃花 bai tao hua 666
 本庄铃	ben zhuang ling	666
 波多野结衣	bo duo ye jie yi	666
 彩美旬果	cai mei xun guo	666
@@ -117,7 +118,6 @@ vocabulary: essay-zh-hans
 星野明	xing ye ming	666
 星野娜美	xing ye na mei	666
 乙白沙也加	yi bai sha ye jia	666
-乙石沙也加	yi shi sha ye jia	666
 一之濑亚美莉	yi zhi lai ya mei li	666
 樱井步	ying jing bu	666
 樱井彩	ying jing cai	666
