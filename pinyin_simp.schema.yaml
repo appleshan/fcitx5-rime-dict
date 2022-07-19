@@ -155,7 +155,7 @@ speller:
     - erase/^n$/  # 响应超级简拼，取消「嗯 n」的独占
     - erase/^ng$/ # 响应超级简拼，取消「嗯 ng」的独占
     - abbrev/^([a-z]).+$/$1/   # 超级简拼
-    - abbrev/^([zcs]h).+$/$1/  # 超级简拼中，zh ch sh 视为整体（ch'sh → 城市），而不是像这样分开（c'h's'h → 从还是很）。
+    - abbrev/^([zcs]h).+$/$1/  # 超级简拼中，zh ch sh 视为整体（ch'sh → 城市），而不是像这样分开（c'h's'h → 吃好睡好）。
 
     # v u 转换，增加对词库中「nue/nve」「qu/qv」等不同注音的支持
     - derive/^([nl])ue$/$1ve/
@@ -174,45 +174,34 @@ speller:
     - derive/([zcs])h(a|e|i|u|ai|ei|an|en|ou|uo|ua|un|ui|uan|uai|uang|ang|eng|ong)$/h$1$2/  # hzi → zhi
     - derive/([zcs])h([aeiu])$/$1$2h/  # zih → zhi
     # ai
-    - derive/([wtpsghkzxcbnm])ai$/$1ia/
-    - derive/([zh|ch|sh])ai$/$1ia/
+    - derive/^([wghkc])ai$/$1ia/
     # ia
     - derive/([qjx])ia$/$1ai/
     # ei
     - derive/([wtfghkz])ei$/$1ie/
-    - derive/shei$/shie/
     # ie
     - derive/([jqx])ie$/$1ei/
     # ao
     - derive/([rtypsdghklzcbnm])ao$/$1oa/
-    - derive/([zh|ch|sh])ao$/$1oa/
     # ou
     - derive/([ypfm])ou$/$1uo/
     # uo（无）
     # an
     - derive/([wrtypsfghklzcbnm])an$/$1na/  # 去掉了 n，不转换常用单词 DNA
-    - derive/([zh|ch|sh])an$/$1na/
     # en
     - derive/([wrpsdfghklzcbnm])en$/$1ne/
-    - derive/([zh|ch|sh])en$/$1ne/
     # ang
     - derive/([wrtypsdfghklzcbnm])ang$/$1nag/
     - derive/([wrtypsdfghklzcbnm])ang$/$1agn/
-    - derive/([zh|ch|sh])ang$/$1nag/
-    - derive/([zh|ch|sh])ang$/$1agn/
     # eng
     - derive/([wrtpsdfghklzcbnm])eng$/$1neg/
     - derive/([wrtpsdfghklzcbnm])eng$/$1egn/
-    - derive/([zh|ch|sh])eng$/$1neg/
-    - derive/([zh|ch|sh])eng$/$1egn/
     # ing
     - derive/([qtypdjlxbnm])ing$/$1nig/
     - derive/([qtypdjlxbnm])ing$/$1ign/
     # ong
     - derive/([rtysdghklzcn])ong$/$1nog/
     - derive/([rtysdghklzcn])ong$/$1ogn/
-    - derive/([zh|ch])ong$/$1nog/
-    - derive/([zh|ch])ong$/$1ogn/
     # iao
     - derive/([qtpdjlxbnm])iao$/$1ioa/
     - derive/([qtpdjlxbnm])iao$/$1oia/
@@ -236,11 +225,8 @@ speller:
     # uan
     - derive/([qrtysdghjklzxcn])uan$/$1aun/
     # - derive/([qrtysdghjklzxcn])uan$/$1una/ # 和「去哪、露娜」等常用词有冲突
-    - derive/([zh|ch|sh])uan$/$1aun/
-    # - derive/([zh|sh])uan$/$1una/
     # un
     - derive/([qrtysdghjklzxc])un$/$1nu/
-    - derive/([zh|ch|sh])un$/$1nu/
     # ue
     - derive/([nlyjqx])ue$/$1eu/
     # uang
