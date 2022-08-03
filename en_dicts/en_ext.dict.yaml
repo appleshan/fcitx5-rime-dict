@@ -6,7 +6,7 @@
 #
 ---
 name: en_ext
-version: "2022-07-15"
+version: "2022-08-01"
 sort: by_weight
 ...
 # 一些杂项
@@ -80,9 +80,17 @@ Ventura	Ventura
 Aeron	Aeron
 Aeron Chair	AeronChair
 RPG	RPG
+Role-Playing Game	RPG
+Role-Playing Game	RolePlayingGame
 ADC	ADC
+Attack Damage Carry	ADC
+Attack Damage Carry	AttackDamageCarry
 APC	APC
+Ability Power Carry	APC
+Ability Power Carry	AbilityPowerCarry
 GDP	GDP
+Gross Domestic Product	GDP
+Gross Domestic Product	GrossDomesticProduct
 Netscape	Netscape
 WeChat	WeChat
 LOL	LOL
@@ -484,6 +492,8 @@ Hazel	Hazel
 Home	Home
 HomeKit	HomeKit
 HTML	HTML
+HyperText Markup Language	HTML
+HyperText Markup Language	HyperTextMarkupLanguage
 iA Writer	iAWriter
 IBM	IBM
 iCloud	iCloud
@@ -741,6 +751,11 @@ SQLAlchemy	SQLAlchemy
 Admin	Admin
 Administrator	Administrator
 ASMR	ASMR
+Autonomous sensory meridian response	ASMR
+Autonomous sensory meridian response	Autonomoussensorymeridianresponse
+autonomous	autonomous
+sensory	sensory
+meridian	meridian
 iKlear	iKlear
 Legal High	ligouhai
 Legal High	LegalHigh
@@ -904,6 +919,8 @@ Opera	Opera
 Igalia	Igalia
 WebCore	WebCore
 GNU	GNU
+GNU General Public License	GNU
+GNU General Public License	GNUGeneralPublicLicense
 Brave	Brave
 iPhone X	iPhoneX
 iPhone XS	iPhoneXS
@@ -942,6 +959,8 @@ GUI	GUI
 Graphical User Interface	GUI
 Graphical User Interface	GraphicalUserInterface
 VPS	VPS
+Virtual private server	VPS
+Virtual private server	Virtualprivateserver
 BIOS	BIOS
 unbelievable	unbelievable
 goroutine	goroutine
@@ -1048,6 +1067,7 @@ platinum	platinum
 Incase	Incase
 NPC	NPC
 Non-Player Character	NPC
+Non-Player Character	NonPlayerCharacter
 MVP	MVP
 Quantumult X	QuantumultX
 cheers	cheers
@@ -1072,7 +1092,11 @@ WhatsApp	WhatsApp
 Messenger	Messenger
 Doge	Doge
 SUV	SUV
+Sport Utility Vehicle	SUV
+Sport Utility Vehicle	SportUtilityVehicle
 UFO	UFO
+Unidentified Flying Object	UFO
+Unidentified Flying Object	UnidentifiedFlyingObject
 Copyright	Copyright
 Registered	Registered
 TM	TM
@@ -1094,6 +1118,9 @@ Honey Select	HoneySelect
 McCafe	McCafe
 benchmark	benchmark
 BSD	BSD
+Berkeley Software Distribution	BSD
+Berkeley Software Distribution	BerkeleySoftwareDistribution
+Berkeley	Berkeley
 GPL	GPL
 LGPL	LGPL
 MIT	MIT
@@ -1101,7 +1128,8 @@ DNSPod	DNSPod
 exists	exists
 goto	goto
 Bandizip	Bandizip
-NATO  NATO
-MissWarmJ MissWarmJ
-Miss  Miss
-NASA  NASA
+NATO	NATO
+MissWarmJ	MissWarmJ
+Miss	Miss
+NASA	NASA
+Meta	Meta
