@@ -10,7 +10,7 @@
 # 对于中日文不同的，需要现在这里添加进词库，这样在 opencc/others.dict.yaml 中的映射就会起作用了。
 ---
 name: av
-version: "2022-07-15"
+version: "2022-08-05"
 sort: by_weight
 vocabulary: essay-zh-hans
 ...
@@ -64,6 +64,7 @@ vocabulary: essay-zh-hans
 濑名光莉	lai ming guang li	666
 濑亚美莉	lai ya mei li	666
 蓝芽水月	lan ya shui yue	666
+栗宫双叶	li gong shuang ye	666
 里美尤利娅	li mei you li ya	666
 栗山莉绪	li shan li xu	666
 莲实克蕾儿	lian shi ke lei er	666

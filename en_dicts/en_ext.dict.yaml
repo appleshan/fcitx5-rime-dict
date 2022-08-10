@@ -6,13 +6,15 @@
 #
 ---
 name: en_ext
-version: "2022-08-01"
+version: "2022-08-05"
 sort: by_weight
 ...
 # 一些杂项
 &nbsp;	nbsp
 <br>	br
 .DS_Store	DSStore
+唵嘛呢叭咪吽	ongmanibeimeihong
+
 
 # 生活大爆炸 & 老友记
 Sheldon	Sheldon
@@ -26,6 +28,7 @@ Joey	Joey
 Ross	Ross
 Chandler	Chandler
 Phoebe	Phoebe
+
 
 # 按键
 Fn	Fn
@@ -55,6 +58,7 @@ iPhone 13	iPhone	3
 iPhone 13 Pro	iPhone	2
 iPhone 13 Pro Max	iPhone	1
 iPhone SE	iPhoneSE
+Pro Max	ProMax
 macOS	macOS	999
 macOS Sierra	macOS	1
 macOS High Sierra	macOS	2
@@ -122,7 +126,9 @@ Debian	Debian
 BBC	BBC
 DataGrip	DataGrip
 Benjamin	Benjamin
+Alpha	Alpha
 AlphaGo	AlphaGo
+AlphaFold	AlphaFold
 Valve	Valve
 CS:GO	CSGO
 Counter-Strike: Global Offensive	CSGO
@@ -1133,3 +1139,12 @@ MissWarmJ	MissWarmJ
 Miss	Miss
 NASA	NASA
 Meta	Meta
+pizza	pizza
+PictureView	PictureView
+programming	programming
+RAM	RAM
+Random-access memory	RAM
+Random-access memory	RandomAccessMemory
+ROM	ROM
+Read-only memory	ROM
+Read-only memory	ReadOnlyMemory

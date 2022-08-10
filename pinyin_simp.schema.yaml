@@ -115,10 +115,10 @@ custom_phrase:
 translator:
   dictionary: pinyin_simp  # 挂载拼音主词库 pinyin_simp.dict.yaml
   preedit_format: # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
-    - xform/([jqxy])v/$1u/    # 显示成 ju qu xu yu
-    # - xform/([nl])v/$1ü/    # 显示为 nüe lüe
+    - xform/([jqxy])v/$1u/    # 显示为 ju qu xu yu
+    # - xform/([nl])v/$1ü/    # 显示为 nü lü
     # - xform/([nl])ue/$1üe/  # 显示为 nüe lüe
-    - xform/([nl])v/$1v/      # 显示为 nve lve
+    - xform/([nl])v/$1v/      # 显示为 nv lv
     - xform/([nl])ue/$1ve/    # 显示为 nve lve
   # 拼音的权重应该比英文大
   initial_quality: 1.2
