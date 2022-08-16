@@ -59,7 +59,7 @@ patch:
       Control_R: noop
 
   key_binder:
-    # 以词定字的快捷键
+    # 以词定字（上屏当前词组的第一个或最后一个字）
     select_first_character: "grave"
     select_last_character: "slash"
     bindings:

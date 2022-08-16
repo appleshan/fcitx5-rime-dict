@@ -6,7 +6,7 @@
 #
 ---
 name: en_ext
-version: "2022-08-05"
+version: "2022-08-15"
 sort: by_weight
 ...
 # 一些杂项
@@ -1148,3 +1148,13 @@ Random-access memory	RandomAccessMemory
 ROM	ROM
 Read-only memory	ROM
 Read-only memory	ReadOnlyMemory
+AV	AV
+TODO	TODO
+Microsoft To Do	MicrosoftToDo
+VCD	VCD
+Video CD	VCD
+Video CD	VideoCD
+FBI	FBI
+Federal Bureau of Investigation	FBI
+Federal Bureau of Investigation	FederalBureauofInvestigation
+FBI WARNING	FBIWARNING

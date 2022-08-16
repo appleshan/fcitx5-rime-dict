@@ -147,6 +147,7 @@ Mac	mac
 Wi-Fi	wifi
 Apple ID	appleid
 QQ邮箱	qqyzxl
+TODO	todo
 
 ##### 方便词
 # ！ 会导致 zh 无法参与超级简拼
