@@ -19,8 +19,11 @@
 -   简体字表、词库
     -   [《通用规范汉字表》的 8105 字字表](https://github.com/iDvel/The-Table-of-General-Standard-Chinese-Characters)
     -   [华宇野风系统词库](http://bbs.pinyin.thunisoft.com/forum.php?mod=viewthread&tid=30049)
-    -   [现代汉语常用词表](https://gist.github.com/indiejoseph/eae09c673460aa0b56db)
     -   [清华大学开源词库](https://github.com/thunlp/THUOCL)
+    -   [现代汉语常用词表](https://gist.github.com/indiejoseph/eae09c673460aa0b56db)
+    -   [现代汉语词典](https://forum.freemdict.com/t/topic/12102)
+    -   [同义词词林](https://forum.freemdict.com/t/topic/1211)
+    -   [新华成语大词典](https://forum.freemdict.com/t/topic/11407)
     -   [八股文语言模型](https://github.com/lotem/rime-octagram-data/tree/hans)
 -   词库更新
     - 已经校对了大量词汇，主要参考[校对网](http://www.jiaodui.com/bbs/)
