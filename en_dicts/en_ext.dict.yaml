@@ -6,7 +6,7 @@
 #
 ---
 name: en_ext
-version: "2022-08-15"
+version: "2022-08-28"
 sort: by_weight
 ...
 # 一些杂项
@@ -678,9 +678,11 @@ Uber	Uber
 uBlock	uBlock
 Ulysses	Ulysses
 USB	USB
+Universal Serial Bus	USB
+Universal Serial Bus	UniversalSerialBus
 Versions	Versions
-VPN	VPN	2
-virtual private network	VPN	1
+VPN	VPN
+virtual private network	VPN
 Watch	Watch
 watchOS	watchOS
 Wi-Fi	waifai	100
@@ -1158,3 +1160,15 @@ FBI	FBI
 Federal Bureau of Investigation	FBI
 Federal Bureau of Investigation	FederalBureauofInvestigation
 FBI WARNING	FBIWARNING
+Hostname	Hostname
+CDPR	CDPR
+CD Projekt	CDPR
+CD Projekt	CDProjekt
+ACG	ACG
+Animation Comics Games	ACG
+NBA	NBA
+National Basketball Association	NBA
+National Basketball Association	NationalBasketballAssociation
+SpaceX	SpaceX
+Avira	Avira
+uninstall	uninstall

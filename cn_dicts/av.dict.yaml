@@ -10,7 +10,7 @@
 # 对于中日文不同的，需要现在这里添加进词库，这样在 opencc/others.dict.yaml 中的映射就会起作用了。
 ---
 name: av
-version: "2022-08-15"
+version: "2022-08-28"
 sort: by_weight
 vocabulary: essay-zh-hans
 ...
@@ -29,6 +29,7 @@ vocabulary: essay-zh-hans
 伊藤舞雪	yi teng wu xue	666
 有坂深雪	you ban shen xue	666
 友田彩也香	you tian cai ye xiang	666
+有栖七菜	you qi qi cai	666
 佐伯由美香	zuo bo you mei xiang	666
 西田那津	xi tian na jin	666
 # 简体和日文不同的：
