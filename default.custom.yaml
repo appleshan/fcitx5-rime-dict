@@ -37,7 +37,9 @@ patch:
     patterns:
       email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
       uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
+      # 默认：句号会直接让句子上屏：
       # url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
+      # 修改：句号不会直接上屏，方便在中文状态下输入网址，使用逗号句号翻页时请勿使用这个：
       url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].*$"  # 让类似 google.com（不以 www 开头）的网址址也支持
 
   # 下面设置的整体效果：不用 CapsLock 和 Shift 切换输入法，切换输入法使用系统快捷键，如 Ctrl/Cmd + 空格
