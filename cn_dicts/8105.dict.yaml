@@ -26,7 +26,7 @@
 # 降低一些几乎只在一个固定词汇中使用的读音的权重，不让其参与注音，在 main 中手动注音。
 ---
 name: 8105
-version: "2022-08-28"
+version: "2022-09-01"
 sort: by_weight
 vocabulary: essay-zh-hans
 ...
@@ -3783,11 +3783,11 @@ vocabulary: essay-zh-hans
 簝	liao	4
 橑	liao	1
 𪤗	liao	0
-烈	lie	452123
 列	lie	244324
 裂	lie	174922
 猎	lie	107720
 咧	lie	58774
+烈	lie	52123
 劣	lie	49371
 冽	lie	11108
 趔	lie	4928
@@ -4075,7 +4075,7 @@ vocabulary: essay-zh-hans
 锊	lve	58
 䂮	lve	0
 圙	lve	0
-吗	ma	2028487
+吗	ma	9028487
 马	ma	1729443
 妈	ma	956493
 麻	ma	374419
@@ -6238,11 +6238,11 @@ vocabulary: essay-zh-hans
 铜	tong	73454
 筒	tong	54584
 桶	tong	49900
-彤	tong	45357
+捅	tong	45436
 瞳	tong	38812
 桐	tong	37139
-捅	tong	25436
 佟	tong	19785
+彤	tong	15357
 恸	tong	5121
 潼	tong	4597
 嗵	tong	4379
@@ -8121,15 +8121,16 @@ vocabulary: essay-zh-hans
 侦	zhen	55445
 贞	zhen	49540
 枕	zhen	45747
-圳	zhen	33157
 诊	zhen	29637
 甄	zhen	26342
+帧	zhen	21370
 斟	zhen	17602
 祯	zhen	13395
 臻	zhen	8443
 桢	zhen	5681
 箴	zhen	3543
 缜	zhen	3455
+圳	zhen	3315
 榛	zhen	3295
 赈	zhen	3169
 蓁	zhen	2763
@@ -8137,7 +8138,6 @@ vocabulary: essay-zh-hans
 疹	zhen	1914
 砧	zhen	1520
 鸩	zhen	1439
-帧	zhen	1370
 轸	zhen	1112
 稹	zhen	815
 浈	zhen	168

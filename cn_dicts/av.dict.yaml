@@ -10,7 +10,7 @@
 # 对于中日文不同的，需要现在这里添加进词库，这样在 opencc/others.dict.yaml 中的映射就会起作用了。
 ---
 name: av
-version: "2022-08-28"
+version: "2022-09-01"
 sort: by_weight
 vocabulary: essay-zh-hans
 ...
@@ -103,6 +103,7 @@ vocabulary: essay-zh-hans
 藤森里穗	teng sen li sui	666
 天海翼	tian hai yi	666
 天使萌	tian shi meng	666
+天音真比奈	tian yin zhen bi nai	666
 望月理沙	wang yue li sha	666
 武藤绫香	wu teng ling xiang	666
 希岛爱理	xi dao ai li	666

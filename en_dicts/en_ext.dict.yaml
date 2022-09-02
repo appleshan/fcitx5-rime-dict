@@ -6,7 +6,7 @@
 #
 ---
 name: en_ext
-version: "2022-08-28"
+version: "2022-09-01"
 sort: by_weight
 ...
 # 一些杂项
@@ -14,6 +14,7 @@ sort: by_weight
 <br>	br
 .DS_Store	DSStore
 唵嘛呢叭咪吽	ongmanibeimeihong
+般若波罗蜜	boreboluomi
 
 
 # 生活大爆炸 & 老友记
@@ -1172,3 +1173,13 @@ National Basketball Association	NationalBasketballAssociation
 SpaceX	SpaceX
 Avira	Avira
 uninstall	uninstall
+FeHelper	FeHelper
+Hypertext	Hypertext
+PHP	PHP
+Hypertext Preprocessor	PHP
+Hypertext Preprocessor	HypertextPreprocessor
+cannot	cannot
+Duang	Duang
+placeholder	placeholder
+Pythonic	Pythonic
+redefine	redefine

@@ -9,7 +9,7 @@
 #
 ---
 name: cn_en
-version: "2022-08-05"
+version: "2022-09-01"
 sort: by_weight
 ...
 # 没有空格的（为了Emoji映射。Emoji 里空格是分割符，没法映射，不知道怎么解决）
@@ -258,3 +258,4 @@ OK 了	okle
 OK 了吗	oklema
 腾讯 QQ	tengxunqq
 公网 IP	gongwangip
+Web 开发	webkaifa
