@@ -25,20 +25,20 @@ schema:
 # 功能开关
 switches:
   - name: ascii_mode
-    reset: 0
     # states: [ 中文, 英文 ] 永远不切换，所以注释了
+    reset: 0
   - name: full_shape
-    reset: 0
     # states: [ 半角, 全角 ] 永远不切换，所以注释了
+    reset: 0
   - name: ascii_punct
-    reset: 0
     # states: [ 中文标点, 英文标点 ] 永远不切换，所以注释了
-  - name: emoji
-    reset: 1
-    states: [ 💀, 😄 ]
-  - name: traditionalization
     reset: 0
+  - name: emoji
+    states: [ 💀, 😄 ]
+    reset: 1
+  - name: traditionalization
     states: [ 简, 繁繁繁 ]
+    reset: 0
 
 
 # 输入引擎（带 ※ 的是默认自带的）
@@ -149,6 +149,51 @@ speller:
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
   delimiter: " '"
   algebra:
+    ### 模糊音
+    # 声母
+    # - derive/^([zcs])h/$1/          # z c s → zh ch sh
+    # - derive/^([zcs])([^h])/$1h$2/  # zh ch sh → z c s
+    # - derive/^l/n/  # n → l
+    # - derive/^n/l/  # l → n
+    # - derive/^f/h/  # …………
+    # - derive/^h/f/  # …………
+    # - derive/^l/r/
+    # - derive/^r/l/
+    # - derive/^g/k/
+    # - derive/^k/g/
+    # 韵母
+    # - derive/ang/an/
+    # - derive/an/ang/
+    # - derive/eng/en/
+    # - derive/en/eng/
+    # - derive/in/ing/
+    # - derive/ing/in/
+    # - derive/ian/iang/
+    # - derive/iang/ian/
+    # - derive/uan/uang/
+    # - derive/uang/uan/
+    # - derive/ai/an/
+    # - derive/an/ai/
+    # - derive/ong/un/
+    # - derive/un/ong/
+    # - derive/ong/on/
+    # - derive/iong/un/
+    # - derive/un/iong/
+    # - derive/ong/eng/
+    # - derive/eng/ong/
+    # 拼音音节
+    # - derive/^fei$/hui/
+    # - derive/^hui$/fei/
+    # - derive/^hu$/fu/
+    # - derive/^fu$/hu/
+    # - derive/^wang$/huang/
+    # - derive/^huang$/wang/
+
+    ### 旧时的拼写规则
+    # - derive/un$/uen/
+    # - derive/ui$/uei/
+    # - derive/iu$/iou/
+
     # 超级简拼
     - erase/^hm$/ # 响应超级简拼，取消「噷 hm」的独占
     - erase/^m$/  # 响应超级简拼，取消「呣 m」的独占
@@ -157,18 +202,13 @@ speller:
     - abbrev/^([a-z]).+$/$1/   # 超级简拼
     - abbrev/^([zcs]h).+$/$1/  # 超级简拼中，zh ch sh 视为整体（ch'sh → 城市），而不是像这样分开（c'h's'h → 吃好睡好）。
 
-    # v u 转换，增加对词库中「nue/nve」「qu/qv」等不同注音的支持
+    ### v u 转换，增加对词库中「nue/nve」「qu/qv」等不同注音的支持
     - derive/^([nl])ue$/$1ve/
     - derive/^([nl])ve$/$1ue/
     - derive/^([jqxy])u/$1v/
     - derive/^([jqxy])v/$1u/
 
-    # 其他拼写规则
-    # - derive/un$/uen/
-    # - derive/ui$/uei/
-    # - derive/iu$/iou/
-
-    # 自动纠错
+    ### 自动纠错
     # 有些规则对全拼简拼混输有副作用：如「x'ai 喜爱」被纠错为「xia 下」
     # zh、ch、sh
     - derive/([zcs])h(a|e|i|u|ai|ei|an|en|ou|uo|ua|un|ui|uan|uai|uang|ang|eng|ong)$/h$1$2/  # hzi → zhi
@@ -235,7 +275,7 @@ speller:
     - derive/([g|h|k|zh|ch|sh])uang$/$1unag/
     - derive/([g|h|k|zh|ch|sh])uang$/$1augn/
     # iong
-    - derive/([jqx])iong$/$1iong/
+    - derive/([jqx])iong$/$1inog/
     - derive/([jqx])iong$/$1oing/
     - derive/([jqx])iong$/$1iogn/
     - derive/([jqx])iong$/$1oign/
