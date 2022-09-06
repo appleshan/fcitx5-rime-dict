@@ -7,10 +7,10 @@
 #
 # 希望的效果是：输入艺术家的名字后，第一个候选项永远是中文，第二个候选项永远是日文（方便在 javdb.com 上检索😅）
 # 示例：输入「相泽南」后，会被映射为「相泽南 相沢みなみ」。
-# 对于中日文不同的，需要现在这里添加进词库，这样在 opencc/others.dict.yaml 中的映射就会起作用了。
+# 对于中日文不同的，需要现在这里添加进词库，这样在 opencc/others.txt 中的映射就会起作用了。
 ---
 name: av
-version: "2022-09-01"
+version: "2022-09-05"
 sort: by_weight
 vocabulary: essay-zh-hans
 ...

@@ -6,7 +6,7 @@
 #
 ---
 name: en_ext
-version: "2022-09-01"
+version: "2022-09-05"
 sort: by_weight
 ...
 # 一些杂项
@@ -272,6 +272,8 @@ Ajax	Ajax
 Bug	Bug
 BMW	BMW
 BGM	BGM
+Background music	BGM
+Background music	Backgroundmusic
 CEO	CEO
 CTO	CTO
 Coding	Coding
@@ -728,7 +730,11 @@ Face ID	FaceID
 URL	URL
 URI	URI
 HTTP	HTTP
+Hypertext Transfer Protocol	HTTP
+Hypertext Transfer Protocol	HypertextTransferProtocol
 HTTPS	HTTPS
+Hypertext Transfer Protocol Secure	HTTPS
+Hypertext Transfer Protocol Secure	HypertextTransferProtocolSecure
 cookies	cookies
 WSGI	WSGI
 Bitcoin	Bitcoin
@@ -1183,3 +1189,21 @@ Duang	Duang
 placeholder	placeholder
 Pythonic	Pythonic
 redefine	redefine
+QSpace	QSpace
+Path Finder	PathFinder
+Tabnine	Tabnine
+Bonjour	Bonjour
+ICMP	ICMP
+Internet Control Message Protocol	ICMP
+Internet Control Message Protocol	InternetControlMessageProtocol
+Electron	Electron
+fixes	fixes
+backup	backup
+FTP	FTP
+File Transfer Protocol	FTP
+File Transfer Protocol	FileTransferProtocol
+SFTP	SFTP
+SSH File Transfer Protocol	SFTP
+SSH File Transfer Protocol	SSHFileTransferProtocol
+uPic	uPic
+homemade	homemade
