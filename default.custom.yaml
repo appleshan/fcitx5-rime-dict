@@ -38,14 +38,13 @@ patch:
       email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
       uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
       url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
-      # 方便在中文状态下输入网址，会导致句号不会让句子上屏，使用句号翻页时需要注释掉 url_2：
+      # 方便在中文状态下输入网址或文件名，会导致句号不会让句子上屏，使用句号翻页时需要注释掉 url_2：
       url_2: "^[a-z]+[.]"  # 让类似 google.com（不以 www 开头）的网址址也支持
       win_path: "^[A-Za-z]:.*"  # 支持 c:\file\path 之类的路径输入
 
   # 下面设置的整体效果：不用 CapsLock 和 Shift 切换输入法，切换输入法使用系统快捷键，如 Ctrl/Cmd + 空格
   ascii_composer:
-    # Caps 只切换大小写英文字母。
-    good_old_caps_lock: true
+    good_old_caps_lock: true # true | false Caps 切换大小写或切换中英
 
     switch_key:
       # `inline_ascii` 在输入框内插入英文。
@@ -53,7 +52,8 @@ patch:
       # `commit_code` 输入拼音上屏并切换至英文。
       # `clear` 清除拼音并切换至英文。
       # `noop` 屏蔽此按键。
-      Caps_Lock: commit_text # 打字打到一半时按下了 Caps 后： commit_code 上屏拼音的英文字母 | commit_text 上屏拼音拼出的词语
+      Caps_Lock: commit_text # noop | commit_code | commit_text
+      # 打字打到一半时按下了 Caps 后： commit_code 上屏拼音的英文字母 | commit_text 上屏拼音拼出的词语
       # 如果你设置 `Caps_Lock` 为 `noop`，一个奇怪的问题是退格键不能用了，除非取消大写锁定。
       # 所以我直接设置文字上屏了。
       Shift_L: noop # noop | commit_code ，是否用 Shift 切换中英文
