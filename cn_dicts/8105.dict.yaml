@@ -26,7 +26,7 @@
 # 降低一些几乎只在一个固定词汇中使用的读音的权重，不让其参与注音，在 main 中手动注音。
 ---
 name: 8105
-version: "2022-09-05"
+version: "2022-09-06"
 sort: by_weight
 vocabulary: essay-zh-hans
 ...
@@ -68,7 +68,7 @@ vocabulary: essay-zh-hans
 # 嗯	ng	在固顶字改为「那个、哪个」了
 # 噷	hm	在固顶字里置顶了
 # 呣	m	在固顶字里放到第三位了
-嗯	eng	179528
+嗯	eng	9179528
 哼	hng	255327
 # 表示打招呼或惊诧时的语气词，繁体有个「誒」，但《现汉》《现规》《通用汉字规范表》都没有收录「诶」，大陆用的是「欸」。
 欸	ei	534
@@ -267,6 +267,7 @@ vocabulary: essay-zh-hans
 刨	bao	8691
 苞	bao	7827
 鸨	bao	7173
+曝	bao	6457
 煲	bao	3617
 葆	bao	3519
 雹	bao	2984
@@ -275,7 +276,6 @@ vocabulary: essay-zh-hans
 孢	bao	455
 趵	bao	341
 枹	bao	113
-曝	bao	1
 瀑	bao	1
 被	bei	2998064
 备	bei	823555
@@ -1538,8 +1538,8 @@ vocabulary: essay-zh-hans
 堨	e	0
 𥔲	e	0
 𫫇	e	0
+嗯	en	9179528
 恩	en	433653
-嗯	en	179528
 摁	en	8517
 蒽	en	130
 而	er	5075337

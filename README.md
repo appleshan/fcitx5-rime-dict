@@ -20,10 +20,11 @@
     -   [《通用规范汉字表》的 8105 字字表](https://github.com/iDvel/The-Table-of-General-Standard-Chinese-Characters)
     -   [华宇野风系统词库](http://bbs.pinyin.thunisoft.com/forum.php?mod=viewthread&tid=30049)
     -   [清华大学开源词库](https://github.com/thunlp/THUOCL)
-    -   [现代汉语常用词表](https://gist.github.com/indiejoseph/eae09c673460aa0b56db)
-    -   [现代汉语词典](https://forum.freemdict.com/t/topic/12102)
-    -   [同义词词林](https://forum.freemdict.com/t/topic/1211)
-    -   [新华成语大词典](https://forum.freemdict.com/t/topic/11407)
+    -   [《现代汉语常用词表》](https://gist.github.com/indiejoseph/eae09c673460aa0b56db)
+    -   [《现代汉语词典》](https://forum.freemdict.com/t/topic/12102)
+    -   [《同义词词林》](https://forum.freemdict.com/t/topic/1211)
+    -   [《新华成语大词典》](https://forum.freemdict.com/t/topic/11407)
+    -   [腾讯词向量](https://ai.tencent.com/ailab/nlp/zh/download.html)
     -   [八股文语言模型](https://github.com/lotem/rime-octagram-data/tree/hans)
 -   词库更新
     - 已经校对了大量词汇，主要参考[校对网](http://www.jiaodui.com/bbs/)
@@ -33,6 +34,8 @@
 <br>
 
 ## 使用说明
+
+请注意 `ext.dict.yaml` 是个大词库，折腾期间建议先注释掉，折腾完了再打开。
 
 ### 1. 选项菜单
 在输入状态时，<kbd>F4</kbd> 或者 <kbd>control</kbd> + <kbd>`</kbd> 弹出菜单
