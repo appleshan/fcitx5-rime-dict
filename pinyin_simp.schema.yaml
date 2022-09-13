@@ -20,6 +20,7 @@ schema:
     https://github.com/iDvel/rime-ice
   dependencies:
     - easy_en
+    - latex
 
 
 # 功能开关
@@ -66,6 +67,7 @@ engine:
     - lua_translator@date_translator  # 时间、日期、星期 # 这个顺序要在 table_translator@easy_en 上面，否则动态时间（输入sj）的候选项不会在第一个，不知道为啥。。。
     - table_translator@custom_phrase  # 自定义文本（固顶字）
     - table_translator@easy_en        # 英文输入
+    - reverse_lookup_translator       # ※ 反查，LaTeX
   filters: # ※ 默认组件：過濾翻譯的結果
     - lua_filter@long_word_filter # 长词优先
     - simplifier@emoji            # Emoji
@@ -144,11 +146,31 @@ translator/max_homophones: 7
 translator/max_homographs: 7
 
 
+# 引入自己的修改过的 symbols
+punctuator:
+  # import_preset: symbols # 默认的
+  import_preset: symbols.custom # symbols.custom.yaml （标点设定和「v」模式在里面）
+
+recognizer:
+  import_preset: default
+  patterns:
+    # punct: "^/([0-9]+[a-z]*|[a-z]+)$"
+    punct: "^v([0-9]?|[A-Za-z]+)$"  # 用 “v” 替换 “/”，并支持大写
+    reverse_lookup: '^\\.+$'  # LaTeX
+
+
+# LaTeX
+reverse_lookup:
+  dictionary: latex
+  spelling_hints: 9
+  enable_completion: false
+  tips: latex
+
+
 # 拼写设定
 speller:
-  # alphabet: zyxwvutsrqponmlkjihgfedcba
-  # 因为 easy_en 是以依赖的形式加载的，所以它自己的 alphabet 不管用，必须在此方案设定支持大写
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
+  # alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA\  # LaTeX 需要把反斜杠加上，不让反斜杠直接上屏
   delimiter: " '"
   algebra:
     ### 模糊音
@@ -286,15 +308,3 @@ speller:
     - derive/ong$/on/ # lon → long
     - derive/([tl])eng$/$1en/ # ten → teng
     - derive/([qwrtypsdfghjklzxcbnm])([aeio])ng$/$1ng/ # lng → lang、leng、ling、long
-
-
-# 引入自己的修改过的 symbols
-punctuator:
-  # import_preset: symbols
-  import_preset: symbols.custom # symbols.custom.yaml （标点设定和「v」模式在里面）
-
-recognizer:
-  import_preset: default
-  patterns:
-    # punct: "^/([0-9]+[a-z]*|[a-z]+)$"
-    punct: "^v([a-zA-Z]+|[0-9]0?)$"  # 用 “v” 替换 “/”，并支持大写

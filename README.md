@@ -8,14 +8,14 @@
     - 小狼毫 Weasel 0.14.3
 -   「[袖珍简化字方案](https://github.com/rime/rime-pinyin-simp)」作为基础
     - [简繁切换](https://github.com/rime/home/issues/388#issuecomment-504572224)
+    - [easy_en](https://github.com/BlindingDark/rime-easy-en) 英文输入
     - [日期、时间、星期](https://github.com/KyleBing/rime-wubi86-jidian)
+    - 自整理的 Emoji
     - [以词定字](https://github.com/BlindingDark/rime-lua-select-character)
     - [长词优先](https://github.com/tumuyan/rime-melt/blob/master/lua/melt.lua)
-    - Emoji
+    - [LaTeX](https://github.com/shenlebantongying/rime_latex)
     - 所有标点符号直接上屏，「/」模式改为「v」模式，「/」直接上屏
     - 增加了许多拼音纠错
--   融合[easy_en](https://github.com/BlindingDark/rime-easy-en)英文输入方案
-    - [优化英文输入体验](https://dvel.me/posts/make-rime-en-better/)
 -   简体字表、词库
     -   [《通用规范汉字表》的 8105 字字表](https://github.com/iDvel/The-Table-of-General-Standard-Chinese-Characters)
     -   [华宇野风系统词库](http://bbs.pinyin.thunisoft.com/forum.php?mod=viewthread&tid=30049)
@@ -89,6 +89,9 @@
 维护内容主要是异形词、错别字的校对，错误注音的修正，缺失的常用词汇的增添，词频的调整。
 
 <br>
+
+## 参考资料
+    - [优化英文输入体验](https://dvel.me/posts/make-rime-en-better/)
 
 ---
 

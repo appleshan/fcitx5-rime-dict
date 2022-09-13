@@ -1,0 +1,39 @@
+# Rime schema
+# encoding: utf-8
+
+# 来源：https://github.com/shenlebantongying/rime_latex Aug 19, 2022
+# 未做任何修改
+
+schema:
+  schema_id: latex
+  name: Latex Math Symbols
+  version: "1.1"
+  author:
+    - slbtty <shenlebantongying@gmail.com>
+    - mark <mark@mkmark.net>
+  description: |
+    Latex Math Symbols Input Method.
+    You have to type '\' first to get symbols.
+    This schema is intended to be used as an addon for other input methods.
+
+engine:
+  processors:
+    - speller  # to enable alphabet & initials below.
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - abc_segmentor
+    - fallback_segmentor
+  translators:
+    - table_translator
+
+speller:
+  alphabet: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789\^_-><+-=()[]'
+  initials: '\_^'
+  auto_select: true
+
+translator:
+  dictionary: latex
+  enable_sentence: false
+  enable_user_dict: false
