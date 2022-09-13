@@ -1,9 +1,15 @@
 .DS_Store
 .vscode/
+/.idea
+
 build/
 *.userdb/
 
 installation.yaml
 user.yaml
 
-/.idea
+opencc/.idea
+opencc/convert
+opencc/convert.go
+
+rime_*
