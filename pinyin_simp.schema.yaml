@@ -114,6 +114,8 @@ custom_phrase:
 # 挂载拼音主词库
 translator:
   dictionary: pinyin_simp  # 挂载拼音主词库 pinyin_simp.dict.yaml
+  # packs:
+  #   - cn_tencent
   preedit_format: # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
     - xform/([jqxy])v/$1u/    # 显示为 ju qu xu yu
     # - xform/([nl])v/$1ü/    # 显示为 nü lü

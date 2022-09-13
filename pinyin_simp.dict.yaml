@@ -11,10 +11,10 @@ import_tables:
   - cn_dicts/8105    # 《通用汉字规范表》8105 字字表
 
   - cn_dicts/main    # 基础词库，华宇野风系统词库 + 清华大学开源词库 + 修订
-  - cn_dicts/ext     # 扩展词库，建议与基础词库一同使用
+  - cn_dicts/sogou   # 搜狗流行词，与 main 没有重复
+  - cn_dicts/ext     # 扩展词库，与 main、sogou 没有重复
+  - cn_dicts/tencent # 腾讯词向量，百万+，部署时间较长，与 main、sogou、ext 没有重复
   - cn_dicts/av      # 著名表演艺术家
-  - cn_dicts/sogou   # 搜狗流行词
-  - cn_dicts/large   # 腾讯词向量，百万+，部署时间较长。
   - cn_dicts/sogouw  # 互联网词库(SogouW)。15w
   - cn_dicts/sogou_chengyusuyu    #成语俗语
   # - cn_dicts/sogou_shici          #诗词名句大全
@@ -22,3 +22,17 @@ import_tables:
   # - cn_dicts/food                 #食物
   - cn_dicts/kaifa                #计算机软件开发术语
 ...
+#
+#
+# cn_tencent 词库过大，每次部署时间过长，折腾期间建议注释掉，
+# 或参考 https://github.com/rime/home/wiki/DictionaryPack 导出为扩展包，这样只第一次部署时比较久
+#
+# 不用命令行的简单办法：
+# （目前小狼毫不能用，小狼毫0.14.3的 librime 是 1.5.3，鼠须管0.15.2的 librime 是 1.7.1，扩展包功能需要 librime 1.6.0）
+# 1. 注释掉上面的 - cn_tencent
+# 2. 解开 pinyin_simp.schema.yaml 中的 `packs:` `- cn_tencent` 这两行注释
+# 3. 重新部署，确认 build 目录生成了 cn_tencent.table.bin 文件
+# 4. 删除或改名 cn_tencent.dict.yaml，否则每次还是会花时间生成
+# 这样 cn_tencent 就不参与每次部署了，但是可以使用。如果修改更新了 cn_tencent 后还是需要重新生成一次。
+#
+#
