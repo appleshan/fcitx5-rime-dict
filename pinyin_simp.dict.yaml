@@ -10,9 +10,10 @@ vocabulary: essay-zh-hans
 import_tables:
   - cn_dicts/8105    # 《通用汉字规范表》8105 字字表
 
-  - cn_dicts/main    # 华宇野风系统词库 + 清华大学开源词库 + 修订
-  - cn_dicts/ext     # 扩展词库，词库很大，部署时间较长，折腾期间建议先注释掉
+  - cn_dicts/main    # 基础词库，华宇野风系统词库 + 清华大学开源词库 + 修订
+  - cn_dicts/ext     # 扩展词库，建议与基础词库一同使用
   - cn_dicts/av      # 著名表演艺术家
+  - cn_dicts/large   # 腾讯词向量，百万+，部署时间较长。
   - cn_dicts/sogouw  # 互联网词库(SogouW)。15w
   - cn_dicts/sogou_chengyusuyu    #成语俗语
   # - cn_dicts/sogou_shici          #诗词名句大全
