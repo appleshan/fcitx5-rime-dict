@@ -19,7 +19,7 @@ patch:
   recognizer/patterns/punct: '^v([0-9]0?|[A-Za-z]+)$'
 
 punctuator:
-  # 全角，未作改动
+  # 全角，未做改动
   full_shape:
     ' ' : { commit: '　' }
     ',' : { commit: ， }
