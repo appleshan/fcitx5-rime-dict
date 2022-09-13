@@ -12,7 +12,7 @@
 # 来源：https://pinyin.sogou.com/dict/detail/index/4?rf=dictindex
 # 搜狗转 Rime 词库：https://github.com/lewangdev/scel2txt
 ---
-name: cn_sogou
+name: sogou
 version: "2022-09-13"
 sort: by_weight
 ...
