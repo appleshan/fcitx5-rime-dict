@@ -9,10 +9,9 @@
 # 示例：输入「相泽南」后，会被映射为「相泽南 相沢みなみ」。
 # 对于中日文不同的，需要现在这里添加进词库，这样在 opencc/others.txt 中的映射就会起作用了。
 ---
-name: av
+name: cn_av
 version: "2022-09-10"
 sort: by_weight
-vocabulary: essay-zh-hans
 ...
 # 简体和日文相同的：
 本田岬	ben tian jia	666

@@ -5,8 +5,6 @@
 name: pinyin_simp
 version: "1"
 sort: by_weight
-vocabulary: essay-zh-hans
-
 import_tables:
   - cn_dicts/8105    # 《通用汉字规范表》8105 字字表
 
@@ -26,9 +24,9 @@ import_tables:
 #
 # cn_tencent 词库过大，每次部署时间过长，折腾期间建议注释掉，
 # 或参考 https://github.com/rime/home/wiki/DictionaryPack 导出为扩展包，这样只第一次部署时比较久
+# （目前小狼毫不能用，小狼毫0.14.3的 librime 是 1.5.3，鼠须管0.15.2的 librime 是 1.7.1，扩展包功能需要 librime 1.6.0）
 #
 # 不用命令行的简单办法：
-# （目前小狼毫不能用，小狼毫0.14.3的 librime 是 1.5.3，鼠须管0.15.2的 librime 是 1.7.1，扩展包功能需要 librime 1.6.0）
 # 1. 注释掉上面的 - cn_tencent
 # 2. 解开 pinyin_simp.schema.yaml 中的 `packs:` `- cn_tencent` 这两行注释
 # 3. 重新部署，确认 build 目录生成了 cn_tencent.table.bin 文件

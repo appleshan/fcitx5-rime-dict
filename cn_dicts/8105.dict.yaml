@@ -25,10 +25,9 @@
 # 确保一些常用多音字的权重在合适的数值，保证大于 5:100。
 # 降低一些几乎只在一个固定词汇中使用的读音的权重，不让其参与注音，在 main 中手动注音。
 ---
-name: 8105
+name: cn_8105
 version: "2022-09-06"
 sort: by_weight
-vocabulary: essay-zh-hans
 ...
 ### 按需启用
 # 「这、那」的口语读音
@@ -61,6 +60,7 @@ vocabulary: essay-zh-hans
 # 祂	ta
 # 觍	tian
 # 𪨊	song
+# 磺	huang
 
 
 ### 小时候没学过的拼音。。。
@@ -2483,6 +2483,7 @@ vocabulary: essay-zh-hans
 潢	huang	3727
 璜	huang	2543
 遑	huang	2242
+磺	huang	2222
 隍	huang	1797
 肓	huang	1770
 湟	huang	1167
