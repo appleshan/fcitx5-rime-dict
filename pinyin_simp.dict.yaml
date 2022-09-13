@@ -13,6 +13,7 @@ import_tables:
   - cn_dicts/main    # 基础词库，华宇野风系统词库 + 清华大学开源词库 + 修订
   - cn_dicts/ext     # 扩展词库，建议与基础词库一同使用
   - cn_dicts/av      # 著名表演艺术家
+  - cn_dicts/sogou   # 搜狗流行词
   - cn_dicts/large   # 腾讯词向量，百万+，部署时间较长。
   - cn_dicts/sogouw  # 互联网词库(SogouW)。15w
   - cn_dicts/sogou_chengyusuyu    #成语俗语

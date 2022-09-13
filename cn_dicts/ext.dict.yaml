@@ -15,7 +15,7 @@
 # - 偶尔从各个地方加入的一些垂直扩展词库
 # - 简化字八股文，三个字及以上的 https://github.com/rime/rime-essay-simp
 # - [同义词词林2020.3.26修订版](https://forum.freemdict.com/t/topic/1211)
-# - [弃]不再更新搜狗流行词了，全是错别字和饭圈谐音词
+# - 以前的一些搜狗流行词，新更新的单独放在了 cn_sogou.dict.yaml 中
 #
 #
 # 此词库依赖于 Rime 的自动注音功能
