@@ -6,7 +6,7 @@
 #
 ---
 name: en_ext
-version: "2022-09-05"
+version: "2022-09-13"
 sort: by_weight
 ...
 # 一些杂项
@@ -255,6 +255,7 @@ Hexo	Hexo
 Hugo	Hugo
 undefined	undefined
 Epic	Epic
+Epic Games	Epic Games
 Instagram	Instagram
 Beta	Beta
 archive	archive
@@ -1212,3 +1213,12 @@ refactoring	refactoring
 refactor	refactor
 Notepad	Notepad
 Notepad++	Notepad
+O’Reilly	OReilly
+Octocat	Octocat
+IMAP	IMAP
+Internet Message Access Protocol	IMAP
+Internet Message Access Protocol	InternetMessageAccessProtocol
+SMTP	SMTP
+Simple Mail Transfer Protocol	SMTP
+Simple Mail Transfer Protocol	SimpleMailTransferProtocol
+unacceptable	unacceptable

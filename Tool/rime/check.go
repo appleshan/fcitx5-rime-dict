@@ -214,10 +214,7 @@ func Check(dictPath string) {
 		// +---------------------------------------------------------------
 		// | 异形词检查
 		// +---------------------------------------------------------------
-		if !filterWords.Contains(text) {
-			if dictPath == HanziPath {
-				continue
-			}
+		if dictPath != HanziPath && !filterWords.Contains(text) {
 			for _, wrongWord := range wrongWords.ToSlice() {
 				if strings.Contains(text, wrongWord) {
 					fmt.Printf("异形词汇：%q - %q\n", wrongWord, text)

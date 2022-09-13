@@ -7,4 +7,7 @@ build/
 installation.yaml
 user.yaml
 
+Tool/scel2txt/out/*
+Tool/scel2txt/scel/*
+
 rime_*

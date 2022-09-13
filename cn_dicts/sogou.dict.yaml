@@ -13,7 +13,7 @@
 # 搜狗转 Rime 词库：https://github.com/lewangdev/scel2txt
 ---
 name: cn_sogou
-version: "2022-09-10"
+version: "2022-09-13"
 sort: by_weight
 ...
 # *_* 过滤词，每次更新时自动删除的词汇列表：
@@ -41,6 +41,8 @@ sort: by_weight
 # 至尊披萨
 # 做披萨
 # 白鱀豚
+# 填的好
+# 死的快
 # +_+
 阿巴巴	a ba ba
 阿巴巴巴	a ba ba ba
@@ -21622,7 +21624,6 @@ sort: by_weight
 四大名校	si da ming xiao
 四大天坑	si da tian keng
 四大学院	si da xue yuan
-死的快	si de kuai
 斯蒂芬库里	si di fen ku li
 四点出发	si dian chu fa
 四叠半	si die ban
@@ -22757,7 +22758,6 @@ sort: by_weight
 天大寒	tian da han
 天道佩恩	tian dao pei en
 天刀手游	tian dao shou you
-填的好	tian de hao
 田德花园	tian de hua yuan
 天地惠城	tian di hui cheng
 天地宽	tian di kuan
@@ -23401,7 +23401,6 @@ sort: by_weight
 推理之径	tui li zhi jing
 退林还耕	tui lin huan geng
 退秦师	tui qin shi
-退赛了	tui sai le
 褪色者	tui shai zhe
 推塔快	tui ta kuai
 退退退	tui tui tui
@@ -27256,7 +27255,6 @@ sort: by_weight
 兴洲苑	xing zhou yuan
 性子直	xing zi zhi
 星座花	xing zuo hua
-雄安站	xiong an zhan
 雄安质量	xiong an zhi liang
 熊本县	xiong ben xian
 兄弟情义	xiong di qing yi
