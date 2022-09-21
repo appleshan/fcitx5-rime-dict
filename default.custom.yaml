@@ -52,7 +52,7 @@ patch:
       # `commit_code` 输入拼音上屏并切换至英文。
       # `clear` 清除拼音并切换至英文。
       # `noop` 屏蔽此按键。
-      Caps_Lock: commit_text # noop | commit_code | commit_text
+      Caps_Lock: commit_text # commit_code | commit_text
       # 打字打到一半时按下了 Caps 后： commit_code 上屏拼音的英文字母 | commit_text 上屏拼音拼出的词语
       # 如果你设置 `Caps_Lock` 为 `noop`，一个奇怪的问题是退格键不能用了，除非取消大写锁定。
       # 所以我直接设置文字上屏了。
