@@ -6,7 +6,7 @@
 #
 ---
 name: en_ext
-version: "2022-09-15"
+version: "2022-09-17"
 sort: by_weight
 ...
 # 一些杂项
@@ -54,10 +54,11 @@ Eject	Eject
 
 
 # 往下开始都是扩展单词
-iPhone	iPhone	4
-iPhone 13	iPhone	3
-iPhone 13 Pro	iPhone	2
-iPhone 13 Pro Max	iPhone	1
+iPhone	iPhone	5
+iPhone 14	iPhone	4
+iPhone 14 Plus	iPhone	3
+iPhone 14 Pro	iPhone	2
+iPhone 14 Pro Max	iPhone	1
 iPhone SE	iPhoneSE
 Pro Max	ProMax
 macOS	macOS	999
@@ -407,6 +408,8 @@ Apple	Apple
 Apple Watch	AppleWatch
 AppleCare	AppleCare
 AppleCare+	AppleCare
+Apple Card	AppleCard
+Apple Books	AppleBooks
 ATI	ATI
 Apple Store	AppleStore
 Apple TV	AppleTV
@@ -416,6 +419,7 @@ Apple File System	AppleFileSystem
 Apple ID	AppleID
 Apple News	AppleNews
 Apple Pay	ApplePay
+iTunes Store	iTunesStore
 AMD	AMD
 Amphetamine	Amphetamine
 Android	Android
@@ -960,12 +964,15 @@ Erlang	Erlang
 FAQ	FAQ
 Panamera	Panamera
 FaceTime	FaceTime
+FaceTime Audio	FaceTimeAudio
 Jordan	Jordan
 Thompson	Thompson
 LMAO	LMAO
 Vivaldi	Vivaldi
 Cryptomator	Cryptomator
 WTF	WTF
+what the fuck	WTF
+what the fuck	whatthefuck
 ASAP	ASAP
 PUBG	PUBG
 Ruby	Ruby
@@ -1225,3 +1232,8 @@ Simple Mail Transfer Protocol	SMTP
 Simple Mail Transfer Protocol	SimpleMailTransferProtocol
 unacceptable	unacceptable
 Waterfox	Waterfox
+Let's Go	LetsGo
+one-liner	oneliner
+Callback	Callback
+SSID	SSID
+Time Machine	TimeMachine
