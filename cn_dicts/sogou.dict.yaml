@@ -7,6 +7,7 @@
 #
 #
 # 只保留三个字及以上的
+# 与 main 没有重复
 #
 #
 # 来源：https://pinyin.sogou.com/dict/detail/index/4?rf=dictindex
@@ -16,7 +17,9 @@ name: sogou
 version: "2022-09-13"
 sort: by_weight
 ...
-# *_* 过滤词，每次更新时自动删除的词汇列表：
+# *_* ///过滤词，每次更新时自动删除的词汇列表：
+# 真珠美学
+# 声生不息
 # 草雉京
 # 当家作主
 # 搬包谷
@@ -20616,7 +20619,6 @@ sort: by_weight
 生日直播	sheng ri zhi bo
 生肉丸	sheng rou wan
 生三胎	sheng san tai
-声生不息	sheng sheng bu xi
 声生不息官宣	sheng sheng bu xi guan xuan
 笙笙予你	sheng sheng yu ni
 盛世芳华	sheng shi fang hua
@@ -31041,7 +31043,6 @@ sort: by_weight
 震源中心	zhen yuan zhong xin
 针织连衣裙	zhen zhi lian yi qun
 珍珠蚌	zhen zhu bang
-真珠美学	zhen zhu mei xue
 珍珠球	zhen zhu qiu
 珍珠雅苑	zhen zhu ya yuan
 珍珠妆	zhen zhu zhuang

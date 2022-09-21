@@ -13,12 +13,13 @@ import (
 
 const (
 	mark        = "# +_+"
-	HanziPath   = "/Users/dvel/Library/Rime/cn_8105.dict.yaml"
-	MainPath    = "/Users/dvel/Library/Rime/cn_main.dict.yaml"
-	SogouPath   = "/Users/dvel/Library/Rime/cn_sogou.dict.yaml"
-	ExtPath     = "/Users/dvel/Library/Rime/cn_ext.dict.yaml"
-	AVPath      = "/Users/dvel/Library/Rime/cn_av.dict.yaml"
-	TencentPath = "/Users/dvel/Library/Rime/cn_tencent.dict.yaml"
+	HanziPath   = "/Users/dvel/Library/Rime/cn_dicts/8105.dict.yaml"
+	MainPath    = "/Users/dvel/Library/Rime/cn_dicts/main.dict.yaml"
+	SogouPath   = "/Users/dvel/Library/Rime/cn_dicts/sogou.dict.yaml"
+	ExtPath     = "/Users/dvel/Library/Rime/cn_dicts/ext.dict.yaml"
+	AVPath      = "/Users/dvel/Library/Rime/cn_dicts/av.dict.yaml"
+	TencentPath = "/Users/dvel/Library/Rime/cn_dicts/tencent.dict.yaml"
+	WikiPath    = "/Users/dvel/Library/Rime/cn_dicts/zhwiki.dict.yaml"
 	EmojiPath   = "/Users/dvel/Library/Rime/opencc/mapping.txt"
 )
 
@@ -28,6 +29,7 @@ var (
 	SogouSet  mapset.Set[string]
 	ExtSet    mapset.Set[string]
 	TencenSet mapset.Set[string]
+	WikiSet mapset.Set[string]
 	initStart time.Time
 )
 
@@ -45,6 +47,7 @@ func init() {
 	SogouSet = readAndSet(SogouPath)
 	ExtSet = readAndSet(ExtPath)
 	TencenSet = readAndSet(TencentPath)
+	WikiSet = readAndSet(WikiPath)
 }
 
 // readAndSet 读取词库文件为 set

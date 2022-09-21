@@ -9,11 +9,12 @@ import_tables:
   - cn_dicts/8105    # 《通用汉字规范表》8105 字字表
   - cn_dicts/main    # 基础词库，华宇野风系统词库 + 清华大学开源词库 + 修订
   - cn_dicts/sogou   # 搜狗流行词，与 main 没有重复
-  - cn_dicts/ext     # 扩展词库，与 main、sogou 没有重复
+  - cn_dicts/ext     # 扩展词库，与 main sogou 没有重复
   - cn_dicts/av      # 著名表演艺术家
 
-  # 大词库，部署时间较长
-  - cn_dicts/tencent # 腾讯词向量，与 main、sogou、ext 没有重复
+  # 大词库，都是百万左右，部署时间较长，建议在折腾期间先注释掉
+  - cn_dicts/zhwiki  # 中文维基词库，与 main sogou ext 没有重复
+  - cn_dicts/tencent # 腾讯词向量，与 main sogou ext wiki 没有重复
 
   - cn_dicts/sogouw  # 互联网词库(SogouW)。15w
   - cn_dicts/sogou_chengyusuyu    #成语俗语

@@ -18,14 +18,47 @@ import (
 )
 
 var filterMark = "# *_*"
-var filterList mapset.Set[string] // 不需要的搜狗流行词词汇
 
-// 初始化时弄好过滤词汇列表
-func init() {
-	fmt.Println("sogou.go init")
-	filterList = mapset.NewSet[string]()
+// UpdateSogou 1.下载搜狗流行词加入到现有词库末尾，2.过滤去重排序，3.打印新增词汇
+func UpdateSogou() {
+	// 控制台输出
+	fmt.Println("搜狗流行词：")
+	defer printTimeCost(time.Now())
 
-	file, err := os.Open(SogouPath)
+	downloadAndWrite()       // 1.下载搜狗流行词加入到现有词库末尾
+	checkAndWrite(SogouPath) // 2.过滤去重排序
+	PrintNewWords(SogouPath) // 3.打印新增词汇
+
+	// 弄完了删除临时用的文件，否则 VSCode 全局搜索词汇时会搜索到，影响体验
+	err := os.Remove("./scel2txt/scel/sogou.scel")
+	if err != nil {
+		log.Fatal(err)
+	}
+	err = os.Remove("./scel2txt/out/luna_pinyin.sogou.dict.yaml")
+	if err != nil {
+		log.Fatal(err)
+	}
+	err = os.Remove("./scel2txt/out/sogou.txt")
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+
+// UpdateWiki 和搜狗的逻辑是一样的，只是没有自动化下载更新
+func UpdateWiki() {
+	// 控制台输出
+	fmt.Println("维基词库：")
+	defer printTimeCost(time.Now())
+
+	checkAndWrite(WikiPath)
+	PrintNewWords(WikiPath)
+}
+
+// 弄好过滤词汇列表
+func makeFilterList(dictPath string) mapset.Set[string] {
+	filterList := mapset.NewSet[string]()
+
+	file, err := os.Open(dictPath)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -56,33 +89,7 @@ func init() {
 		filterList.Add(text)
 	}
 
-	// 初始化结束
-	defer printTimeCost(initStart)
-}
-
-// Sogou 下载搜狗流行词，加入到现有词库末尾，过滤、去重，打印新增词汇
-func Sogou() {
-	// 控制台输出
-	fmt.Println("搜狗流行词：")
-	defer printTimeCost(time.Now())
-
-	downloadAndWrite()
-	checkAndWrite()
-	PrintNewWords()
-
-	// 弄完了删除文件，否则 VSCode 搜索词汇时会搜索到
-	err := os.Remove("./scel2txt/scel/sogou.scel")
-	if err != nil {
-		log.Fatal(err)
-	}
-	err = os.Remove("./scel2txt/out/luna_pinyin.sogou.dict.yaml")
-	if err != nil {
-		log.Fatal(err)
-	}
-	err = os.Remove("./scel2txt/out/sogou.txt")
-	if err != nil {
-		log.Fatal(err)
-	}
+	return filterList
 }
 
 // downloadAndWrite 下载搜狗流行词，转换为 Rime 格式，然后加入到现有词库的后面
@@ -134,14 +141,17 @@ func downloadAndWrite() {
 	}
 }
 
-// checkAndWrite 检查 sogou，过滤、排序、去重
-func checkAndWrite() {
+// checkAndWrite 过滤、排序、去重、重新写入
+func checkAndWrite(dictPath string) {
 	// 控制台输出
-	fmt.Println("检查 sogou，过滤、排序、去重、重新写入：")
+	fmt.Println("过滤、排序、去重、重新写入：")
 	defer printTimeCost(time.Now())
 
+	// 先制作好过滤词列表，在此列表的不加入进词库
+	filterList := makeFilterList(dictPath)
+
 	// 打开文件
-	file, err := os.OpenFile(SogouPath, os.O_RDWR, 0644)
+	file, err := os.OpenFile(dictPath, os.O_RDWR, 0644)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -168,7 +178,7 @@ func checkAndWrite() {
 		text, code := sp[0], sp[1]
 		// 检查错误
 		if len(sp) != 2 {
-			log.Fatal("sogou 分割错误：", line)
+			log.Fatal("分割错误：", line)
 		}
 		// 计数
 		if utf8.RuneCountInString(text) <= 2 {
@@ -234,14 +244,24 @@ func checkAndWrite() {
 }
 
 // PrintNewWords 打印新增词汇，注音也打出来，肉眼校对一边
-func PrintNewWords() {
-	newSogouSet := readAndSet(SogouPath)
-	newWords := newSogouSet.Difference(SogouSet)
+func PrintNewWords(dictPath string) {
+	newSet := readAndSet(dictPath)
+	newWords := mapset.NewSet[string]()
+	if dictPath == SogouPath {
+		newWords = newSet.Difference(SogouSet)
+	}
+	if dictPath == WikiPath {
+		newWords = newSet.Difference(WikiSet)
+	}
 	fmt.Println("新增词汇：")
+
+	// 没有注音
 	// for _, word := range newWords.ToSlice() {
 	// 	fmt.Println(word)
 	// }
-	file, err := os.Open(SogouPath)
+
+	// 把注音也打出来，方便直接校对
+	file, err := os.Open(dictPath)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -265,5 +285,10 @@ func PrintNewWords() {
 	fmt.Println("count: ", newWords.Cardinality())
 
 	// 更新全局的 set，方便后面检查
-	SogouSet = newSogouSet
+	if dictPath == SogouPath {
+		SogouSet = newSet
+	}
+	if dictPath == WikiPath {
+		WikiSet = newSet
+	}
 }

@@ -44,7 +44,7 @@ patch:
 
   # 下面设置的整体效果：不用 CapsLock 和 Shift 切换输入法，切换输入法使用系统快捷键，如 Ctrl/Cmd + 空格
   ascii_composer:
-    good_old_caps_lock: true # true | false Caps 切换大小写或切换中英
+    good_old_caps_lock: true # true | false , Caps 切换大小写或切换中英
 
     switch_key:
       # `inline_ascii` 在输入框内插入英文。

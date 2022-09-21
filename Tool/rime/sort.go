@@ -21,7 +21,7 @@ func Sort(dictPath string) {
 	fmt.Println("开始排序 ", path.Base(dictPath), "：")
 	defer printTimeCost(time.Now())
 
-	// 顺序是否有变动
+	// 是否有任何变动
 	oldSha1 := getSha1(dictPath)
 	defer func(oldSha1 string) {
 		newSha1 := getSha1(dictPath)
@@ -118,6 +118,7 @@ func Sort(dictPath string) {
 	})
 
 	// 下面开始写入，顺便从其他词库中去重
+	// 准备写入
 	err = file.Truncate(0)
 	if err != nil {
 		log.Fatalln(err)
@@ -145,55 +146,41 @@ func Sort(dictPath string) {
 		}
 	}
 
-	count := 0 // 重复个数
-	// sogou 不和 main 有重复
-	if dictPath == SogouPath {
-		intersect := SogouSet.Intersect(MainSet)
-		for _, line := range contents {
-			if intersect.Contains(line.text) {
-				count++
-				fmt.Println("sogou 重复于其他词库：", line)
-				continue
-			}
-			_, err := file.WriteString(line.text + "\t" + line.code + "\n")
-			if err != nil {
-				log.Fatal(err)
-			}
+	// 其他词库需要从一个或多个词库中去重
+	if dictPath == SogouPath || dictPath == ExtPath || dictPath == TencentPath || dictPath == WikiPath {
+		var intersect mapset.Set[string]
+		switch dictPath {
+		case SogouPath:
+			// sogou 不和 main 有重复
+			intersect = SogouSet.Intersect(MainSet)
+		case ExtPath:
+			// ext 不和 mian+sogou 有重复
+			intersect = ExtSet.Intersect(MainSet.Union(SogouSet))
+		case WikiPath:
+			// wiki 不和 main+sogou+ext 有重复
+			intersect = WikiSet.Intersect(MainSet.Union(SogouSet).Union(ExtSet))
+		case TencentPath:
+			// tencent 不和 main+sogou+ext+wiki 有重复
+			intersect = TencenSet.Intersect(MainSet.Union(SogouSet).Union(ExtSet).Union(WikiSet))
+		default:
+			log.Fatal("？？？")
 		}
-		if count != 0 {
-			fmt.Println("重复个数：", count)
-		}
-	}
 
-	// ext 不和 mian+sogou 有重复
-	if dictPath == ExtPath {
-		intersect := ExtSet.Intersect(MainSet.Union(SogouSet))
+		count := 0 // 重复个数
 		for _, line := range contents {
 			if intersect.Contains(line.text) {
 				count++
-				fmt.Println("ext 重复于其他词库：", line)
+				fmt.Printf("%s 重复于其他词库：%s\n", strings.Split(path.Base(dictPath), ".")[0], line.text)
 				continue
 			}
-			_, err := file.WriteString(line.text + "\n")
-			if err != nil {
-				log.Fatal(err)
+			str := ""
+			if dictPath == ExtPath || dictPath == TencentPath {
+				str = line.text + "\n"
 			}
-		}
-		if count != 0 {
-			fmt.Println("重复个数：", count)
-		}
-	}
-
-	// tencent 不和 main+sogou+ext 有重复
-	if dictPath == TencentPath {
-		intersect := TencenSet.Intersect(MainSet.Union(SogouSet).Union(ExtSet))
-		for _, line := range contents {
-			if intersect.Contains(line.text) {
-				count++
-				fmt.Println("tencent 重复于其他词库：", line)
-				continue
+			if dictPath == SogouPath || dictPath == WikiPath {
+				str = line.text + "\t" + line.code + "\n"
 			}
-			_, err := file.WriteString(line.text + "\n")
+			_, err := file.WriteString(str)
 			if err != nil {
 				log.Fatal(err)
 			}
