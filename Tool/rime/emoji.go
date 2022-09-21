@@ -29,18 +29,25 @@ func Emoji() {
 	sc := bufio.NewScanner(file)
 	for sc.Scan() {
 		line := sc.Text()
-		// Emoji 是单独的逻辑
+		// 过滤注释
 		if strings.HasPrefix(line, "#") {
 			continue
 		}
+		// 检查是否含有 Tab
 		if strings.Contains(line, "\t") {
-			log.Fatal("mapping.txt 含有 Tab：", line)
+			fmt.Println("mapping.txt 含有 Tab：", line)
 		}
+		// 加入 set，顺便用 testSet 检查是否有重复
 		sp := strings.Split(line, " ")
-		for _, hanzi := range sp[1:] {
-			set.Add(hanzi)
+		testSet := mapset.NewSet[string]()
+		for _, word := range sp[1:] {
+			set.Add(word)
+			if testSet.Contains(word) {
+				fmt.Println("此行有重复项：", line)
+			} else {
+				testSet.Add(word)
+			}
 		}
-		continue
 	}
 
 	count := 0
