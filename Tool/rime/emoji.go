@@ -38,9 +38,9 @@ func Emoji() {
 			fmt.Println("mapping.txt 含有 Tab：", line)
 		}
 		// 加入 set，顺便用 testSet 检查是否有重复
-		sp := strings.Split(line, " ")
+		parts := strings.Split(line, " ")
 		testSet := mapset.NewSet[string]()
-		for _, word := range sp[1:] {
+		for _, word := range parts[1:] {
 			set.Add(word)
 			if testSet.Contains(word) {
 				fmt.Println("此行有重复项：", line)

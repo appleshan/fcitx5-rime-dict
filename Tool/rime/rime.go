@@ -70,8 +70,8 @@ func readAndSet(dictPath string) mapset.Set[string] {
 			}
 			continue
 		}
-		sp := strings.Split(line, "\t")
-		set.Add(sp[0])
+		parts := strings.Split(line, "\t")
+		set.Add(parts[0])
 	}
 
 	return set

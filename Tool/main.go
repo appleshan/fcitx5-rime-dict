@@ -3,6 +3,7 @@ package main
 import (
 	"RimeTool/rime"
 	"fmt"
+	"os"
 	"strings"
 )
 
@@ -39,7 +40,7 @@ func doYouContinue() {
 	var isOK string
 	_, _ = fmt.Scanf("%s", &isOK)
 	if strings.ToLower(isOK) != "ok" {
-		return
+		os.Exit(123)
 	}
 	fmt.Println("--------------------------------------------------")
 }

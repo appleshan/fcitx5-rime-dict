@@ -6,7 +6,7 @@
 #
 ---
 name: en_ext
-version: "2022-09-13"
+version: "2022-09-15"
 sort: by_weight
 ...
 # 一些杂项
@@ -155,6 +155,8 @@ Wunderlist	Wunderlist
 VMware	VMware
 Fusion	Fusion
 VMware Fusion	VMwareFusion
+VMware Fusion Player	VMwareFusionPlayer
+VMware Fusion Pro	VMwareFusionPro
 Vanilla	Vanilla
 Ubisoft	Ubisoft
 Twitch	Twitch
@@ -1222,3 +1224,4 @@ SMTP	SMTP
 Simple Mail Transfer Protocol	SMTP
 Simple Mail Transfer Protocol	SimpleMailTransferProtocol
 unacceptable	unacceptable
+Waterfox	Waterfox

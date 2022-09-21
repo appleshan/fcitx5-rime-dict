@@ -143,10 +143,6 @@ func downloadAndWrite() {
 
 // checkAndWrite 过滤、排序、去重、重新写入
 func checkAndWrite(dictPath string) {
-	// 控制台输出
-	fmt.Println("过滤、排序、去重、重新写入：")
-	defer printTimeCost(time.Now())
-
 	// 先制作好过滤词列表，在此列表的不加入进词库
 	filterList := makeFilterList(dictPath)
 
@@ -174,12 +170,11 @@ func checkAndWrite(dictPath string) {
 			}
 			continue
 		}
-		sp := strings.Split(line, "\t")
-		text, code := sp[0], sp[1]
-		// 检查错误
-		if len(sp) != 2 {
+		parts := strings.Split(line, "\t")
+		if len(parts) != 2 {
 			log.Fatal("分割错误：", line)
 		}
+		text, code := parts[0], parts[1]
 		// 计数
 		if utf8.RuneCountInString(text) <= 2 {
 			twoWordCount++
@@ -237,6 +232,7 @@ func checkAndWrite(dictPath string) {
 		}
 	}
 	fmt.Println("删除重复 count：", duplicateCount)
+
 	err = file.Sync()
 	if err != nil {
 		log.Fatal(err)

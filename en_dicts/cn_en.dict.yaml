@@ -9,7 +9,7 @@
 #
 ---
 name: cn_en
-version: "2022-09-05"
+version: "2022-09-15"
 sort: by_weight
 ...
 # 没有空格的（为了Emoji映射。Emoji 里空格是分割符，没法映射，不知道怎么解决）
@@ -47,12 +47,19 @@ QQ 输入法	qqshurufa
 Dock 栏	docklan
 阿 Q 精神	aqjingshen
 Win 版	winban
+Win 版本	winbanben
 Windows 版	windowsban
+Windows 版本	windowsbanben
 Mac 版	macban
+Mac 版本	macbanben
 macOS 版	macosban
+macOS 版本	macosbanben
 iOS 版	iosban
+iOS 版本	iosbanben
 Android 版	androidban
+Android 版本	androidbanben
 Web 版	webban
+Web 版本	webbanben
 PC 端	pcduan
 Win 端	winduan
 Windows 端	windowsduan
@@ -158,6 +165,7 @@ z 逆变换	znibianhuan	100
 D 之国	dzhiguo
 D 之一族	dzhiyizu
 Beta 版	betaban
+Beta 版本	betabanben
 AV 女优	avnvyou
 X 战警	xzhanjing
 A4	asi
@@ -189,6 +197,7 @@ Big 胆	bigdan
 多边兽 Z	duobianshouz
 藤子·F·不二雄	tengzifbuerxiong
 PC 版	pcban
+PC 版本	pcbanben
 A 塔	ata
 平 A	pinga
 立 Flag	liflag
@@ -237,6 +246,7 @@ F 罩	fzhao
 G 罩	gzhao
 H 罩	hzhao
 TV 版	tvban
+TV 版本	tvbanben
 芒果 TV	mangguotv
 V 字仇杀队	vzichoushadui
 V 怪客	vguaike
@@ -245,10 +255,10 @@ Q 弹	qtan
 Steam 云	steamyun
 M 系列	mxilie
 阿 Sir	asir
-Pro 版本	probanben
 Pro 版	proban
-Lite 版本	litebanben
+Pro 版本	probanben
 Lite 版	liteban
+Lite 版本	litebanben
 X 教授	xjiaoshou
 Papi 酱	papijiang
 MAC 地址	macdizhi
@@ -260,3 +270,5 @@ OK 了吗	oklema
 公网 IP	gongwangip
 Web 开发	webkaifa
 圈 X	quanx
+Switch 版	switchban
+Switch 版本	switchbanben

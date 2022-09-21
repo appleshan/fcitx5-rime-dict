@@ -55,17 +55,17 @@ func Sort(dictPath string) {
 		}
 
 		// 分割为 词汇text 编码code 权重weight
-		sp := strings.Split(line, "\t")
-		text, code, weight := sp[0], "", ""
+		parts := strings.Split(line, "\t")
+		text, code, weight := parts[0], "", ""
 
 		// 将 main 中注释了但没删除的词汇权重调为 0
 		if dictPath == MainPath && strings.HasPrefix(line, "# ") {
-			line = sp[0] + "\t" + sp[1] + "\t" + "0"
+			line = parts[0] + "\t" + parts[1] + "\t" + "0"
 		}
 
 		// mark 之后的，写入到 contents
 		// 自身重复的直接排除，不重复的写入
-		switch len(sp) {
+		switch len(parts) {
 		case 1: // ext tencent 是一列
 			if selfSet.Contains(text) {
 				fmt.Println("重复：", line)
@@ -73,8 +73,8 @@ func Sort(dictPath string) {
 			}
 			selfSet.Add(text)
 			contents = append(contents, lemma{text: text})
-		case 2: // sogou 是两列
-			text, code = sp[0], sp[1]
+		case 2: // sogou wiki 是两列
+			text, code = parts[0], parts[1]
 			if selfSet.Contains(text + code) {
 				fmt.Println("重复：", line)
 				break
@@ -82,7 +82,7 @@ func Sort(dictPath string) {
 			selfSet.Add(text + code)
 			contents = append(contents, lemma{text: text, code: code})
 		case 3: // 字表 main av 是三列
-			text, code, weight = sp[0], sp[1], sp[2]
+			text, code, weight = parts[0], parts[1], parts[2]
 			if selfSet.Contains(text + code) {
 				fmt.Println("重复：", line)
 				break
@@ -95,15 +95,7 @@ func Sort(dictPath string) {
 		}
 	}
 
-	// 排序
-	// 没有编码的词库排序，直接按 Unicode 编码排序
-	sort.Slice(contents, func(i, j int) bool {
-		if contents[i].text != contents[j].text {
-			return contents[i].text < contents[j].text
-		}
-		return false
-	})
-	// 有编码的词库排序，拼音升序、权重降序
+	// 排序：拼音升序、权重降序、最后直接按Unicode编码排序
 	sort.Slice(contents, func(i, j int) bool {
 		if contents[i].code != contents[j].code {
 			return contents[i].code < contents[j].code
@@ -147,7 +139,7 @@ func Sort(dictPath string) {
 	}
 
 	// 其他词库需要从一个或多个词库中去重
-	if dictPath == SogouPath || dictPath == ExtPath || dictPath == TencentPath || dictPath == WikiPath {
+	if dictPath == SogouPath || dictPath == ExtPath || dictPath == WikiPath || dictPath == TencentPath {
 		var intersect mapset.Set[string]
 		switch dictPath {
 		case SogouPath:

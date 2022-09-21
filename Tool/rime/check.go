@@ -27,6 +27,7 @@ func init() {
 	specialWords.Add("狄尔斯–阿尔德反应")
 	specialWords.Add("特里斯坦–达库尼亚")
 	specialWords.Add("特里斯坦–达库尼亚群岛")
+	specialWords.Add("茱莉亚·路易斯-德瑞弗斯")
 	specialWords.Add("科科斯（基林）群岛")
 	specialWords.Add("刚果（金）")
 	specialWords.Add("刚果（布）")
@@ -121,15 +122,15 @@ func Check(dictPath string) {
 		// +---------------------------------------------------------------
 		// | 通用检查：分割为：词汇text, 编码code, 权重weight
 		// +---------------------------------------------------------------
-		sp := strings.Split(line, "\t")
+		parts := strings.Split(line, "\t")
 		var text, code, weight string
-		switch len(sp) {
+		switch len(parts) {
 		case 1: // ext tencent 是一列
-			text = sp[0]
-		case 2: // sogou 是两列
-			text, code = sp[0], sp[1]
+			text = parts[0]
+		case 2: // sogou wiki 是两列
+			text, code = parts[0], parts[1]
 		case 3: // 字表 main av 是三列
-			text, code, weight = sp[0], sp[1], sp[2]
+			text, code, weight = parts[0], parts[1], parts[2]
 		default:
 			log.Fatal("分割错误：", line)
 		}
@@ -181,6 +182,7 @@ func Check(dictPath string) {
 		for _, c := range code {
 			if unicode.IsUpper(c) {
 				fmt.Printf("拼音部分有大写字母: %q\n", line)
+				break
 			}
 		}
 
@@ -189,12 +191,11 @@ func Check(dictPath string) {
 			codeCount := len(strings.Split(code, " "))
 			textCount := utf8.RuneCountInString(text)
 			if strings.Contains(text, "·") {
-				textCount = textCount - strings.Count(text, "·")
+				textCount -= strings.Count(text, "·")
 			}
 			if strings.HasPrefix(text, "# ") {
 				textCount -= 2
 			}
-
 			if textCount != codeCount {
 				fmt.Println("汉字个数和拼音个数不相等：", text, code)
 			}
@@ -217,7 +218,7 @@ func Check(dictPath string) {
 		if dictPath != HanziPath && !filterWords.Contains(text) {
 			for _, wrongWord := range wrongWords.ToSlice() {
 				if strings.Contains(text, wrongWord) {
-					fmt.Printf("异形词汇：%q - %q\n", wrongWord, text)
+					fmt.Printf("异形词汇: %s - %s\n", wrongWord, text)
 				}
 			}
 		}
