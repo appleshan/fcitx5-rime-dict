@@ -31,6 +31,9 @@ func init() {
 	specialWords.Add("科科斯（基林）群岛")
 	specialWords.Add("刚果（金）")
 	specialWords.Add("刚果（布）")
+	specialWords.Add("赛博朋克：边缘行者")
+	specialWords.Add("赛博朋克：边缘跑手")
+	specialWords.Add("赛博朋克：命运之轮")
 
 	// 需要注音的多音字列表
 	polyphoneFile, err := os.Open("rime/多音字.txt")

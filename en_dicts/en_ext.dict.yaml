@@ -6,7 +6,7 @@
 #
 ---
 name: en_ext
-version: "2022-09-17"
+version: "2022-09-20"
 sort: by_weight
 ...
 # 一些杂项
@@ -117,7 +117,6 @@ ARM	ARM
 eGPU	eGPU
 One Piece	OnePiece
 Bose	Bose
-iPhone	iPhone
 CCTV	CCTV
 GTA	GTA
 LGBT	LGBT
@@ -146,6 +145,7 @@ Xnip	Xnip
 Workspace	Workspace
 Google Workspace	GoogleWorkspace
 WYSIWYG	WYSIWYG
+What You See Is What You Get	WYSIWYG
 Mark Text	MarkText
 Joplin	Joplin
 Obsidian	Obsidian
@@ -203,12 +203,6 @@ DOM	DOM
 VIP	VIP
 D.VA	DVA
 Logo	Logo
-Rachel	Rachel
-Monica	Monica
-Phoebe	Phoebe
-Joey	Joey
-Chandler	Chandler
-Ross	Ross
 Telnet	Telnet
 IPv4	IPv
 IPv6	IPv
@@ -219,7 +213,6 @@ IPv6	IPvliu
 Unix	Unix
 Rick and Morty	RickandMorty
 Tokyo	Tokyo
-Rachel	Rachel
 uTools	uTool
 uTools	uTools
 AirPods	AirPods
@@ -258,7 +251,7 @@ Hexo	Hexo
 Hugo	Hugo
 undefined	undefined
 Epic	Epic
-Epic Games	Epic Games
+Epic Games	EpicGames
 Instagram	Instagram
 Beta	Beta
 archive	archive
@@ -823,6 +816,8 @@ MX	MX
 macOS Server	macOSServer
 Darwin	Darwin
 NAS	NAS
+Network Attached Storage	NAS
+Network Attached Storage	NetworkAttachedStorage
 Olympic	Olympic
 Fork	Fork
 CommonMark	CommonMark
@@ -1063,9 +1058,11 @@ IINA	IINA
 GUID	GUID
 ExFAT	ExFAT
 APFS	APFS
-Microsoft NTFS	MicrosoftNTFS
+Apple File System	APFS
+Apple File System	AppleFileSystem
 NTFS	NTFS
 Microsoft NTFS	NTFS
+Microsoft NTFS	MicrosoftNTFS
 setup	setup
 txt	txt
 chromeOS	chromeOS
@@ -1237,3 +1234,15 @@ one-liner	oneliner
 Callback	Callback
 SSID	SSID
 Time Machine	TimeMachine
+goodbye	goodbye
+regexp	regexp
+FOSS	FOSS
+Free and open source software	FOSS
+Free and open source software	Freeandopensourcesoftware
+InfoQ	InfoQ
+SFC	SFC
+Software Freedom Conservancy	SFC
+Software Freedom Conservancy	SoftwareFreedomConservancy
+PopCap	PopCap
+PopCap Games	PopCapGames
+Cyberpunk	Cyberpunk

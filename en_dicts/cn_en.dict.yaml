@@ -9,7 +9,7 @@
 #
 ---
 name: cn_en
-version: "2022-09-15"
+version: "2022-09-20"
 sort: by_weight
 ...
 # 没有空格的（为了Emoji映射。Emoji 里空格是分割符，没法映射，不知道怎么解决）
@@ -83,85 +83,84 @@ Go 语言	goyuyan
 维生素 K	weishengsuk
 维 E 乳	weieru
 维生素 E 乳	weishengsueru
-阿 Q	aq	100
-阿 Q 正传	aqzhengzhuan	100
-单边 z 变换	danbianzbianhuan	100
-逗 B	doub	100
-逗 B	doubi	100
-哆啦 A 梦	duolaameng	100
-二 B	erb	100
-二 B	erbi	100
-卡拉 OK	kalaok	100
-牛 B	niub	100
-牛 B	niubi	100
-三 K 党	sankdang	100
-三 K 党	sankeidang	100
-傻 B	shab	100
-傻 B	shabi	100
+阿 Q	aq
+阿 Q 正传	aqzhengzhuan
+单边 z 变换	danbianzbianhuan
+逗 B	doub
+逗 B	doubi
+哆啦 A 梦	duolaameng
+二 B	erb
+二 B	erbi
+卡拉 OK	kalaok
+牛 B	niub
+牛 B	niubi
+三 K 党	sankdang
+三 K 党	sankeidang
+傻 B	shab
+傻 B	shabi
 傻 X	shax
-智能 ABC	zhinengabc	100
-智能 ABC 输入法	zhinengabcshurufa	100
-装 B	zhuangb	100
-装 B	zhuangbi	100
-A 股	agu	100
-A 盘	apan	100
-A 片	apian	100
-AA 制	aazhi	100
+智能 ABC	zhinengabc
+智能 ABC 输入法	zhinengabcshurufa
+装 B	zhuangb
+装 B	zhuangbi
+A 股	agu
+A 盘	apan
+A 片	apian
+AA 制	aazhi
 ATM 机	atmji
-B 超	bchao	100
-B 股	bgu	100
-B 淋巴细胞	blinbaxibao	100
-B 盘	bpan	100
-B 细胞	bxibao	100
-C 盘	cpan	100
-C 语言	cyuyan	100
-D 盘	dpan	100
-E 盘	epan	100
-F 盘	fpan	100
-G 点	gdian	100
-G 盘	gpan	100
-H 股	hgu	100
-H 盘	hpan	100
-I 盘	ipan	100
-IP 地址	ipdizhi	100
-IP 电话	ipdianhua	100
-IP 卡	ipka	100
-IP 地址	ipweizhi	100
-J 盘	jpan	100
-K 宝	kbao	100
-K 宝	keibao	100
-K 粉	kfen	100
-K 粉	keifen	100
-K 歌	kge	100
-K 歌	keige	100
-POS 机	posji	100
-Q 币	qbi	100
-QQ	qq	100
-QQ 号	qqhao	100
-QQ 号码	qqhaoma	100
-QQ 会员	qqhuiyuan	100
-QQ 空间	qqkongjian	100
-QQ 群	qqqun	100
-QQ 邮箱	qqyouxiang	100
-SIM 卡	simka	100
-T 淋巴细胞	tlinbaxibao	100
-T 细胞	txibao	100
-T 型台	txingtai	100
-U 盾	udun	100
-U 形管	uxingguan	100
-UIM 卡	uimka	100
-USIM 卡	usimka	100
-X 刀	xdao	100
-X 染色体	xranseti	100
-Y 染色体	yranseti	100
-z 变换	zbianhuan	100
-z 逆变换	znibianhuan	100
-α 粒子	aerfalizi	100
-α 射线	aerfashexian	100
-β 粒子	beitalizi	100
-β 射线	beitashexian	100
-γ 刀	gamadao	100
-γ 射线	gamashexian	100
+B 超	bchao
+B 股	bgu
+B 淋巴细胞	blinbaxibao
+B 盘	bpan
+B 细胞	bxibao
+C 盘	cpan
+C 语言	cyuyan
+D 盘	dpan
+E 盘	epan
+F 盘	fpan
+G 点	gdian
+G 盘	gpan
+H 股	hgu
+H 盘	hpan
+I 盘	ipan
+IP 地址	ipdizhi
+IP 电话	ipdianhua
+IP 卡	ipka
+IP 地址	ipweizhi
+J 盘	jpan
+K 宝	kbao
+K 宝	keibao
+K 粉	kfen
+K 粉	keifen
+K 歌	kge
+K 歌	keige
+POS 机	posji
+Q 币	qbi
+QQ	qq
+QQ 号	qqhao
+QQ 号码	qqhaoma
+QQ 空间	qqkongjian
+QQ 群	qqqun
+QQ 邮箱	qqyouxiang
+SIM 卡	simka
+T 淋巴细胞	tlinbaxibao
+T 细胞	txibao
+T 型台	txingtai
+U 盾	udun
+U 形管	uxingguan
+UIM 卡	uimka
+USIM 卡	usimka
+X 刀	xdao
+X 染色体	xranseti
+Y 染色体	yranseti
+z 变换	zbianhuan
+z 逆变换	znibianhuan
+α 粒子	aerfalizi
+α 射线	aerfashexian
+β 粒子	beitalizi
+β 射线	beitashexian
+γ 刀	gamadao
+γ 射线	gamashexian
 D 之国	dzhiguo
 D 之一族	dzhiyizu
 Beta 版	betaban
@@ -272,3 +271,32 @@ Web 开发	webkaifa
 圈 X	quanx
 Switch 版	switchban
 Switch 版本	switchbanben
+A 型	axing
+A 型血	axingxue
+B 型	bxing
+B 型血	bxingxue
+AB 型	abxing
+AB 型血	abxingxue
+O 型	oxing
+O 型血	oxingxue
+IT 界	itjie
+Fn 键	fnjian
+Cmd 键	cmdjian
+Command 键	commandjian
+Ctrl 键	ctrljian
+Control 键	controljian
+Opt 键	optjian
+Option 键	optionjian
+Shift 键	shiftjian
+Tab 键	tabjian
+Caps 键	capsjian
+CapsLock 键	capslockjian
+Return 键	returnjian
+Enter 键	enterjian
+Space 键	spacejian
+Backspace 键	backspacejian
+Del 键	deljian
+Delete 键	deletejian
+Esc 键	escjian
+Eject 键	ejectjian
+J·K·罗琳	jkluolin
