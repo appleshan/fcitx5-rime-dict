@@ -13,7 +13,7 @@ func main() {
 	rime.Emoji()       // 检查 Emoji 与 main、sogou、ext 的差集，确保 Emoji 的词都在词库中
 	rime.UpdateSogou() // 自动下载搜狗流行词，加入到现有词库末尾，过滤、去重，打印新增词汇，搜狗转 Rime 词库：https://github.com/lewangdev/scel2txt
 	rime.UpdateWiki()  // 更新维基词库，手动录入后运行。
-	doYouContinue()
+	// doYouContinue()
 
 	// 通用检查
 	rime.Check(rime.HanziPath)

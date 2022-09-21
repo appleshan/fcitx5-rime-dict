@@ -27,6 +27,7 @@ func Sort(dictPath string) {
 		newSha1 := getSha1(dictPath)
 		if newSha1 != oldSha1 {
 			fmt.Println("sorted")
+			updateVersion(dictPath)
 		}
 	}(oldSha1)
 
@@ -202,4 +203,48 @@ func getSha1(dictPath string) string {
 	}
 
 	return hex.EncodeToString(sha1Handle.Sum(nil))
+}
+
+// 如果词库发生了变动，顺便把日期也给改了。
+func updateVersion(dictPath string) {
+	// 打开文件
+	file, err := os.OpenFile(dictPath, os.O_RDWR, 0644)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer file.Close()
+
+	// 修改并读取到 arr
+	arr := make([]string, 0)
+	sc := bufio.NewScanner(file)
+	for sc.Scan() {
+		line := sc.Text()
+		if strings.HasPrefix(line, "version:") {
+			s := fmt.Sprintf("version: \"%s\"", time.Now().Format("2006-01-02"))
+			arr = append(arr, s)
+		} else {
+			arr = append(arr, line)
+		}
+	}
+
+	// 重新写入
+	err = file.Truncate(0)
+	if err != nil {
+		log.Fatal(err)
+	}
+	_, err = file.Seek(0, 0)
+	if err != nil {
+		log.Fatal()
+	}
+	for _, line := range arr {
+		_, err := file.WriteString(line + "\n")
+		if err != nil {
+			log.Fatal(err)
+		}
+	}
+
+	err = file.Sync()
+	if err != nil {
+		log.Fatal(err)
+	}
 }
