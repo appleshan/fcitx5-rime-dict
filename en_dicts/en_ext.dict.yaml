@@ -6,7 +6,7 @@
 #
 ---
 name: en_ext
-version: "2022-09-27"
+version: "2022-09-28"
 sort: by_weight
 ...
 # 一些杂项
@@ -1490,6 +1490,7 @@ Hostname	Hostname
 CDPR	CDPR
 CD Projekt	CDPR
 CD Projekt	CDProjekt
+CD Projekt RED	CDProjektRED
 ACG	ACG
 Animation Comics Games	ACG
 NBA	NBA
@@ -1626,3 +1627,5 @@ Liquid Crystal Display	LiquidCrystalDisplay
 emotional	emotional
 Emotional Damage	EmotionalDamage
 revert	revert
+GitLab	GitLab
+Apple Silicon	AppleSilicon
