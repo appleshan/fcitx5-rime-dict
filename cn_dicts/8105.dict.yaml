@@ -3588,13 +3588,13 @@ sort: by_weight
 泪	lei	439483
 累	lei	238891
 勒	lei	149722
+嘞	lei	128190
 蕾	lei	83954
 磊	lei	40900
 垒	lei	26075
 擂	lei	22548
 肋	lei	19237
 儡	lei	11246
-嘞	lei	2819
 镭	lei	1854
 羸	lei	1348
 檑	lei	602
@@ -5138,11 +5138,11 @@ sort: by_weight
 慬	qin	12
 嵚	qin	8
 梣	qin	3
-情	qing	3879008
+请	qing	8563750
 轻	qing	1720467
 清	qing	1568814
 青	qing	914968
-请	qing	856375
+情	qing	387900
 庆	qing	189750
 晴	qing	147525
 倾	qing	141937
@@ -5486,6 +5486,7 @@ sort: by_weight
 筛	shai	788300
 色	shai	119311
 山	shan	1526952
+删	shan	1112335
 闪	shan	551016
 善	shan	305341
 扇	shan	86396
@@ -5496,7 +5497,6 @@ sort: by_weight
 讪	shan	21892
 杉	shan	21508
 陕	shan	18975
-删	shan	12335
 煽	shan	12159
 膳	shan	9913
 跚	shan	6556

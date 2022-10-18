@@ -6,7 +6,7 @@
 #
 ---
 name: en_ext
-version: "2022-09-24"
+version: "2022-09-27"
 sort: by_weight
 ...
 # 一些杂项
@@ -51,6 +51,10 @@ Del	Del
 Delete	Delete
 Esc	Esc
 Eject	Eject
+
+
+# 《冰与火之歌》常见的家族及姓名
+#TODO
 
 
 # 常见姓氏 100 个，常见男名 100 个，常见女名 100 个：
@@ -1610,3 +1614,15 @@ Mason	Mason
 Elijah	Elijah
 Oliver	Oliver
 Jacob	Jacob
+Love & Peace	LoveandPeace
+Love & Peace	LovePeace
+Love and Peace	LoveandPeace
+Peace & Love	PeaceLove
+Peace & Love	PeaceandLove
+Peace and Love	PeaceandLove
+Liquid	Liquid
+Liquid Crystal Display	LCD
+Liquid Crystal Display	LiquidCrystalDisplay
+emotional	emotional
+Emotional Damage	EmotionalDamage
+revert	revert
