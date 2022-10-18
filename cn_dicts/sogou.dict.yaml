@@ -14,7 +14,7 @@
 # 搜狗转 Rime 词库：https://github.com/lewangdev/scel2txt
 ---
 name: sogou
-version: "2022-09-22"
+version: "2022-09-23"
 sort: by_weight
 ...
 # *_* 过滤列表，每次更新时不再写入：
@@ -434,6 +434,7 @@ sort: by_weight
 暗裔币	an yi bi
 安艺恩	an yi en
 安医二附院	an yi er fu yuan
+安怡家园	an yi jia yuan
 暗影刺客	an ying ci ke
 暗影会	an ying hui
 暗影火炬城	an ying huo ju cheng
@@ -555,6 +556,7 @@ sort: by_weight
 八点到九点	ba dian dao jiu dian
 八点见	ba dian jian
 八渡笋	ba du sun
+巴多萨	ba duo sa
 八尔湖	ba er hu
 八二开	ba er kai
 巴尔坎	ba er kan
@@ -640,6 +642,7 @@ sort: by_weight
 八万字	ba wan zi
 霸王步	ba wang bu
 霸王拧	ba wang ning
+霸王蟹	ba wang xie
 巴西国际	ba xi guo ji
 巴西松子	ba xi song zi
 巴辛姆	ba xin mu
@@ -1210,6 +1213,7 @@ sort: by_weight
 北淮淀	bei huai dian
 备货中	bei huo zhong
 北极星的眼泪	bei ji xing de yan lei
+贝加庞克	bei jia pang ke
 北京北站	bei jing bei zhan
 北京冬奥	bei jing dong ao
 北京环球	bei jing huan qiu
@@ -1571,6 +1575,7 @@ sort: by_weight
 别找我麻烦	bie zhao wo ma fan
 别整我	bie zheng wo
 别自己吓自己	bie zi ji xia zi ji
+滨北线	bin bei xian
 滨边美波	bin bian mei bo
 滨海酒店	bin hai jiu dian
 滨海新村	bin hai xin cun
@@ -5115,6 +5120,7 @@ sort: by_weight
 地质人员	di zhi ren yuan
 地中之盐	di zhong zhi yan
 低姿匍匐	di zi pu fu
+帝梓元	di zi yuan
 地租妈	di zu ma
 涤罪七雷	di zui qi lei
 电报员	dian bao yuan
@@ -7881,6 +7887,7 @@ sort: by_weight
 狗啃刘海	gou ken liu hai
 勾栏听曲	gou lan ting qu
 勾栏瓦肆	gou lan wa si
+狗了个狗	gou le ge gou
 狗里狗气	gou li gou qi
 购买成功	gou mai cheng gong
 购买时	gou mai shi
@@ -9465,6 +9472,7 @@ sort: by_weight
 核酸做了没	he suan zuo le mei
 何所似	he suo si
 河套学院	he tao xue yuan
+合同兵	he tong bing
 河豚计划	he tun ji hua
 喝完奶茶	he wan nai cha
 喝完喜酒	he wan xi jiu
@@ -9787,6 +9795,7 @@ sort: by_weight
 猴面雀	hou mian que
 后面有答案	hou mian you da an
 吼姆拉	hou mu la
+侯牧人	hou mu ren
 厚秋裤	hou qiu ku
 后三天	hou san tian
 后舍男生	hou she nan sheng
@@ -9845,6 +9854,7 @@ sort: by_weight
 虎墩墩	hu dun dun
 护耳朵	hu er duo
 忽而已秋	hu er yi qiu
+护发好物	hu fa hao wu
 互发消息	hu fa xiao xi
 胡富国	hu fu guo
 护肤套装	hu fu tao zhuang
@@ -9897,6 +9907,7 @@ sort: by_weight
 湖南卷	hu nan juan
 湖南人民	hu nan ren min
 湖南人事	hu nan ren shi
+湖南天雁	hu nan tian yan
 湖南文理	hu nan wen li
 湖南乡	hu nan xiang
 湖南疫情	hu nan yi qing
@@ -10465,6 +10476,7 @@ sort: by_weight
 回妈家	hui ma jia
 绘梦师	hui meng shi
 会盟镇	hui meng zhen
+惠绵保	hui mian bao
 回绵阳	hui mian yang
 毁灭吧	hui mie ba
 毁灭日	hui mie ri
@@ -11636,6 +11648,7 @@ sort: by_weight
 教育院	jiao yu yuan
 教育招生	jiao yu zhao sheng
 教育整顿	jiao yu zheng dun
+胶原棒	jiao yuan bang
 胶原霜	jiao yuan shuang
 脚著谢公屐	jiao zhu xie gong ji
 教资报名	jiao zi bao ming
@@ -11731,6 +11744,7 @@ sort: by_weight
 皆是回忆	jie shi hui yi
 皆是浪漫	jie shi lang man
 皆是命	jie shi ming
+戒手机	jie shou ji
 接受邀请	jie shou yao qing
 接收值	jie shou zhi
 解说杯	jie shuo bei
@@ -11749,6 +11763,7 @@ sort: by_weight
 戒同所	jie tong suo
 街头采访	jie tou cai fang
 街头教父	jie tou jiao fu
+街头男战士	jie tou nan zhan shi
 界头镇	jie tou zhen
 接完亲	jie wan qin
 接完我	jie wan wo
@@ -12082,6 +12097,7 @@ sort: by_weight
 进循环	jin xun huan
 禁烟花	jin yan hua
 禁言术	jin yan shu
+禁养犬	jin yang quan
 金曜汉	jin yao han
 金叶复叶槭	jin ye fu ye qi
 今夜难眠	jin ye nan mian
@@ -12091,6 +12107,7 @@ sort: by_weight
 金银山	jin yin shan
 金银铜牌	jin yin tong pai
 金永大	jin yong da
+金域名邸	jin yu ming di
 金玉婷	jin yu ting
 金域医疗	jin yu yi liao
 金圆股份	jin yuan gu fen
@@ -12227,6 +12244,7 @@ sort: by_weight
 精神之钙	jing shen zhi gai
 精神追求	jing shen zhui qiu
 靖世九柱	jing shi jiu zhu
+敬事如仪	jing shi ru yi
 竟是我	jing shi wo
 镜双城	jing shuang cheng
 敬颂冬绥	jing song dong sui
@@ -12480,6 +12498,7 @@ sort: by_weight
 拘留了	ju liu le
 聚龙山	ju long shan
 巨龙之境	ju long zhi jing
+巨轮智能	ju lun zhi neng
 聚美东湾	ju mei dong wan
 居民码	ju min ma
 居民医保	ju min yi bao
@@ -13261,6 +13280,7 @@ sort: by_weight
 可笑可笑	ke xiao ke xiao
 科信学院	ke xin xue yuan
 科兴科学园	ke xing ke xue yuan
+科兴生物	ke xing sheng wu
 科兴疫苗	ke xing yi miao
 科学布局	ke xue bu ju
 科学防控	ke xue fang kong
@@ -13601,6 +13621,7 @@ sort: by_weight
 拉卡德	la ka de
 拉开差距	la kai cha ju
 拉开窗帘	la kai chuang lian
+拉露恩	la lu en
 辣妈们	la ma men
 辣馒头	la man tou
 拉梅拉	la mei la
@@ -15326,6 +15347,7 @@ sort: by_weight
 罗马诺	luo ma nuo
 罗曼尼	luo man ni
 罗曼尼康帝	luo man ni kang di
+洛铭西	luo ming xi
 罗纳威	luo na wei
 洛佩慈	luo pei ci
 洛浦公园	luo pu gong yuan
@@ -15470,6 +15492,7 @@ sort: by_weight
 马来西亚人	ma lai xi ya ren
 马兰开花	ma lan kai hua
 马蓝星	ma lan xing
+马了个马	ma le ge ma
 马里奥制造	ma li ao zhi zao
 马里博尔	ma li bo er
 马里迪莫	ma li di mo
@@ -16292,6 +16315,7 @@ sort: by_weight
 没住校	mei zhu xiao
 没撞到	mei zhuang dao
 美妆视频	mei zhuang shi pin
+梅子笑	mei zi xiao
 没粽子	mei zong zi
 没走远	mei zou yuan
 没组队	mei zu dui
@@ -18080,6 +18104,7 @@ sort: by_weight
 葡萄成熟时	pu tao cheng shu shi
 葡萄冻	pu tao dong
 葡萄芋圆	pu tao yu yuan
+菩提戒指	pu ti jie zhi
 普通本科	pu tong ben ke
 普通二本	pu tong er ben
 普通类	pu tong lei
@@ -18206,6 +18231,7 @@ sort: by_weight
 骑岭乡	qi ling xiang
 齐鲁保	qi lu bao
 齐鲁工惠	qi lu gong hui
+齐鲁禁毒	qi lu jin du
 齐鲁酒地	qi lu jiu di
 齐鲁理工学院	qi lu li gong xue yuan
 齐马蓝	qi ma lan
@@ -18852,6 +18878,7 @@ sort: by_weight
 情人湖	qing ren hu
 情人咒	qing ren zhou
 庆三八	qing san ba
+青色热情	qing se re qing
 青山不墨	qing shan bu mo
 请善待	qing shan dai
 青山集团	qing shan ji tuan
@@ -19092,6 +19119,7 @@ sort: by_weight
 去做任务	qu zuo ren wu
 去做一个	qu zuo yi ge
 去做指甲	qu zuo zhi jia
+全班保研	quan ban bao yan
 全被抓	quan bei zhua
 全部封闭	quan bu feng bi
 全部隔离	quan bu ge li
@@ -19365,6 +19393,7 @@ sort: by_weight
 人都找不到	ren dou zhao bu dao
 人多车多	ren duo che duo
 人多的很	ren duo de hen
+任多美	ren duo mei
 任法融	ren fa rong
 人格测试	ren ge ce shi
 人格理论	ren ge li lun
@@ -20574,6 +20603,7 @@ sort: by_weight
 神女劈观	shen nv pi guan
 审判结果	shen pan jie guo
 沈培培	shen pei pei
+神启荒	shen qi huang
 神崎飒马	shen qi sa ma
 沈欺霜	shen qi shuang
 神奇小子	shen qi xiao zi
@@ -20957,6 +20987,7 @@ sort: by_weight
 施害者	shi hai zhe
 石汉青	shi han qing
 十毫升	shi hao sheng
+浉河中学	shi he zhong xue
 石黑一雄	shi hei yi xiong
 石黑英雄	shi hei ying xiong
 世华水岸	shi hua shui an
@@ -21261,6 +21292,7 @@ sort: by_weight
 十一朵	shi yi duo
 十一二岁	shi yi er sui
 十一集	shi yi ji
+十一假	shi yi jia
 十一假期	shi yi jia qi
 十一颗	shi yi ke
 十一颗心	shi yi ke xin
@@ -21828,6 +21860,7 @@ sort: by_weight
 四号晚上	si hao wan shang
 四号五号	si hao wu hao
 四号种子	si hao zhong zi
+四化里	si hua li
 四环内	si huan nei
 四级包	si ji bao
 四级报名	si ji bao ming
@@ -22391,6 +22424,7 @@ sort: by_weight
 泰安一中	tai an yi zhong
 太霸气	tai ba qi
 泰版流星花园	tai ban liu xing hua yuan
+台胞小区	tai bao xiao qu
 台北大街	tai bei da jie
 台北警方	tai bei jing fang
 台北君悦	tai bei jun yue
@@ -23423,6 +23457,7 @@ sort: by_weight
 同心咒	tong xin zhou
 同心筑梦	tong xin zhu meng
 同性别	tong xing bie
+同兴环保	tong xing huan bao
 通行条	tong xing tiao
 同样精彩	tong yang jing cai
 痛仰乐队	tong yang yue dui
@@ -25881,6 +25916,7 @@ sort: by_weight
 西凉王	xi liang wang
 洗刘海	xi liu hai
 西龙虎峪	xi long hu yu
+洗马池	xi ma chi
 西麦食品	xi mai shi pin
 西梅汁	xi mei zhi
 希娜小姐	xi na xiao jie
@@ -25889,6 +25925,7 @@ sort: by_weight
 希女王	xi nv wang
 吸欧气	xi ou qi
 郄鹏恩	xi peng en
+洗铅华	xi qian hua
 西迁精神	xi qian jing shen
 西青医院	xi qing yi yuan
 西区故事	xi qu gu shi
@@ -26868,6 +26905,7 @@ sort: by_weight
 小舟潮	xiao zhou chao
 小猪姐姐	xiao zhu jie jie
 小猪佩奇过大年	xiao zhu pei qi guo da nian
+小拽龙	xiao zhuai long
 小专场	xiao zhuan chang
 小转盘	xiao zhuan pan
 小壮熊	xiao zhuang xiong
@@ -27069,6 +27107,7 @@ sort: by_weight
 鑫湖家园	xin hu jia yuan
 新画卷	xin hua juan
 心花开	xin hua kai
+新画皮	xin hua pi
 新华五村	xin hua wu cun
 新华章	xin hua zhang
 心怀梦想	xin huai meng xiang
@@ -27519,6 +27558,7 @@ sort: by_weight
 修正错误	xiu zheng cuo wu
 袖子里	xiu zi li
 许鞍华	xu an hua
+许安正	xu an zheng
 续保押金	xu bao ya jin
 徐必成	xu bi cheng
 许昌禹州	xu chang yu zhou
@@ -28809,6 +28849,7 @@ sort: by_weight
 已接种	yi jie zhong
 已进校	yi jin xiao
 已经到家	yi jing dao jia
+逸景公馆	yi jing gong guan
 已经开发	yi jing kai fa
 已经开放	yi jing kai fang
 一鲸落万物生	yi jing luo wan wu sheng
@@ -30444,6 +30485,7 @@ sort: by_weight
 粤珍轩	yue zhen xuan
 月正圆	yue zheng yuan
 月之暗面	yue zhi an mian
+月之海	yue zhi hai
 月之环	yue zhi huan
 岳志军	yue zhi jun
 月中桂	yue zhong gui
@@ -30593,6 +30635,7 @@ sort: by_weight
 暂未就业	zan wei jiu ye
 暂无出口	zan wu chu kou
 暂无数据	zan wu shu ju
+赞贤路	zan xian lu
 咱爷俩	zan ye lia
 咱这届	zan zhe jie
 咱这一届	zan zhe yi jie
@@ -30885,6 +30928,7 @@ sort: by_weight
 张家朗	zhang jia lang
 涨价前	zhang jia qian
 张嘉益	zhang jia yi
+章江新区	zhang jiang xin qu
 张杰谢娜	zhang jie xie na
 章金莱	zhang jin lai
 张瑾瑜	zhang jin yu
@@ -32462,6 +32506,7 @@ sort: by_weight
 追凶者	zhui xiong zhe
 追忆篇	zhui yi pian
 追忆套	zhui yi tao
+追忆之境	zhui yi zhi jing
 准备复试	zhun bei fu shi
 准备好没有	zhun bei hao mei you
 准备面试	zhun bei mian shi
@@ -33027,4 +33072,5 @@ sort: by_weight
 做志愿者	zuo zhi yuan zhe
 左转道	zuo zhuan dao
 左转向灯	zuo zhuan xiang deng
+做自己的光	zuo zi ji de guang
 左梓轩	zuo zi xuan
