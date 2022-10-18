@@ -20,7 +20,6 @@ var filterWords = mapset.NewSet[string]()    // 与异形词列表同时使用�
 
 // 初始化特殊词汇列表、多音字列表、异形词列表
 func init() {
-	initStart = time.Now()
 	fmt.Println("init...")
 	fmt.Println("check.go init")
 	// 特殊词汇列表
@@ -153,10 +152,11 @@ func Check(dictPath string) {
 			fmt.Println("code 前后不应该含有空格：", line)
 		}
 
-		// 检查：编码是否含有非字母
+		// 检查：编码是否含有非字母，或没有小写
 		for _, r := range code {
-			if string(r) != " " && !unicode.IsLetter(r) {
-				fmt.Println("编码含有非字母：", line)
+			if string(r) != " " && !(r >= 97 && r <= 122) {
+				fmt.Println("编码含有非字母或大写字母：", line)
+				break
 			}
 		}
 
@@ -179,14 +179,6 @@ func Check(dictPath string) {
 		// 除了 main ，其他词库不应该含有两个字的词汇
 		if dictPath != MainPath && utf8.RuneCountInString(text) == 2 {
 			fmt.Println("意外的两字词：", line)
-		}
-
-		// 拼音不要大写
-		for _, c := range code {
-			if unicode.IsUpper(c) {
-				fmt.Printf("拼音部分有大写字母: %q\n", line)
-				break
-			}
 		}
 
 		// 汉字个数应该与拼音个数相等

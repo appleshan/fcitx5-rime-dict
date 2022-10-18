@@ -151,7 +151,7 @@ func Sort(dictPath string) {
 			intersect = ExtSet.Intersect(MainSet.Union(SogouSet))
 		case TencentPath:
 			// tencent 不和 main+sogou+ext 有重复
-			intersect = TencenSet.Intersect(MainSet.Union(SogouSet).Union(ExtSet))
+			intersect = TencentSet.Intersect(MainSet.Union(SogouSet).Union(ExtSet))
 		default:
 			log.Fatal("？？？")
 		}

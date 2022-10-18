@@ -1168,8 +1168,8 @@ CleanShot X	CleanShotX
 Setapp	Setapp
 IE	IE
 GraphQL	GraphQL
-TOTP	TOTP	2
-Time-based One-Time Password	TOTP	1
+TOTP	TOTP
+Time-based One-Time Password	TOTP
 Unclutter	Unclutter
 Sitemap	Sitemap
 DuckDuckGo	DuckDuckGo

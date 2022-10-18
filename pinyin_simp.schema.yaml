@@ -238,7 +238,7 @@ speller:
     - derive/([zcs])h(a|e|i|u|ai|ei|an|en|ou|uo|ua|un|ui|uan|uai|uang|ang|eng|ong)$/h$1$2/  # hzi → zhi
     - derive/([zcs])h([aeiu])$/$1$2h/  # zih → zhi
     # ai
-    - derive/^([wghkc])ai$/$1ia/
+    - derive/^([wghkzc])ai$/$1ia/
     # ia
     - derive/([qjx])ia$/$1ai/
     # ei

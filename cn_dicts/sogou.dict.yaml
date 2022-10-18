@@ -8,6 +8,7 @@
 #
 # 只保留三个字及以上的
 # 与 main 没有重复
+# nue → nve，lue → lve
 #
 #
 # 来源：https://pinyin.sogou.com/dict/detail/index/4?rf=dictindex
@@ -18,6 +19,7 @@ version: "2022-09-28"
 sort: by_weight
 ...
 # *_* 过滤列表，每次更新时不再写入：
+# 我这分
 # 蕾神之锤
 # 无疫烦
 # 孤泳者
@@ -4095,7 +4097,7 @@ sort: by_weight
 大国威严	da guo wei yan
 打过疫苗	da guo yi miao
 大国责任	da guo ze ren
-大国战略	da guo zhan lue
+大国战略	da guo zhan lve
 大国智慧	da guo zhi hui
 大还是小	da hai shi xiao
 大汉奸	da han jian
@@ -5301,7 +5303,7 @@ sort: by_weight
 顶级版	ding ji ban
 顶级场	ding ji chang
 顶级高校	ding ji gao xiao
-顶级掠食者	ding ji lue shi zhe
+顶级掠食者	ding ji lve shi zhe
 丁家花园	ding jia hua yuan
 丁佳敏	ding jia min
 顶尖人才	ding jian ren cai
@@ -6245,8 +6247,8 @@ sort: by_weight
 烦恼多	fan nao duo
 反内卷	fan nei juan
 范尼凯克	fan ni kai ke
-反虐待	fan nue dai
 反女权	fan nv quan
+反虐待	fan nve dai
 范跑跑	fan pao pao
 范坡镇	fan po zhen
 反器材	fan qi cai
@@ -7825,7 +7827,7 @@ sort: by_weight
 巩立姣	gong li jiao
 公理圆弧	gong li yuan hu
 公路商店	gong lu shang dian
-攻略站	gong lue zhan
+攻略站	gong lve zhan
 共鸣石	gong ming shi
 功能拓展	gong neng tuo zhan
 功能拓展区	gong neng tuo zhan qu
@@ -10740,7 +10742,7 @@ sort: by_weight
 几倍工资	ji bei gong zi
 基本不吃	ji ben bu chi
 基本不可能	ji ben bu ke neng
-基本方略	ji ben fang lue
+基本方略	ji ben fang lve
 基本合格	ji ben he ge
 基本没动	ji ben mei dong
 集不到	ji bu dao
@@ -10757,7 +10759,7 @@ sort: by_weight
 机车梦	ji che meng
 机车族	ji che zu
 记承天寺	ji cheng tian si
-集成战略	ji cheng zhan lue
+集成战略	ji cheng zhan lve
 基础币	ji chu bi
 基础攻击力	ji chu gong ji li
 基础绩效	ji chu ji xiao
@@ -10979,7 +10981,7 @@ sort: by_weight
 级升里	ji sheng li
 寄生胎	ji sheng tai
 寄生者	ji sheng zhe
-即时策略	ji shi ce lue
+即时策略	ji shi ce lve
 祭十二郎文	ji shi er lang wen
 及时改正	ji shi gai zheng
 吉世光	ji shi guang
@@ -15380,10 +15382,6 @@ sort: by_weight
 乱世黄金	luan shi huang jin
 乱世舞姬	luan shi wu ji
 乱走动	luan zou dong
-掠宝清单	lue bao qing dan
-略伦特	lue lun te
-掠食城市	lue shi cheng shi
-略无阙处	lue wu que chu
 伦蒂尼姆	lun di ni mu
 伦敦生活	lun dun sheng huo
 伦敦战场	lun dun zhan chang
@@ -15537,6 +15535,10 @@ sort: by_weight
 律政先锋	lv zheng xian feng
 绿洲华庭	lv zhou hua ting
 吕佐夫	lv zuo fu
+掠宝清单	lve bao qing dan
+略伦特	lve lun te
+掠食城市	lve shi cheng shi
+略无阙处	lve wu que chu
 骂不得	ma bu de
 麻步镇	ma bu zhen
 麻仓叶	ma cang ye
@@ -15610,7 +15612,7 @@ sort: by_weight
 马岭岗	ma ling gang
 马楼乡	ma lou xiang
 马鹿山	ma lu shan
-马略卡	ma lue ka
+马略卡	ma lve ka
 马茂庄	ma mao zhuang
 马美如	ma mei ru
 玛纳加尔姆	ma na jia er mu
@@ -18569,7 +18571,7 @@ sort: by_weight
 前六位	qian liu wei
 乾隆白菜	qian long bai cai
 潜龙突围	qian long tu wei
-前掠翼	qian lue yi
+前掠翼	qian lve yi
 潜能量	qian neng liang
 千年不遇	qian nian bu yu
 千年城	qian nian cheng
@@ -20009,7 +20011,7 @@ sort: by_weight
 三江锅	san jiang guo
 三角符文	san jiao fu wen
 三角派	san jiao pai
-三角战略	san jiao zhan lue
+三角战略	san jiao zhan lve
 三角粽	san jiao zong
 三晋通	san jin tong
 三进制	san jin zhi
@@ -21668,7 +21670,7 @@ sort: by_weight
 数量题	shu liang ti
 书没读好	shu mei du hao
 书面作业	shu mian zuo ye
-庶女攻略	shu nv gong lue
+庶女攻略	shu nv gong lve
 淑女剑	shu nv jian
 暑期安全	shu qi an quan
 暑气逐渐止	shu qi zhu jian zhi
@@ -25409,7 +25411,6 @@ sort: by_weight
 我这也一样	wo zhe ye yi yang
 我这一晚上	wo zhe yi wan shang
 我这专业	wo zhe zhuan ye
-我这分	wo zhei fen
 我真的会谢	wo zhen de hui xie
 我直接回家	wo zhi jie hui jia
 我直接裂开	wo zhi jie lie kai
@@ -25530,7 +25531,7 @@ sort: by_weight
 五歌仙	wu ge xian
 五个钟	wu ge zhong
 无根生	wu gen sheng
-无攻略	wu gong lue
+无攻略	wu gong lve
 无工之剑	wu gong zhi jian
 五公子	wu gong zi
 无骨袜	wu gu wa
@@ -27116,7 +27117,7 @@ sort: by_weight
 泻肝丸	xie gan wan
 斜杠青年	xie gang qing nian
 写给自己	xie gei zi ji
-写攻略	xie gong lue
+写攻略	xie gong lve
 写观后感	xie guan hou gan
 写贺卡	xie he ka
 谢和平	xie he ping
@@ -30076,7 +30077,7 @@ sort: by_weight
 有汤圆	you tang yuan
 有体验卡	you ti yan ka
 油田一中	you tian yi zhong
-又甜又虐	you tian you nue
+又甜又虐	you tian you nve
 有童心	you tong xin
 有通行证	you tong xing zheng
 有同桌	you tong zhuo
@@ -31043,11 +31044,11 @@ sort: by_weight
 战令皮肤	zhan ling pi fu
 战灵天舞	zhan ling tian wu
 斩乱麻	zhan luan ma
-战略点	zhan lue dian
-战略机遇期	zhan lue ji yu qi
-战略威慑	zhan lue wei she
-战略纵深	zhan lue zong shen
 战吕布	zhan lv bu
+战略点	zhan lve dian
+战略机遇期	zhan lve ji yu qi
+战略威慑	zhan lve wei she
+战略纵深	zhan lve zong shen
 斩魔刀	zhan mo dao
 占三年	zhan san nian
 战神榜	zhan shen bang
@@ -31286,7 +31287,7 @@ sort: by_weight
 赵泛舟	zhao fan zhou
 招个手	zhao ge shou
 朝歌遗迹	zhao ge yi ji
-找攻略	zhao gong lue
+找攻略	zhao gong lve
 赵公山	zhao gong shan
 照顾不周	zhao gu bu zhou
 照顾好身体	zhao gu hao shen ti
@@ -31734,7 +31735,7 @@ sort: by_weight
 致不灭的你	zhi bu mie de ni
 志不求易者成	zhi bu qiu yi zhe cheng
 止步于此	zhi bu yu ci
-治藏方略	zhi cang fang lue
+治藏方略	zhi cang fang lve
 只差一个	zhi cha yi ge
 只唱你爱	zhi chang ni ai
 至诚学院	zhi cheng xue yuan

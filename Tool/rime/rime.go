@@ -26,9 +26,8 @@ var (
 	// HanziSet  mapset.Set[string]
 	MainSet   mapset.Set[string]
 	SogouSet  mapset.Set[string]
-	ExtSet    mapset.Set[string]
-	TencenSet mapset.Set[string]
-	initStart time.Time
+	ExtSet     mapset.Set[string]
+	TencentSet mapset.Set[string]
 )
 
 // 一个词条的组成部分：汉字、编码、权重
@@ -44,7 +43,7 @@ func init() {
 	MainSet = readAndSet(MainPath)
 	SogouSet = readAndSet(SogouPath)
 	ExtSet = readAndSet(ExtPath)
-	TencenSet = readAndSet(TencentPath)
+	TencentSet = readAndSet(TencentPath)
 }
 
 // readAndSet 读取词库文件为 set
