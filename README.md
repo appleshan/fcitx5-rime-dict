@@ -16,7 +16,6 @@
     -   [LaTeX](https://github.com/shenlebantongying/rime_latex)
     -   所有标点符号直接上屏，「/」模式改为「v」模式，「/」直接上屏
     -   增加了许多拼音纠错
-
 -   简体字表、词库
     -   [《通用规范汉字表》的 8105 字字表](https://github.com/iDvel/The-Table-of-General-Standard-Chinese-Characters)
     -   [华宇野风系统词库](http://bbs.pinyin.thunisoft.com/forum.php?mod=viewthread&tid=30049)
@@ -25,7 +24,6 @@
     -   [《现代汉语词典》](https://forum.freemdict.com/t/topic/12102)
     -   [《同义词词林》](https://forum.freemdict.com/t/topic/1211)
     -   [《新华成语大词典》](https://forum.freemdict.com/t/topic/11407)
-    -   [中文维基词库](https://github.com/felixonmars/fcitx5-pinyin-zhwiki)
     -   [腾讯词向量](https://ai.tencent.com/ailab/nlp/zh/download.html)
     -   [八股文语言模型](https://github.com/lotem/rime-octagram-data/tree/hans)
 -   词库更新
@@ -86,7 +84,6 @@
 - `main.dict.yaml` 基础词库。
 - `sogou.dict.yaml` 搜狗流行词。
 - `ext.dict.yaml` 扩展词库。
-- `zhwiki.dict.yaml` 扩展词库，大词库。
 - `tencent.dict.yaml` 扩展词库，大词库。
 
 维护内容主要是异形词、错别字的校对，错误注音的修正，缺失的常用词汇的增添，词频的调整。
