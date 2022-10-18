@@ -9,7 +9,7 @@
 #
 ---
 name: cn_en
-version: "2022-09-20"
+version: "2022-09-24"
 sort: by_weight
 ...
 # 没有空格的（为了Emoji映射。Emoji 里空格是分割符，没法映射，不知道怎么解决）
@@ -300,3 +300,4 @@ Delete 键	deletejian
 Esc 键	escjian
 Eject 键	ejectjian
 J·K·罗琳	jkluolin
+周刊少年 Jump	zhoukanshaonianjump

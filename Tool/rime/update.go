@@ -18,16 +18,18 @@ import (
 )
 
 var filterMark = "# *_*"
+var filterList = mapset.NewSet[string]() // 过滤词列表，在这个列表里的词汇，不再加入
 
-// UpdateSogou 1.下载搜狗流行词加入到现有词库末尾，2.过滤去重排序，3.打印新增词汇
+// UpdateSogou 更新搜狗流行词
 func UpdateSogou() {
 	// 控制台输出
 	fmt.Println("搜狗流行词：")
 	defer printTimeCost(time.Now())
 
-	downloadAndWrite()       // 1.下载搜狗流行词加入到现有词库末尾
-	checkAndWrite(SogouPath) // 2.过滤去重排序
-	PrintNewWords(SogouPath) // 3.打印新增词汇
+	makeFilterList(SogouPath) // 0.弄好过滤词列表
+	downloadSogou()           // 1.下载搜狗流行词加入到现有词库末尾
+	checkAndWrite(SogouPath)  // 2.过滤、去重、排序
+	PrintNewWords(SogouPath)  // 3.打印新增词汇
 
 	// 弄完了删除临时用的文件，否则 VSCode 全局搜索词汇时会搜索到，影响体验
 	err := os.Remove("./scel2txt/scel/sogou.scel")
@@ -45,9 +47,7 @@ func UpdateSogou() {
 }
 
 // 弄好过滤词汇列表
-func makeFilterList(dictPath string) mapset.Set[string] {
-	filterList := mapset.NewSet[string]()
-
+func makeFilterList(dictPath string) {
 	file, err := os.Open(dictPath)
 	if err != nil {
 		log.Fatal(err)
@@ -78,12 +78,10 @@ func makeFilterList(dictPath string) mapset.Set[string] {
 		// 加入过滤词列表
 		filterList.Add(text)
 	}
-
-	return filterList
 }
 
-// downloadAndWrite 下载搜狗流行词，转换为 Rime 格式，然后加入到现有词库的后面
-func downloadAndWrite() {
+// downloadSogou 下载搜狗流行词，转换为 Rime 格式，然后加入到现有词库的后面
+func downloadSogou() {
 	// 下载
 	url := "https://pinyin.sogou.com/d/dict/download_cell.php?id=4&name=%E7%BD%91%E7%BB%9C%E6%B5%81%E8%A1%8C%E6%96%B0%E8%AF%8D%E3%80%90%E5%AE%98%E6%96%B9%E6%8E%A8%E8%8D%90%E3%80%91&f=detail"
 	// Get the data
@@ -106,7 +104,7 @@ func downloadAndWrite() {
 		panic(err)
 	}
 
-	// 用python进行转换
+	// 用 Python 进行转换
 	c := cmd.NewCommand("python3 scel2txt.py", cmd.WithWorkingDir("./scel2txt"))
 	err = c.Execute()
 	if err != nil {
@@ -129,13 +127,14 @@ func downloadAndWrite() {
 	if err != nil {
 		panic(err)
 	}
+	err = sogouFile.Sync()
+	if err != nil {
+		log.Fatal(err)
+	}
 }
 
 // checkAndWrite 过滤、排序、去重、重新写入
 func checkAndWrite(dictPath string) {
-	// 先制作好过滤词列表，在此列表的不加入进词库
-	filterList := makeFilterList(dictPath)
-
 	// 打开文件
 	file, err := os.OpenFile(dictPath, os.O_RDWR, 0644)
 	if err != nil {

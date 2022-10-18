@@ -14,7 +14,7 @@
 # 搜狗转 Rime 词库：https://github.com/lewangdev/scel2txt
 ---
 name: sogou
-version: "2022-09-23"
+version: "2022-09-24"
 sort: by_weight
 ...
 # *_* 过滤列表，每次更新时不再写入：
@@ -2013,7 +2013,9 @@ sort: by_weight
 不进不出	bu jin bu chu
 不禁赛	bu jin sai
 不惊动	bu jing dong
+不静默	bu jing mo
 不敬仙师	bu jing xian shi
+不静止	bu jing zhi
 不救穷	bu jiu qiong
 不举办	bu ju ban
 不聚餐	bu ju can
@@ -2278,6 +2280,7 @@ sort: by_weight
 不是直播	bu shi zhi bo
 捕食植物	bu shi zhi wu
 不收兵	bu shou bing
+部首查字法	bu shou cha zi fa
 不守规则	bu shou gui ze
 不收红包	bu shou hong bao
 不收件	bu shou jian
@@ -3669,6 +3672,7 @@ sort: by_weight
 穿几件	chuan ji jian
 穿件外套	chuan jian wai tao
 穿件衣服	chuan jian yi fu
+川教之声	chuan jiao zhi sheng
 穿尽红丝几万条	chuan jin hong si ji wan tiao
 川剧院	chuan ju yuan
 穿军装	chuan jun zhuang
@@ -3828,6 +3832,7 @@ sort: by_weight
 踔厉风发	chuo li feng fa
 戳我一下	chuo wo yi xia
 戳子肉	chuo zi rou
+慈悲者	ci bei zhe
 次次密接	ci ci mi jie
 此次事件	ci ci shi jian
 次第花开	ci di hua kai
@@ -4497,6 +4502,7 @@ sort: by_weight
 带金属	dai jin shu
 带课本	dai ke ben
 戴克斯	dai ke si
+黛莱皙	dai lai xi
 待揽收	dai lan shou
 戴了口罩	dai le kou zhao
 待录取	dai lu qu
@@ -4538,6 +4544,7 @@ sort: by_weight
 带星号	dai xing hao
 带星号了	dai xing hao le
 带行李箱	dai xing li xiang
+带押过户	dai ya guo hu
 戴亚克隆	dai ya ke long
 呆一布	dai yi bu
 戴因斯雷布	dai yin si lei bu
@@ -4558,6 +4565,7 @@ sort: by_weight
 郸城一高	dan cheng yi gao
 单抽出奇迹	dan chou chu qi ji
 单抽券	dan chou quan
+单词通	dan ci tong
 单打王	dan da wang
 担当尽责	dan dang jin ze
 担当实干	dan dang shi gan
@@ -4584,6 +4592,7 @@ sort: by_weight
 弹幕天使	dan mu tian shi
 丹尼格林	dan ni ge lin
 丹妮莉丝	dan ni li si
+丹尼斯吴	dan ni si wu
 丹青客	dan qing ke
 单人单管	dan ren dan guan
 单人机位	dan ren ji wei
@@ -4733,6 +4742,7 @@ sort: by_weight
 道路信息	dao lu xin xi
 倒霉一辈子	dao mei yi bei zi
 稻梦空间	dao meng kong jian
+盗梦师	dao meng shi
 稻米节	dao mi jie
 到目的地	dao mu di di
 到哪看	dao na kan
@@ -6218,6 +6228,7 @@ sort: by_weight
 反式脂肪	fan shi zhi fang
 番薯丸	fan shu wan
 范思蓝恩	fan si lan en
+钒钛股份	fan tai gu fen
 反弹无效	fan tan wu xiao
 反问号	fan wen hao
 范沃森	fan wo sen
@@ -6718,6 +6729,7 @@ sort: by_weight
 风险低	feng xian di
 风险点位	feng xian dian wei
 风险挑战	feng xian tiao zhan
+奉献型	feng xian xing
 奉献一生	feng xian yi sheng
 风险预防	feng xian yu fang
 奉献祖国	feng xian zu guo
@@ -6967,6 +6979,7 @@ sort: by_weight
 付完定金	fu wan ding jin
 赋完分	fu wan fen
 付完尾款	fu wan wei kuan
+付卫华	fu wei hua
 付尾款后	fu wei kuan hou
 付尾款了	fu wei kuan le
 服务百姓	fu wu bai xing
@@ -9221,6 +9234,7 @@ sort: by_weight
 好通码	hao tong ma
 号头庄	hao tou zhuang
 好徒儿	hao tu er
+好玩节	hao wan jie
 好玩意儿	hao wan yi er
 郝文婷	hao wen ting
 毫无斗志	hao wu dou zhi
@@ -9634,6 +9648,7 @@ sort: by_weight
 衡井线	heng jing xian
 横扫饥饿	heng sao ji e
 横山克	heng shan ke
+恒山里	heng shan li
 衡山医院	heng shan yi yuan
 恒生科技	heng sheng ke ji
 衡水模式	heng shui mo shi
@@ -10883,6 +10898,7 @@ sort: by_weight
 急难愁	ji nan chou
 急难愁盼	ji nan chou pan
 济南地铁	ji nan di tie
+济南王	ji nan wang
 济南校区	ji nan xiao qu
 济南疫情	ji nan yi qing
 济南中学	ji nan zhong xue
@@ -11253,6 +11269,7 @@ sort: by_weight
 剪刀妹	jian dao mei
 剪刀石头	jian dao shi tou
 剪刀腿	jian dao tui
+捡到校园卡	jian dao xiao yuan ka
 间谍过家家	jian die guo jia jia
 坚定斗争意志	jian ding dou zheng yi zhi
 坚定跟党走	jian ding gen dang zou
@@ -12339,6 +12356,8 @@ sort: by_weight
 救国大业	jiu guo da ye
 九号走	jiu hao zou
 九和府	jiu he fu
+九级大风	jiu ji da feng
+九级风	jiu ji feng
 究极龙	jiu ji long
 究极神兵	jiu ji shen bing
 九江职业	jiu jiang zhi ye
@@ -13416,6 +13435,7 @@ sort: by_weight
 空中解体	kong zhong jie ti
 空座位	kong zuo wei
 口岸城市	kou an cheng shi
+寇白门	kou bai men
 口碑不错	kou bei bu cuo
 寇布拉	kou bu la
 口袋觉醒	kou dai jue xing
@@ -14181,6 +14201,7 @@ sort: by_weight
 力求完美	li qiu wan mei
 立秋已至	li qiu yi zhi
 利刃华尔兹	li ren hua er zi
+利仁科技	li ren ke ji
 立人设	li ren she
 离人心上	li ren xin shang
 李汭燦	li rui can
@@ -14381,6 +14402,7 @@ sort: by_weight
 联盟第一	lian meng di yi
 联盟手游	lian meng shou you
 莲前街道	lian qian jie dao
+恋人榜	lian ren bang
 莲蓉月饼	lian rong yue bing
 联赛车	lian sai che
 连山易	lian shan yi
@@ -14865,6 +14887,7 @@ sort: by_weight
 六个坚持	liu ge jian chi
 六个圈	liu ge quan
 刘格菘	liu ge song
+六宫格	liu gong ge
 遛狗人	liu gou ren
 刘冠麟	liu guan lin
 留观区	liu guan qu
@@ -15160,6 +15183,7 @@ sort: by_weight
 路村营	lu cun ying
 鲁大海	lu da hai
 鲁大新皮肤	lu da xin pi fu
+鹿道森	lu dao sen
 路德金	lu de jin
 陆地剑仙	lu di jian xian
 陆地神仙	lu di shen xian
@@ -16362,6 +16386,7 @@ sort: by_weight
 梦境试炼	meng jing shi lian
 梦剧场	meng ju chang
 梦开始的地方	meng kai shi de di fang
+盟可睐	meng ke lai
 梦寐之地	meng mei zhi di
 猛猛干	meng meng gan
 蒙面舞王	meng mian wu wang
@@ -18593,6 +18618,7 @@ sort: by_weight
 强弱项	qiang ruo xiang
 呛嗓子	qiang sang zi
 强势回归	qiang shi hui gui
+抢四级	qiang si ji
 强提醒	qiang ti xing
 蔷薇币	qiang wei bi
 蔷薇剑	qiang wei jian
@@ -20027,6 +20053,7 @@ sort: by_weight
 三月四月	san yue si yue
 三月五号	san yue wu hao
 三月一日	san yue yi ri
+三悦有了新工作	san yue you le xin gong zuo
 三月中	san yue zhong
 三张卷	san zhang juan
 三张卷子	san zhang juan zi
@@ -20880,6 +20907,7 @@ sort: by_weight
 士兵计划	shi bing ji hua
 士兵男孩	shi bing nan hai
 食饼筒	shi bing tong
+施伯雄	shi bo xiong
 事不避难	shi bu bi nan
 事不避难者进	shi bu bi nan zhe jin
 石埠镇	shi bu zhen
@@ -21326,6 +21354,7 @@ sort: by_weight
 十月初一	shi yue chu yi
 十月二	shi yue er
 十月二号	shi yue er hao
+十月七	shi yue qi
 十月三号	shi yue san hao
 十月十六	shi yue shi liu
 十月十四	shi yue shi si
@@ -21963,6 +21992,7 @@ sort: by_weight
 肆式青春	si shi qing chun
 四十雀	si shi que
 四十页	si shi ye
+四十原石	si shi yuan shi
 四十周年	si shi zhou nian
 汜水关	si shui guan
 嘶嘶嘶	si si si
@@ -22565,6 +22595,7 @@ sort: by_weight
 太威仪盘	tai wei yi pan
 太稳了	tai wen le
 太温暖	tai wen nuan
+太吾村	tai wu cun
 太迅速	tai xun su
 太严峻	tai yan jun
 泰洋川禾	tai yang chuan he
@@ -23060,6 +23091,7 @@ sort: by_weight
 天空之舞	tian kong zhi wu
 天鲲号	tian kun hao
 天籁纸鸢	tian lai zhi yuan
+天朗风清	tian lang feng qing
 天狼绘梦者	tian lang hui meng zhe
 天狼座	tian lang zuo
 天乐湖	tian le hu
@@ -23921,6 +23953,7 @@ sort: by_weight
 忘川的河	wang chuan de he
 王传峰	wang chuan feng
 忘川风华录	wang chuan feng hua lu
+忘川序	wang chuan xu
 王大虎	wang da hu
 王大山	wang da shan
 王答乡	wang da xiang
@@ -23969,6 +24002,7 @@ sort: by_weight
 王口镇	wang kou zhen
 王蓝莓	wang lan mei
 王岚嵚	wang lan qin
+王了个王	wang le ge wang
 王立彤	wang li tong
 王力威	wang li wei
 王莉霞	wang li xia
@@ -24328,6 +24362,7 @@ sort: by_weight
 危途疑踪	wei tu yi zong
 韦驮天	wei tuo tian
 微网格	wei wang ge
+薇薇安娜	wei wei an na
 威武之师	wei wu zhi shi
 危险地区	wei xian di qu
 危险动作	wei xian dong zuo
@@ -24633,6 +24668,7 @@ sort: by_weight
 我的志愿	wo de zhi yuan
 我等的人	wo deng de ren
 我等着吃	wo deng zhe chi
+卧底队友	wo di dui you
 我第一名	wo di yi ming
 我第一排	wo di yi pai
 我第一志愿	wo di yi zhi yuan
@@ -26079,6 +26115,7 @@ sort: by_weight
 夏金兰	xia jin lan
 夏静怡	xia jing yi
 夏克立	xia ke li
+下老大了	xia lao da le
 下牢溪	xia lao xi
 下了好大的雨	xia le hao da de yu
 下了一单	xia le yi dan
@@ -27080,6 +27117,7 @@ sort: by_weight
 新段位	xin duan wei
 新队伍	xin dui wu
 新发布	xin fa bu
+新法师	xin fa shi
 新法制报	xin fa zhi bao
 新粉丝	xin fen si
 欣凤学城	xin feng xue cheng
@@ -28071,6 +28109,7 @@ sort: by_weight
 闫永强	yan yong qiang
 盐与避难所	yan yu bi nan suo
 颜宇鹏	yan yu peng
+宴遇奇缘	yan yu qi yuan
 炎狱炎熔	yan yu yan rong
 演员的诞生	yan yuan de dan sheng
 演员粉	yan yuan fen
@@ -28438,6 +28477,7 @@ sort: by_weight
 野炊二	ye chui er
 野萃山	ye cui shan
 椰蛋树	ye dan shu
+夜的尽头	ye de jin tou
 夜的命名术	ye de ming ming shu
 野店镇	ye dian zhen
 也放假	ye fang jia
@@ -29479,6 +29519,7 @@ sort: by_weight
 盈趣科技	ying qu ke ji
 影山飞雄	ying shan fei xiong
 英尚国际	ying shang guo ji
+迎盛会	ying sheng hui
 英仕派	ying shi pai
 滢水山庄	ying shui shan zhuang
 罂粟籽	ying su zi
@@ -29712,6 +29753,7 @@ sort: by_weight
 有杆秤	you gan cheng
 有感觉没	you gan jue mei
 油柑汁	you gan zhi
+游港聚珍	you gang ju zhen
 有隔间	you ge jian
 有隔离	you ge li
 有个亲戚	you ge qin qi
@@ -31126,6 +31168,7 @@ sort: by_weight
 赵瑟瑟	zhao se se
 找啥工作	zhao sha gong zuo
 招商街道	zhao shang jie dao
+招商南油	zhao shang nan you
 招生代码	zhao sheng dai ma
 招生电话	zhao sheng dian hua
 招生会	zhao sheng hui
@@ -31748,6 +31791,7 @@ sort: by_weight
 只有一个月	zhi you yi ge yue
 只有一天假	zhi you yi tian jia
 只有这么多	zhi you zhe me duo
+智育成绩	zhi yu cheng ji
 止于此	zhi yu ci
 织羽集	zhi yu ji
 致郁生日	zhi yu sheng ri
@@ -32464,6 +32508,7 @@ sort: by_weight
 状告本官	zhuang gao ben guan
 装机模拟器	zhuang ji mo ni qi
 撞击说	zhuang ji shuo
+庄敬自强	zhuang jing zi qiang
 撞了个	zhuang le ge
 撞了一下腰	zhuang le yi xia yao
 壮气凌云	zhuang qi ling yun
