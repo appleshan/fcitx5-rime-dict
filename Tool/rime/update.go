@@ -44,16 +44,6 @@ func UpdateSogou() {
 	}
 }
 
-// UpdateWiki 和搜狗的逻辑是一样的，只是没有自动化下载更新
-func UpdateWiki() {
-	// 控制台输出
-	fmt.Println("维基词库：")
-	defer printTimeCost(time.Now())
-
-	checkAndWrite(WikiPath)
-	PrintNewWords(WikiPath)
-}
-
 // 弄好过滤词汇列表
 func makeFilterList(dictPath string) mapset.Set[string] {
 	filterList := mapset.NewSet[string]()
@@ -246,9 +236,6 @@ func PrintNewWords(dictPath string) {
 	if dictPath == SogouPath {
 		newWords = newSet.Difference(SogouSet)
 	}
-	if dictPath == WikiPath {
-		newWords = newSet.Difference(WikiSet)
-	}
 	fmt.Println("新增词汇：")
 
 	// 没有注音
@@ -283,8 +270,5 @@ func PrintNewWords(dictPath string) {
 	// 更新全局的 set，方便后面检查
 	if dictPath == SogouPath {
 		SogouSet = newSet
-	}
-	if dictPath == WikiPath {
-		WikiSet = newSet
 	}
 }

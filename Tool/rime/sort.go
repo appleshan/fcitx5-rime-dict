@@ -74,7 +74,7 @@ func Sort(dictPath string) {
 			}
 			selfSet.Add(text)
 			contents = append(contents, lemma{text: text})
-		case 2: // sogou wiki 是两列
+		case 2: // sogou 是两列
 			text, code = parts[0], parts[1]
 			if selfSet.Contains(text + code) {
 				fmt.Println("重复：", line)
@@ -140,7 +140,7 @@ func Sort(dictPath string) {
 	}
 
 	// 其他词库需要从一个或多个词库中去重
-	if dictPath == SogouPath || dictPath == ExtPath || dictPath == WikiPath || dictPath == TencentPath {
+	if dictPath == SogouPath || dictPath == ExtPath || dictPath == TencentPath {
 		var intersect mapset.Set[string]
 		switch dictPath {
 		case SogouPath:
@@ -149,12 +149,9 @@ func Sort(dictPath string) {
 		case ExtPath:
 			// ext 不和 mian+sogou 有重复
 			intersect = ExtSet.Intersect(MainSet.Union(SogouSet))
-		case WikiPath:
-			// wiki 不和 main+sogou+ext 有重复
-			intersect = WikiSet.Intersect(MainSet.Union(SogouSet).Union(ExtSet))
 		case TencentPath:
-			// tencent 不和 main+sogou+ext+wiki 有重复
-			intersect = TencenSet.Intersect(MainSet.Union(SogouSet).Union(ExtSet).Union(WikiSet))
+			// tencent 不和 main+sogou+ext 有重复
+			intersect = TencenSet.Intersect(MainSet.Union(SogouSet).Union(ExtSet))
 		default:
 			log.Fatal("？？？")
 		}
@@ -170,7 +167,7 @@ func Sort(dictPath string) {
 			if dictPath == ExtPath || dictPath == TencentPath {
 				str = line.text + "\n"
 			}
-			if dictPath == SogouPath || dictPath == WikiPath {
+			if dictPath == SogouPath {
 				str = line.text + "\t" + line.code + "\n"
 			}
 			_, err := file.WriteString(str)

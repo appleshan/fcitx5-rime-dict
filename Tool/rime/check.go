@@ -130,7 +130,7 @@ func Check(dictPath string) {
 		switch len(parts) {
 		case 1: // ext tencent 是一列
 			text = parts[0]
-		case 2: // sogou wiki 是两列
+		case 2: // sogou 是两列
 			text, code = parts[0], parts[1]
 		case 3: // 字表 main av 是三列
 			text, code, weight = parts[0], parts[1], parts[2]

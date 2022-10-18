@@ -19,7 +19,6 @@ const (
 	ExtPath     = "/Users/dvel/Library/Rime/cn_dicts/ext.dict.yaml"
 	AVPath      = "/Users/dvel/Library/Rime/cn_dicts/av.dict.yaml"
 	TencentPath = "/Users/dvel/Library/Rime/cn_dicts/tencent.dict.yaml"
-	WikiPath    = "/Users/dvel/Library/Rime/cn_dicts/zhwiki.dict.yaml"
 	EmojiPath   = "/Users/dvel/Library/Rime/opencc/mapping.txt"
 )
 
@@ -29,7 +28,6 @@ var (
 	SogouSet  mapset.Set[string]
 	ExtSet    mapset.Set[string]
 	TencenSet mapset.Set[string]
-	WikiSet mapset.Set[string]
 	initStart time.Time
 )
 
@@ -47,7 +45,6 @@ func init() {
 	SogouSet = readAndSet(SogouPath)
 	ExtSet = readAndSet(ExtPath)
 	TencenSet = readAndSet(TencentPath)
-	WikiSet = readAndSet(WikiPath)
 }
 
 // readAndSet 读取词库文件为 set
