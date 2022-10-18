@@ -14,10 +14,11 @@
 # 搜狗转 Rime 词库：https://github.com/lewangdev/scel2txt
 ---
 name: sogou
-version: "2022-09-21"
+version: "2022-09-22"
 sort: by_weight
 ...
 # *_* 过滤列表，每次更新时不再写入：
+# 蕾神之锤
 # 无疫烦
 # 孤泳者
 # 茶颜观色
@@ -1194,6 +1195,7 @@ sort: by_weight
 贝尔坦斯	bei er tan si
 卑尔维斯	bei er wei si
 北法信	bei fa xin
+北方队	bei fang dui
 北方姑娘	bei fang gu niang
 北方冷	bei fang leng
 北方联盟	bei fang lian meng
@@ -2511,6 +2513,7 @@ sort: by_weight
 布置考场	bu zhi kao chang
 不知全貌	bu zhi quan mao
 不制热	bu zhi re
+不止柔韧	bu zhi rou ren
 不种菜	bu zhong cai
 步骤分	bu zhou fen
 卜庄镇	bu zhuang zhen
@@ -5248,6 +5251,7 @@ sort: by_weight
 定格照	ding ge zhao
 定规矩	ding gui ju
 定规则	ding gui ze
+定国村	ding guo cun
 定国湖	ding guo hu
 定海浮生录	ding hai fu sheng lu
 定海湾	ding hai wan
@@ -7991,6 +7995,7 @@ sort: by_weight
 古溪村	gu xi cun
 古县渡	gu xian du
 古县衙	gu xian ya
+古香街	gu xiang jie
 故乡明	gu xiang ming
 顾小飞	gu xiao fei
 顾小五	gu xiao wu
@@ -9519,6 +9524,7 @@ sort: by_weight
 黑财经	hei cai jing
 黑茶灰	hei cha hui
 黑潮之上	hei chao zhi shang
+黑池坝	hei chi ba
 黑词条	hei ci tiao
 黑大圣	hei da sheng
 黑道家族	hei dao jia zu
@@ -10000,6 +10006,7 @@ sort: by_weight
 花灯会	hua deng hui
 华东交通	hua dong jiao tong
 华东数控	hua dong shu kong
+华东重机	hua dong zhong ji
 花豆码	hua dou ma
 花都广场	hua du guang chang
 划范围	hua fan wei
@@ -10410,6 +10417,7 @@ sort: by_weight
 会给出	hui gei chu
 会更高	hui geng gao
 会更冷	hui geng leng
+惠工小区	hui gong xiao qu
 惠购湖北	hui gou hu bei
 辉光宝炉	hui guang bao lu
 辉光管	hui guang guan
@@ -10884,6 +10892,7 @@ sort: by_weight
 激人奋进	ji ren fen jin
 肌溶解	ji rong jie
 肌肉线条	ji rou xian tiao
+纪若尘	ji ruo chen
 击杀榜	ji sha bang
 击杀特效	ji sha te xiao
 寄生都市	ji sheng du shi
@@ -11704,6 +11713,7 @@ sort: by_weight
 节能补贴	jie neng bu tie
 节能风电	jie neng feng dian
 节能增效	jie neng zeng xiao
+杰尼威尼	jie ni wei ni
 节日氛围	jie ri fen wei
 节日好	jie ri hao
 节日快乐呀	jie ri kuai le ya
@@ -13158,6 +13168,7 @@ sort: by_weight
 科尔沁旗	ke er qin qi
 科尔维特	ke er wei te
 可感人	ke gan ren
+科工大	ke gong da
 客观法	ke guan fa
 可恨之人	ke hen zhi ren
 课后辅导	ke hou fu dao
@@ -13929,7 +13940,6 @@ sort: by_weight
 雷神锤	lei shen chui
 雷神龙	lei shen long
 雷神瞳	lei shen tong
-蕾神之锤	lei shen zhi chui
 泪失禁	lei shi jin
 累死三军	lei si san jun
 类似事件	lei si shi jian
@@ -16633,6 +16643,7 @@ sort: by_weight
 冥域时空	ming yu shi kong
 名媛群	ming yuan qun
 明源云	ming yuan yun
+洺悦城	ming yue cheng
 明月镜片	ming yue jing pian
 命运航班	ming yun hang ban
 命运与共	ming yun yu gong
@@ -18613,6 +18624,7 @@ sort: by_weight
 切后台	qie hou tai
 切换模式	qie huan mo shi
 切换视角	qie huan shi jiao
+郄马镇	qie ma zhen
 且试天下	qie shi tian xia
 切实维护	qie shi wei hu
 且听凤鸣	qie ting feng ming
@@ -20032,6 +20044,7 @@ sort: by_weight
 森林探险	sen lin tan xian
 森林之子	sen lin zhi zi
 森罗谷	sen luo gu
+森泰御城	sen tai yu cheng
 僧固乡	seng gu xiang
 刹车失灵	sha che shi ling
 沙德尔	sha de er
@@ -20235,6 +20248,7 @@ sort: by_weight
 上高架	shang gao jia
 尚格云顿	shang ge yun dun
 伤过的心	shang guo de xin
+上海杯	shang hai bei
 上海本地宝	shang hai ben di bao
 上海本地人	shang hai ben di ren
 伤害不大	shang hai bu da
@@ -21995,6 +22009,7 @@ sort: by_weight
 四字歌	si zi ge
 撕作业	si zuo ye
 宋贝贝	song bei bei
+宋北村	song bei cun
 送被褥	song bei ru
 送不进去	song bu jin qu
 送财神	song cai shen
@@ -23020,6 +23035,7 @@ sort: by_weight
 天亮以前	tian liang yi qian
 天领奉行	tian ling feng xing
 田柳镇	tian liu zhen
+天隆城	tian long cheng
 天鹿湖	tian lu hu
 天马湖	tian ma hu
 天马司	tian ma si
@@ -23392,6 +23408,7 @@ sort: by_weight
 曈曈日	tong tong ri
 通通闪开	tong tong shan kai
 童文红	tong wen hong
+痛吻危城	tong wen wei cheng
 通下水道	tong xia shui dao
 同向发力	tong xiang fa li
 同向同行	tong xiang tong hang
@@ -24206,6 +24223,7 @@ sort: by_weight
 未来骑士	wei lai qi shi
 未来守护者	wei lai shou hu zhe
 纬来体育	wei lai ti yu
+未来站	wei lai zhan
 蔚蓝锂芯	wei lan li xin
 蔚蓝水岸	wei lan shui an
 蔚蓝之美	wei lan zhi mei
@@ -26060,6 +26078,7 @@ sort: by_weight
 下三白	xia san bai
 下山难	xia shan nan
 夏珊珊	xia shan shan
+下霜了	xia shuang le
 下水道里	xia shui dao li
 下水道美人鱼	xia shui dao mei ren yu
 侠探杰克	xia tan jie ke
@@ -26324,6 +26343,7 @@ sort: by_weight
 享道出行	xiang dao chu xing
 相对安全	xiang dui an quan
 想对你好	xiang dui ni hao
+香坊二小	xiang fang er xiao
 向风而行	xiang feng er xing
 相逢时节	xiang feng shi jie
 相扶到老	xiang fu dao lao
@@ -27168,6 +27188,7 @@ sort: by_weight
 新平旺	xin ping wang
 新骑士	xin qi shi
 辛其物	xin qi wu
+新奇穴	xin qi xue
 信其有	xin qi you
 新桥里	xin qiao li
 辛勤付出	xin qin fu chu
@@ -27247,6 +27268,7 @@ sort: by_weight
 新翔家园	xin xiang jia yuan
 新乡人	xin xiang ren
 鑫享事诚	xin xiang shi cheng
+新乡疫情	xin xiang yi qing
 心向远方	xin xiang yuan fang
 新箱子	xin xiang zi
 新校园	xin xiao yuan
@@ -28318,6 +28340,7 @@ sort: by_weight
 要退役	yao tui yi
 要外出	yao wai chu
 药丸屏	yao wan ping
+遥望未来站	yao wang wei lai zhan
 要温度	yao wen du
 要稳住	yao wen zhu
 耀我中华	yao wo zhong hua
@@ -28800,6 +28823,7 @@ sort: by_weight
 抑菌霜	yi jun shuang
 抑菌皂	yi jun zao
 易开得	yi kai de
+艺考圈	yi kao quan
 一颗红心	yi ke hong xin
 医科类	yi ke lei
 一科没过	yi ke mo guo
@@ -29355,6 +29379,7 @@ sort: by_weight
 迎冬奥	ying dong ao
 迎端午	ying duan wu
 应对挑战	ying dui tiao zhan
+应返尽返	ying fan jin fan
 樱粉金	ying fen jin
 迎富贵	ying fu gui
 应该能过	ying gai neng guo
@@ -30027,6 +30052,7 @@ sort: by_weight
 余茂春	yu mao chun
 羽毛球社	yu mao qiu she
 玉门关外	yu men guan wai
+驭梦为舟	yu meng wei zhou
 玉米加农炮	yu mi jia nong pao
 玉米叶	yu mi ye
 玉米猪肉	yu mi zhu rou
@@ -30817,6 +30843,7 @@ sort: by_weight
 张辰瑞	zhang chen rui
 张纯如	zhang chun ru
 张大飞	zhang da fei
+张大鲁	zhang da lu
 张丹三	zhang dan san
 张导演	zhang dao yan
 张道英	zhang dao ying
@@ -32218,6 +32245,7 @@ sort: by_weight
 逐梦蓝天	zhu meng lan tian
 逐梦前行	zhu meng qian xing
 逐梦新征程	zhu meng xin zheng cheng
+逐梦行	zhu meng xing
 珠穆拉玛峰	zhu mu la ma feng
 竹内亮	zhu nei liang
 主内平安	zhu nei ping an

@@ -6,7 +6,7 @@
 #
 ---
 name: en_ext
-version: "2022-09-20"
+version: "2022-09-22"
 sort: by_weight
 ...
 # 一些杂项
@@ -194,6 +194,8 @@ IEPL	IEPL
 IPLC	IPLC
 IntelliJ	IntelliJ
 IntelliJ IDEA	IntelliJIDEA
+IntelliJ IDEA Community	IntelliJIDEACommunity
+IntelliJ IDEA Ultimate	IntelliJIDEAUltimate
 IDEA	IDEA
 IDE	IDE
 NTR	NTR
@@ -321,6 +323,8 @@ Rust	Rust
 segmentfault	segmentfault
 SPA	SPA
 SQL	SQL
+Structured Query Language	SQL
+Structured Query Language	StructuredQueryLanguage
 SQL Server	SQLServer	2
 Microsoft SQL Server	SQLServer	1
 Microsoft SQL Server	MicrosoftSQLServer
@@ -1246,3 +1250,32 @@ Software Freedom Conservancy	SoftwareFreedomConservancy
 PopCap	PopCap
 PopCap Games	PopCapGames
 Cyberpunk	Cyberpunk
+Kotlin	Kotlin
+PhpStorm	PhpStorm
+Rider	Rider
+Datalore	Datalore
+DataSpell	DataSpell
+RubyMine	RubyMine
+AppCode	AppCode
+PyCharm Edu	PyCharmEdu
+IntelliJ IDEA Edu	IntelliJIDEAEdu
+Code With Me	CodeWithMe
+JetBrains Mono	JetBrainsMono
+JVM	JVM
+Java Virtual Machine	JVM
+Java Virtual Machine	JavaVirtualMachine
+Java EE	JavaEE
+ReSharper	ReSharper
+dotPeek	dotPeek
+dotTrace	dotTrace
+dotMemory	dotMemory
+dotCover	dotCover
+TeamCity	TeamCity
+EduTools	EduTools
+FIFO	FIFO
+First In, First Out	FIFO
+LIFO	LIFO
+Last In, First out	LIFO
+NeatDownloadManager	NeatDownloadManager
+furry	furry
+quantum	quantum
