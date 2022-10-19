@@ -140,10 +140,9 @@ end
 -- 感谢&参考于： https://github.com/tumuyan/rime-melt
 -- 修改：不提升英文和中英混输的
 function long_word_filter(input)
-		-- 目前的效果：将 2 个词插入到第 4、5 个候选项
+    -- 目前的效果：将 2 个词插入到第 4、5 个候选项
     local count = 2 -- 提升 count 个词语
-    local idx = 4   -- 插入到第 idx 位
-
+    local idx = 4 -- 插入到第 idx 位
 
     local l = {}
     local firstWordLength = 0 -- 记录第一个候选词的长度，提前的候选词至少要比第一个候选词长
@@ -157,17 +156,17 @@ function long_word_filter(input)
             i = i + 1
             firstWordLength = leng
             yield(cand)
-				-- 不知道这两行是干嘛用的，似乎注释掉也没有影响。
-				-- elseif #table > 30 then
-				--     table.insert(l, cand)
-				-- 注释掉了英文的
-				-- elseif ((leng > firstWordLength) and (s1 < 2)) and (string.find(cand.text, "^[%w%p%s]+$")) then
-				--     s1 = s1 + 1
-				--     if (string.len(cand.text) / string.len(cand.comment) > 1.5) then
-				--         yield(cand)
-				--     end
-				-- 换了个正则，否则中英混输的也会被提升
-				-- elseif ((leng > firstWordLength) and (s2 < count)) and (string.find(cand.text, "^[%w%p%s]+$")==nil) then
+		-- 不知道这两行是干嘛用的，似乎注释掉也没有影响。
+		-- elseif #table > 30 then
+		--     table.insert(l, cand)
+		-- 注释掉了英文的
+		-- elseif ((leng > firstWordLength) and (s1 < 2)) and (string.find(cand.text, "^[%w%p%s]+$")) then
+		--     s1 = s1 + 1
+		--     if (string.len(cand.text) / string.len(cand.comment) > 1.5) then
+		--         yield(cand)
+		--     end
+		-- 换了个正则，否则中英混输的也会被提升
+		-- elseif ((leng > firstWordLength) and (s2 < count)) and (string.find(cand.text, "^[%w%p%s]+$")==nil) then
         elseif ((leng > firstWordLength) and (s2 < count)) and (string.find(cand.text, "[%w%p%s]+") == nil) then
             yield(cand)
             s2 = s2 + 1
@@ -205,5 +204,35 @@ function v_single_char_first_filter(input, seg)
     if (string.find(input, "v") == 1 and string.len(input) == 2) then
         yield(Candidate("", seg.start, seg._end, "", ""))
     end
+end
+-------------------------------------------------------------
+-- iRime 九宫格专用，将输入框的数字转为对应的拼音或英文
+function irime_t9_preedit(input, env)
+    for cand in input:iter() do
+        if (string.find(cand.text, "%w+") ~= nil) then
+            cand:get_genuine().preedit = cand.text
+        else
+            cand:get_genuine().preedit = cand.comment
+        end
+        yield(cand)
+    end
+end
+-------------------------------------------------------------
+-- 限制码长（最多能输入 length_limit 个字符，超过后不再上屏）
+-- 参考于：https://github.com/rime/weasel/issues/733
+function code_length_limit_processor(key, env)
+    local ctx = env.engine.context
+    local config = env.engine.schema.config
+    -- 限制
+    local length_limit = config:get_string(env.name_space) or 55
+    if (length_limit ~= nil) then
+        if (string.len(ctx.input) > tonumber(length_limit)) then
+            -- ctx:clear()
+            ctx:pop_input(1) -- 删除输入框中最后个编码字符
+            return 1
+        end
+    end
+    -- 放行
+    return 2
 end
 -------------------------------------------------------------
