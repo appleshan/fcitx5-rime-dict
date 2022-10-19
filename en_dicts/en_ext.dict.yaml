@@ -6,7 +6,7 @@
 #
 ---
 name: en_ext
-version: "2022-09-28"
+version: "2022-09-29"
 sort: by_weight
 ...
 # 一些杂项
@@ -1629,3 +1629,9 @@ Emotional Damage	EmotionalDamage
 revert	revert
 GitLab	GitLab
 Apple Silicon	AppleSilicon
+ADSL	ADSL
+Asymmetric Digital Subscriber Line	ADSL
+Asymmetric Digital Subscriber Line	AsymmetricDigitalSubscriberLine
+ICP	ICP
+iRime	iRime
+emo	emo
