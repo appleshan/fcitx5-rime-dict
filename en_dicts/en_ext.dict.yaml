@@ -6,7 +6,7 @@
 #
 ---
 name: en_ext
-version: "2022-09-29"
+version: "2022-10-01"
 sort: by_weight
 ...
 # 一些杂项
@@ -1463,6 +1463,8 @@ exists	exists
 goto	goto
 Bandizip	Bandizip
 NATO	NATO
+North Atlantic Treaty Organization	NATO
+North Atlantic Treaty Organization	NorthAtlanticTreatyOrganization
 MissWarmJ	MissWarmJ
 Miss	Miss
 NASA	NASA
