@@ -76,8 +76,8 @@ engine:
     - uniquifier                  # 去重
 
 
-# 限制码长，默认 55。（最多能输入 code_length_limit 个字符，超过后不再上屏）
-# code_length_limit: 55
+# 限制码长，默认 100。（最多能输入 code_length_limit 个字符）
+# code_length_limit: 100
 
 
 # 增加简繁切换快捷键

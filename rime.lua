@@ -224,7 +224,7 @@ function code_length_limit_processor(key, env)
     local ctx = env.engine.context
     local config = env.engine.schema.config
     -- 限制
-    local length_limit = config:get_string(env.name_space) or 55
+    local length_limit = config:get_string(env.name_space) or 100
     if (length_limit ~= nil) then
         if (string.len(ctx.input) > tonumber(length_limit)) then
             -- ctx:clear()
