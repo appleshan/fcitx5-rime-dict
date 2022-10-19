@@ -9,7 +9,7 @@
 #
 ---
 name: cn_en
-version: "2022-09-24"
+version: "2022-10-08"
 sort: by_weight
 ...
 # 没有空格的（为了Emoji映射。Emoji 里空格是分割符，没法映射，不知道怎么解决）
@@ -302,3 +302,9 @@ Eject 键	ejectjian
 J·K·罗琳	jkluolin
 周刊少年 Jump	zhoukanshaonianjump
 ICP 备案	icpbeian
+啥 Bug	shabug
+有 Bug	youbug
+没 Bug	meibug
+没有 Bug	meiyoubug
+卡 Bug	kabug
+J·R·R·托尔金	jrrtuoerjin

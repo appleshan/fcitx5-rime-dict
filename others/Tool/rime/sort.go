@@ -16,7 +16,7 @@ import (
 	"time"
 )
 
-func Sort(dictPath string) {
+func Sort(dictPath string, column int) {
 	// 控制台输出
 	fmt.Println("开始排序 ", path.Base(dictPath), "：")
 	defer printTimeCost(time.Now())
@@ -58,6 +58,9 @@ func Sort(dictPath string) {
 		// 分割为 词汇text 编码code 权重weight
 		parts := strings.Split(line, "\t")
 		text, code, weight := parts[0], "", ""
+		if len(parts) != column {
+			fmt.Println("分割错误:", line)
+		}
 
 		// 将 main 中注释了但没删除的词汇权重调为 0
 		if dictPath == MainPath && strings.HasPrefix(line, "# ") {
@@ -66,7 +69,7 @@ func Sort(dictPath string) {
 
 		// mark 之后的，写入到 contents
 		// 自身重复的直接排除，不重复的写入
-		switch len(parts) {
+		switch column {
 		case 1: // ext tencent 是一列
 			if selfSet.Contains(text) {
 				fmt.Println("重复：", line)
@@ -130,7 +133,7 @@ func Sort(dictPath string) {
 	}
 
 	// 字表、main、av，直接写入，不需要从其他词库去重
-	if dictPath == HanziPath || dictPath == MainPath || dictPath == AVPath {
+	if contains([]string{HanziPath, MainPath, AVPath}, dictPath) {
 		for _, line := range contents {
 			_, err := file.WriteString(line.text + "\t" + line.code + "\t" + strconv.Itoa(line.weight) + "\n")
 			if err != nil {
@@ -140,7 +143,7 @@ func Sort(dictPath string) {
 	}
 
 	// 其他词库需要从一个或多个词库中去重
-	if dictPath == SogouPath || dictPath == ExtPath || dictPath == TencentPath {
+	if contains([]string{SogouPath, ExtPath, TencentPath}, dictPath) {
 		var intersect mapset.Set[string]
 		switch dictPath {
 		case SogouPath:
@@ -180,11 +183,48 @@ func Sort(dictPath string) {
 		}
 	}
 
+	// 外部或临时的词库文件，只排序
+	if !contains([]string{HanziPath, AVPath, MainPath, SogouPath, ExtPath, TencentPath}, dictPath) {
+		if column == 1 {
+			for _, line := range contents {
+				_, err := file.WriteString(line.text+"\n")
+				if err != nil {
+					log.Fatalln(err)
+				}
+			}
+		} else if column == 2 {
+			for _, line := range contents {
+				_, err := file.WriteString(line.text + "\t" + line.code + "\n")
+				if err != nil {
+					log.Fatalln(err)
+				}
+			}
+		}else if column == 3 {
+			for _, line := range contents {
+				_, err := file.WriteString(line.text + "\t" + line.code + "\t" + strconv.Itoa(line.weight) + "\n")
+				if err != nil {
+					log.Fatalln(err)
+				}
+			}
+		} else {
+			log.Fatal("。。。")
+		}
+	}
+
 	// 同步
 	err = file.Sync()
 	if err != nil {
 		log.Fatal(err)
 	}
+}
+
+func contains(arr []string, item string) bool {
+	for _, x := range arr {
+		if item == x {
+			return true
+		}
+	}
+	return false
 }
 
 func getSha1(dictPath string) string {

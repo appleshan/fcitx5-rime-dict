@@ -24,12 +24,13 @@ func main() {
 	doYouContinue()
 
 	// 排序，顺便去重，包括自身重复和其他词库的重复
-	rime.Sort(rime.HanziPath)
-	rime.Sort(rime.AVPath)
-	rime.Sort(rime.MainPath)
-	rime.Sort(rime.SogouPath)   // 对 main 中已经有的，去重
-	rime.Sort(rime.ExtPath)     // 对 main、sogou 中已经有的，去重
-	rime.Sort(rime.TencentPath) // 对 main、sogou、ext 中已经有的，去重
+	// 列数，1 只有汉字，2 汉字+注音，3 汉字+注音+权重
+	rime.Sort(rime.HanziPath, 3)
+	rime.Sort(rime.AVPath, 3)
+	rime.Sort(rime.MainPath, 3)
+	rime.Sort(rime.SogouPath, 2)   // 对 main 中已经有的，去重
+	rime.Sort(rime.ExtPath, 1)     // 对 main、sogou 中已经有的，去重
+	rime.Sort(rime.TencentPath, 1) // 对 main、sogou、ext 中已经有的，去重
 }
 
 func doYouContinue() {

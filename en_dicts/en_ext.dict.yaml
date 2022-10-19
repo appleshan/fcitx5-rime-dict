@@ -6,7 +6,7 @@
 #
 ---
 name: en_ext
-version: "2022-10-03"
+version: "2022-10-08"
 sort: by_weight
 ...
 # 一些杂项
@@ -1648,3 +1648,20 @@ Android application package	Androidapplicationpackage
 whack	whack
 ing	ing
 encore	encore
+suffix	suffix
+prefix	prefix
+Type-A	TypeA
+Type-B	TypeB
+Type-C	TypeC
+USB Type-A	USBTypeA
+USB Type-B	USBTypeB
+USB Type-C	USBTypeC
+USB-A	USBA
+USB-B	USBB
+USB-C	USBC
+vex	vex
+tempest	tempest
+J.R.R. Tolkien	JRRTolkien
+Impostor Factory
+Impostor Factory	ImpostorFactory
+impostor
