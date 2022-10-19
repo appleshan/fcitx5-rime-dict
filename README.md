@@ -1,6 +1,6 @@
 # 自用 Rime 配置
 
-![demo](./demo.jpeg)
+![demo](./others/demo.jpeg)
 
 ## 基本套路
 
