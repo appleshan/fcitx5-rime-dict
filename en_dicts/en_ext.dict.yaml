@@ -6,7 +6,7 @@
 #
 ---
 name: en_ext
-version: "2022-10-08"
+version: "2022-10-11"
 sort: by_weight
 ...
 # 一些杂项
@@ -1664,4 +1664,6 @@ tempest	tempest
 J.R.R. Tolkien	JRRTolkien
 Impostor Factory
 Impostor Factory	ImpostorFactory
-impostor
+impostor	impostor
+vampire	vampire
+Vampire Survivors	VampireSurvivors
