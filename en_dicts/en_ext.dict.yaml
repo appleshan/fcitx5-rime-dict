@@ -6,7 +6,7 @@
 #
 ---
 name: en_ext
-version: "2022-10-01"
+version: "2022-10-03"
 sort: by_weight
 ...
 # 一些杂项
@@ -1060,6 +1060,10 @@ MagSafe	MagSafe
 HDMI	HDMI
 WorkFlowy	WorkFlowy
 NSFW	NSFW
+Not Safe For Work	NSFW
+Not Suitable For Work	NSFW
+Not Safe For Work	NotSafeForWork
+Not Suitable For Work	NotSuitableForWork
 Disco	Disco
 Termius	Termius
 Jinja	Jinja
@@ -1637,3 +1641,10 @@ Asymmetric Digital Subscriber Line	AsymmetricDigitalSubscriberLine
 ICP	ICP
 iRime	iRime
 emo	emo
+colon	colon
+APK	APK
+Android application package	APK
+Android application package	Androidapplicationpackage
+whack	whack
+ing	ing
+encore	encore

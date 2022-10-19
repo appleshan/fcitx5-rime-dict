@@ -15,10 +15,15 @@
 # 搜狗转 Rime 词库：https://github.com/lewangdev/scel2txt
 ---
 name: sogou
-version: "2022-10-01"
+version: "2022-10-03"
 sort: by_weight
 ...
 # *_* 过滤列表，每次更新时不再写入：
+# 伍万里
+# 伍千里
+# 叁乔居
+# 叁叁肆
+# 叁贰贰
 # 不是叭
 # 我这分
 # 蕾神之锤
@@ -20097,7 +20102,6 @@ sort: by_weight
 三冬暖	san dong nuan
 三豆饮	san dou yin
 三短一长	san duan yi zhang
-叁贰贰	san er er
 三二分段	san er fen duan
 三费卡	san fei ka
 三分大赛	san fen da sai
@@ -20181,7 +20185,6 @@ sort: by_weight
 三千多万	san qian duo wan
 三强争霸赛	san qiang zheng ba sai
 三桥街道	san qiao jie dao
-叁乔居	san qiao ju
 三清三关	san qing san guan
 三泉溪暖	san quan xi nuan
 三全学院	san quan xue yuan
@@ -20189,7 +20192,6 @@ sort: by_weight
 三人成行	san ren cheng xing
 三人篮球	san ren lan qiu
 三日雨	san ri yu
-叁叁肆	san san si
 三色论	san se lun
 三沙卫视	san sha wei shi
 三沙源	san sha yuan
@@ -25871,7 +25873,6 @@ sort: by_weight
 武器装扮	wu qi zhuang ban
 吴谦大校	wu qian da xiao
 五千二	wu qian er
-伍千里	wu qian li
 无情的情书	wu qing de qing shu
 吴庆龙	wu qing long
 武青南路	wu qing nan lu
@@ -25962,7 +25963,6 @@ sort: by_weight
 无痛针	wu tong zhen
 无痛针灸	wu tong zhen jiu
 五万八	wu wan ba
-伍万里	wu wan li
 五万年	wu wan nian
 无妄宝鼎	wu wang bao ding
 勿忘国殇	wu wang guo shang

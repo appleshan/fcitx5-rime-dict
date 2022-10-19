@@ -6,17 +6,17 @@
 #
 ---
 name: others
-version: "2022-09-22"
+version: "2022-10-03"
 sort: by_weight
 ...
 ##### 方便词（已经在 custom_phrase 写过了，这里再写一遍，可以让这些字词参与组词）
 # 双拼应该注释掉这几行
-一	i
-有	u
-一个	ig
-有一个	uig
-有个	ug
-又有	uu
+# 一	i
+# 有	u
+# 一个	ig
+# 有一个	uig
+# 有个	ug
+# 又有	uu
 
 
 ##### 容错词

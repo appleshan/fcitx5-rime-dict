@@ -7,6 +7,7 @@ import (
 	"log"
 	"os"
 	"path"
+	"strconv"
 	"strings"
 	"time"
 	"unicode"
@@ -137,6 +138,14 @@ func Check(dictPath string) {
 			log.Fatal("分割错误：", line)
 		}
 
+		// 检查：weight 应该是纯数字
+		if len(parts) == 3 {
+			_, err := strconv.Atoi(weight)
+			if err != nil {
+				fmt.Println("weight 非数字：", line)
+			}
+		}
+
 		// 过滤特殊词条
 		if specialWords.Contains(text) {
 			continue
@@ -154,7 +163,7 @@ func Check(dictPath string) {
 
 		// 检查：编码是否含有非字母，或没有小写
 		for _, r := range code {
-			if string(r) != " " && !(r >= 97 && r <= 122) {
+			if string(r) != " " && !(r >= 97 && r <= 122) { // not [a-z]
 				fmt.Println("编码含有非字母或大写字母：", line)
 				break
 			}
