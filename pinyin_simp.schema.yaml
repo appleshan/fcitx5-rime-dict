@@ -20,7 +20,6 @@ schema:
     https://github.com/iDvel/rime-ice
   dependencies:
     - easy_en
-    - latex
 
 
 # 功能开关
@@ -164,14 +163,6 @@ recognizer:
     reverse_lookup: '^\\.+$'  # LaTeX
 
 
-# LaTeX
-reverse_lookup:
-  dictionary: latex
-  spelling_hints: 9
-  enable_completion: false
-  tips: latex
-
-
 # 拼写设定
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
@@ -243,9 +234,9 @@ speller:
     - derive/([zcs])h(a|e|i|u|ai|ei|an|en|ou|uo|ua|un|ui|uan|uai|uang|ang|eng|ong)$/h$1$2/  # hzi → zhi
     - derive/([zcs])h([aeiu])$/$1$2h/  # zih → zhi
     # ai
-    - derive/^([wghkzc])ai$/$1ia/
+    - derive/^([wghkzc])ai$/$1ia/  # wia → wai
     # ia
-    - derive/([qjx])ia$/$1ai/
+    - derive/([qjx])ia$/$1ai/  # qai → qia
     # ei
     - derive/([wtfghkz])ei$/$1ie/
     # ie

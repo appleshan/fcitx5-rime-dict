@@ -13,7 +13,6 @@
     -   自整理的 Emoji
     -   [以词定字](https://github.com/BlindingDark/rime-lua-select-character)
     -   [长词优先](https://github.com/tumuyan/rime-melt/blob/master/lua/melt.lua)
-    -   [LaTeX](https://github.com/shenlebantongying/rime_latex)
     -   所有标点符号直接上屏，「/」模式改为「v」模式，「/」直接上屏
     -   增加了许多拼音纠错
 -   简体字表、词库
@@ -25,7 +24,6 @@
     -   [《同义词词林》](https://forum.freemdict.com/t/topic/1211)
     -   [《新华成语大词典》](https://forum.freemdict.com/t/topic/11407)
     -   [腾讯词向量](https://ai.tencent.com/ailab/nlp/zh/download.html)
-    -   [八股文语言模型](https://github.com/lotem/rime-octagram-data/tree/hans)
 -   词库更新
     - 已经校对了大量词汇，主要参考[校对网](http://www.jiaodui.com/bbs/)
     - 长期对词库进行更新、修订、调频
