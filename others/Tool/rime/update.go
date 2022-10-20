@@ -169,8 +169,10 @@ func checkAndWrite(dictPath string) {
 			}
 			continue
 		}
+
+		// 分割
 		parts := strings.Split(line, "\t")
-		if len(parts) != 2 {
+		if len(parts) != 2 && len(parts) != 3 {
 			log.Fatal("分割错误：", line)
 		}
 		text, code := parts[0], parts[1]
@@ -183,6 +185,7 @@ func checkAndWrite(dictPath string) {
 			wrongWordCount++
 			continue
 		}
+
 		// nue → nve，lue → lve
 		if strings.Contains(code, "nue") {
 			code = strings.ReplaceAll(code, "nue", "nve")
@@ -213,7 +216,7 @@ func checkAndWrite(dictPath string) {
 	}
 	_, err = file.Seek(0, 0)
 	if err != nil {
-		log.Fatal()
+		log.Fatal(err)
 	}
 	// 写入前缀
 	for _, content := range prefixContents {

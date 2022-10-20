@@ -16,7 +16,9 @@ import (
 	"time"
 )
 
-func Sort(dictPath string, column int) {
+// Sort 词库排序、顺便去重
+// flag: 1 只有汉字，2 汉字+注音，3 汉字+注音+权重，4 汉字+权重。
+func Sort(dictPath string, flag int) {
 	// 控制台输出
 	fmt.Println("开始排序 ", path.Base(dictPath), "：")
 	defer printTimeCost(time.Now())
@@ -58,8 +60,13 @@ func Sort(dictPath string, column int) {
 		// 分割为 词汇text 编码code 权重weight
 		parts := strings.Split(line, "\t")
 		text, code, weight := parts[0], "", ""
-		if len(parts) != column {
-			fmt.Println("分割错误:", line)
+
+		// 检查分割长度
+		if (flag == 1 || flag == 2 || flag == 3) && len(parts) != flag {
+			fmt.Println("分割错误123:", line)
+		}
+		if flag == 4 && len(parts) != 2 {
+			fmt.Println("分割错误4:", line)
 		}
 
 		// 将 main 中注释了但没删除的词汇权重调为 0
@@ -69,15 +76,15 @@ func Sort(dictPath string, column int) {
 
 		// mark 之后的，写入到 contents
 		// 自身重复的直接排除，不重复的写入
-		switch column {
-		case 1: // ext tencent 是一列
+		switch flag {
+		case 1: // 一列 【汉字】
 			if selfSet.Contains(text) {
 				fmt.Println("重复：", line)
 				break
 			}
 			selfSet.Add(text)
 			contents = append(contents, lemma{text: text})
-		case 2: // sogou 是两列
+		case 2: // 两列 【汉字+注音】
 			text, code = parts[0], parts[1]
 			if selfSet.Contains(text + code) {
 				fmt.Println("重复：", line)
@@ -85,7 +92,7 @@ func Sort(dictPath string, column int) {
 			}
 			selfSet.Add(text + code)
 			contents = append(contents, lemma{text: text, code: code})
-		case 3: // 字表 main av 是三列
+		case 3: // 三列 【汉字+注音+权重】
 			text, code, weight = parts[0], parts[1], parts[2]
 			if selfSet.Contains(text + code) {
 				fmt.Println("重复：", line)
@@ -94,6 +101,15 @@ func Sort(dictPath string, column int) {
 			selfSet.Add(text + code)
 			weight, _ := strconv.Atoi(weight)
 			contents = append(contents, lemma{text: text, code: code, weight: weight})
+		case 4: // 两列 【汉字+权重】
+			text, weight = parts[0], parts[1]
+			if selfSet.Contains(text) {
+				fmt.Println("重复：", line)
+				break
+			}
+			selfSet.Add(text + weight)
+			weight, _ := strconv.Atoi(weight)
+			contents = append(contents, lemma{text: text, weight: weight})
 		default:
 			log.Fatal("分割错误：", line)
 		}
@@ -168,10 +184,10 @@ func Sort(dictPath string, column int) {
 			}
 			str := ""
 			if dictPath == ExtPath || dictPath == TencentPath {
-				str = line.text + "\n"
+				str = line.text + "\t" + strconv.Itoa(line.weight) + "\n"
 			}
 			if dictPath == SogouPath {
-				str = line.text + "\t" + line.code + "\n"
+				str = line.text + "\t" + line.code + "\t" + strconv.Itoa(line.weight) + "\n"
 			}
 			_, err := file.WriteString(str)
 			if err != nil {
@@ -183,31 +199,37 @@ func Sort(dictPath string, column int) {
 		}
 	}
 
-	// 外部或临时的词库文件，只排序
+	// 外部或临时的词库文件，只排序，不去重
 	if !contains([]string{HanziPath, AVPath, MainPath, SogouPath, ExtPath, TencentPath}, dictPath) {
-		if column == 1 {
+		switch flag {
+		case 1:
 			for _, line := range contents {
-				_, err := file.WriteString(line.text+"\n")
+				_, err := file.WriteString(line.text + "\n")
 				if err != nil {
 					log.Fatalln(err)
 				}
 			}
-		} else if column == 2 {
+		case 2:
 			for _, line := range contents {
 				_, err := file.WriteString(line.text + "\t" + line.code + "\n")
 				if err != nil {
 					log.Fatalln(err)
 				}
 			}
-		}else if column == 3 {
+		case 3:
 			for _, line := range contents {
 				_, err := file.WriteString(line.text + "\t" + line.code + "\t" + strconv.Itoa(line.weight) + "\n")
 				if err != nil {
 					log.Fatalln(err)
 				}
 			}
-		} else {
-			log.Fatal("。。。")
+		case 4:
+			for _, line := range contents {
+				_, err := file.WriteString(line.text + "\t" + strconv.Itoa(line.weight) + "\n")
+				if err != nil {
+					log.Fatalln(err)
+				}
+			}
 		}
 	}
 
@@ -271,7 +293,7 @@ func updateVersion(dictPath string) {
 	}
 	_, err = file.Seek(0, 0)
 	if err != nil {
-		log.Fatal()
+		log.Fatal(err)
 	}
 	for _, line := range arr {
 		_, err := file.WriteString(line + "\n")

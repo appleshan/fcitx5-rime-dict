@@ -75,7 +75,7 @@ func init() {
 }
 
 // Check 对传入的词库文件进行检查
-func Check(dictPath string) {
+func Check(dictPath string, flag int) {
 	// 控制台输出
 	fmt.Println("检查 " + path.Base(dictPath) + ":")
 	defer printTimeCost(time.Now())
@@ -127,19 +127,20 @@ func Check(dictPath string) {
 		// +---------------------------------------------------------------
 		parts := strings.Split(line, "\t")
 		var text, code, weight string
-		switch len(parts) {
-		case 1: // ext tencent 是一列
+		if flag == 1 && len(parts) == 1 { // 一列，【汉字】：外部词库
 			text = parts[0]
-		case 2: // sogou 是两列
+		} else if flag == 2 && len(parts) == 2 { // 两列，【汉字+注音】：外部词库
 			text, code = parts[0], parts[1]
-		case 3: // 字表 main av 是三列
+		} else if flag == 3 && len(parts) == 3 { // 三列，【汉字+注音+权重】：字表 main av sogou
 			text, code, weight = parts[0], parts[1], parts[2]
-		default:
+		} else if flag == 4 && len(parts) == 2 { // 两列，【汉字+权重】：ext tencent
+			text, weight = parts[0], parts[1]
+		} else {
 			log.Fatal("分割错误：", line)
 		}
 
 		// 检查：weight 应该是纯数字
-		if len(parts) == 3 {
+		if weight != "" {
 			_, err := strconv.Atoi(weight)
 			if err != nil {
 				fmt.Println("weight 非数字：", line)
@@ -161,15 +162,15 @@ func Check(dictPath string) {
 			fmt.Println("code 前后不应该含有空格：", line)
 		}
 
-		// 检查：编码是否含有非字母，或没有小写
+		// 检查：code 是否含有非字母，或没有小写
 		for _, r := range code {
-			if string(r) != " " && !(r >= 97 && r <= 122) { // not [a-z]
+			if string(r) != " " && !unicode.IsLower(r) {
 				fmt.Println("编码含有非字母或大写字母：", line)
 				break
 			}
 		}
 
-		// 检查：汉字部分是否含有非汉字内容
+		// 检查：text 是否含有非汉字内容
 		for _, c := range text {
 			if strings.Contains(text, "·") {
 				break

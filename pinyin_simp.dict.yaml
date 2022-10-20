@@ -4,7 +4,6 @@
 ---
 name: pinyin_simp
 version: "1"
-sort: by_weight
 import_tables:
   - cn_dicts/8105    # 《通用汉字规范表》8105 字字表
   - cn_dicts/main    # 基础词库，华宇野风系统词库 + 清华大学开源词库 + 修订
