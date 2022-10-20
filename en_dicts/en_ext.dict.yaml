@@ -6,7 +6,7 @@
 #
 ---
 name: en_ext
-version: "2022-10-12"
+version: "2022-10-13"
 sort: by_weight
 ...
 # 一些杂项
@@ -1666,3 +1666,7 @@ Impostor Factory	ImpostorFactory
 impostor	impostor
 vampire	vampire
 Vampire Survivors	VampireSurvivors
+AppCleaner	AppCleaner
+related	related
+clicking	clicking
+IQIYI	IQIYI
