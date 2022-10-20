@@ -6,7 +6,7 @@
 #
 ---
 name: en_ext
-version: "2022-10-13"
+version: "2022-10-19"
 sort: by_weight
 ...
 # 一些杂项
@@ -1670,3 +1670,7 @@ AppCleaner	AppCleaner
 related	related
 clicking	clicking
 IQIYI	IQIYI
+BuhoCleaner	BuhoCleaner
+Midjourney	Midjourney
+Champion's inequality	Championsinequality
+NovelAI	NovelAI
