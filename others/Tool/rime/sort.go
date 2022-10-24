@@ -71,7 +71,7 @@ func Sort(dictPath string, flag int) {
 
 		// 将 main 中注释了但没删除的词汇权重调为 0
 		if dictPath == MainPath && strings.HasPrefix(line, "# ") {
-			line = parts[0] + "\t" + parts[1] + "\t" + "0"
+			parts[2] = "0"
 		}
 
 		// mark 之后的，写入到 contents
