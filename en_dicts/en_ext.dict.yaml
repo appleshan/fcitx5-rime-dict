@@ -6,7 +6,7 @@
 #
 ---
 name: en_ext
-version: "2022-10-20"
+version: "2022-10-22"
 sort: by_weight
 ...
 # 一些杂项
@@ -1591,7 +1591,7 @@ FIFO	FIFO
 First In, First Out	FIFO
 LIFO	LIFO
 Last In, First out	LIFO
-NeatDownloadManager	NeatDownloadManager
+Neat Download Manager	NeatDownloadManager
 furry	furry
 quantum	quantum
 Hi-Fi	HiFi
@@ -1677,3 +1677,8 @@ NovelAI	NovelAI
 swab	swab
 angular	angular
 addressable	addressable
+rebase	rebase
+Motrix	Motrix
+VCS	VCS
+version control system	VCS
+version control system	versioncontrolsystem
