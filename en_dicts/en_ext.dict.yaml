@@ -6,7 +6,7 @@
 #
 ---
 name: en_ext
-version: "2022-10-19"
+version: "2022-10-20"
 sort: by_weight
 ...
 # 一些杂项
@@ -1674,3 +1674,5 @@ BuhoCleaner	BuhoCleaner
 Midjourney	Midjourney
 Champion's inequality	Championsinequality
 NovelAI	NovelAI
+swab	swab
+angular	angular

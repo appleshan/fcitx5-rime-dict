@@ -2,7 +2,7 @@
 #
 # https://github.com/iDvel/rime-ice
 #
-# version: "2022-10-19"
+# version: "2022-10-20"
 #
 #
 # 数据分类来源：https://www.emojiall.com/zh-hans/all-emojis
@@ -1083,7 +1083,7 @@ S$ 新加坡元 新加坡币
 ⛱ 沙滩伞
 ❄️ 雪花
 ⭐ 五角星
-🌀 台风 旋风 飓风 漩涡 蚊香
+🌀 台风 旋风 飓风 漩涡 蚊香 气旋
 🌂 收起的伞 收起的雨伞 雨伞
 🌈 彩虹
 🌊 波浪 浪花
