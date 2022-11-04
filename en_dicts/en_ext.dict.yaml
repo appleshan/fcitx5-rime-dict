@@ -6,7 +6,7 @@
 #
 ---
 name: en_ext
-version: "2022-10-25"
+version: "2022-10-26"
 sort: by_weight
 ...
 # 一些杂项
@@ -1686,3 +1686,6 @@ cnBeta	cnBeta
 Pull Request	PullRequest
 Merge Request	MergeRequest
 squash	squash
+Ant Design	AntDesign
+Disney	Disney
+early access	earlyaccess

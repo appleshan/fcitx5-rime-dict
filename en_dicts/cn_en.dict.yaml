@@ -9,7 +9,7 @@
 #
 ---
 name: cn_en
-version: "2022-10-22"
+version: "2022-10-26"
 sort: by_weight
 ...
 # 没有空格的（为了Emoji映射。Emoji 里空格是分割符，没法映射，不知道怎么解决）
@@ -314,3 +314,4 @@ J·R·R·托尔金	jrrtuoerjin
 随身 WiFi	suishenwifi
 U 型锁	uxingsuo
 查 IP	chaip
+Go 程	gocheng
