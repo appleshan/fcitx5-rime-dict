@@ -10,7 +10,7 @@
 # 对于中日文不同的，需要现在这里添加进词库，这样在 opencc/others.txt 中的映射就会起作用了。
 ---
 name: av
-version: "2022-09-10"
+version: "2022-10-28"
 sort: by_weight
 ...
 # 简体和日文相同的：
@@ -57,6 +57,7 @@ sort: by_weight
 古川伊织	gu chuan yi zhi	666
 广濑里绪菜	guang lai li xu cai	666
 河北春菜	he bei chun cai	666
+凰香奈芽	huang xiang nai ya	666
 吉川莲	ji chuan lian	666
 吉泽明步	ji ze ming bu	666
 岬奈奈美	jia nai nai mei	666

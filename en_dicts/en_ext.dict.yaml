@@ -6,7 +6,7 @@
 #
 ---
 name: en_ext
-version: "2022-10-26"
+version: "2022-10-28"
 sort: by_weight
 ...
 # 一些杂项
@@ -643,9 +643,6 @@ TCP/IP	tcpip
 Twitter	Twitter
 V2EX	ver
 V2EX	verex
-VSCode	VSC
-VSCode	VSCo
-VSCode	VSCod
 VSCode	VSCode
 Vue	Vue
 Vue.js	Vuejs
