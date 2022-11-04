@@ -6,7 +6,7 @@
 #
 ---
 name: en_ext
-version: "2022-10-22"
+version: "2022-10-25"
 sort: by_weight
 ...
 # 一些杂项
@@ -1682,3 +1682,7 @@ Motrix	Motrix
 VCS	VCS
 version control system	VCS
 version control system	versioncontrolsystem
+cnBeta	cnBeta
+Pull Request	PullRequest
+Merge Request	MergeRequest
+squash	squash
