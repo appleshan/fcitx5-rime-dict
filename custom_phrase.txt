@@ -150,10 +150,7 @@ QQ邮箱	qqyzxl
 TODO	todo
 
 ##### 方便词
-# ！ 会导致 zh 无法参与超级简拼
-# 这	zh
 # ！ 单编码的声母同样会导致无法参与超级简拼，如「lir」无法响应「例如」。
-# 儿	r
 一	i
 有	u
 一个	ig
@@ -191,8 +188,6 @@ apple.shan@gmail.com	email
 超级至尊比萨	chao ji zhi zun pi sa
 至尊比萨	zhi zun bi sa
 至尊比萨	zhi zun pi sa
-大西洋珍鲑比萨	da xi yang zhen gui bi sa
-大西洋珍鲑比萨	da xi yang zhen gui pi sa
 海鲜比萨	hai xian bi sa
 海鲜比萨	hai xian pi sa
 蔬菜比萨	shu cai bi sa
@@ -210,10 +205,6 @@ apple.shan@gmail.com	email
 # 「坐骑」，正确是 qi，《现汉7》只保留了 qi，《现汉6》一些词组中是念 ji
 坐骑	zuo qi
 坐骑	zuo ji
-一骑绝尘	yi qi jue chen
-一骑绝尘	yi ji jue chen
-一骑红尘妃子笑	yi qi hong chen fei zi xiao
-一骑红尘妃子笑	yi ji hong chen fei zi xiao
 千里走单骑	qian li zou dan qi
 千里走单骑	qian li zou dan ji
 # 「道行」，正确是 heng，但「道行hang」比较流行
@@ -224,6 +215,4 @@ apple.shan@gmail.com	email
 模样	mo yang
 有模有样	you mu you yang
 有模有样	you mo you yang
-一模一样	yi mu yi yang
-一模一样	yi mo yi yang
 
