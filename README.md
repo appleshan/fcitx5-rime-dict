@@ -92,12 +92,17 @@
 
 使用方法改成类似 `vfh` 按键，即以 `v` 作为前缀按键。
 
+### 9. IntelliJ 系列软件的 IDE 中输入框位置不正确
+此问题的根本原因是 IDE 附带的 JBR 不正确，要处理此问题，需要：
+1. 前往 [Release 17.0.6-b829.5](https://github.com/RikudouPatrickstar/JetBrainsRuntime-for-Linux-x64/releases) 下载 jbr 并解压到任意路径
+2. 按照 [此指导](https://intellij-support.jetbrains.com/hc/en-us/articles/206544879-Selecting-the-JDK-version-the-IDE-will-run-under) 更改 IDE 的 JBR
+
 ## 长期维护词库
 
 主要维护的词库：
 
 - `8105.dict.yaml` 字表。
-- `main.dict.yaml` 基础词库。
+- `base.dict.yaml` 基础词库。
 - `sogou.dict.yaml` 搜狗流行词。
 - `ext.dict.yaml` 扩展词库。
 - `tencent.dict.yaml` 扩展词库，大词库。
