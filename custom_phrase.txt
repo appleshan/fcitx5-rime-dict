@@ -155,11 +155,12 @@ TODO	todo
 有	u
 一个	ig
 有个	ug
+是一个	sig
 有一个	uig
-有一个	uige
 有一个	uyig
-有一个	uyge
 有一个	uyige
+有没有	umu
+有没有	umeiu
 又有	uu
 又又又	uuu
 又双叒叕	uuuu

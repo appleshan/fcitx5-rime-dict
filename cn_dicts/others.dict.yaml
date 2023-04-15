@@ -1,26 +1,47 @@
 # Rime dictionary
 # encoding: utf-8
 #
+#
 # https://github.com/iDvel/rime-ice
 # ------- 一些杂项，按需选择 -------
 #
+#
 ---
 name: others
-version: "2022-10-03"
+version: "2023-04-08"
 sort: by_weight
 ...
-##### 方便词（已经在 custom_phrase 写过了，这里再写一遍，可以让这些字词参与组词）
-# 双拼应该注释掉这几行
-# 一	i
-# 有	u
-# 一个	ig
-# 有一个	uig
-# 有个	ug
-# 又有	uu
-
+##### 大写字母
+# 因为默认的双拼拼写规则用掉了大写字母。这些奇怪的编码是为了做 xlit 转写，同时适配全拼和双拼。
+A	ā
+B	ḃ
+C	ç
+D	ď
+E	ē
+F	ḟ
+G	ḡ
+H	ĥ
+I	ī
+J	ĵ
+K	ḱ
+L	ĺ
+M	ḿ
+N	ń
+O	ō
+P	ṕ
+Q	ɋ
+R	ŕ
+S	ś
+T	ť
+U	ū
+V	ṽ
+W	ẃ
+X	ẋ
+Y	ȳ
+Z	ź
 
 ##### 容错词
-# 「血xue、xie」「谁shui、shei」「露lu、lou」「熟shu、shou」「密钥yao、yue」已在 main 中实现
+# 「血xue、xie」「谁shui、shei」「露lu、lou」「熟shu、shou」「密钥yao、yue」已在 base 中实现
 # ---
 # 「馄饨」，正确是 tun，北方口语是 dun
 馄饨	hun tun
@@ -74,6 +95,8 @@ sort: by_weight
 一骑红尘妃子笑	yi ji hong chen fei zi xiao
 千里走单骑	qian li zou dan qi
 千里走单骑	qian li zou dan ji
+一骑当千  yi qi dang qian
+一骑当千  yi ji dang qian
 # 「道行」，正确是 heng，但「道行hang」比较流行
 道行	dao heng
 道行	dao hang
@@ -235,7 +258,6 @@ sort: by_weight
 三个䖝	san ge chong
 三个丿	san ge pie
 三个户
-三个日
 三个瓜
 三个鸟
 三个米
@@ -257,7 +279,6 @@ sort: by_weight
 四个魚	si ge yu
 四个月
 四个日
-四个曰
 四个林
 四个水
 四个石

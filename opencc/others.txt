@@ -1,15 +1,54 @@
-一一一一一一一	version: "2022-10-28" 一一一一一一一
-一一一一一一一	此文件中间不能有空行 一一一一一一一
-一一一一一一一	格式为：输入内容<Tab>响应内容1<Space>响应内容2<Space>响应内容3。。。 一一一一一一一
-一一一一一一一	最左侧的输入内容应该写入词库中 一一一一一一一
-一一一一一一一	一一一一一一一 一一一一一一一
-一一一一一一一	偏旁部首 一一一一一一一
+一月	一月 Jan. January
+二月	二月 Feb. February
+三月	三月 Mar. March
+四月	四月 Apr. April
+五月	五月 May
+六月	六月 June
+七月	七月 July
+八月	八月 Aug. August
+九月	九月 Sep. Sept. September
+十月	十月 Oct. October
+十一月	十一月 Nov. November
+十二月	十二月 Dec. December
+一月份	一月份 Jan. January
+二月份	二月份 Feb. February
+三月份	三月份 Mar. March
+四月份	四月份 Apr. April
+五月份	五月份 May
+六月份	六月份 June
+七月份	七月份 July
+八月份	八月份 Aug. August
+九月份	九月份 Sep. Sept. September
+十月份	十月份 Oct. October
+十一月份	十一月份 Nov. November
+十二月份	十二月份 Dec. December
+周一	周一 Mon. Monday
+周二	周二 Tue. Tuesday
+周三	周三 Wed. Wednesday
+周四	周四 Thu. Thurs. Thursday
+周五	周五 Fri. Friday
+周六	周六 Sat. Saturday
+周日	周日 Sun. Sunday
+礼拜一	礼拜一 Mon. Monday
+礼拜二	礼拜二 Tue. Tuesday
+礼拜三	礼拜三 Wed. Wednesday
+礼拜四	礼拜四 Thu. Thurs. Thursday
+礼拜五	礼拜五 Fri. Friday
+礼拜六	礼拜六 Sat. Saturday
+礼拜日	礼拜日 Sun. Sunday
+星期一	星期一 Mon. Monday
+星期二	星期二 Tue. Tuesday
+星期三	星期三 Wed. Wednesday
+星期四	星期四 Thu. Thurs. Thursday
+星期五	星期五 Fri. Friday
+星期六	星期六 Sat. Saturday
+星期日	星期日 Sun. Sunday
 厂部	厂部 厂 ⺁
 偏厂	偏厂 厂
 偏厂儿	偏厂儿 厂
 厂字头	厂字头 厂
 反字框	反字框 ⺁
-匚部	匚部 
+匚部	匚部
 区字框	区字框 匚
 三框	三框 匚
 三框儿	三框儿 匚
@@ -168,7 +207,6 @@
 足字旁	足字旁 ⻊
 髦字头	髦字头 髟
 石字头	石字头 丆
-一一一一一一一	著名表演艺术家 一一一一一一一
 爱田飞鸟	爱田飞鸟 あいだ飛鳥
 爱乃娜美	爱乃娜美 愛乃なみ
 安斋拉拉	安斋拉拉 安齋拉拉
@@ -274,7 +312,13 @@
 飞鸟里伊奈	飞鸟里伊奈 飛鳥りいな
 天音真比奈	天音真比奈 天音まひな
 凰香奈芽	凰香奈芽 凰かなめ
-一一一一一一一	生活大爆炸&老友记 一一一一一一一
+翼舞	翼舞 つばさ舞
+神木丽	神木丽 神木麗
+小花暖	小花暖 小花のん
+山口叶琉	山口叶琉 山口葉瑠
+赤目丽兰	赤目丽兰 赤目レイラン
+天马唯	天马唯 天馬ゆい
+七森莉莉	七森莉莉 七ツ森りり
 谢耳朵	谢耳朵 Sheldon
 谢尔顿	谢尔顿 Sheldon
 Sheldon	Sheldon 谢尔顿 谢耳朵
@@ -298,7 +342,6 @@ Ross	Ross 罗斯
 Chandler	Chandler 钱德勒
 菲比	菲比 Phoebe
 Phoebe	Phoebe 菲比
-一一一一一一一	键盘符号 一一一一一一一
 Cmd	Cmd Command ⌘
 Command	Command ⌘
 Ctrl	Ctrl Control ⌃
@@ -306,7 +349,7 @@ Control	Control ⌃
 Opt	Opt Option ⌥
 Option	Option ⌥
 Shift	Shift ⇧
-Tab	Tab ⇥
+Tab	Tab ⇥ 	
 Caps	Caps CapsLock ⇪
 CapsLock	CapsLock ⇪
 Return	Return ⏎
@@ -317,7 +360,6 @@ Del	Del Delete ⌫
 Delete	Delete ⌫
 Esc	Esc Escape ⎋
 Eject	Eject ⏏
-一一一一一一一	三叠字 一一一一一一一
 三个生	三个生 㽓
 三个秦	三个秦 䆐
 三个若	三个若 䖃
@@ -449,7 +491,6 @@ Eject	Eject ⏏
 三个瓜	三个瓜 𤬑
 三个鸟	三个鸟 𪉓
 三个米	三个米 𥼬
-一一一一一一一	四叠字 一一一一一一一
 四个乂	四个乂 㸚
 四个人	四个人 𠈌
 四个厶	四个厶 𠫬
@@ -493,13 +534,18 @@ Eject	Eject ⏏
 四个土	四个土 㙓
 男女男	男女男 嬲
 女男女	女男女 嫐
-一一一一一一一	其他 一一一一一一一
 Rime	Rime 㞢
 中州韵	中州韵 Rime
 鼠须管	鼠须管 Squirrel
 小狼毫	小狼毫 Weasel
-平方米	平方米 m²
+平方	平方 ²
 平方厘米	平方厘米 cm²
+平方分米	平方分米 dm²
+平方米	平方米 m²
+立方	立方 ³
+立方厘米	立方厘米 cm³
+立方分米	立方分米 dm³
+立方米	立方米 m³
 度	度 °
 摄氏度	摄氏度 °C
 华氏度	华氏度 °F
@@ -515,10 +561,10 @@ Apple	Apple 
 约等号	约等号 ≈
 不等于	不等于 ≠
 不等号	不等号 ≠
-大于	大于 >
-大于号	大于号 >
-小于	小于 <
-小于号	小于号 <
+大于	大于 > ≥
+大于号	大于号 > ≥
+小于	小于 < ≤
+小于号	小于号 < ≤
 小于等于	小于等于 ≤
 小于等于号	小于等于号 ≤
 大于等于	大于等于 ≥
@@ -565,3 +611,10 @@ Omicron	Omicron 奥密克戎
 车马炮	车马炮 車马炮
 出车	出车 出車
 安卓	安卓 Android
+反引号	反引号 `
+阿尔法粒子	阿尔法粒子 α粒子
+阿尔法射线	阿尔法射线 α射线
+贝塔粒子	贝塔粒子 β粒子
+贝塔射线	贝塔射线 β射线
+伽马刀	伽马刀 γ刀
+伽马射线	伽马射线 γ射线
