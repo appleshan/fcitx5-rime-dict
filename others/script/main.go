@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"path/filepath"
 	"script/rime"
 	"strings"
 )
@@ -11,49 +12,67 @@ import (
 func main() {
 	log.SetFlags(log.LstdFlags | log.Lshortfile)
 
-	// 临时用的
-	// rime.Temp()
+	if len(os.Args) > 1 {
+		switch os.Args[1] {
+		case "s":
+			goto SORT
+		case "t":
+			rime.Temp()
+			return
+		case "tp":
+			rime.Pinyin(filepath.Join(rime.RimeDir, "cn_dicts/temp.txt"))
+			return
+		}
+	}
 
 	// Emoji 检查和更新
-	rime.CheckEmoji()
-	rime.UpdateEmojiTXT()
+	rime.CheckAndGenerateEmoji()
 	fmt.Println("--------------------------------------------------")
 
-	// 更新搜狗流行词
-	rime.UpdateSogou()
+	// 从 others/cn_en.txt 更新中英混输词库
+	rime.CnEn()
 	fmt.Println("--------------------------------------------------")
 
-	// 为 sogou、ext、tencent 没权重的词条加上权重，有权重的改为下面设置的权重
-	rime.AddWeight(rime.SogouPath, rime.DefaultWeight)
-	rime.AddWeight(rime.ExtPath, rime.DefaultWeight)
-	rime.AddWeight(rime.TencentPath, rime.DefaultWeight)
+	// 为没注音的词汇半自动注音
+	rime.Pinyin(rime.ExtPath)
 	fmt.Println("--------------------------------------------------")
 
-	// 通用检查
-	// flag: 1 只有汉字，2 汉字+注音，3 汉字+注音+权重，4 汉字+权重。
-	go rime.Check(rime.HanziPath, 3)
-	go rime.Check(rime.BasePath, 3)
-	go rime.Check(rime.SogouPath, 3)
-	go rime.Check(rime.ExtPath, 4)
-	go rime.Check(rime.TencentPath, 4)
+	// 为 ext、tencent 没权重的词条加上权重，有权重的改为下面设置的权重
+	rime.AddWeight(rime.ExtPath, 100)
+	rime.AddWeight(rime.TencentPath, 100)
+	fmt.Println("--------------------------------------------------")
 
-	wait()
+	// 检查
+	// _type: 1 只有汉字 2 汉字+注音 3 汉字+注音+权重 4 汉字+权重
+	rime.Check(rime.HanziPath, 3)
+	rime.Check(rime.BasePath, 3)
+	rime.Check(rime.ExtPath, 3)
+	rime.Check(rime.TencentPath, 4)
+	fmt.Println("--------------------------------------------------")
 
-	// 排序
+	// 检查同义多音字
+	rime.CheckPolyphone(rime.BasePath)
+	rime.CheckPolyphone(rime.ExtPath)
+	fmt.Println("--------------------------------------------------")
+
+	areYouOK()
+
+SORT:
+	// 排序，顺便去重
 	rime.Sort(rime.HanziPath, 3)
+	rime.Sort(filepath.Join(rime.RimeDir, "cn_dicts/41448.dict.yaml"), 2)
 	rime.Sort(rime.BasePath, 3)
-	rime.Sort(rime.SogouPath, 3)   // 对 base 中已经有的，去重
-	rime.Sort(rime.ExtPath, 4)     // 对 base、sogou 中已经有的，去重
-	rime.Sort(rime.TencentPath, 4) // 对 base、sogou、ext 中已经有的，去重
-	// rime.SortEnDict(rime.EnPath)
+	rime.Sort(rime.ExtPath, 3)
+	rime.Sort(rime.TencentPath, 4)
+	rime.Sort(filepath.Join(rime.RimeDir, "en_dicts/en.dict.yaml"), 2)
 }
 
-func wait() {
-	fmt.Println("检查完成后输入 OK 以继续。。。")
+func areYouOK() {
+	fmt.Println("Are you OK:")
 	var isOK string
 	_, _ = fmt.Scanf("%s", &isOK)
-	if strings.ToLower(isOK) != "ok" {
+	isOK = strings.ToLower(isOK)
+	if isOK != "ok" && isOK != "y" && isOK != "yes" {
 		os.Exit(123)
 	}
-	fmt.Println("--------------------------------------------------")
 }

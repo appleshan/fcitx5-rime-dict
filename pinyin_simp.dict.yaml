@@ -5,11 +5,7 @@
 name: pinyin_simp
 version: "1"
 import_tables:
-  - cn_dicts/8105    # 《通用汉字规范表》8105 字字表
-  - cn_dicts/base    # 基础词库，华宇野风系统词库 + 清华大学开源词库 + 修订
   - cn_dicts/sogou   # 搜狗流行词，与 base 没有重复
-  - cn_dicts/ext     # 扩展词库，与 base sogou 没有重复
-  - cn_dicts/tencent # 腾讯词向量，与 base sogou ext wiki 没有重复
 
   - cn_dicts/av      # 著名表演艺术家
 

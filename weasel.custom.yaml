@@ -16,7 +16,6 @@ patch:
   "style/layout/margin_y": 12 #候选字上下边距
   "style/layout/hilite_padding": 12 #候选字背景色色块高度 若想候选字背景色块无边界填充候选框，仅需其高度和候选字上下边距一致即可
   "style/layout/hilite_spacing": 3 # 序号和候选字之间的间隔
-  "style/layout/spacing": 10 #作用不明
   "style/layout/candidate_spacing": 24 # 候选字间隔
   "style/layout/round_corner": 0 #候选字背景色块圆角幅度
 

@@ -1,158 +1,41 @@
 # Rime table
 # coding: utf-8
+#@/db_name	custom_phrase.txt
+#@/db_type	tabledb
 #
-# 用於【朙月拼音】系列輸入方案
-# 【小狼毫】0.9.21 以上
-# 这个文件内的字词会占据最高权重（排在候选项的最前面）。
+# 自定义短语
+# 可为方案增加一些要置顶的词汇及短语，例如邮箱、手机号、常用短语等等。编码可以随便起，不限于拼音。
 #
-# 請將該文件以UTF-8編碼保存爲
-# Rime用戶文件夾/custom_phrase.txt
+# 适用于全拼。双拼默认为 custom_phrase_double.txt 需要手动创建，并更改上面的 db_name 为 custom_phrase_double.txt
 #
-# 碼表各字段以製表符（Tab）分隔
-# 順序爲：文字、編碼、權重（決定重碼的次序、可選）
+# 以下固定的词汇及顺序纯属个人偏好，仅作示例，
+# 可以增加自己的 .txt 文件，并在方案的 custom_phrase/user_dict 指定为自己的文件。
 #
-# 雖然文本碼表編輯較爲方便，但不適合導入大量條目
+# 以 Tab 分割：词汇<Tab>编码<Tab>权重
 #
-# no comment
+# 这个文件内的字词会占据最高权重（即排在候选项的最前面，因为指定了高权重 custom_phrase/initial_quality: 99）。
+# 但不与其他翻译器互相造词，如果使用了完整编码，那么这个字或词将无法参与造词，即自造词无法被记住。
+# 所以只建议固定非完整拼音的编码，如果需求是置顶指定拼音的候选项，请参考方案中的 pin_cand_filter。
+#
+# 最下面的英文是因为一些常用单词的第一候选项被纠错覆盖了，如 Amazon 被纠错为「a ma zong 阿妈粽」，期望的 Amazon 跑到第二个候选项了，所以这里给它固定死喽。
+#
+# version: "2024-03-12"
+#
+# 此行之后不能写注释
 
-#{{ 拼词
+噷	hm
+呣	m
+呒	m
 
-# 三角叠
-劦	lilili
-品	pinpinpin
-垚	tututu
-芔	huihuihui
-晶	ririri
-森	mumumu
-驫	mamama
-骉	mamama
-惢	xinxinxin
-掱	shoushoushou
-毳	maomaomao
-淼	shuishuishui
-焱	huohuohuo
-猋	quanquanquan
-磊	shishishi
-畾	tiantiantian
-皛	baibaibai
-赑	beibeibei
-矗	zhizhizhi
-鑫	jinjinjin
-雥	zhuizhuizhui
-雥	cuicuicui
-雥	weiweiwei
-馫	xiangxiangxiang
-麤	lululu
-龘	longlonglong
-众	renrenren
-刕	daodaodao
-厵	yuanyuanyuan
-叒	youyouyou
-嚞	jijiji
-壵	shishishi
-孨	zizizi
-尛	xiaoxiaoxiao
-歮	zhizhizhi
-犇	niuniuniu
-𤾩	baibaibai
-羴	yangyangyang
-舙	shesheshe
-譶	yanyanyan
-靐	leileilei
-飍	fengfengfeng
-飝	feifeifei
-鱻	yuyuyu
-灥	quanquanquan
-㐂	qiqiqi
-㽓	shengshengsheng
-䆐	qinqinqin
-䖃	ruoruoruo
-䨺	yunyunyun
+有	u	3
+又	u	2
+由	u	1
 
-# 左右叠
-㴇	shuishuishui
-雦	zhuizhuizhui
+一	i	4
+以	i	3
+已	i	2
+亦	i	1
 
-# 四方叠
-叕	youyouyouyou
-㗊	koukoukoukou
-㠭	gonggonggonggong
-𣊭	riririri
-㵘	shuishuishuishui
-朤	yueyueyueyue
-燚	huohuohuohuo
-𨰻	jinjinjinjin
-䲜	yuyuyuyu
-䨻	leileilei
-
-#}}
-
-# 符号
-·	jiangehao
-·	dian
-°	du
-℃	sheshidu
-℉	huashidu
-
-# 人名
-
-# 扩展词语
-中州韻輸入法引擎	rime	2
-http://rime.im/	rime	1
-Rime	rime	3
-朙月拼音	mingyuepinyin
-⌘	cmd
-⌃	ctl
-⌥	opt
-⇧	shift
-GBK	gbk
-UTF-8	utfba
-Google Analytics	ga
-macOS	macos
-Linux	linux
-CSS	css
-HTML	html
-iOS	ios
-iPad	ipad
-iPhone	iphone
-iTunes	itunes
-JavaScript	js
-TypeScript	ts
-jQuery	jquery
-MySQL	mysql
-SQL	sql
-WeChat	wechat
-Swift	swift
-MacBook Pro	mbp
-MacBook	macbook
-Apple	apple
-U盘	up
-GitHub	github
-iMac	imac
-iPad	ipad
-iPhone	iphone
-iPod	ipod
-IPTV	iptv
-IPv4	ipv
-IPv6	ipv
-Mac App Store	mas
-OS X	osx
-GNU/Linux	linux
-Youku	youku
-YouTube	youtube
-iCloud	icloud
-Dropbox	dropbox
-T恤	txu
-Mac	mac
-Wi-Fi	wifi
-Apple ID	appleid
-QQ邮箱	qqyzxl
-TODO	todo
-
-##### 方便词
-# ！ 单编码的声母同样会导致无法参与超级简拼，如「lir」无法响应「例如」。
-一	i
-有	u
 一个	ig
 有个	ug
 是一个	sig
@@ -164,56 +47,18 @@ TODO	todo
 又有	uu
 又又又	uuu
 又双叒叕	uuuu
-39454075	qq
-apple.shan@gmail.com	email
 
-##### 容错词
-# 「血xue、xie」「谁shui、shei」「露lu、lou」「熟shu、shou」「密钥yao、yue」已在 sys 中实现
-# ---
-# 「馄饨」，正确是 tun，北方口语是 dun
-馄饨	hun tun
-馄饨	hun dun
-# 「主角」，正确是 jue，港台是 jiao
-主角	zhu jue
-主角	zhu jiao
-角色	jue se
-角色	jiao se
-# 「比萨」，正确是 bi，Pizza 发音为 pi
-比萨	bi sa
-比萨	pi sa
-比萨饼	bi sa bing
-比萨饼	pi sa bing
-吃比萨	chi bi sa
-吃比萨	chi pi sa
-超级至尊比萨	chao ji zhi zun bi sa
-超级至尊比萨	chao ji zhi zun pi sa
-至尊比萨	zhi zun bi sa
-至尊比萨	zhi zun pi sa
-海鲜比萨	hai xian bi sa
-海鲜比萨	hai xian pi sa
-蔬菜比萨	shu cai bi sa
-蔬菜比萨	shu cai pi sa
-# 「扑街」，正确是 jie，口语是 gai
-扑街	pu jie
-扑街	pu gai
-街溜子	jie liu zi
-街溜子	gai liu zi
-扑街仔	pu jie zai
-扑街仔	pu gai zai
-# 「说服」，正确是 shuo，但「游说」「说客」仍然保留着 shui 的读音
-说服	shuo fu
-说服	shui fu
-# 「坐骑」，正确是 qi，《现汉7》只保留了 qi，《现汉6》一些词组中是念 ji
-坐骑	zuo qi
-坐骑	zuo ji
-千里走单骑	qian li zou dan qi
-千里走单骑	qian li zou dan ji
-# 「道行」，正确是 heng，但「道行hang」比较流行
-道行	dao heng
-道行	dao hang
-# 「模样」，正确是 mu，口语常念 mo
-模样	mu yang
-模样	mo yang
-有模有样	you mu you yang
-有模有样	you mo you yang
-
+go	go
+Golang	golang
+Hugo	hugo
+goto	goto
+domain	domain
+TODO	todo
+Dota	dota
+main	main
+Amazon	amazon
+NASA	nasa
+gone	gone
+Go程	gocheng
+code	code
+SOHO	soho

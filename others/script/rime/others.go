@@ -3,64 +3,42 @@ package rime
 import (
 	"bufio"
 	"fmt"
+	mapset "github.com/deckarep/golang-set/v2"
 	"log"
 	"os"
+	"strconv"
 	"strings"
 	"unicode/utf8"
 )
 
-// 临时用的或一次性的方法集
+// 一些临时用的函数
 
 func Temp() {
-	defer os.Exit(1)
+	// GeneratePinyinTest("你的行动力")
+	// GeneratePinyinTest("都挺长的")
+	// GeneratePinyinTest("血条长")
+
+	// findP(BasePath, "血")
+	// Pinyin(ExtPath)
+	// AddWeight(ExtPath, 100)
 }
 
-func dictsDifference(dict1, dict2 string) {
-	file1Set := readToSet(dict1)
-	file2Set := readToSet(dict2)
-	set := file1Set.Difference(file2Set)
-	fmt.Println(set.ToSlice())
-	fmt.Println(set.Cardinality())
-}
-
-func dictsIntersect(dict1, dict2 string) {
-	file1Set := readToSet(dict1)
-	file2Set := readToSet(dict2)
-	set := file1Set.Intersect(file2Set)
-	fmt.Println(set.ToSlice())
-	fmt.Println(set.Cardinality())
-}
-
-func enDictsIntersect(dict1, dict2 string) {
-	file1Set := readEnToSet(dict1)
-	file2Set := readEnToSet(dict2)
-	set := file1Set.Difference(file2Set)
-	// fmt.Println(set.ToSlice())
-	fmt.Println(set.Cardinality())
-	file, err := os.OpenFile("rime/1.txt", os.O_CREATE|os.O_TRUNC|os.O_WRONLY, 0644)
+// 列出字表中多音字的状况：是否参与自动注音
+func polyphone() {
+	// open file
+	file, err := os.Open(HanziPath)
 	if err != nil {
-		log.Fatal(err)
+		log.Fatalln(err)
 	}
 	defer file.Close()
-	for _, word := range set.ToSlice() {
-		_, err := file.WriteString(word + "\t" + word + "\n")
-		if err != nil {
-			log.Fatal(err)
-		}
-	}
-	err = file.Sync()
-	if err != nil {
-		log.Fatal(err)
-	}
-}
 
-// 处理一个 Rime 词库，去除掉它两个字及以下的词汇
-func processNewDict(dictPath string) {
-	file, _ := os.Open(dictPath)
-	defer file.Close()
-
-	outFile, _ := os.OpenFile("/Users/dvel/Downloads/1.dict.yaml", os.O_CREATE|os.O_TRUNC|os.O_WRONLY, 0644)
-	defer outFile.Close()
+	// 将所有读音读入 m
+	type py struct {
+		pinyin string
+		weight int
+		isAuto bool // 是否参与自动注音
+	}
+	m := make(map[string][]py)
 
 	sc := bufio.NewScanner(file)
 	isMark := false
@@ -72,58 +50,98 @@ func processNewDict(dictPath string) {
 			}
 			continue
 		}
-
-		text := strings.Split(line, "\t")[0]
-		if utf8.RuneCountInString(text) <= 2 {
+		if line == "" || strings.HasPrefix(line, "#") {
 			continue
 		}
-		outFile.WriteString(line + "\n")
+		parts := strings.Split(line, "\t")
+		if len(parts) != 3 {
+			log.Fatalln("len(parts) != 3", line)
+		}
+		hanzi, pinyin := parts[0], parts[1]
+		weight, _ := strconv.Atoi(parts[2])
+		m[hanzi] = append(m[hanzi], py{pinyin: pinyin, weight: weight})
 	}
-	outFile.Sync()
+
+	// 判断是否参与注音
+	for hanzi, pys := range m {
+		if len(pys) == 1 {
+			continue
+		}
+		// 找到最大的权重
+		max := 0
+		for _, py := range pys {
+			if py.weight > max {
+				max = py.weight
+			}
+		}
+		// 计算其他权重相较于 max 的比值，是否大于 0.05
+		for i, py := range pys {
+			if py.weight == max {
+				m[hanzi][i].isAuto = true
+			} else if float64(py.weight)/float64(max) > 0.05 {
+				m[hanzi][i].isAuto = true
+			}
+		}
+		// 输出
+		fmt.Println(hanzi)
+		for _, py := range pys {
+			fmt.Println(py.pinyin, py.weight, py.isAuto)
+		}
+	}
 }
 
-func get字表汉字拼音映射() {
-	file, err := os.Open(HanziPath)
+// 在词库中找到此行是否包含同义多音字，如果包含且长度大于等于3，从文件中删除这行，并将所有删除的行写入到 1.txt 中
+func findP(dictPath string, ch string) {
+	// open file
+	file, err := os.OpenFile(dictPath, os.O_RDWR, 0666)
 	if err != nil {
-		log.Fatal(err)
+		log.Fatalln(err)
 	}
 	defer file.Close()
 
-	HanPinYinMap := make(map[string][]string)
-	keys := make([]string, 0) // ordered map
+	outFile, err := os.Create("1.txt")
+	if err != nil {
+		log.Fatalln(err)
+	}
+	defer outFile.Close()
+
+	lines := make([]string, 0)
+
 	isMark := false
 	sc := bufio.NewScanner(file)
+	set := mapset.NewSet[string]() // 去重用的
 	for sc.Scan() {
 		line := sc.Text()
 		if !isMark {
-			if strings.Contains(line, mark) {
+			lines = append(lines, line)
+			if line == mark {
 				isMark = true
 			}
 			continue
 		}
+		if line == "" || strings.HasPrefix(line, "#") {
+			lines = append(lines, line)
+			continue
+		}
 		parts := strings.Split(line, "\t")
-		text, code := parts[0], parts[1]
-		if !contains(keys, text) {
-			keys = append(keys, text)
+		if len(parts) != 3 {
+			log.Fatalln("len(parts) != 3", line)
 		}
-		HanPinYinMap[text] = append(HanPinYinMap[text], code)
-	}
-
-	tempTXT, err := os.OpenFile("rime/temp.txt", os.O_CREATE|os.O_TRUNC|os.O_RDWR, 0644)
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer tempTXT.Close()
-
-	for _, key := range keys {
-		s := key + " " + strings.Join(HanPinYinMap[key], " ") + "\n"
-		_, err := tempTXT.WriteString(s)
-		if err != nil {
-			log.Fatal(err)
+		text := parts[0]
+		if strings.Contains(text, ch) && utf8.RuneCountInString(text) >= 3 && !set.Contains(text) {
+			outFile.WriteString(line + "\n")
+		} else {
+			set.Add(text)
+			lines = append(lines, line)
 		}
 	}
-	err = tempTXT.Sync()
-	if err != nil {
-		log.Fatal(err)
+
+	// 从 lines 重新写入 file
+	file.Truncate(0)
+	file.Seek(0, 0)
+	for _, line := range lines {
+		file.WriteString(line + "\n")
 	}
+
+	fmt.Println("done")
 }
