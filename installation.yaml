@@ -1,20 +1,20 @@
-# Windows
-distribution_code_name: Weasel
-distribution_name: "小狼毫"
-distribution_version: 0.16.1
-install_time: "Tue Dec  7 13:43:05 2021"
-installation_id: "de7d4543-5380-41ae-bf93-b75609fe1390"  # 同步和备份 ID
-rime_version: 1.11.2
-sync_dir: "C:/Users/apple/OneDrive/persist/sync/rime"  # 同步和备份目录，我直接放到 OneDrive
-update_time: "Sun Jun  9 03:04:22 2024"
-
 # Arch Linux
-#distribution_code_name: "fcitx-rime"
-#distribution_name: Rime
-#distribution_version: 5.0.16
+distribution_code_name: "fcitx-rime"
+distribution_name: Rime
+distribution_version: 5.1.11
+install_time: "Tue Dec  7 13:43:05 2021"
+installation_id: "de7d4543-5380-41ae-bf93-b75609fe1390"
+rime_version: 1.12.0
+sync_dir: "/home/alecshan/persist/sync/rime"
+update_time: "Wed Jul  9 02:26:26 2025"
+
+# Windows
+#distribution_code_name: Weasel
+#distribution_name: "小狼毫"
+#distribution_version: 0.16.1
 #install_time: "Tue Dec  7 13:43:05 2021"
-#installation_id: "de7d4543-5380-41ae-bf93-b75609fe1390"
-#rime_version: 1.8.5
-#sync_dir: "/home/alecshan/persist/sync/rime"
-#update_time: "Tue Mar 14 09:21:37 2023"
+#installation_id: "de7d4543-5380-41ae-bf93-b75609fe1390"  # 同步和备份 ID
+#rime_version: 1.11.2
+#sync_dir: "C:/Users/apple/OneDrive/persist/sync/rime"  # 同步和备份目录，我直接放到 OneDrive
+#update_time: "Sun Jun  9 03:04:22 2024"
 

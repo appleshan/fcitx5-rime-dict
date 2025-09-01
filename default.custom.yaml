@@ -13,9 +13,6 @@
 patch:
   # 方案列表
   schema_list:
-  # - schema: pinyin_simp
-  # - schema: numbers
-  # - schema: symbols
   - schema: rime_ice               # 雾凇拼音（全拼）
   - schema: double_pinyin_mspy     # 微软双拼
 

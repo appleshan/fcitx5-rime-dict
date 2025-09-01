@@ -62,3 +62,6 @@ gone	gone
 Go程	gocheng
 code	code
 SOHO	soho
+
+apple.shan@gmail.com	mygmail
+https://ghfast.top/	ghfast
