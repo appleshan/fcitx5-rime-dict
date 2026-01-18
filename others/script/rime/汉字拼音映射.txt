@@ -13,6 +13,7 @@
 猼 bo
 礤 ca
 閦 chu
+膪 chuai
 鯙 chun
 𪻐 cong
 䐛 da
@@ -21,7 +22,6 @@
 鮗 dong
 遯 dun
 犎 feng
-鳆 fu
 𫚒 fu
 咈 fu
 㹴 geng
@@ -37,7 +37,6 @@
 㺀 hu
 獚 huang
 𫚔 hui
-檵 ji
 䇲 jia
 榎 jia
 鳽 jian
@@ -48,7 +47,6 @@
 椇 ju
 鵙 ju
 罥 juan
-朘 juan
 濬 jun
 埈 jun
 峠 ka
@@ -68,14 +66,12 @@
 𱇮 mang
 脢 mei
 濛 meng
-蒾 mi
 䕷 mi
 旼 min
 慜 min
 暋 min
 麿 mo
 拏 na
-㖏 nie
 鬅 peng
 魾 pi
 魮 pi
@@ -96,11 +92,9 @@
 瓋 ti
 魠 tuo
 梶 wei
-揾 wen
 螉 weng
 蟱 wu
 㵲 wu
-矽 xi
 蠵 xi
 鰕 xia
 𮬣 xian
@@ -126,25 +120,33 @@
 凪 zhi
 塚 zhong
 鯮 zong
-𭎂 zong
 ### ----------在字表但未被脚本自动纳入的注音：----------
 # 嗯 eng # 目前以 en 为主
+揞 an
 鿫 ao
 㞎 ba
 𰻝 biang
 𤭢 cei
 蟌 cong
+鿕 dan
 㨃 dui
 欸 ei
+鳆 fu
 鿔 ge
 睆 huan
+檵 ji
+朘 juan
 佧 ka
 堀 ku
 菈 la
 𫟷 li
+蒾 mi
 鿭 ni
 嬢 niang
+㖏 nie
+𤆵 pa
 珮 pei
+榀 pin
 螓 qin
 䞍 qing
 朊 ruan
@@ -155,12 +157,17 @@
 鿬 tian
 樋 tong
 氽 tun
+揾 wen
+矽 xi
 雫 xia
 咲 xiao
+蓺 yi
 哟 yo
 唷 yo
 𫚪 yu
+膣 zhi
 跩 zhuai
+𭎂 zong
 # -_- ----------这行下面是要过滤掉的词汇，不进行注音检查----------
 娭毑
 杭育
@@ -406,6 +413,7 @@
 胤礽
 黄泆潼
 剑首一吷
+礓䃰
 礓䃰儿
 蒋攸铦
 官田原三筊埤古水道遗构
@@ -430,7 +438,6 @@
 褦襶
 南宫仆射
 南蛮鴃舌
-囊膪
 李搢臣
 李搢荣
 倪朝搢
@@ -672,7 +679,6 @@
 噫吁嚱
 櫽栝
 远路应悲春晼晚
-元気森林
 掸邦
 掸邦高原
 掸邦北部
@@ -712,10 +718,6 @@
 琅邪王
 西山兰若试茶歌
 阿兰若
-群氓
-群氓效应
-愚氓
-僧是愚氓犹可训
 钱松喦
 欹嵚历落
 合原槻羽
@@ -808,3 +810,11 @@
 万古钦躅
 禽滑釐
 夏无且
+属予作文以记之
+皋陶
+钟繇
+𦗒狐
+不亦说乎
+日掛中天
+鹤庆乾酒
+吴廷瑈
