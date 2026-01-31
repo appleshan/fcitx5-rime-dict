@@ -4,9 +4,9 @@ distribution_name: Rime
 distribution_version: 5.1.12
 install_time: "Tue Dec  7 13:43:05 2021"
 installation_id: "de7d4543-5380-41ae-bf93-b75609fe1390"
-rime_version: 1.14.0
+rime_version: 1.16.1
 sync_dir: "/home/alecshan/persist/sync/rime"
-update_time: "Thu Nov  6 06:16:55 2025"
+update_time: "Thu Jan 29 15:21:34 2026"
 
 # Windows
 #distribution_code_name: Weasel
