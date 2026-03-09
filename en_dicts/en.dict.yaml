@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2026-01-28"
+version: "2026-03-08"
 sort: by_weight
 ...
 # +_+
@@ -339,6 +339,7 @@ adore	adore
 adrenaline	adrenaline
 Adrian	Adrian
 adrift	adrift
+adrifts	adrifts
 # ads	ads
 adsense	adsense
 ADSL	ADSL
@@ -544,7 +545,8 @@ Albion	Albion
 album	album
 albums	albums
 Albuquerque	Albuquerque
-Alcatel	Alcatel
+# Alcatel	Alcatel
+alchemical	alchemical
 alchemist	alchemist
 alchemy	alchemy
 alcohol	alcohol
@@ -911,6 +913,7 @@ anticipated	anticipated
 anticipation	anticipation
 antigen	antigen
 antigens	antigens
+antigravity	antigravity
 Antigua	Antigua
 Antilles	Antilles
 antimony	antimony
@@ -1853,7 +1856,7 @@ Bedfordshire	Bedfordshire
 bedroom	bedroom
 bedrooms	bedrooms
 beds	beds
-bedspread	 bedspread
+bedspread	bedspread
 bee	bee
 beech	beech
 beef	beef
@@ -2291,6 +2294,7 @@ bonding	bonding
 bonds	bonds
 bone	bone
 bones	bones
+bonfire	bonfire
 Bonn	Bonn
 bonnie	bonnie
 Bono	Bono
@@ -2647,7 +2651,6 @@ bug	bug
 buggy	buggy
 bugle	bugle
 bugs	bugs
-bugzilla	bugzilla
 Buick	Buick
 build	build
 builder	builder
@@ -3364,6 +3367,7 @@ cheerleader	cheerleader
 cheerleaders	cheerleaders
 cheers	cheers
 cheese	cheese
+cheesecloth	cheesecloth
 cheetah	cheetah
 chef	chef
 chefs	chefs
@@ -3430,6 +3434,7 @@ Chilean	Chilean
 chili	chili
 chill	chill
 # ChillSeph	ChillSeph
+chime	chime
 chimera	chimera
 chimney	chimney
 chimpanzee	chimpanzee
@@ -4065,6 +4070,8 @@ complied	complied
 complies	complies
 compliment	compliment
 complimentary	complimentary
+complimented	complimented
+complimenting	complimenting
 compliments	compliments
 comply	comply
 complying	complying
@@ -5199,6 +5206,7 @@ decriers	decriers
 decries	decries
 decry	decry
 decrying	decrying
+decrypt	decrypt
 dedicate	dedicate
 dedicated	dedicated
 dedication	dedication
@@ -6944,6 +6952,7 @@ ethnic	ethnic
 ethnicity	ethnicity
 etiology	etiology
 etiquette	etiquette
+etymology	etymology
 # eu	eu
 Eugene	Eugene
 Euler	Euler
@@ -7913,6 +7922,7 @@ forgiveness	forgiveness
 forgot	forgot
 forgotten	forgotten
 fork	fork
+forked	forked
 forks	forks
 form	form
 forma	forma
@@ -8311,6 +8321,7 @@ gauge	gauge
 gauges	gauges
 gaussian	gaussian
 Gauteng	Gauteng
+gauze	gauze
 gave	gave
 Gavin	Gavin
 gay	gay
@@ -8468,6 +8479,7 @@ gimp	gimp
 gin	gin
 Gina	Gina
 ginger	ginger
+ginseng	ginseng
 Giorgio	Giorgio
 Giovanni	Giovanni
 giraffe	giraffe
@@ -8763,6 +8775,7 @@ grille	grille
 grilled	grilled
 grills	grills
 grim	grim
+grime	grime
 grin	grin
 grind	grind
 grinder	grinder
@@ -8904,6 +8917,7 @@ Hague	Hague
 haha	haha
 Hahn	Hahn
 # hai	hai
+haiku	haiku
 hail	hail
 hair	hair
 haired	haired
@@ -9283,6 +9297,7 @@ high	high
 # highbeam	highbeam
 higher	higher
 highest	highest
+highfalutin	highfalutin
 highland	highland
 highlands	highlands
 highlight	highlight
@@ -10973,6 +10988,7 @@ kilowatt-hours	kilowatt-hours
 kilowatts	kilowatts
 Kim	Kim
 Kimberly	Kimberly
+Kimi	Kimi
 kin	kin
 kinase	kinase
 kind	kind
@@ -12102,6 +12118,7 @@ manufacturers	manufacturers
 manufactures	manufactures
 manufacturing	manufacturing
 manure	manure
+manus	manus
 manuscript	manuscript
 manuscripts	manuscripts
 many	many
@@ -12211,7 +12228,7 @@ masculine	masculine
 Maserati	Maserati
 mask	mask
 masks	masks
-masochism	 masochism
+masochism	masochism
 Mason	Mason
 mason	mason
 masonry	masonry
@@ -12231,6 +12248,7 @@ mastering	mastering
 masterpiece	masterpiece
 masters	masters
 mastery	mastery
+mastodon	mastodon
 masturbate	masturbate
 masturbated	masturbated
 masturbates	masturbates
@@ -12686,6 +12704,7 @@ mini	mini
 miniature	miniature
 miniatures	miniatures
 minimal	minimal
+minimax	minimax
 minimize	minimize
 minimized	minimized
 minimizing	minimizing
@@ -12848,6 +12867,7 @@ moist	moist
 moisture	moisture
 mojo	mojo
 # mol	mol
+molar	molar
 mold	mold
 molded	molded
 molding	molding
@@ -12858,6 +12878,7 @@ molecular	molecular
 molecule	molecule
 molecules	molecules
 Molly	Molly
+molt	molt
 molybdenum	molybdenum
 mom	mom
 moment	moment
@@ -13066,6 +13087,7 @@ MSN	MSN
 MTV	MTV
 mu	mu
 much	much
+muck	muck
 mud	mud
 muddle	muddle
 muddy	muddy
@@ -13219,7 +13241,7 @@ NAS	NAS
 NASA	NASA
 nasal	nasal
 NASCAR	NASCAR
-Nasdaq	Nasdaq
+NASDAQ	NASDAQ
 Nash	Nash
 Nashville	Nashville
 Nassau	Nassau
@@ -14933,6 +14955,7 @@ pistols	pistols
 piston	piston
 pistons	pistons
 pit	pit
+pitaya	pitaya
 # pitbull	pitbull
 Pitcairn	Pitcairn
 pitch	pitch
@@ -15159,6 +15182,7 @@ polyphony	polyphony
 polytechnic	polytechnic
 pomegranate	pomegranate
 pomelo	pomelo
+pompous	pompous
 pond	pond
 ponder	ponder
 ponds	ponds
@@ -15223,6 +15247,7 @@ POS	POS
 pose	pose
 posed	posed
 poses	poses
+posh	posh
 posing	posing
 position	position
 positioned	positioned
@@ -15470,6 +15495,7 @@ presume	presume
 presumed	presumed
 preteen	preteen
 pretend	pretend
+pretentious	pretentious
 pretext	pretext
 Pretoria	Pretoria
 pretty	pretty
@@ -16432,6 +16458,7 @@ regardless	regardless
 regards	regards
 RegEd	RegEd
 regency	regency
+regenerate	regenerate
 regeneration	regeneration
 regenerative	regenerative
 regent	regent
@@ -16608,6 +16635,7 @@ rentals	rentals
 rented	rented
 renting	renting
 rents	rents
+reorder	reorder
 reorganization	reorganization
 rep	rep
 repair	repair
@@ -16879,6 +16907,7 @@ reward	reward
 rewarded	rewarded
 rewarding	rewarding
 rewards	rewards
+rewind	rewind
 rewrite	rewrite
 rewritten	rewritten
 Rex	Rex
@@ -18429,6 +18458,7 @@ SMS	SMS
 SMTP	SMTP
 smuggle	smuggle
 # smugmug	smugmug
+smut	smut
 # sn	sn
 snack	snack
 snacks	snacks
@@ -18558,6 +18588,7 @@ songs	songs
 songwriter	songwriter
 Sonia	Sonia
 sonic	sonic
+sonnet	sonnet
 Sonny	Sonny
 Sonoma	Sonoma
 sons	sons
@@ -18568,6 +18599,7 @@ Sony	Sony
 soon	soon
 sooner	sooner
 soonest	soonest
+soot	soot
 soothing	soothing
 soothsay	soothsay
 soothsayer	soothsayer
@@ -18934,6 +18966,7 @@ stargazers	stargazers
 staring	staring
 stark	stark
 # starr	starr
+starred	starred
 starring	starring
 stars	stars
 start	start
@@ -20186,6 +20219,7 @@ tier	tier
 ties	ties
 tiff	tiff
 tiffany	tiffany
+Tiffany	Tiffany
 tiger	tiger
 tigers	tigers
 tight	tight
@@ -20632,6 +20666,7 @@ trillion	trillion
 trilogy	trilogy
 trim	trim
 trimmed	trimmed
+trimming	trimming
 Trina	Trina
 Trinidad	Trinidad
 trinity	trinity
@@ -21314,6 +21349,7 @@ verbatim	verbatim
 verbs	verbs
 Verde	Verde
 verdict	verdict
+verdigris	verdigris
 verge	verge
 verification	verification
 verified	verified
