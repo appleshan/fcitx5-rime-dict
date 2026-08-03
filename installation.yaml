@@ -1,12 +1,12 @@
 # Arch Linux
 distribution_code_name: "fcitx-rime"
 distribution_name: Rime
-distribution_version: 5.1.12
+distribution_version: 5.1.13
 install_time: "Tue Dec  7 13:43:05 2021"
 installation_id: "de7d4543-5380-41ae-bf93-b75609fe1390"
 rime_version: 1.16.1
 sync_dir: "/home/alecshan/persist/sync/rime"
-update_time: "Thu Jan 29 15:21:34 2026"
+update_time: "Sun Mar 29 19:53:54 2026"
 
 # Windows
 #distribution_code_name: Weasel

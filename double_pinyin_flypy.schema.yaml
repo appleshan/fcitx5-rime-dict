@@ -10,7 +10,7 @@
 # 目前配置中有个别功能仍然是全拼拼写，不能自动适配，所以需要手动修改一下：
 # - 英文中部分符号的派生规则：在英文方案文件 melt_eng.schema.yaml > speller > algebra 修改为对应的双拼拼写运算
 # - 部件拆字的拼写规则：在部件拆字方案 radical_pinyin.schema.yaml > speller > algebra 修改为对应的双拼拼写运算
-# 打个补丁一劳永逸，补丁写法参考 [常见问题](https://github.com/iDvel/rime-ice/issues/133) 或 others/双拼补丁示例/ 文件夹
+# 打个补丁一劳永逸，补丁写法参考 [常见问题](https://github.com/iDvel/rime-ice/issues/133) 或 others/patch_examples/ 文件夹
 
 
 # 方案说明
@@ -163,9 +163,11 @@ pin_cand_filter:
 translator:
   dictionary: rime_ice          # 挂载词库 rime_ice.dict.yaml
   enable_word_completion: true  # 大于 4 音节的词条自动补全，librime > 1.11.2
+  # max_sentences: 3            # 造句数量，偏好长句输入可设置大于 1，librime ≥ 1.17.0
   prism: double_pinyin_flypy    # 多方案共用一个词库时，为避免冲突，需要用 prism 指定一个名字。
   spelling_hints: 8             # corrector.lua ：为了让错音错字提示的 Lua 同时适配全拼双拼，将拼音显示在 comment 中
   always_show_comments: true    # corrector.lua ：Rime 默认在 preedit 等于 comment 时取消显示 comment，这里强制一直显示，供 corrector.lua 做判断用。
+  # keep_comments: true         # corrector.lua ：显示拼音注释
   initial_quality: 1.2          # 拼音的权重应该比英文大
   comment_format:               # 标记拼音注释，供 corrector.lua 做判断用
     - xform/^/［/
