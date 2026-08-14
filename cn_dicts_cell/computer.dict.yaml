@@ -1,0 +1,41 @@
+# Rime dictionary
+# encoding: utf-8
+# 计算机 互联网相关
+#
+---
+name: computer
+version: "2024-07-19"
+sort: by_weight
+...
+入参	ru can	50
+出参	chu can	10
+强依赖	qiang yi lai	26
+弱依赖	ruo yi lai	4
+发版	fa ban	109
+竞业	jing ye	191
+父级目录	fu ji mu lu	0
+会邀	hui yao	0
+主域名	zhu yu ming	21
+训练集	xun lian ji	1
+测试集	ce shi ji	1
+特判	te pan	4
+限频	xian pin	7
+系统会话	xi tong hui hua	1
+编程计划	bian cheng ji hua	1
+项目级	xiang mu ji	1
+议价文件	yi jia wen jian	1
+废标	fei biao	15
+必传	bi chuan	50
+智谱	zhi pu	50
+深度求索	shen du qiu suo	50
+科大讯飞	ke da xun fei	50
+百川智能	bai chuan zhi neng	50
+零一万物	ling yi wan wu	30
+阶跃星辰	jie yue xing chen	30
+面壁智能	mian bi zhi neng	20
+生数科技	sheng shu ke ji	20
+旷视科技	kuang shi ke ji	50
+商汤科技	shang tang ke ji	50
+全站加速	quan zhan jia su	0
+全站客户端	quan zhan ke hu duan	0
+全站导航	quan zhan dao hang	0
